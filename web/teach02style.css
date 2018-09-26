@@ -1,0 +1,32 @@
+body
+{
+
+}
+
+one
+{
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+two
+{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+three
+{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+btnClickMe
+{
+
+}
+
+div:hover
+{
+    font-weight: bold;
+}
