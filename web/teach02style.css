@@ -3,25 +3,25 @@ body
 
 }
 
-one
+#one
 {
     font-size: 32px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-two
+#two
 {
     font-size: 24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-three
+#three
 {
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-btnClickMe
+#btnClickMe
 {
 
 }

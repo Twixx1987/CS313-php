@@ -8,5 +8,5 @@ function clickAlert() {
 // a function to change the color of the div
 function changeColor() {
     var newColor = document.forms['frmOne'].elements[0].value;
-    document.getElementsByClassName('one').style.color = newColor;
+    document.getElementById('one').style.color = newColor;
 }
