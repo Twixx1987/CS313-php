@@ -6,6 +6,7 @@ function clickAlert() {
 }
 
 // a function to change the color of the div
-function changeColor(inColor, one) {
-    one.setAttribute(color, inColor);
+function changeColor() {
+    var newColor = document.forms['frmOne'].elements[0].value;
+    document.getElementsByClassName('one').style.color = newColor;
 }
