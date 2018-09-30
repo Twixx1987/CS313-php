@@ -6,7 +6,7 @@ body
 
 .construction
 {
-    max-width: 18rem;
+    max-width: 24rem;
     @include card;
     @include text-white;
     @include bg-warning;
