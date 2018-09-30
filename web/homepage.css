@@ -19,6 +19,7 @@ body
     height: 200px;
     border-radius: 5px;
     float: right;
+    margin: 10px;
 }
 
 .hero_content

@@ -25,8 +25,8 @@
 		<?php include 'top_menu.php'; ?>
 	</nav>
 	<div class="hero_content container">
-		<h2 class="hero_heading">Welcome intrepid heroes!</h2>
-		<p>Today I will be teaching you about another hero of legend, Dolskuggar Ljuswarin. <img src="Dolskuggar Ljuswarin.jpg" alt="Dolskuggar Ljuswarin" id="dolskuggar"></p>
+		<h2 class="hero_heading">Welcome intrepid heroes!<img src="Dolskuggar Ljuswarin.jpg" alt="Dolskuggar Ljuswarin" id="dolskuggar"></h2>
+		<p>Today I will be teaching you about another hero of legend, Dolskuggar Ljuswarin.</p>
 		<p>Dolskuggar commonly went by the nickname Dol. He was of great inportance during the shadow incursion in the new age. Dolskuggar was the one that warned the King of the impending invasion.</p>
 		<p>Dolskuggar Ljuswarin is of an uncommon race, the Shadow Elves. They came into existance after the Shadow War that ended the Silver Age. Dolskuggar's ancestors were among those that worked with 
 			the Great Sorcerer Alvar Bergljot. As you well know the Great Alvar is the one who discovered how to conjur light. His discovery turned the tide of the war against the shadows. But that is 
