@@ -19,10 +19,10 @@
     <!-- Page title -->
     <title>CS313 - Shaun Densley</title>
 </head>
-<body class="bg-warning">
-    <h1 class="pagetitle">CS313 - Shaun Densley</h1>
+<body>
+    <h1 class="pagetitle">CS313 Assignments - Shaun Densley</h1>
 	<div class="menu_top">
-		<?php include 'top_menu.php'; ?>
+		<?php include '../top_menu.php'; ?>
 	</div>
 	<div class="construction">
 	  <div class="card-header">&#x26A0 Content Under Construction! &#x26A0</div>
