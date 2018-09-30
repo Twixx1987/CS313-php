@@ -24,7 +24,7 @@
 	<div class="menu_top">
 		<?php include '../top_menu.php'; ?>
 	</div>
-	<div class="construction">
+	<div class="construction bg-warning">
 	  <div class="card-header">&#x26A0 Content Under Construction! &#x26A0</div>
 	  <div class="card-body">
 	    <h2 class="card-title">&#x26A0 Content Under Construction! &#x26A0</h2>
