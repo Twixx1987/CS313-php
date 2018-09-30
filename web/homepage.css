@@ -13,10 +13,12 @@ body
     @include mb-3;
 }
 
-dolskuggar
+#dolskuggar
 {
-    width: 400;
-    height: 500;
+    width: 40;
+    height: 50;
+    @include rounded;
+    @include float-md-left;
 }
 
 .hero_content
