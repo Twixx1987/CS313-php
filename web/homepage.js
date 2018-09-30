@@ -6,8 +6,9 @@ $(document).ready(
         $("#dolskuggar").mouseenter(function () {
             $("#dolskuggar").animate({
                 right: '500px',
-                width: '400px',
-                height: '500px'
+                width: '440px',
+                height: '550px',
+                float: none
             }, "slow");
         });
     });
@@ -18,8 +19,9 @@ $(document).ready(
         $("#dolskuggar").mouseleave(function () {
             $("#dolskuggar").animate({
                 left: '500px',
-                width: '40px',
-                height: '50px'
+                width: '120px',
+                height: '150px',
+                float: left
             }, "slow");
         });
     });
