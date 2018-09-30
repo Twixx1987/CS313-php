@@ -18,7 +18,7 @@ body
     width: 160px;
     height: 200px;
     border-radius: 5px;
-    @include float-left;
+    margin: auto;
 }
 
 .hero_content
@@ -43,8 +43,6 @@ body
 {
     font-size: 18px;
     font-family: 'Book Antiqua', Times, serif;
-    @include btn;
-    @include btn-secondary;
 }
 
 .menu-list
@@ -55,7 +53,7 @@ body
 
 .menu
 {
-    @include bg-light;
+    @include bg-dark;
 }
 
 .pagetitle
