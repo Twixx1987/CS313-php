@@ -21,9 +21,9 @@
 </head>
 <body>
     <h1 class="hero_title">Welcome Heroes of the King's Initiative!</h1>
-	<div class="menu_top">
+	<nav class="menu">
 		<?php include 'top_menu.php'; ?>
-	</div>
+	</nav>
 	<div class="hero_content container">
 		<h2 class="hero_heading">Welcome intrepid heroes!</h2>
 		<p>Today I will be teaching you about another hero of legend, Dolskuggar Ljuswarin.</p>

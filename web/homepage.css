@@ -15,8 +15,8 @@ body
 
 #dolskuggar
 {
-    width: 120px;
-    height: 150px;
+    width: 160px;
+    height: 200px;
     float: left;
     border-radius: 5px;
 }
@@ -40,12 +40,6 @@ body
 }
 
 .menu
-{
-    @include collapse;
-    @include navbar-collapse;
-}
-
-.menu_top
 {
     @include navbar;
     @include navbar-expand-lg;

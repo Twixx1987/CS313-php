@@ -9,7 +9,7 @@ $(document).ready(
                 width: '440px',
                 height: '550px',
                 float: none
-            }, "slow");
+            }, "fast");
         });
     });
 
@@ -19,8 +19,8 @@ $(document).ready(
         $("#dolskuggar").mouseleave(function () {
             $("#dolskuggar").animate({
                 left: '500px',
-                width: '120px',
-                height: '150px',
+                width: '160px',
+                height: '200px',
                 float: left
             }, "slow");
         });

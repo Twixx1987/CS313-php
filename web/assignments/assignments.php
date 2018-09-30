@@ -21,9 +21,9 @@
 </head>
 <body>
     <h1 class="pagetitle">CS313 Assignments - Shaun Densley</h1>
-	<div class="menu_top">
+	<nav class="menu">
 		<?php include '../top_menu.php'; ?>
-	</div>
+	</nav>
 	<div class="construction bg-warning">
 	  <div class="card-header">&#x26A0 Content Under Construction! &#x26A0</div>
 	  <div class="card-body">
