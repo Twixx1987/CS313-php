@@ -4,14 +4,36 @@ body
     font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
-.content
+.construction
 {
+    max-width: 18rem;
+    @include card;
+    @include text-white;
+    @include bg-warning;
+    @include mb-3;
+}
 
+dolskuggar
+{
+    width: 400px;
+    height: 500px;
+}
+
+.hero_content
+{
+    font-family: 'Copperplate Gothic Bold', Castellar, serif;
+}
+
+.hero_heading
+{
+    font-family: 'Old English Text MT', 'Copperplate Gothic Bold', Castellar, serif; 
 }
 
 .menu
 {
-
+    @include d-inline-flex;
+    @include p-2;
+    @include bd-highlight;
 }
 
 .menu_top
@@ -29,5 +51,5 @@ body
 
 .warning
 {
-    background-color: yellow;
+
 }

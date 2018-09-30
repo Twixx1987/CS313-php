@@ -24,9 +24,12 @@
 	<div class="menu_top">
 		<?php include 'top_menu.php'; ?>
 	</div>
-	<div class="content">
-		<h2 class="warning">&#x26A0 Content Under Construction! &#x26A0</h2>
-		<p>&#x26A0 Please come back in a week. &#x26A0</p>
+	<div class="construction">
+	  <div class="card-header">&#x26A0 Content Under Construction! &#x26A0</div>
+	  <div class="card-body">
+	    <h2 class="card-title">&#x26A0 Content Under Construction! &#x26A0</h2>
+	    <p class="card-text">&#x26A0 Please come back in a week. &#x26A0</p>
+	  </div>
 	</div>
 </body>
 </html>
