@@ -24,14 +24,14 @@
 	<div class="menu_top">
 		<?php include 'top_menu.php'; ?>
 	</div>
-	<img src="Dolskuggar Ljuswarin.jpg" alt="Dolskuggar Ljuswarin" id="dolskuggar">
 	<div class="hero_content container">
 		<h2 class="hero_heading">Welcome intrepid heroes!</h2>
 		<p>Today I will be teaching you about another hero of legend, Dolskuggar Ljuswarin.</p>
 		<p>Dolskuggar commonly went by the nickname Dol. He was of great inportance during the shadow incursion in the new age. Dolskuggar was the one that warned the King of the impending invasion.</p>
-		<p>Dolskuggar Ljuswarin is of an uncommon race, the Shadow Elves. They came into existance after the Shadow War that ended the Silver Age. Dolskuggar's ancestors were among those that worked with 
-			the Great Sorcerer Alvar Bergljot. As you well know the Great Alvar is the one who discovered how to conjur light. His discovery turned the tide of the war against the shadows. But that is 
-			a story for another day. The Great Alvar taught a clan of elves how to conjur light. That clan became known as the Ljuswarin or Light Warriors. They are Dolskuggar's ancestors.</p>
+		<p><img src="Dolskuggar Ljuswarin.jpg" alt="Dolskuggar Ljuswarin" id="dolskuggar">Dolskuggar Ljuswarin is of an uncommon race, the Shadow Elves. They came into existance after the Shadow War 
+			that ended the Silver Age. Dolskuggar's ancestors were among those that worked with the Great Sorcerer Alvar Bergljot. As you well know the Great Alvar is the one who discovered how to 
+			conjur light. His discovery turned the tide of the war against the shadows. But that is a story for another day. The Great Alvar taught a clan of elves how to conjur light. That clan 
+			became known as the Ljuswarin or Light Warriors. They are Dolskuggar's ancestors.</p>
 		<p>The Ljuswarin clan sacrificed themsleves to end the Shadow War. They entered the Shadow Realm to keep the Shadow creatures at bay. In doing so they locked themselves off of this world 
 			for millenia. Over those millenia their physical forms adapted to their new world. But the magic that started the Shadow War could not be reversed and over time the link this world had to 
 			the Shadow World grew allowing breaches to form and the Shadows began to return in dark places around the World.</p>

@@ -15,8 +15,8 @@ body
 
 #dolskuggar
 {
-    width: 40;
-    height: 50;
+    width: 40px;
+    height: 50px;
     @include rounded;
     @include float-md-left;
 }
