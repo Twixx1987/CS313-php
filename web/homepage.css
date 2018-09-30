@@ -7,6 +7,7 @@ body
 .construction
 {
     max-width: 36rem;
+    @include rounded;
     @include card;
     @include text-white;
     @include mb-3;
@@ -16,7 +17,6 @@ dolskuggar
 {
     width: 40px;
     height: 50px;
-    @include float-md-left;
 }
 
 .hero_content

@@ -24,7 +24,7 @@
 	<div class="menu_top">
 		<?php include 'top_menu.php'; ?>
 	</div>
-	<img src="Dolskuggar Ljuswarin.jpg" alt="Dolskuggar Ljuswarin" class="dolskuggar">
+	<img src="Dolskuggar Ljuswarin.jpg" alt="Dolskuggar Ljuswarin" class="dolskuggar float-md-left">
 	<div class="hero_content container">
 		<h2 class="hero_heading">Welcome intrepid heroes!</h2>
 		<p>Today I will be teaching you about another hero of legend, Dolskuggar Ljuswarin.</p>
