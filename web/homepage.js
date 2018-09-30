@@ -5,7 +5,6 @@ $(document).ready(
     function () {
         $("#dolskuggar").mouseenter(function () {
             $("#dolskuggar").animate({
-                right: '500px',
                 width: '440px',
                 height: '550px'
             }, "fast");
@@ -17,7 +16,6 @@ $(document).ready(
     function () {
         $("#dolskuggar").mouseleave(function () {
             $("#dolskuggar").animate({
-                left: '500px',
                 width: '160px',
                 height: '200px'
             }, "slow");
