@@ -7,8 +7,7 @@ $(document).ready(
             $("#dolskuggar").animate({
                 right: '500px',
                 width: '440px',
-                height: '550px',
-                float: none
+                height: '550px'
             }, "fast");
         });
     });
@@ -20,8 +19,7 @@ $(document).ready(
             $("#dolskuggar").animate({
                 left: '500px',
                 width: '160px',
-                height: '200px',
-                float: left
+                height: '200px'
             }, "slow");
         });
     });

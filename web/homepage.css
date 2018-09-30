@@ -39,6 +39,20 @@ body
     font-family: 'Old English Text MT', 'Copperplate Gothic Bold', Colonna MT, serif;
 }
 
+.menu-items
+{
+    font-size: 18px;
+    font-family: 'Book Antiqua', Times, serif;
+    @include btn;
+    @include btn-secondary;
+}
+
+.menu-list
+{
+    font-size: 18px;
+    font-family: 'Book Antiqua', Times, serif;
+}
+
 .menu
 {
     @include bg-light;
