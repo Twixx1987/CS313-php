@@ -17,8 +17,8 @@ body
 {
     width: 160px;
     height: 200px;
-    float: left;
     border-radius: 5px;
+    @include float-left;
 }
 
 .hero_content
@@ -41,9 +41,6 @@ body
 
 .menu
 {
-    @include navbar;
-    @include navbar-expand-lg;
-    @include navbar-light;
     @include bg-light;
 }
 
