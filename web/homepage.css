@@ -15,32 +15,33 @@ body
 
 dolskuggar
 {
-    width: 400px;
-    height: 500px;
+    width: 40px;
+    height: 50px;
+    @include float-md-left;
 }
 
 .hero_content
 {
-    font-family: 'Copperplate Gothic Bold', Castellar, serif;
+    font-family: Colonna MT, serif;
 }
 
 .hero_heading
 {
-    font-family: 'Old English Text MT', 'Copperplate Gothic Bold', Castellar, serif; 
+    font-family: 'Old English Text MT', 'Copperplate Gothic Bold', Colonna MT, serif; 
 }
 
 .menu
 {
-    @include d-inline-flex;
-    @include p-2;
-    @include bd-highlight;
+    @include collapse;
+    @include navbar-collapse;
 }
 
 .menu_top
 {
-    @include d-flex;
-    @include p-2;
-    @include bd-highlight;
+    @include navbar;
+    @include navbar-expand-lg;
+    @include navbar-light;
+    @include bg-light;
 }
 
 .pagetitle
