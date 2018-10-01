@@ -20,8 +20,8 @@
     <title>CS313 - Shaun Densley</title>
 </head>
 <body>
-    <h1 class="pagetitle">CS313 Assignments - Shaun Densley</h1>
-	<div class="menu">
+    <h1 class="pagetitle container">CS313 Assignments - Shaun Densley</h1>
+	<div class="menu container">
 		<?php include '../top_menu.php'; ?>
 	</div>
 	<div class="construction bg-warning">

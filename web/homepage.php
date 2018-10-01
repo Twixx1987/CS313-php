@@ -20,8 +20,8 @@
     <title>Welcome Heroes of the King's Initiative!</title>
 </head>
 <body>
-    <h1 class="hero_title">Welcome Heroes of the King's Initiative!</h1>
-	<nav class="menu">
+    <h1 class="hero_title container">Welcome Heroes of the King's Initiative!</h1>
+	<nav class="menu container">
 		<?php include 'top_menu.php'; ?>
 	</nav>
 	<div class="hero_content container">
