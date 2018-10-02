@@ -26,14 +26,15 @@
 	</div>
 	<div class="container">
 		<form action="teach03form.php" method="post">
-			Name: <input type="text" name="name">
-			Email: <input type="text" name="email">
-			Major: <input type="radio" name="major" value="Computer Science">
-					<input type="radio" name="major" value="Web Design and Development">
-					<input type="radio" name="major" value="Computer Information Technology">
-					<input type="radio" name="major" value="Computer Engineering">
-			Comments: <input type="textarea" name="comments" rows="5" cols="40">
-			Continents Visited: 
+			Name: <input type="text" name="name"><br/>
+			Email: <input type="text" name="email"><br/>
+			Major:<br/><input type="radio" name="major" value="Computer Science">Computer Science<br/>
+					<input type="radio" name="major" value="Web Design and Development">Web Design and Development<br/>
+					<input type="radio" name="major" value="Computer Information Technology">Computer Information Technology<br/>
+					<input type="radio" name="major" value="Computer Engineering">Computer Engineering<br/>
+			Comments: <input type="textarea" name="comments" rows="5" cols="40"><br/>
+			Continents Visited: <br/>
+			<button type="submit" value="Submit" name="submit">
 		</form>
 	</div>
 </body>
