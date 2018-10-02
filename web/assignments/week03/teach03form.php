@@ -48,7 +48,7 @@ function cleanInputs($data) {
 		<p>Name: <?php echo $name;?></p>
 		<p>Email: <?php echo $email;?></p>
 		<p>Major: <?php echo $major;?></p>
-		<p>Comments: <?php echo $continents;?></p>
+		<p>Comments: <?php echo $comments;?></p>
 		<p>Continents Visited: </p>
 	</div>
 </body>

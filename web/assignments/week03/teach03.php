@@ -32,9 +32,9 @@
 					<input type="radio" name="major" value="Web Design and Development">Web Design and Development<br/>
 					<input type="radio" name="major" value="Computer Information Technology">Computer Information Technology<br/>
 					<input type="radio" name="major" value="Computer Engineering">Computer Engineering<br/>
-			Comments: <input type="textarea" name="comments" rows="5" cols="40"><br/>
+			Comments: <textarea name="comments" rows="5" cols="40"><br/>
 			Continents Visited: <br/>
-			<button type="submit" value="Submit" name="submit">
+			<input class="btn btn-secondary" type="submit" value="Submit" name="submit">
 		</form>
 	</div>
 </body>
