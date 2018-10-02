@@ -24,16 +24,24 @@
 	<div class="menu container">
 		<?php include '../../top_menu.php'; ?>
 	</div>
-	<div class="container">
+	<div id="form" class="container">
 		<form action="teach03form.php" method="post">
 			Name: <input type="text" name="name"><br/>
 			Email: <input type="text" name="email"><br/>
-			Major:<br/><input type="radio" name="major" value="Computer Science">Computer Science<br/>
-					<input type="radio" name="major" value="Web Design and Development">Web Design and Development<br/>
-					<input type="radio" name="major" value="Computer Information Technology">Computer Information Technology<br/>
-					<input type="radio" name="major" value="Computer Engineering">Computer Engineering<br/>
+			Major:<br/>
+				<input type="radio" name="major" value="Computer Science"> Computer Science<br/>
+				<input type="radio" name="major" value="Web Design and Development"> Web Design and Development<br/>
+				<input type="radio" name="major" value="Computer Information Technology"> Computer Information Technology<br/>
+				<input type="radio" name="major" value="Computer Engineering"> Computer Engineering<br/>
 			Comments: <textarea name="comments" rows="5" cols="40"></textarea><br/>
 			Continents Visited: <br/>
+				<input type="checkbox" name="continent" value="North America"> North America<br/>
+				<input type="checkbox" name="continent" value="North America"> South America<br/>
+				<input type="checkbox" name="continent" value="North America"> Europe<br/>
+				<input type="checkbox" name="continent" value="North America"> Asia<br/>
+				<input type="checkbox" name="continent" value="North America"> Australia<br/>
+				<input type="checkbox" name="continent" value="North America"> Africa<br/>
+				<input type="checkbox" name="continent" value="North America"> Antartica<br/>
 			<input class="btn btn-secondary" type="submit" value="Submit" name="submit">
 		</form>
 	</div>
