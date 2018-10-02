@@ -42,7 +42,7 @@ function cleanInputs($data) {
 <body>
     <h1 class="pagetitle container">CS313 - Teach 03 - Shaun Densley</h1>
 	<div class="menu container">
-		<?php include '../top_menu.php'; ?>
+		<?php include '../../top_menu.php'; ?>
 	</div>
 	<div class="container">
 		<p>Name: <?php echo $name;?></p>

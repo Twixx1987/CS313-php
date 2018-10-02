@@ -22,7 +22,7 @@
 <body>
     <h1 class="pagetitle container">CS313 - Teach 03 - Shaun Densley</h1>
 	<div class="menu container">
-		<?php include '../top_menu.php'; ?>
+		<?php include '../../top_menu.php'; ?>
 	</div>
 	<div class="container">
 		<form action="teach03form.php" method="post">
@@ -32,7 +32,7 @@
 					<input type="radio" name="major" value="Web Design and Development">Web Design and Development<br/>
 					<input type="radio" name="major" value="Computer Information Technology">Computer Information Technology<br/>
 					<input type="radio" name="major" value="Computer Engineering">Computer Engineering<br/>
-			Comments: <textarea name="comments" rows="5" cols="40"><br/>
+			Comments: <textarea name="comments" rows="5" cols="40"></textarea><br/>
 			Continents Visited: <br/>
 			<input class="btn btn-secondary" type="submit" value="Submit" name="submit">
 		</form>
