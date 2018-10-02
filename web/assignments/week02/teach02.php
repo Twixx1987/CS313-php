@@ -24,28 +24,30 @@
     <div class="menu container">
         <?php include '../../top_menu.php'; ?>
     </div>
-    <div id="one" class="card border-dark mb-3 card-width card-body bg-light">
+    <div id="one" class="card border-dark mb-3 card-width card-body bg-light container">
         <p>Here is some sample text for div one.</p>
     </div>
-    <form id="frmOne">
+    <form id="frmOne"  class="container">
         Pick a color: <input type="color" name="inColor" class="btn-outline-success rounded"/>
         <br />
         Click on this button to change this div's color. <button type="button" onclick="changeColor()" id="btnChangeColor" class="btn btn-outline-success btn-sm">Change color</button>
     </form>
     <br/>
-    <div id="two" class="card border-dark mb-3 card-width card-body bg-light">
+    <div id="two" class="card border-dark mb-3 card-width card-body bg-light container">
         <p>Let's also add some sample text for div two.</p>
     </div>
-    <form id="frmTwo">
+    <form id="frmTwo" class="container">
         Enter a Hexadecimal color code: <input type="color" name="inColor2" class="btn-outline-success rounded" />
         <br />
         Click on this button to change the second div's color. <button type="button" id="btnChangeColor2" class="btn btn-outline-success btn-sm">Change color</button>
     </form>
     <button id="btnToggleDiv3" class="btn btn-outline-success btn-sm">Toggle div three!</button>
-    <br /><br />
-    <button onclick="clickAlert()" id="btnClickMe" class="btn btn-outline-success btn-sm">Click Me!</button>
-    <br/><br />
-    <div id="three" class="card boarder-dark mb-3 card-width card-body bg-light">
+    <div class="container">
+		<br /><br />
+	    <button onclick="clickAlert()" id="btnClickMe" class="btn btn-outline-success btn-sm">Click Me!</button>
+	<br/><br />
+    </div>
+    <div id="three" class="card boarder-dark mb-3 card-width card-body bg-light container">
         <p>Some sample text for div three should probably be included as well. Also, this text will fade with the click of a button, specifically the button labeled Toggle div three!</p>
     </div>
 </body>
