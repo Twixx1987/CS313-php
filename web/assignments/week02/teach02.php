@@ -20,7 +20,7 @@
     <title>Teach 02 - CS313 - Shaun Densley</title>
 </head>
 <body>
-    <h1>Teach 02</h1>
+    <h1 class="container">Teach 02</h1>
     <div class="menu container">
         <?php include '../../top_menu.php'; ?>
     </div>
@@ -41,8 +41,8 @@
         <br />
         Click on this button to change the second div's color. <button type="button" id="btnChangeColor2" class="btn btn-outline-success btn-sm">Change color</button>
     </form>
-    <button id="btnToggleDiv3" class="btn btn-outline-success btn-sm">Toggle div three!</button>
     <div class="container">
+		<button id="btnToggleDiv3" class="btn btn-outline-success btn-sm">Toggle div three!</button>
 		<br /><br />
 	    <button onclick="clickAlert()" id="btnClickMe" class="btn btn-outline-success btn-sm">Click Me!</button>
 	<br/><br />
