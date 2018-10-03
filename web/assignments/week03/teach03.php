@@ -34,7 +34,7 @@
 				<?php
 					$majors = array("CS" => "Computer Science", "WDD" => "Web Design and Development", "CIT" => "Computer Information Technology", "CE" => "Computer Engineering");
 					foreach($majors as $abr => $major) {
-						echo "<input type=\"radio\" name=\"major\" id=\"major-\"" . $abr . " value=\"$major\"><label for=\"major-\"" . $abr . ">$major</label><br/>";
+						echo "<input type='radio' name='major' id='major-'" . $abr . " value='$major'><label for='major-'" . $abr . ">$major</label><br/>";
 					}
 				?>
 			</ul>
