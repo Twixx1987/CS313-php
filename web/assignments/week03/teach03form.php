@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$email = cleanInputs($_POST["email"]);
 	$major = $_POST["major"];
 	$comments = cleanInputs($_POST["comments"]);
-	$continents = $_POST["continents[]"];
+	$continents = $_POST["continents"];
 }
 
 function cleanInputs($data) {
