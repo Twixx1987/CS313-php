@@ -29,10 +29,13 @@
 			Name: <input type="text" name="name"><br/>
 			Email: <input type="text" name="email"><br/>
 			Major:<br/>
-				<input type="radio" name="major" value="Computer Science"> Computer Science<br/>
-				<input type="radio" name="major" value="Web Design and Development"> Web Design and Development<br/>
-				<input type="radio" name="major" value="Computer Information Technology"> Computer Information Technology<br/>
-				<input type="radio" name="major" value="Computer Engineering"> Computer Engineering<br/>
+			<?php
+				$majors = array("CS" => "Computer Science", "WDD" => "Web Design and Development", "CIT" => "Computer Information Technology", "CE" => "Computer Engineering");
+				
+				foreach($majors as $abr => $major) {
+					echo "<input type=\"radio\" name=\"major\" id=\"major-\"" . $abr . " value=\"$abr\"><label for=\"major\"" . $abr . ">$major</label><br/>";
+				}
+			?>
 			<textarea name="comments" rows="5" cols="40" placeholder="Comments"></textarea><br/>
 			Continents Visited: <br/>
 				<input type="checkbox" name="continents[]" value="North America"> North America<br/>
