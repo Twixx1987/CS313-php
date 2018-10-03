@@ -1,15 +1,20 @@
 <?php
 // set variables for the inputs
-$name = $email = $comments = $continent = "";
+$name = $email = $comments = $continentAbr = "";
 
+// a map for the continent abbreviations and their complete names
+$continents = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "AU" => "Australia", "AF" => "Africa", "AN" => "Antartica");
+
+// get the input data
 if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$name = cleanInputs($_POST["name"]);
 	$email = cleanInputs($_POST["email"]);
 	$major = $_POST["major"];
 	$comments = cleanInputs($_POST["comments"]);
-	$continents = $_POST["continents"];
+	$continentsAbr = $_POST["continents"];
 }
 
+// a function to clean the data
 function cleanInputs($data) {
 	$data = trim($data);
 	$data = stripslashes($data);
@@ -52,8 +57,8 @@ function cleanInputs($data) {
 		<p>Comments: <?php echo $comments;?></p>
 		<p>Continents Visited:<br/>
 		<?php
-			foreach($continents as $continent) {
-			echo "$continent <br>";
+			foreach($continentsAbr as $continent) {
+			echo "$continents[$continent] <br>";
 		}
 		?>
 		</p>
