@@ -57,6 +57,11 @@ body
     @include bg-dark;
 }
 
+.noStyle
+{
+    list-style-type: none;
+}
+
 .pagetitle
 {
     font-size: 40px;
