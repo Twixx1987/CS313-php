@@ -45,7 +45,7 @@
 				<?php
 					$continents = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "AU" => "Australia", "AF" => "Africa", "AN" => "Antartica");
 					foreach($continents as $abr => $continent) {
-						echo "<li class="noStyle"><input type=\"checkbox\" name=\"continents[]\" id=\"continent-\"" . $abr . " value=\"$abr\"><label for=\"continent-\"" . $abr . ">$continent</label></li>";
+						echo "<li class=\"noStyle\"><input type=\"checkbox\" name=\"continents[]\" id=\"continent-\"" . $abr . " value=\"$abr\"><label for=\"continent-\"" . $abr . ">$continent</label></li>";
 					}
 				?>
 			</ul>
