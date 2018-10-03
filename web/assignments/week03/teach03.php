@@ -36,12 +36,12 @@
 			<textarea name="comments" rows="5" cols="40" placeholder="Comments"></textarea><br/>
 			Continents Visited: <br/>
 				<input type="checkbox" name="continents[]" value="North America"> North America<br/>
-				<input type="checkbox" name="continents[]" value="North America"> South America<br/>
-				<input type="checkbox" name="continents[]" value="North America"> Europe<br/>
-				<input type="checkbox" name="continents[]" value="North America"> Asia<br/>
-				<input type="checkbox" name="continents[]" value="North America"> Australia<br/>
-				<input type="checkbox" name="continents[]" value="North America"> Africa<br/>
-				<input type="checkbox" name="continents[]" value="North America"> Antartica<br/>
+				<input type="checkbox" name="continents[]" value="South America"> South America<br/>
+				<input type="checkbox" name="continents[]" value="Europe"> Europe<br/>
+				<input type="checkbox" name="continents[]" value="Asia"> Asia<br/>
+				<input type="checkbox" name="continents[]" value="Australia"> Australia<br/>
+				<input type="checkbox" name="continents[]" value="Africa"> Africa<br/>
+				<input type="checkbox" name="continents[]" value="Antartica"> Antartica<br/>
 			<input class="btn btn-secondary" type="submit" value="Submit" name="submit">
 		</form>
 	</div>

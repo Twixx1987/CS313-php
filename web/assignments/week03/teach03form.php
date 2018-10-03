@@ -50,12 +50,13 @@ function cleanInputs($data) {
 		<p>Email: <a href="mailto:<?php echo $email;?>"> <?php echo $email;?></a></p>
 		<p>Major: <?php echo $major;?></p>
 		<p>Comments: <?php echo $comments;?></p>
-		<p>Continents Visited: <?php 
-									foreach($continents as $continent) {
-										echo "$continent <br>";
-									}
-								?>
-								</p>
+		<p>Continents Visited:<	br/>
+		<?php
+			foreach($continents as $continent) {
+			echo "$continent <br>";
+		}
+		?>
+		</p>
 	</div>
 </body>
 </html>
