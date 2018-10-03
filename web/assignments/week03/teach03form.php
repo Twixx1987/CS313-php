@@ -1,12 +1,13 @@
 <?php
 // set variables for the inputs
-$name = $email = $comments = "";
+$name = $email = $comments = $continent = "";
 
 if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$name = cleanInputs($_POST["name"]);
 	$email = cleanInputs($_POST["email"]);
 	$major = $_POST["major"];
 	$comments = cleanInputs($_POST["comments"]);
+	$continent = cleanInputs($_POST["continent"]);
 }
 
 function cleanInputs($data) {
@@ -49,7 +50,7 @@ function cleanInputs($data) {
 		<p>Email: <a href="mailto:<?php echo $email;?>"> <?php echo $email;?></p>
 		<p>Major: <?php echo $major;?></p>
 		<p>Comments: <?php echo $comments;?></p>
-		<p>Continents Visited: </p>
+		<p>Continents Visited: <?php echo $continent;?></p>
 	</div>
 </body>
 </html>
