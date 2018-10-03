@@ -33,8 +33,7 @@
 				<input type="radio" name="major" value="Web Design and Development"> Web Design and Development<br/>
 				<input type="radio" name="major" value="Computer Information Technology"> Computer Information Technology<br/>
 				<input type="radio" name="major" value="Computer Engineering"> Computer Engineering<br/>
-			Comments:<br/>
-			<textarea name="comments" rows="5" cols="40" placeholder="comments"></textarea><br/>
+			<textarea name="comments" rows="5" cols="40" placeholder="Comments"></textarea><br/>
 			Continents Visited: <br/>
 				<input type="checkbox" name="continent" value="North America"> North America<br/>
 				<input type="checkbox" name="continent" value="North America"> South America<br/>
