@@ -47,13 +47,13 @@ function cleanInputs($data) {
 	</div>
 	<div class="container">
 		<p>Name: <?php echo $name;?></p>
-		<p>Email: <?php echo "<a href=/"mailto:$email/">$email</a>";?></p>
+		<p>Email: <a href="mailto:<?php echo $email;?>"> <?php echo $email;?></a></p>
 		<p>Major: <?php echo $major;?></p>
 		<p>Comments: <?php echo $comments;?></p>
 		<p>Continents Visited: <?php 
 									foreach ($continent as $place) {
-									echo "$place <br>";
-								}
+										echo "$place <br>";
+									}
 								?>
 								</p>
 	</div>
