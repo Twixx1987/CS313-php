@@ -26,25 +26,28 @@
 	</div>
 	<div id="form" class="container">
 		<form action="teach03form.php" method="post">
-			Name: <input type="text" name="name"><br/>
-			Email: <input type="text" name="email"><br/>
-			Major:<br/>
+			<p>Here is a simpole questionnaire about your major and travel history. Please answer all the questions.</p>
+			<label for="name">Name</label><input type="text" id="name" name="name"><br/>
+			<label for="email">Email</label><input type="text" id="email" name="email"><br/>
+			<label for="major">Major</label><br/>
 			<?php
 				$majors = array("CS" => "Computer Science", "WDD" => "Web Design and Development", "CIT" => "Computer Information Technology", "CE" => "Computer Engineering");
 				
 				foreach($majors as $abr => $major) {
-					echo "<input type=\"radio\" name=\"major\" id=\"major-\"" . $abr . " value=\"$abr\"><label for=\"major\"" . $abr . ">$major</label><br/>";
+					echo "<input type=\"radio\" name=\"major\" id=\"major-\"" . $abr . " value=\"$major\"><label for=\"major-\"" . $abr . ">$major</label><br/>";
 				}
 			?>
+			<label for="comments">Comments</label><br/>
 			<textarea name="comments" rows="5" cols="40" placeholder="Comments"></textarea><br/>
-			Continents Visited: <br/>
-				<input type="checkbox" name="continents[]" value="North America"> North America<br/>
-				<input type="checkbox" name="continents[]" value="South America"> South America<br/>
-				<input type="checkbox" name="continents[]" value="Europe"> Europe<br/>
-				<input type="checkbox" name="continents[]" value="Asia"> Asia<br/>
-				<input type="checkbox" name="continents[]" value="Australia"> Australia<br/>
-				<input type="checkbox" name="continents[]" value="Africa"> Africa<br/>
-				<input type="checkbox" name="continents[]" value="Antartica"> Antartica<br/>
+			Select all the continents you have visited:<br/>
+			<?php
+				$continents = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "AU" => "Australia", "AF" => "Africa", "AN" => "Antartica");
+
+				foreach($continents as $abr => $continent) {
+					echo "<input type=\"checkbox\" name=\"continents[]\" id=\"continent-\"" . $abr . " value=\"$abr\"><label for=\"continent-\"" . $abr . ">$continent</label><br/>";
+				}
+			?>
+				
 			<input class="btn btn-secondary" type="submit" value="Submit" name="submit">
 		</form>
 	</div>
