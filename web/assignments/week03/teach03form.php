@@ -7,7 +7,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$email = cleanInputs($_POST["email"]);
 	$major = $_POST["major"];
 	$comments = cleanInputs($_POST["comments"]);
-	$continents = $_POST["continents"];
+	$continents = $_POST["continents[]"];
 }
 
 function cleanInputs($data) {
@@ -51,7 +51,6 @@ function cleanInputs($data) {
 		<p>Major: <?php echo $major;?></p>
 		<p>Comments: <?php echo $comments;?></p>
 		<p>Continents Visited: <?php 
-									$continents = $_POST["continents"];
 									foreach($continents as $continent) {
 										echo "$continent <br>";
 									}
