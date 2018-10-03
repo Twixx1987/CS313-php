@@ -51,7 +51,8 @@ function cleanInputs($data) {
 		<p>Major: <?php echo $major;?></p>
 		<p>Comments: <?php echo $comments;?></p>
 		<p>Continents Visited: <?php 
-									foreach ($continents as $continent) {
+									$continents = $_POST["continents"];
+									foreach($continents as $continent) {
 										echo "$continent <br>";
 									}
 								?>
