@@ -59,7 +59,7 @@ function cleanInputs($data) {
 		<ul>
 			<?php
 				foreach($continentsAbr as $continent) {
-					echo "<li>$continents[$continent] </li>";
+					echo "<li class="noStyle">$continents[$continent] </li>";
 				}
 			?>
 		</ul>
