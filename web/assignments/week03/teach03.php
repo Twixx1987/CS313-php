@@ -35,13 +35,13 @@
 				<input type="radio" name="major" value="Computer Engineering"> Computer Engineering<br/>
 			<textarea name="comments" rows="5" cols="40" placeholder="Comments"></textarea><br/>
 			Continents Visited: <br/>
-				<input type="checkbox" name="continent" value="North America"> North America<br/>
-				<input type="checkbox" name="continent" value="North America"> South America<br/>
-				<input type="checkbox" name="continent" value="North America"> Europe<br/>
-				<input type="checkbox" name="continent" value="North America"> Asia<br/>
-				<input type="checkbox" name="continent" value="North America"> Australia<br/>
-				<input type="checkbox" name="continent" value="North America"> Africa<br/>
-				<input type="checkbox" name="continent" value="North America"> Antartica<br/>
+				<input type="checkbox" name="continents" value="North America"> North America<br/>
+				<input type="checkbox" name="continents" value="North America"> South America<br/>
+				<input type="checkbox" name="continents" value="North America"> Europe<br/>
+				<input type="checkbox" name="continents" value="North America"> Asia<br/>
+				<input type="checkbox" name="continents" value="North America"> Australia<br/>
+				<input type="checkbox" name="continents" value="North America"> Africa<br/>
+				<input type="checkbox" name="continents" value="North America"> Antartica<br/>
 			<input class="btn btn-secondary" type="submit" value="Submit" name="submit">
 		</form>
 	</div>
