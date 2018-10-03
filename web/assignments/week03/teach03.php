@@ -34,7 +34,7 @@
 				<?php
 					$majors = array("CS" => "Computer Science", "WDD" => "Web Design and Development", "CIT" => "Computer Information Technology", "CE" => "Computer Engineering");
 					foreach($majors as $abr => $major) {
-						echo "<input type='radio' name='major' id='major-'" . $abr . " value='$major'><label for='major-'" . $abr . ">$major</label><br/>";
+						echo "<input type='radio' name='major' id='major-$abr' value='$major'><label for='major-$abr'>$major</label><br/>";
 					}
 				?>
 			</ul>
@@ -45,7 +45,7 @@
 				<?php
 					$continents = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "AU" => "Australia", "AF" => "Africa", "AN" => "Antartica");
 					foreach($continents as $abr => $continent) {
-						echo "<li class=\"noStyle\"><input type=\"checkbox\" name=\"continents[]\" id=\"continent-\"" . $abr . " value=\"$abr\"><label for=\"continent-\"" . $abr . ">$continent</label></li>";
+						echo "<li class=\"noStyle\"><input type='checkbox' name='continents[]' id='continent-$abr' value='$abr'><label for='continent-$abr'>$continent</label></li>";
 					}
 				?>
 			</ul>
