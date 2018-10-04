@@ -22,7 +22,7 @@
 <body>
     <h1 class="pagetitle container">Shopping Cart</h1>
 	<div class="menu container">
-		<?php include '../top_menu.php'; ?>
+		<?php include "../../top_menu.php"; ?>
 	</div>
 	<div class="container">
 	</div>
