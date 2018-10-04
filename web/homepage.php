@@ -22,7 +22,7 @@
 <body>
     <h1 class="hero_title container">Welcome Heroes of the King's Initiative!</h1>
 	<nav class="menu container">
-		<?php include 'top_menu.php'; ?>
+		<?php include "top_menu.php"; ?>
 	</nav>
 	<div class="hero_content container">
 		<h2 class="hero_heading">Welcome intrepid heroes!<img src="Dolskuggar Ljuswarin.jpg" alt="Dolskuggar Ljuswarin" id="dolskuggar"></h2>
