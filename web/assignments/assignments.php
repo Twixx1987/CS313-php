@@ -35,15 +35,15 @@
 		</div>
 		<div class="row">
 			<div class="col-sm">
-				<a class="btn btn-secondary" role="button" href="/assignments/week02/teach02.php">Teach 02</a>
+				<a class="btn btn-secondary" role="button" href="/assignments/week02/teach02.php">Teach 02 - Web Refresher</a>
 			</div>
 			<div class="col-sm">
-				<a class="btn btn-secondary" role="button" href="homepage.php">Ponder 02 - Homepage</a>
+				<a class="btn btn-secondary" role="button" href="homepage.php">Ponder 02 - King's Initiative Blog</a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm">
-				<a class="btn btn-secondary" role="button" href="/assignments/week03/teach03.php">Teach 03</a>			
+				<a class="btn btn-secondary" role="button" href="/assignments/week03/teach03.php">Teach 03 - PHP Forms</a>
 			</div>
 			<div class="col-sm">
 				<a class="btn btn-secondary" role="button" href="/assignments/week03/browse.php">Ponder 03 - Shopping Cart</a>
