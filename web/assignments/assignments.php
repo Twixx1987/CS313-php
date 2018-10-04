@@ -24,12 +24,119 @@
 	<div class="menu container">
 		<?php include '../top_menu.php'; ?>
 	</div>
-	<div class="construction bg-warning container">
-	  <div class="card-header">&#x26A0 Content Under Construction! &#x26A0</div>
-	  <div class="card-body">
-	    <h2 class="card-title">&#x26A0 Content Under Construction! &#x26A0</h2>
-	    <p class="card-text">&#x26A0 Please come back in a week. &#x26A0</p>
-	  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm">
+				<h2>Teach Assignments</h2>
+			</div>
+			<div class="col-sm">
+				<h2>Ponder Assignments</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+				<a class="btn btn-secondary" role="button" href="/assignments/week02/teach02.php">Teach 02</a>
+			</div>
+			<div class="col-sm">
+				<a class="btn btn-secondary" role="button" href="homepage.php">Ponder 02 - Homepage</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+				<a class="btn btn-secondary" role="button" href="/assignments/week03/teach03.php">Teach 03</a>			
+			</div>
+			<div class="col-sm">
+				<a class="btn btn-secondary" role="button" href="/assignments/week03/browse.php">Ponder 03 - Shopping Cart</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
 	</div>
 </body>
 </html>
