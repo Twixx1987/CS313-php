@@ -25,6 +25,35 @@
 		<?php include "../../top_menu.php"; ?>
 	</div>
 	<div class="container">
+		<h2>Welcome to Coffins and More</h2>
+		
+		<div id="featuredProducts" class="carousel slide" data-ride="carousel">
+			<h3>Featured Product</h3>
+			<ol class="carousel-indicators">
+				<li data-target="" data-slide-to="0" class="active"></li>
+				<li data-target="" data-slide-to="1"></li>
+				<li data-target="" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="" alt="Deluxe Pine Coffin">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="" alt="Deluxe Children's Toolset">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="" alt="Deluxe ">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#featuredProducts" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#featuredProducts" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
 	</div>
 </body>
 </html>
