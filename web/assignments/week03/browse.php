@@ -36,7 +36,7 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="d-block w-100" src="" alt="Deluxe Pine Coffin">
+					<img class="d-block w-100" src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" alt="Deluxe Pine Coffin">
 				</div>
 				<div class="carousel-item">
 					<img class="d-block w-100" src="" alt="Deluxe Children's Toolset">
