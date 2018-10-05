@@ -35,13 +35,13 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="d-block w-100" src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg&text=Deluxe Pine Coffin" alt="Deluxe Pine Coffin">
+					<img class="d-block w-100" src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg?text=Deluxe Pine Coffin" alt="Deluxe Pine Coffin">
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg&text=Deluxe Children's Toolset" alt="Deluxe Children's Toolset">
+					<img class="d-block w-100" src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg?text=Deluxe Children's Toolset" alt="Deluxe Children's Toolset">
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg&text=Deluxe Computer" alt="Deluxe Computer">
+					<img class="d-block w-100" src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg?text=Deluxe Computer" alt="Deluxe Computer">
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#featuredProducts" role="button" data-slide="prev">
