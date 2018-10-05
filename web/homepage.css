@@ -4,9 +4,10 @@ body
     font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
-.carouselImage
+.carouselContainer
 {
     max-height: 700px;
+    max-width: 1000px;
 }
 
 .construction
