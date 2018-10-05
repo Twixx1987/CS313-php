@@ -26,6 +26,18 @@
 	</div>
 	<div class="container">
 		<h2>The Coffins Catalog</h2>
+		<div class="row">
+			<div class="col-sm">
+				<img href="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:802px; height:600px;" alt="Deluxe Pine Coffin">
+			</div>
+			<div class="col-md">
+				<p>A simple yet rustic coffin for a reasonable price. This is made of solid pine planks giving it that beautiful rustic look.</p>
+				<form id="pineCoffin" action="" method="post">
+					<label for="pineQty">Qty</label><br/>
+					<input type="number" id="pineQty" name="pineQty" placeholder="0"> at $1,500 each<br/>
+
+			</div>
+		</div>
 	</div>
 </body>
 </html>
