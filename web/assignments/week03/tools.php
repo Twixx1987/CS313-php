@@ -20,13 +20,12 @@
     <title>Tools</title>
 </head>
 <body>
-    <h1 class="pagetitle container">Catalog</h1>
+    <h1 class="pagetitle container">The Tools Catalog</h1>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>
 	</div>
 	<div class="container">
-		<h2>Welcome to Coffins and More</h2>
-		<h3>The Tools Catalog</h3>
+		<h2>The Tools Catalog</h2>
 		
 	</div>
 </body>
