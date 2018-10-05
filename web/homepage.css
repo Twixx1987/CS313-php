@@ -12,8 +12,6 @@ body
 
 .carouselImage
 {
-    max-height: 700px;
-    max-width: 1000px;
     @include px-auto;
     @include mx-auto;
 }
