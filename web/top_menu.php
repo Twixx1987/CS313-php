@@ -1,5 +1,5 @@
 <?php
-echo '<ul class="nav flex-column flex-sm-row menu-list btn btn-secondary">
+echo '<ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-secondary">
         <li class="nav-item flex-sm-fill text-sm-center">
           <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="/homepage.php">Hobby</a>
         </li>

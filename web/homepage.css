@@ -14,6 +14,7 @@ body
 {
     max-height: 700px;
     max-width: 1000px;
+    margin: auto;
 }
 
 .construction
