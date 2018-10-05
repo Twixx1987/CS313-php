@@ -20,7 +20,7 @@
     <title>Tools</title>
 </head>
 <body>
-    <h1 class="pagetitle container">The Tools Catalog</h1>
+    <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>
 	</div>

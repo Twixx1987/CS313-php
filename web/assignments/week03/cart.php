@@ -20,11 +20,12 @@
     <title>Shopping Cart</title>
 </head>
 <body>
-    <h1 class="pagetitle container">Shopping Cart</h1>
+    <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>
 	</div>
 	<div class="container">
+		<h2>Cart</h2>
 	</div>
 </body>
 </html>

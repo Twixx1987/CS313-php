@@ -20,11 +20,12 @@
     <title>Order Confirmation</title>
 </head>
 <body>
-    <h1 class="pagetitle container">Order Confirmation</h1>
+    <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>
 	</div>
 	<div class="container">
+		<h2>Order Confirmation</h2>
 	</div>
 </body>
 </html>

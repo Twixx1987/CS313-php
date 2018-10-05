@@ -20,12 +20,12 @@
     <title>Catalog</title>
 </head>
 <body>
-    <h1 class="pagetitle container">Catalog</h1>
+    <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>
 	</div>
 	<div class="container">
-		<h2>Welcome to Coffins and More</h2>
+		<h2>Our Catalog</h2>
 		<div id="featuredProducts" class="carousel slide carouselContainer" data-ride="carousel">
 			<h3>Featured Product</h3>
 			<ol class="carousel-indicators">
