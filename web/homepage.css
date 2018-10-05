@@ -10,6 +10,12 @@ body
     max-width: 1000px;
 }
 
+.carouselImage
+{
+    max-height: 700px;
+    max-width: 1000px;
+}
+
 .construction
 {
     max-width: 36rem;
