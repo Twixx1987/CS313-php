@@ -27,19 +27,7 @@
 	<div class="container">
 		<h2>The Computers Catalog</h2>
 		<div class="row">
-			<div class="col-sm">
-				<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:224px; height:300px;" alt="Deluxe Computer">
-			</div>
-			<div class="col-md">
-				<p>Though this computer appears to be from a bygone age, it is truly a powerhouse. The casing is just a facade to help protect your assets.</p>
-				<form id="powerComp" action="" method="post">
-					<label for="compQty">Qty</label><input type="number" class="cartQty" id="compQty" name="compQty" min="0" placeholder="0"> at $1,500 each<br/>
-					<input type="submit" id="compSubmit" name="compSubmit" class="btnAddCart" value="Add to Cart">
-				</form>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm">
+			<div class="col-sm mx-auto">
 				<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:300px; height:300px;" alt="Industrial Dell Computer">
 			</div>
 			<div class="col-md">
@@ -47,6 +35,18 @@
 				<form id="dellComp" action="" method="post">
 					<label for="dellQty">Qty</label><input type="number" class="cartQty" id="dellQty" name="dellQty" min="0" placeholder="0"> at $500 each<br/>
 					<input type="submit" id="dellSubmit" name="dellSubmit" class="btnAddCart" value="Add to Cart">
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm mx-auto">
+				<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:224px; height:300px;" alt="Deluxe Computer">
+			</div>
+			<div class="col-md">
+				<p>Though this computer appears to be from a bygone age, it is truly a powerhouse. The casing is just a facade to help protect your assets.</p>
+				<form id="powerComp" action="" method="post">
+					<label for="compQty">Qty</label><input type="number" class="cartQty" id="compQty" name="compQty" min="0" placeholder="0"> at $1,500 each<br/>
+					<input type="submit" id="compSubmit" name="compSubmit" class="btnAddCart" value="Add to Cart">
 				</form>
 			</div>
 		</div>

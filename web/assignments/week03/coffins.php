@@ -27,7 +27,7 @@
 	<div class="container">
 		<h2>The Coffins Catalog</h2>
 		<div class="row">
-			<div class="col-sm">
+			<div class="col-sm mx-auto">
 				<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:401px; height:300px;" alt="Deluxe Pine Coffin">
 			</div>
 			<div class="col-md">
@@ -39,7 +39,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm">
+			<div class="col-sm mx-auto">
 				<img src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:300px; height:300px;" alt="Deluxe Mahogany Coffin">
 			</div>
 			<div class="col-md">
@@ -51,7 +51,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm">
+			<div class="col-sm mx-auto">
 				<img src="http://newhavenfunerals.com.au/wp-content/uploads/2014/05/ASHURST-CEDAR.jpg" style="width:425px; height:300px;" alt="Deluxe Cedar Coffin">
 			</div>
 			<div class="col-md">
@@ -63,7 +63,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm">
+			<div class="col-sm mx-auto">
 				<img src="https://i0.wp.com/newhavenfunerals.com.au/wp-content/uploads/2014/05/BEACH-FISHING.jpg" style="width:449px; height:300px;" alt="Deluxe Beach Coffin">
 			</div>
 			<div class="col-md">

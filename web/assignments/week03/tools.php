@@ -27,7 +27,7 @@
 	<div class="container">
 		<h2>The Tools Catalog</h2>
 		<div class="row">
-			<div class="col-sm">
+			<div class="col-sm mx-auto">
 				<img src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:300px; height:300px;" alt="Deluxe Children's Toolset - Blue">
 			</div>
 			<div class="col-md">
@@ -39,7 +39,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm">
+			<div class="col-sm mx-auto">
 				<img src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" style="width:300px; height:300px;" alt="Deluxe Children's Toolset - Pink">
 			</div>
 			<div class="col-md">
