@@ -26,7 +26,30 @@
 	</div>
 	<div class="container">
 		<h2>The Tools Catalog</h2>
-		
+		<div class="row">
+			<div class="col-sm">
+				<img src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:300px; height:300px;" alt="Deluxe Children's Toolset - Blue">
+			</div>
+			<div class="col-md">
+				<p>Do you have a young one ready to create? This deluxe blue children's toolset is perfect for teaching your son how to work with his hands.</p>
+				<form id="blueTool" action="" method="post">
+					<label for="blueQty">Qty </label><input type="number" class="cartQty" id="blueQty" name="blueQty" min="0" placeholder="0"> at $40 each<br/>
+					<input type="submit" id="blueSubmit" name="blueSubmit" class="btnAddCart" value="Add to Cart">
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+				<img src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" style="width:300px; height:300px;" alt="Deluxe Children's Toolset - Pink">
+			</div>
+			<div class="col-md">
+				<p>Do you have an avid young engineer to be in your household? This deluxe pink children's toolset is perfect for teaching your daughter the tricks of the trade.</p>
+				<form id="pinkTool" action="" method="post">
+					<label for="pinkQty">Qty</label><input type="number" class="cartQty" id="pinkQty" name="pinkQty" min="0" placeholder="0"> at $4,500 each<br/>
+					<input type="submit" id="pinkSubmit" name="pinkSubmit" class="btnAddCart" value="Add to Cart">
+				</form>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
