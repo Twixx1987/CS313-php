@@ -38,9 +38,9 @@ session_start();
 		<div id="featuredProducts" class="carousel slide carouselContainer" data-ride="carousel">
 			<h3>Featured Product</h3>
 			<ol class="carousel-indicators">
-				<li data-target="coffins.php" data-slide-to="0" class="active"></li>
-				<li data-target="computers.php" data-slide-to="1"></li>
-				<li data-target="tools.php" data-slide-to="2"></li>
+				<li data-target="#carousel-indicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-indicators" data-slide-to="1"></li>
+				<li data-target="#carousel-indicators" data-slide-to="2"></li>
 			</ol>
 			<div class="carousel-inner bg-secondary">
 				<div class="carousel-item active">

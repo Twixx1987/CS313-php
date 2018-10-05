@@ -93,10 +93,9 @@ body
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     color: white;
-    @include bg-secondary;
-    @include rounded;
-    @include border;
-    @include border-dark;
+    @include carousel-caption;
+    @include d-none;
+    @include d-md-block;
 }
 
 .warning

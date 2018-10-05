@@ -38,7 +38,7 @@
 				<a class="btn btn-secondary" role="button" href="/assignments/week02/teach02.php">Teach 02 - Web Refresher</a>
 			</div>
 			<div class="col-sm">
-				<a class="btn btn-secondary" role="button" href="homepage.php">Ponder 02 - King\'s Initiative Blog</a>
+				<a class="btn btn-secondary" role="button" href="homepage.php">Ponder 02 - King's Initiative Blog</a>
 			</div>
 		</div>
 		<div class="row">
