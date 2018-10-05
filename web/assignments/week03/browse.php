@@ -33,21 +33,27 @@
 				<li data-target="computers.php" data-slide-to="1"></li>
 				<li data-target="tools.php" data-slide-to="2"></li>
 			</ol>
-			<div class="carousel-inner">
+			<div class="carousel-inner bg-secondary">
 				<div class="carousel-item active">
-					<img class="d-block carouselImage" src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:802px; height:600px;" alt="Deluxe Pine Coffin">
+					<a href="coffins.php">
+						<img class="d-block carouselImage" src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:802px; height:600px;" alt="Deluxe Pine Coffin">
+					</a>
 					<div class="subtext">
 						<p>We have a large selection of stock and custom coffins.</p>
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="d-block carouselImage" src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:449px; height:600px;" alt="Deluxe Computer">
+					<a href="computers.php">
+						<img class="d-block carouselImage" src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:449px; height:600px;" alt="Deluxe Computer">
+					</a>
 					<div class="subtext">
 						<p>Our computer selection is noteable.</p>
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="d-block carouselImage" src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:600px; height:600px;" alt="Deluxe Children's Toolset">
+					<a href="tools.php">
+						<img class="d-block carouselImage" src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:600px; height:600px;" alt="Deluxe Children's Toolset">
+					</a>
 					<div class="subtext">
 						<p>We even have great tools for sale.</p>
 					</div>
