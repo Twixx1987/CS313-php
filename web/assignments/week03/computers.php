@@ -1,3 +1,8 @@
+<?php
+//start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -20,6 +25,10 @@
     <title>Computers</title>
 </head>
 <body>
+	<?php
+		$_SESSION["items[]"];
+	?>
+
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>
@@ -32,7 +41,7 @@
 			</div>
 			<div class="col-md">
 				<p>This industrial strength Dell computer is perfect for all but the heavy users. Just add a monitor, mouse, and keyboard and you will be set.</p>
-				<form id="dellComp" action="" method="post">
+				<form id="dellComp" action="computers.php" method="post">
 					<label for="dellQty">Qty</label><input type="number" class="cartQty" id="dellQty" name="dellQty" min="0" placeholder="0"> at $500 each<br/>
 					<input type="submit" id="dellSubmit" name="dellSubmit" class="btnAddCart" value="Add to Cart">
 				</form>
@@ -44,7 +53,7 @@
 			</div>
 			<div class="col-md">
 				<p>Though this computer appears to be from a bygone age, it is truly a powerhouse. The casing is just a facade to help protect your assets.</p>
-				<form id="powerComp" action="" method="post">
+				<form id="powerComp" action="computers.php" method="post">
 					<label for="compQty">Qty</label><input type="number" class="cartQty" id="compQty" name="compQty" min="0" placeholder="0"> at $1,500 each<br/>
 					<input type="submit" id="compSubmit" name="compSubmit" class="btnAddCart" value="Add to Cart">
 				</form>

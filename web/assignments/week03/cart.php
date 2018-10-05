@@ -1,3 +1,8 @@
+<?php
+//start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -20,6 +25,10 @@
     <title>Shopping Cart</title>
 </head>
 <body>
+	<?php
+		$_SESSION["items[]"];
+	?>
+
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>

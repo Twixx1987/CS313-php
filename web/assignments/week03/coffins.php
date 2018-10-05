@@ -1,3 +1,8 @@
+<?php
+//start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -20,6 +25,10 @@
     <title>Catalog</title>
 </head>
 <body>
+	<?php
+		$_SESSION["items[]"];
+	?>
+
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>
@@ -32,7 +41,7 @@
 			</div>
 			<div class="col-md">
 				<p>A simple yet rustic coffin for a reasonable price. This is made of solid pine planks giving it that beautiful rustic look.</p>
-				<form id="pineCoffin" action="" method="post">
+				<form id="pineCoffin" action="coffins.php" method="post">
 					<label for="pineQty">Qty</label><input type="number" class="cartQty" id="pineQty" name="pineQty" min="0" placeholder="0"> at $1,500 each<br/>
 					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Add to Cart">
 				</form>
@@ -44,7 +53,7 @@
 			</div>
 			<div class="col-md">
 				<p>A beautiful dark Mahogany coffin that goes with anything. The smooth finish is always a pleaser.</p>
-				<form id="mahoganyCoffin" action="" method="post">
+				<form id="mahoganyCoffin" action="coffins.php" method="post">
 					<label for="mahoganyQty">Qty</label><input type="number" class="cartQty" id="mahoganyQty" name="mahoganyQty" min="0" placeholder="0"> at $2,500 each<br/>
 					<input type="submit" id="mahoganySubmit" name="mahoganySubmit" class="btnAddCart" value="Add to Cart">
 				</form>
@@ -56,7 +65,7 @@
 			</div>
 			<div class="col-md">
 				<p>This deluxe Cedar coffin is perfect for everyone. The hand carved finish work makes it one of our most beautiful products.</p>
-				<form id="cedarCoffin" action="" method="post">
+				<form id="cedarCoffin" action="coffins.php" method="post">
 					<label for="cedarQty">Qty </label><input type="number" class="cartQty" id="cedarQty" name="cedarQty" min="0" placeholder="0"> at $3,500 each<br/>
 					<input type="submit" id="cedarSubmit" name="cedarSubmit" class="btnAddCart" value="Add to Cart">
 				</form>
@@ -68,7 +77,7 @@
 			</div>
 			<div class="col-md">
 				<p>The beautiful hand painted beach finish on this coffin is sure to lighten the mood. This is especially popular among those who love aquatics.</p>
-				<form id="beachCoffin" action="" method="post">
+				<form id="beachCoffin" action="coffins.php" method="post">
 					<label for="beachQty">Qty</label><input type="number" class="cartQty" id="beachQty" name="beachQty" min="0" placeholder="0"> at $4,500 each<br/>
 					<input type="submit" id="beachSubmit" name="beachSubmit" class="btnAddCart" value="Add to Cart">
 				</form>

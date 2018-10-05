@@ -1,3 +1,8 @@
+<?php
+//start the session
+session_start();
+?>
+
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -20,6 +25,10 @@
     <title>Tools</title>
 </head>
 <body>
+	<?php
+		$_SESSION["items[]"];
+	?>
+
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>
@@ -32,7 +41,7 @@
 			</div>
 			<div class="col-md">
 				<p>Do you have a young one ready to create? This deluxe blue children's toolset is perfect for teaching your son how to work with his hands.</p>
-				<form id="blueTool" action="" method="post">
+				<form id="blueTool" action="tools.php" method="post">
 					<label for="blueQty">Qty </label><input type="number" class="cartQty" id="blueQty" name="blueQty" min="0" placeholder="0"> at $40 each<br/>
 					<input type="submit" id="blueSubmit" name="blueSubmit" class="btnAddCart" value="Add to Cart">
 				</form>
@@ -44,7 +53,7 @@
 			</div>
 			<div class="col-md">
 				<p>Do you have an avid young engineer to be in your household? This deluxe pink children's toolset is perfect for teaching your daughter the tricks of the trade.</p>
-				<form id="pinkTool" action="" method="post">
+				<form id="pinkTool" action="tools.php" method="post">
 					<label for="pinkQty">Qty</label><input type="number" class="cartQty" id="pinkQty" name="pinkQty" min="0" placeholder="0"> at $40 each<br/>
 					<input type="submit" id="pinkSubmit" name="pinkSubmit" class="btnAddCart" value="Add to Cart">
 				</form>
