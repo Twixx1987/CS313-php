@@ -38,6 +38,42 @@
 				</form>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-sm">
+				<img href="http://newhavenfunerals.com.au/wp-content/uploads/2014/05/ASHURST-CEDAR.jpg" style="width:849px; height:600px;" alt="Deluxe Cedar Coffin">
+			</div>
+			<div class="col-md">
+				<p>This deluxe Cedar coffin is perfect for everyone. The hand carved finish work makes it one of our most beautiful products.</p>
+				<form id="cedarCoffin" action="" method="post">
+					<label for="cedarQty">Qty </label><input type="number" class="cartQty" id="cedarQty" name="cedarQty" placeholder="0"> at $3,500 each<br/>
+					<input type="submit" id="cedarSubmit" name="cedarSubmit" class="btnAddCart" value="Add to Cart">
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+				<img href="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:802px; height:600px;" alt="Deluxe Pine Coffin">
+			</div>
+			<div class="col-md">
+				<p>A simple yet rustic coffin for a reasonable price. This is made of solid pine planks giving it that beautiful rustic look.</p>
+				<form id="pineCoffin" action="" method="post">
+					<label for="pineQty">Qty</label><input type="number" class="cartQty" id="pineQty" name="pineQty" placeholder="0"> at $1,500 each<br/>
+					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Add to Cart">
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+				<img href="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:802px; height:600px;" alt="Deluxe Pine Coffin">
+			</div>
+			<div class="col-md">
+				<p>A simple yet rustic coffin for a reasonable price. This is made of solid pine planks giving it that beautiful rustic look.</p>
+				<form id="pineCoffin" action="" method="post">
+					<label for="pineQty">Qty</label><input type="number" class="cartQty" id="pineQty" name="pineQty" placeholder="0"> at $1,500 each<br/>
+					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Add to Cart">
+				</form>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
