@@ -20,7 +20,9 @@ body
 
 .cartQty
 {
-    width: 10px;
+    @include border;
+    @include border-secondary;
+    @include rounded;
 }
 
 .construction
