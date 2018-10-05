@@ -28,7 +28,7 @@
 		<h2>The Computers Catalog</h2>
 		<div class="row">
 			<div class="col-sm">
-				<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:449px; height:600px;" alt="Deluxe Computer">
+				<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:224px; height:300px;" alt="Deluxe Computer">
 			</div>
 			<div class="col-md">
 				<p>Though this computer appears to be from a bygone age, it is truly a powerhouse. The casing is just a facade to help protect your assets.</p>
@@ -40,7 +40,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm">
-				<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:600px; height:600px;" alt="Industrial Dell Computer">
+				<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:300px; height:300px;" alt="Industrial Dell Computer">
 			</div>
 			<div class="col-md">
 				<p>This industrial strength Dell computer is perfect for all but the heavy users. Just add a monitor, mouse, and keyboard and you will be set.</p>
