@@ -11,7 +11,9 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 	"Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", 
 	"Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", 
 	"North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", 
-	"South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington","West Virginia", "Wisconsin", "Wyoming");
+	"South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington","West Virginia", "Wisconsin", 
+	"Wyoming", "Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland", "Nova Scotia", "Ontario", 
+	"Prince Edward Island", "Quebec", "Saskatchewan");
 ?>
 
 <!DOCTYPE html>
@@ -68,8 +70,8 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 				<div class="col">
 					<label class="label" for="state">State</label><br/><select id="state" name="state">
 						<?php 
-							foreach($countries as $country) {
-								echo "<option value='$country'>$country</option>";
+							foreach($states as $state) {
+								echo "<option value='$state'>$state</option>";
 							}
 						?>
 					</select><br/> 
@@ -82,8 +84,12 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 				<div class="col">
 					<label class="label" for="country">Country</label><br/><select id="country" name="country">
 						<?php 
-							foreach($states as $state) {
-								echo "<option value='$state'>$state</option>";
+							foreach($countries as $country) {
+								echo "<option value='$country'"
+								if($country=="United States of America") {
+									echo " selected ";
+								} 
+								echo ">$country</option>";
 							}
 						?>
 					</select><br/>  
