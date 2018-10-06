@@ -48,7 +48,7 @@ session_start();
 						<img class="carouselImage mx-auto px-auto" src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:802px; height:600px;" alt="Deluxe Pine Coffin">
 					</a>
 					<div class="subtext">
-						<p>We have a large selection of stock and custom coffins.</p>
+						<p>We have a large selection of stock and custom coffins.</p><br/>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -56,7 +56,7 @@ session_start();
 						<img class="carouselImage mx-auto px-auto" src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:449px; height:600px;" alt="Deluxe Computer">
 					</a>
 					<div class="subtext">
-						<p>Our computer selection is noteable.</p>
+						<p>Our computer selection is noteable.</p><br/>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -64,7 +64,7 @@ session_start();
 						<img class="carouselImage mx-auto px-auto" src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:600px; height:600px;" alt="Deluxe Children's Toolset">
 					</a>
 					<div class="subtext">
-						<p>We even have great tools for sale.</p>
+						<p>We even have great tools for sale.</p><br/>
 					</div>
 				</div>
 			</div>
