@@ -56,7 +56,7 @@ session_start();
 						<p>Our computer selection is noteable.</p>
 					</div>
 					<a href="computers.php">
-						<img class="rounded mx-auto d-block" src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:600px; height:600px;" alt="Deluxe Computer">
+						<img class="carouselImage rounded mx-auto d-block" src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" alt="Deluxe Computer">
 					</a>
 				</div>
 				<div class="carousel-item">
@@ -64,7 +64,7 @@ session_start();
 						<p>We even have great tools for sale.</p>
 					</div>
 					<a href="tools.php">
-						<img class="rounded mx-auto d-block" src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:600px; height:600px;" alt="Deluxe Children's Toolset">
+						<img class="carouselImage rounded mx-auto d-block" src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" alt="Deluxe Children's Toolset">
 					</a>
 				</div>
 			</div>
