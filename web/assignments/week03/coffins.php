@@ -3,7 +3,7 @@
 session_start();
 
 // create/call the items session variable
-$_SESSION["items"];
+$_SESSION["items[]"];
 
 // get the input data
 if($_SERVER["REQUEST_METHOD"]=="POST") {
@@ -12,10 +12,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$cedarQty = cleanInputs($_POST["cedarQty"]);
 	$beachQty = cleanInputs($_POST["beachQty"]);
 
-	// Compare the session items array with the posted items
-	$items[] = $_SESSION["items"];
-	$items["pineQty"] = $pineQty;
-	$_SESSION["items"] = $items;
+	// Create an Array of the items added to the cart
+	$items[] = ("pineQty" => $pineQty, "mahoganyQty" => $mahoganyQty, "cedarQty" => $cedarQty, "beachQty" =>$beachQty);
+
+	// get the session array
+	$sessionItem = $_SESSION["items"];
+
+	// merge new array with the session array
+	array_merge($sessionItems, $items);
 }
 
 // a function to clean the data
