@@ -44,10 +44,6 @@ function cleanInputs($data) {
     <title>Catalog</title>
 </head>
 <body>
-	<?php
-		echo "<div>$_SESSION['items']</div>";
-	?>
-
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "shopping_menu.php"; ?>
