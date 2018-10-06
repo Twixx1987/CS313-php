@@ -59,6 +59,12 @@ body
     font-family: 'Old English Text MT', 'Copperplate Gothic Bold', Colonna MT, serif;
 }
 
+.label
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .menu-items
 {
     font-size: 18px;
