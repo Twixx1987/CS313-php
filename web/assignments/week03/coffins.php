@@ -11,9 +11,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 
 	// Create an Array of the items added to the cart
 	$items = array("pineQty" => $pineQty, "mahoganyQty" => $mahoganyQty, "cedarQty" => $cedarQty, "beachQty" =>$beachQty);
-
-	// set the session variable
-	$_SESSION["items"] = $items;
 }
 
 // a function to clean the data
