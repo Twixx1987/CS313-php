@@ -3,7 +3,7 @@
 session_start();
 
 // create/call the items session variable
-$_SESSION["items[]"];
+$_SESSION["items"];
 
 // get the input data
 if($_SERVER["REQUEST_METHOD"]=="POST") {
