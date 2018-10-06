@@ -60,6 +60,7 @@ function cleanInputs($data) {
     <title>Computers</title>
 </head>
 <body>
+<?php print_r($_SESSION); ?>
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "shopping_menu.php"; ?>

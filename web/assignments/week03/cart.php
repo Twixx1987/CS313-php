@@ -51,85 +51,87 @@ $compQty = $items["compQty"];
 				<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:200px; height:150px;" alt="Deluxe Pine Coffin">
 			</div>
 			<div class="col-md">
-				<p>A simple yet rustic coffin for a reasonable price. This is made of solid pine planks giving it that beautiful rustic look.</p>
-				<p>Qty <?php echo $pineQty ?> at $1,500 each</p>
-				<p>Subtotal $<?php echo round($pineQty*1500,2) ?></p>
+				<p>Qty <?php echo $pineQty; ?> @ $1,500 each</p>
+			</div>
+			<div class="col-md">
+				<p>Subtotal $<?php echo $pineQty*1500; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm mx-auto">
-				<img src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:300px; height:300px;" alt="Deluxe Mahogany Coffin">
+				<img src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:150px; height:150px;" alt="Deluxe Mahogany Coffin">
 			</div>
 			<div class="col-md">
-				<p>A beautiful dark Mahogany coffin that goes with anything. The smooth finish is always a pleaser.</p>
-				<label for="mahoganyQty">Qty</label><input type="number" class="cartQty" id="mahoganyQty" name="mahoganyQty" min="0" placeholder="0"
-					<?php echo "value='$mahoganyQty'";?>
-				> at $2,500 each<br/>
-				<input type="submit" id="mahoganySubmit" name="mahoganySubmit" class="btnAddCart" value="Add to Cart">
+				<p>Qty <?php echo $mahoganyQty;?> @ $2,500 each</p>
+			</div>
+			<div class="col-md">
+				<p>Subtotal $<?php echo $mahoganyQty*2500; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm mx-auto">
-				<img src="http://newhavenfunerals.com.au/wp-content/uploads/2014/05/ASHURST-CEDAR.jpg" style="width:425px; height:300px;" alt="Deluxe Cedar Coffin">
+				<img src="http://newhavenfunerals.com.au/wp-content/uploads/2014/05/ASHURST-CEDAR.jpg" style="width:213px; height:150px;" alt="Deluxe Cedar Coffin">
 			</div>
 			<div class="col-md">
-				<p>This deluxe Cedar coffin is perfect for everyone. The hand carved finish work makes it one of our most beautiful products.</p>
-				<label for="cedarQty">Qty </label><input type="number" class="cartQty" id="cedarQty" name="cedarQty" min="0" placeholder="0"
-					<?php echo "value='$cedarQty'";?>
-				> at $3,500 each<br/>
-				<input type="submit" id="cedarSubmit" name="cedarSubmit" class="btnAddCart" value="Add to Cart">
+				<p>Qty <?php echo $cedarQty;?> @ $3,500 each</p>
+			</div>
+			<div class="col-md">
+				<p>Subtotal $<?php echo $mahoganyQty*3500; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm mx-auto">
-				<img src="https://i0.wp.com/newhavenfunerals.com.au/wp-content/uploads/2014/05/BEACH-FISHING.jpg" style="width:449px; height:300px;" alt="Deluxe Beach Coffin">
+				<img class="mx-auto" src="https://i0.wp.com/newhavenfunerals.com.au/wp-content/uploads/2014/05/BEACH-FISHING.jpg" style="width:225px; height:150px;" alt="Deluxe Beach Coffin">
 			</div>
 			<div class="col-md">
-				<p>The beautiful hand painted beach finish on this coffin is sure to lighten the mood. This is especially popular among those who love aquatics.</p>
-				<label for="beachQty">Qty</label><input type="number" class="cartQty" id="beachQty" name="beachQty" min="0" placeholder="0"
-					<?php echo "value='$beachQty'";?>
-				> at $4,500 each<br/>
-				<input type="submit" id="beachSubmit" name="beachSubmit" class="btnAddCart" value="Add to Cart">
+				<p>Qty <?php echo $beachQty;?> @ $4,500 each</p>
+			</div>
+			<div class="col-md">
+				<p>Subtotal $<?php echo $beachQty*4500; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm mx-auto">
-				<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:300px; height:300px;" alt="Industrial Dell Computer">
+				<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:150px; height:150px;" alt="Industrial Dell Computer">
 			</div>
 			<div class="col-md">
-				<p>This industrial strength Dell computer is perfect for all but the heavy users. Just add a monitor, mouse, and keyboard and you will be set.</p>
-				<label for="dellQty">Qty</label><input type="number" class="cartQty" id="dellQty" name="dellQty" min="0" placeholder="0"> at $500 each<br/>
-				<input type="submit" id="dellSubmit" name="dellSubmit" class="btnAddCart" value="Add to Cart">
+				<p>Qty <?php echo $dellQty; ?> @ $500 each</p>
+			</div>
+			<div class="col-md">
+				<p>Subtotal $<?php $dellQty*500; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm mx-auto">
-				<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:224px; height:300px;" alt="Deluxe Computer">
+				<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:112px; height:150px;" alt="Deluxe Computer">
 			</div>
 			<div class="col-md">
-				<p>Though this computer appears to be from a bygone age, it is truly a powerhouse. The casing is just a facade to help protect your assets.</p>
-				<label for="compQty">Qty</label><input type="number" class="cartQty" id="compQty" name="compQty" min="0" placeholder="0"> at $1,500 each<br/>
-				<input type="submit" id="compSubmit" name="compSubmit" class="btnAddCart" value="Add to Cart">
+				<p>Qty <?php echo $compQty; ?> @ $1,500 each</p>
+			</div>
+			<div class="col-md">
+				<p>Subtotal $<?php $compQty*1500; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm mx-auto">
-				<img src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:300px; height:300px;" alt="Deluxe Children's Toolset - Blue">
+				<img src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Blue">
 			</div>
 			<div class="col-md">
-				<p>Do you have a young one ready to create? This deluxe blue children's toolset is perfect for teaching your son how to work with his hands.</p>
-				<label for="blueQty">Qty </label><input type="number" class="cartQty" id="blueQty" name="blueQty" min="0" placeholder="0"> at $40 each<br/>
-				<input type="submit" id="blueSubmit" name="blueSubmit" class="btnAddCart" value="Add to Cart">
+				<p>Qty <?php echo $blueQty; ?> @ $40 each</p>
+			</div>
+			<div class="col-md">
+				<p>Subtotal $<?php $blueQty*40; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm mx-auto">
-				<img src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" style="width:300px; height:300px;" alt="Deluxe Children's Toolset - Pink">
+				<img src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Pink">
 			</div>
 			<div class="col-md">
-				<p>Do you have an avid young engineer to be in your household? This deluxe pink children's toolset is perfect for teaching your daughter the tricks of the trade.</p>
-				<label for="pinkQty">Qty</label><input type="number" class="cartQty" id="pinkQty" name="pinkQty" min="0" placeholder="0"> at $40 each<br/>
-				<input type="submit" id="pinkSubmit" name="pinkSubmit" class="btnAddCart" value="Add to Cart">
+				<p>Qty <?php echo $pinkQty; ?> @ $40 each</p>
+			</div>
+			<div class="col-md">
+				<p>Subtotal $<?php $pinkQty*40; ?></p>
 			</div>
 		</div>
 	</div>
