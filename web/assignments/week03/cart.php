@@ -127,7 +127,7 @@ function cleanInputs($data) {
 					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
-			<div class="row <?php if($mahoganyQty>0) {echo 'visible';} else {echo 'invisible';}?>">
+			<div class="row <?php if($mahoganyQty==0) echo 'd-none';?>">
 				<div class="col-sm mx-auto">
 					<img src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:150px; height:150px;" alt="Deluxe Mahogany Coffin">
 				</div>
