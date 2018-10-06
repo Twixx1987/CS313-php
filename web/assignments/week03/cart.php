@@ -124,7 +124,7 @@ function cleanInputs($data) {
 					<p>Subtotal $<?php echo $pineQty*1500; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" role="button" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row <?php if($mahoganyQty==0) echo 'd-none';?>">
@@ -140,7 +140,7 @@ function cleanInputs($data) {
 					<p>Subtotal $<?php echo $mahoganyQty*2500; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="mahoganySubmit" name="mahoganySubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" role="button" id="mahoganySubmit" name="mahoganySubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row <?php if($cedarQty==0) echo 'd-none';?>">
@@ -156,7 +156,7 @@ function cleanInputs($data) {
 					<p>Subtotal $<?php echo $cedarQty*3500; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="cedarSubmit" name="cedarSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" role="button" id="cedarSubmit" name="cedarSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row <?php if($beachQty==0) echo 'd-none';?>">
@@ -172,7 +172,7 @@ function cleanInputs($data) {
 					<p>Subtotal $<?php echo $beachQty*4500; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="beachSubmit" name="beachSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" role="button" id="beachSubmit" name="beachSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row <?php if($dellQty==0) echo 'd-none';?>">
@@ -188,7 +188,7 @@ function cleanInputs($data) {
 					<p>Subtotal $<?php echo $dellQty*500; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="dellSubmit" name="dellSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" role="button" id="dellSubmit" name="dellSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row <?php if($compQty==0) echo 'd-none';?>">
@@ -204,7 +204,7 @@ function cleanInputs($data) {
 					<p>Subtotal $<?php echo $compQty*1500; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="compSubmit" name="compSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" role="button" id="compSubmit" name="compSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row <?php if($blueQty==0) echo 'd-none';?>">
@@ -220,7 +220,7 @@ function cleanInputs($data) {
 					<p>Subtotal $<?php echo $blueQty*40; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="blueSubmit" name="blueSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" role="button" id="blueSubmit" name="blueSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row <?php if($pinkQty==0) echo 'd-none';?>">
@@ -236,7 +236,7 @@ function cleanInputs($data) {
 					<p>Subtotal $<?php echo $pinkQty*40; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="pinkSubmit" name="pinkSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" role="button" id="pinkSubmit" name="pinkSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div <?php 

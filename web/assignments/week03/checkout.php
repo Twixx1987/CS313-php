@@ -36,6 +36,16 @@ session_start();
 	</div>
 	<div class="container">
 		<h2>Checkout</h2>
+		<form id="checkout" action="checkout.php" method="post">
+			<label for="firstName">First Name</label><br/><input type="text" id="firstName" name="firstName" placeholder="First Name"><br/> 
+			<label for="lastName">Last Name</label><br/><input type="text" id="lastName" name="lastName" placeholder="Last Name"><br/> 
+			<label for="street1">Street address</label><br/><input type="text" id="street1" name="street1" placeholder="Street address line 1"> 
+			<input type="text" id="street2" name="street2" placeholder="Street address line 2"><br/> 
+			<label for="city">City</label><br/><input type="text" id="city" name="city" placeholder="City"><br/> 
+			<label for="state">State</label><br/><input type="text" id="state" name="state" placeholder="State"><br/> 
+			<label for="zip">Zip Code</label><br/><input type="text" id="zip" name="zip" placeholder="Zip Code"><br/> 
+			<label for="country">Country</label><br/><input type="text" id="country" name="country" placeholder="Country"><br/> 
+		</form>
 	</div>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>

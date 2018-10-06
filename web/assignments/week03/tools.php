@@ -71,7 +71,7 @@ function cleanInputs($data) {
 					<label for="blueQty">Qty </label><input type="number" class="cartQty" id="blueQty" name="blueQty" min="0" placeholder="0"
 						<?php echo "value='$blueQty'";?>
 					> at $40 each<br/>
-					<input type="submit" id="blueSubmit" name="blueSubmit" class="btnAddCart" value="Add to Cart">
+					<input type="submit" role="button" id="blueSubmit" name="blueSubmit" class="btnAddCart" value="Add to Cart">
 				</div>
 			</div>
 			<div class="row">
@@ -83,7 +83,7 @@ function cleanInputs($data) {
 					<label for="pinkQty">Qty</label><input type="number" class="cartQty" id="pinkQty" name="pinkQty" min="0" placeholder="0"
 						<?php echo "value='$pinkQty'";?>
 					> at $40 each<br/>
-					<input type="submit" id="pinkSubmit" name="pinkSubmit" class="btnAddCart" value="Add to Cart">
+					<input type="submit" role="button" id="pinkSubmit" name="pinkSubmit" class="btnAddCart" value="Add to Cart">
 				</div>
 			</div>
 		</form>

@@ -80,7 +80,7 @@ function cleanInputs($data) {
 					<label for="pineQty">Qty</label><input type="number" class="cartQty" id="pineQty" name="pineQty" min="0" placeholder="0" 
 						<?php echo "value='$pineQty'";?>
 					> at $1,500 each<br/>
-					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Add to Cart">
+					<input type="submit" role="button" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Add to Cart">
 				</div>
 			</div>
 			<div class="row">
@@ -92,7 +92,7 @@ function cleanInputs($data) {
 					<label for="mahoganyQty">Qty</label><input type="number" class="cartQty" id="mahoganyQty" name="mahoganyQty" min="0" placeholder="0"
 						<?php echo "value='$mahoganyQty'";?>
 					> at $2,500 each<br/>
-					<input type="submit" id="mahoganySubmit" name="mahoganySubmit" class="btnAddCart" value="Add to Cart">
+					<input type="submit" role="button" id="mahoganySubmit" name="mahoganySubmit" class="btnAddCart" value="Add to Cart">
 				</div>
 			</div>
 			<div class="row">
@@ -104,7 +104,7 @@ function cleanInputs($data) {
 					<label for="cedarQty">Qty </label><input type="number" class="cartQty" id="cedarQty" name="cedarQty" min="0" placeholder="0"
 						<?php echo "value='$cedarQty'";?>
 					> at $3,500 each<br/>
-					<input type="submit" id="cedarSubmit" name="cedarSubmit" class="btnAddCart" value="Add to Cart">
+					<input type="submit" role="button" id="cedarSubmit" name="cedarSubmit" class="btnAddCart" value="Add to Cart">
 				</div>
 			</div>
 			<div class="row">
@@ -116,7 +116,7 @@ function cleanInputs($data) {
 					<label for="beachQty">Qty</label><input type="number" class="cartQty" id="beachQty" name="beachQty" min="0" placeholder="0"
 						<?php echo "value='$beachQty'";?>
 					> at $4,500 each<br/>
-					<input type="submit" id="beachSubmit" name="beachSubmit" class="btnAddCart" value="Add to Cart">
+					<input type="submit" role="button" id="beachSubmit" name="beachSubmit" class="btnAddCart" value="Add to Cart">
 				</div>
 			</div>
 		</form>
