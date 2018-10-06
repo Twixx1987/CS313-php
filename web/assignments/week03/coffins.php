@@ -2,9 +2,6 @@
 //start the session
 session_start();
 
-// create/call the items session variable
-$_SESSION["items"];
-
 // get the input data
 if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$pineQty = cleanInputs($_POST["pineQty"]);
@@ -19,7 +16,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$sessionItem = $_SESSION["items"];
 
 	// merge new array with the session array
-	array_merge($sessionItems, $items);
+	$merged = array_merge($sessionItems, $items);
+
+	// set the session variable
+	$_SESSION["items"] = $merged;
 }
 
 // a function to clean the data
