@@ -11,6 +11,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 
 	// Create an Array of the items added to the cart
 	$items = array("pineQty" => $pineQty, "mahoganyQty" => $mahoganyQty, "cedarQty" => $cedarQty, "beachQty" =>$beachQty);
+
+	// get the session array
+	$sessionItem = $_SESSION["items"];
+
+	// merge new array with the session array
+	$merged = array_merge($sessionItems, $items);
+
+	// set the session variable
+	$_SESSION["items"] = $items;
 }
 
 // a function to clean the data
@@ -44,7 +53,7 @@ function cleanInputs($data) {
     <title>Catalog</title>
 </head>
 <body>
-<?php echo "<div>$_SESSION['items']</div>"; ?>
+<?php print_r($_SESSION); ?>
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "shopping_menu.php"; ?>
