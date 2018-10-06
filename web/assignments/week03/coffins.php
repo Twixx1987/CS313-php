@@ -45,17 +45,6 @@ function cleanInputs($data) {
 </head>
 <body>
 	<?php
-
-
-		$items[] = $_SESSION["items"];
-		
-		if($pineQty>0) $items["pineQty"] = $pineQty;
-		if($mahoganyQty>0) $items["mahoganyQty"] = $mahoganyQty;
-		if($cedarQty>0) $items["cedarQty"] = $cedarQty;
-		if($beachQty>0) $items["beachQty"] = $beachQty;
-
-		$_SESSION["items"] = $items[];
-
 		echo "<div>$_SESSION['items']</div>";
 	?>
 
