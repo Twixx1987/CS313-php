@@ -19,14 +19,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 		$items["compQty"] = $compQty; 
 	}
 
-	// get the session array
-	$sessionItems = $_SESSION["items"];
-
-	// merge new array with the session array
-	$merged = array_merge($sessionItems, $items);
-
 	// set the session variable
-	$_SESSION["items"] = $merged;
+	$_SESSION["computers"] = $items;
 }
 
 // a function to clean the data

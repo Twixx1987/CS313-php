@@ -3,7 +3,7 @@
 session_start();
 
 // get the session variable values
-$items = $_SESSION["items"];
+$items = array_merge($_SESSION["coffins"], $_SESSION["tools"], $_SESSION["computers"]);
 
 // get the individual items
 $pineQty = $items["pineQty"];

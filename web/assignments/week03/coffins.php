@@ -29,11 +29,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 		$items["beachQty"] = $beachQty;
 	}
 
-	// get the session array
-	$sessionItems = $_SESSION["items"];
-
 	// set the session variable
-	$_SESSION["items"] = array_merge($sessionItems, $items);
+	$_SESSION["coffins"] = $items;
 }
 
 // a function to clean the data
