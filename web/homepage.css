@@ -4,6 +4,12 @@ body
     font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
+.btnAddClass {
+    @include btn;
+    @include btn-secondary;
+    @include rounded;
+}
+
 .carouselContainer
 {
     max-height: 700px;
