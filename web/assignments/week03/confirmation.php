@@ -112,7 +112,7 @@ function cleanInputs($data) {
 				<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:200px; height:150px;" alt="Deluxe Pine Coffin">
 			</div>
 			<div class="col-md">
-				<p><span class="text-weight-bold">Qty</span> <?php echo $pineQty;?> @ $1,500 each <span class="text-weight-bold">Subtotal</span> $<?php echo $pineQty*1500; ?></p>
+				<p><span class="font-weight-bold">Qty</span> <?php echo $pineQty;?> @ $1,500 each <span class="font-weight-bold">Subtotal</span> $<?php echo $pineQty*1500; ?></p>
 			</div>
 		</div>
 		<div class="row <?php if($mahoganyQty==0) echo 'd-none';?>">
@@ -120,7 +120,7 @@ function cleanInputs($data) {
 				<img src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:150px; height:150px;" alt="Deluxe Mahogany Coffin">
 			</div>
 			<div class="col-md">
-				<p><span class="text-weight-bold">Qty</span> <?php echo $mahoganyQty;?> @ $2,500 each <span class="text-weight-bold">Subtotal</span> $<?php echo $mahoganyQty*2500; ?></p>
+				<p><span class="font-weight-bold">Qty</span> <?php echo $mahoganyQty;?> @ $2,500 each <span class="font-weight-bold">Subtotal</span> $<?php echo $mahoganyQty*2500; ?></p>
 			</div>
 		</div>
 		<div class="row <?php if($cedarQty==0) echo 'd-none';?>">
@@ -128,7 +128,7 @@ function cleanInputs($data) {
 				<img src="http://newhavenfunerals.com.au/wp-content/uploads/2014/05/ASHURST-CEDAR.jpg" style="width:213px; height:150px;" alt="Deluxe Cedar Coffin">
 			</div>
 			<div class="col-md">
-				<p><span class="text-weight-bold">Qty</span> <?php echo $cedarQty;?> @ $3,500 each <span class="text-weight-bold">Subtotal</span> $<?php echo $cedarQty*3500; ?></p>
+				<p><span class="font-weight-bold">Qty</span> <?php echo $cedarQty;?> @ $3,500 each <span class="font-weight-bold">Subtotal</span> $<?php echo $cedarQty*3500; ?></p>
 			</div>
 		</div>
 		<div class="row <?php if($beachQty==0) echo 'd-none';?>">
@@ -136,7 +136,7 @@ function cleanInputs($data) {
 				<img class="mx-auto" src="https://i0.wp.com/newhavenfunerals.com.au/wp-content/uploads/2014/05/BEACH-FISHING.jpg" style="width:225px; height:150px;" alt="Deluxe Beach Coffin">
 			</div>
 			<div class="col-md">
-				<p><span class="text-weight-bold">Qty</span> <?php echo $beachQty;?> @ $4,500 each <span class="text-weight-bold">Subtotal</span> $<?php echo $beachQty*4500; ?></p>
+				<p><span class="font-weight-bold">Qty</span> <?php echo $beachQty;?> @ $4,500 each <span class="font-weight-bold">Subtotal</span> $<?php echo $beachQty*4500; ?></p>
 			</div>
 		</div>
 		<div class="row <?php if($dellQty==0) echo 'd-none';?>">
@@ -144,7 +144,7 @@ function cleanInputs($data) {
 				<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:150px; height:150px;" alt="Industrial Dell Computer">
 			</div>
 			<div class="col-md">
-				<p><span class="text-weight-bold">Qty</span> <?php echo $dellQty;?> @ $500 each <span class="text-weight-bold">Subtotal</span> $<?php echo $dellQty*500; ?></p>
+				<p><span class="font-weight-bold">Qty</span> <?php echo $dellQty;?> @ $500 each <span class="font-weight-bold">Subtotal</span> $<?php echo $dellQty*500; ?></p>
 			</div>
 		</div>
 		<div class="row <?php if($compQty==0) echo 'd-none';?>">
@@ -152,7 +152,7 @@ function cleanInputs($data) {
 				<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:112px; height:150px;" alt="Deluxe Computer">
 			</div>
 			<div class="col-md">
-				<p><span class="text-weight-bold">Qty</span> <?php echo $compQty;?> @ $1,500 each <span class="text-weight-bold">Subtotal</span> $<?php echo $compQty*1500; ?></p>
+				<p><span class="font-weight-bold">Qty</span> <?php echo $compQty;?> @ $1,500 each <span class="font-weight-bold">Subtotal</span> $<?php echo $compQty*1500; ?></p>
 			</div>
 		</div>
 		<div class="row <?php if($blueQty==0) echo 'd-none';?>">
@@ -160,7 +160,7 @@ function cleanInputs($data) {
 				<img src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Blue">
 			</div>
 			<div class="col-md">
-				<p><span class="text-weight-bold">Qty</span> <?php echo $blueQty;?> @ $40 each <span class="text-weight-bold">Subtotal</span> $<?php echo $blueQty*40; ?></p>
+				<p><span class="font-weight-bold">Qty</span> <?php echo $blueQty;?> @ $40 each <span class="font-weight-bold">Subtotal</span> $<?php echo $blueQty*40; ?></p>
 			</div>
 		</div>
 		<div class="row <?php if($pinkQty==0) echo 'd-none';?>">
@@ -168,7 +168,7 @@ function cleanInputs($data) {
 				<img src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Pink">
 			</div>
 			<div class="col-md">
-				<p><span class="text-weight-bold">Qty</span> <?php echo $pinkQty;?> @ $40 each <span class="text-weight-bold">Subtotal</span> $<?php echo $pinkQty*40; ?></p>
+				<p><span class="font-weight-bold">Qty</span> <?php echo $pinkQty;?> @ $40 each <span class="font-weight-bold">Subtotal</span> $<?php echo $pinkQty*40; ?></p>
 			</div>
 		</div>
 		<div class="row">
