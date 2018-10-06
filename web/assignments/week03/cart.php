@@ -111,7 +111,7 @@ function cleanInputs($data) {
 	<div class="container">
 		<h2>Cart</h2>
 		<form id="cart" action="cart.php" method="post">
-			<div class="row <?php if($pineQty>0) {echo 'invisible';} else {echo 'visible';}?>">
+			<div class="row <?php if($pineQty>0) {echo 'visible';} else {echo 'invisible';}?>">
 				<div class="col-sm mx-auto">
 					<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:200px; height:150px;" alt="Deluxe Pine Coffin">
 				</div>
@@ -127,7 +127,7 @@ function cleanInputs($data) {
 					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row <?php if($mahoganyQty>0) {echo 'visible';} else {echo 'invisible';}?>">
 				<div class="col-sm mx-auto">
 					<img src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:150px; height:150px;" alt="Deluxe Mahogany Coffin">
 				</div>
@@ -143,7 +143,7 @@ function cleanInputs($data) {
 					<input type="submit" id="mahoganySubmit" name="mahoganySubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row <?php if($cedarQty>0) {echo 'visible';} else {echo 'invisible';}?>">
 				<div class="col-sm mx-auto">
 					<img src="http://newhavenfunerals.com.au/wp-content/uploads/2014/05/ASHURST-CEDAR.jpg" style="width:213px; height:150px;" alt="Deluxe Cedar Coffin">
 				</div>
@@ -159,7 +159,7 @@ function cleanInputs($data) {
 					<input type="submit" id="cedarSubmit" name="cedarSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row <?php if($beachQty>0) {echo 'visible';} else {echo 'invisible';}?>">
 				<div class="col-sm mx-auto">
 					<img class="mx-auto" src="https://i0.wp.com/newhavenfunerals.com.au/wp-content/uploads/2014/05/BEACH-FISHING.jpg" style="width:225px; height:150px;" alt="Deluxe Beach Coffin">
 				</div>
@@ -175,7 +175,7 @@ function cleanInputs($data) {
 					<input type="submit" id="beachSubmit" name="beachSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row <?php if($dellQty>0) {echo 'visible';} else {echo 'invisible';}?>">
 				<div class="col-sm mx-auto">
 					<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:150px; height:150px;" alt="Industrial Dell Computer">
 				</div>
@@ -191,7 +191,7 @@ function cleanInputs($data) {
 					<input type="submit" id="dellSubmit" name="dellSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row <?php if($compQty>0) {echo 'visible';} else {echo 'invisible';}?>">
 				<div class="col-sm mx-auto">
 					<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:112px; height:150px;" alt="Deluxe Computer">
 				</div>
@@ -207,7 +207,7 @@ function cleanInputs($data) {
 					<input type="submit" id="compSubmit" name="compSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row <?php if($blueQty>0) {echo 'visible';} else {echo 'invisible';}?>">
 				<div class="col-sm mx-auto">
 					<img src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Blue">
 				</div>
@@ -223,7 +223,7 @@ function cleanInputs($data) {
 					<input type="submit" id="blueSubmit" name="blueSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row <?php if($pinkQty>0) {echo 'visible';} else {echo 'invisible';}?>">
 				<div class="col-sm mx-auto">
 					<img src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Pink">
 				</div>
