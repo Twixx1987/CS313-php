@@ -35,10 +35,14 @@ session_start();
 
 		$items[] = $_SESSION["items"];
 		
-		$items["pineQty"] = $pineQty;
-		$items["mahoganyQty"] = $mahoganyQty;
-		$items["cedarQty"] = $cedarQty;
-		$items["beachQty"] = $beachQty;
+		if($pineQty>0) $items["pineQty"] = $pineQty;
+		if($mahoganyQty>0) $items["mahoganyQty"] = $mahoganyQty;
+		if($cedarQty>0) $items["cedarQty"] = $cedarQty;
+		if($beachQty>0) $items["beachQty"] = $beachQty;
+
+		$_SESSION["items"] = $items[];
+
+		echo "<div class='alert container'>$_SESSION['items']</div>";
 	?>
 
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
