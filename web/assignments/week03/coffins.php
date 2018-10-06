@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 
 	// add items to the array if they were submitted via post
 	if($pineQty>0) {
-		$items["pineQty] = $pineQty; 
+		$items["pineQty"] = $pineQty; 
 	}
 
 	if($mahoganyQty>0) {
