@@ -27,6 +27,11 @@ session_start();
 <body>
 	<?php
 		$_SESSION["items[]"];
+
+		$pineQty = $_POST["pineQty"];
+		$mahoganyQty = $_POST["mahoganyQty"];
+		$cedarQty = $_POST["cedarQty"];
+		$beachQty = $_POST["beachQty"];
 	?>
 
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
@@ -42,9 +47,9 @@ session_start();
 			<div class="col-md">
 				<p>A simple yet rustic coffin for a reasonable price. This is made of solid pine planks giving it that beautiful rustic look.</p>
 				<form id="pineCoffin" action="coffins.php" method="post">
-					<label for="pineQty">Qty</label><input type="number" class="cartQty" id="pineQty" name="pineQty" min="0" placeholder="0"
-							<?php echo "value=\"$_POST["pineQty"]\"";?>
-						> at $1,500 each<br/>
+					<label for="pineQty">Qty</label><input type="number" class="cartQty" id="pineQty" name="pineQty" min="0" placeholder="0" 
+						<?php echo "value='$pineQty'";?>
+					> at $1,500 each<br/>
 					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Add to Cart">
 				</form>
 			</div>
