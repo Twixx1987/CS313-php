@@ -240,7 +240,7 @@ function cleanInputs($data) {
 				</div>
 			</div>
 			<div <?php 
-					if($pinkQty==0 && $blueQty==0 && $compQty==0 && $dellQty==0 && $pineQty==0 && $cedarQty==0 && $mahoganyQty==0 && $beachQty==0) echo "id='totals'";?> class="row">
+					if($pinkQty===0 && $blueQty===0 && $compQty===0 && $dellQty===0 && $pineQty===0 && $cedarQty===0 && $mahoganyQty===0 && $beachQty===0) echo "id='totals'";?> class="row">
 				<div class="col-sm">
 				</div>
 				<div class="col-lg">
