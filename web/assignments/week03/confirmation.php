@@ -112,9 +112,7 @@ function cleanInputs($data) {
 				<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:200px; height:150px;" alt="Deluxe Pine Coffin">
 			</div>
 			<div class="col-md">
-				<label for="pineQty">Qty</label><input type="number" class="cartQty" id="pineQty" name="pineQty" min="0" placeholder="0" 
-					<?php echo "value='$pineQty'";?>
-				> @ $1,500 each</p>
+				<p class="label">Qty <?php echo $pineQty;?> @ $1,500 each</p>
 			</div>
 			<div class="col-md">
 				<p>Subtotal $<?php echo $pineQty*1500; ?></p>
