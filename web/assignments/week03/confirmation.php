@@ -67,43 +67,47 @@ function cleanInputs($data) {
 	</div>
 	<div class="container">
 		<h2>Order Confirmation</h2>
+		<hr></hr>
+		<h3>Shipping Address</h3>
 		<div class="row">
 			<div class="col">
-				<p>First Name</p><br/>
+				<p class="label">First Name</p>
 				<p><?php echo $firstName; ?></p>
 			</div>
 			<div class="col">
-				<p>Last Name</p><br/>
+				<p class="label">Last Name</p>
 				<p><?php echo $lastName; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<p>Street address</p><br/>
+				<p class="label">Street address</p>
 				<p><?php echo $street1; ?></p>
 				<p><?php echo $street2; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<p>City</p><br/>
+				<p class="label">City</p>
 				<p><?php echo $city; ?></p>
 			</div>
 			<div class="col">
-				<p>State</p><br/>
+				<p class="label">State</p>
 				<p><?php echo $state; ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<p>Zip Code</p><br/>
+				<p class="label">Zip Code</p>
 				<p><?php echo $zip; ?></p>
 			</div>
 			<div class="col">
-				<p>Country</p><br/>
+				<p class="label">Country</p>
 				<p><?php echo $country; ?></p>
 			</div>
 		</div>
+		<hr></hr>
+		<h3>Order Details</h3>
 		<div class="row <?php if($pineQty==0) echo 'd-none';?>">
 			<div class="col-sm mx-auto">
 				<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:200px; height:150px;" alt="Deluxe Pine Coffin">
@@ -209,6 +213,8 @@ function cleanInputs($data) {
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-md">
+			</div>
 			<div class="col-lg">
 				<h3><?php echo $pineQty + $mahoganyQty + $cedarQty + $beachQty + $dellQty + $compQty + $blueQty + $pinkQty; ?> Items Totaling $<?php echo $pineQty*1500 + $mahoganyQty*2500 + $cedarQty*3500 + $beachQty*4500 + $dellQty*500 + $compQty*1500 + $blueQty*40 + $pinkQty*40; ?></h3>
 			</div>
