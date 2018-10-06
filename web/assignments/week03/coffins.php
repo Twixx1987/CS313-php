@@ -11,12 +11,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$mahoganyQty = cleanInputs($_POST["mahoganyQty"]);
 	$cedarQty = cleanInputs($_POST["cedarQty"]);
 	$beachQty = cleanInputs($_POST["beachQty"]);
-}
 
-// Compare the session items array with the posted items
-$items[] = $_SESSION["items"];
-$items["pineQty"] = $pineQty;
-$_SESSION["items"] = $items;
+	// Compare the session items array with the posted items
+	$items[] = $_SESSION["items"];
+	$items["pineQty"] = $pineQty;
+	$_SESSION["items"] = $items;
+}
 
 // a function to clean the data
 function cleanInputs($data) {
