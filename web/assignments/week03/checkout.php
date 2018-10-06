@@ -38,38 +38,35 @@ session_start();
 		<form id="checkout" action="confirmation.php" method="post">
 			<div class="row">
 				<div class="col">
-					<label for="firstName">First Name</label><br/><input type="text" id="firstName" name="firstName" placeholder="First Name"><br/> 
+					<label class="label" for="firstName">First Name</label><br/><input type="text" id="firstName" name="firstName" placeholder="First Name"><br/> 
 				</div>
 				<div class="col">
-					<label for="lastName">Last Name</label><br/><input type="text" id="lastName" name="lastName" placeholder="Last Name"><br/> 
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<label for="street1">Street address</label><br/><input type="text" id="street1" name="street1" placeholder="Street address line 1"> 
+					<label class="label" for="lastName">Last Name</label><br/><input type="text" id="lastName" name="lastName" placeholder="Last Name"><br/> 
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
+					<label class="label" for="street1">Street address</label><br/><input type="text" id="street1" name="street1" placeholder="Street address line 1"> 
 					<input type="text" id="street2" name="street2" placeholder="Street address line 2"><br/> 
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<label for="city">City</label><br/><input type="text" id="city" name="city" placeholder="City"><br/> 
+					<label class="label" for="city">City</label><br/><input type="text" id="city" name="city" placeholder="City"><br/> 
 				</div>
 				<div class="col">
-					<label for="state">State</label><br/><input type="text" id="state" name="state" placeholder="State"><br/> 
+					<label class="label" for="state">State</label><br/><input type="text" id="state" name="state" placeholder="State"><br/> 
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<label for="zip">Zip Code</label><br/><input type="text" id="zip" name="zip" placeholder="Zip Code"><br/> 
+					<label class="label" for="zip">Zip Code</label><br/><input type="text" id="zip" name="zip" placeholder="Zip Code"><br/> 
 				</div>
 				<div class="col">
-					<label for="country">Country</label><br/><input type="text" id="country" name="country" placeholder="Country"><br/> 
+					<label class="label" for="country">Country</label><br/><input type="text" id="country" name="country" placeholder="Country"><br/> 
 				</div>
 			</div>
+			<hr></hr>
 			<div class="row">
 				<div class="col">
 					<a href="cart.php" role="button" id="cartReturn" name="submit" class="btnAddCart btn btn-warning">Return to Cart</a><br/>
