@@ -73,14 +73,14 @@ session_start();
 			</div>
 			<div class="row">
 				<div class="col">
-					<a href="cart.php" role="button" id="cartReturn" name="submit" class="btnAddCart btn btn-warning" value="Return to Cart"></a><br/>
+					<a href="cart.php" role="button" id="cartReturn" name="submit" class="btnAddCart btn btn-warning">Return to Cart</a><br/>
 				</div>
 				<div class="col">
-					<input type="submit" role="button" id="checkoutSubmit" name="submit" class="btnAddCart btn btn-success" value="Finalize Purchase"><br/> 
+					<input type="submit" role="button" id="checkoutSubmit" name="submit" class="btnAddCart btn btn-success" value="Finalize Purchase"><br/>
 				</div>
 			</div>
 		</form>
-	</div>
+	</div><br/>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>
 	</div>
