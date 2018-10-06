@@ -85,7 +85,7 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 					<label class="label" for="country">Country</label><br/><select id="country" name="country">
 						<?php 
 							foreach($countries as $country) {
-								echo "<option value='$country'"
+								echo "<option value='$country'";
 								if($country=="United States of America") {
 									echo " selected ";
 								} 
