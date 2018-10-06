@@ -1,6 +1,17 @@
 <?php
 //start the session
 session_start();
+
+// create an array of countries
+$countries = array("Canada", "United States of America");
+
+// create an array of states
+$states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
+	"Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", 
+	"Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", 
+	"Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", 
+	"North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", 
+	"South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington","West Virginia", "Wisconsin", "Wyoming");
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +57,7 @@ session_start();
 			</div>
 			<div class="row">
 				<div class="col">
-					<label class="label" for="street1">Street address</label><br/><input type="text" id="street1" name="street1" placeholder="Street address line 1"> 
+					<label class="label" for="street1">Street address</label><br/><input type="text" id="street1" name="street1" placeholder="Street address line 1"><br/>
 					<input type="text" id="street2" name="street2" placeholder="Street address line 2"><br/> 
 				</div>
 			</div>
@@ -55,15 +66,27 @@ session_start();
 					<label class="label" for="city">City</label><br/><input type="text" id="city" name="city" placeholder="City"><br/> 
 				</div>
 				<div class="col">
-					<label class="label" for="state">State</label><br/><input type="text" id="state" name="state" placeholder="State"><br/> 
+					<label class="label" for="state">State</label><br/><select id="state" name="state">
+						<?php 
+							foreach($state in $states) {
+								echo "<option value='$state'>$state</option>";
+							}
+						?>
+					</select><br/> 
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<label class="label" for="zip">Zip Code</label><br/><input type="text" id="zip" name="zip" placeholder="Zip Code"><br/> 
+					<label class="label" for="zip">Zip Code</label><br/><input type="number" id="zip" name="zip" placeholder="Zip Code"><br/> 
 				</div>
 				<div class="col">
-					<label class="label" for="country">Country</label><br/><input type="text" id="country" name="country" placeholder="Country"><br/> 
+					<label class="label" for="country">Country</label><br/><select id="country" name="country">
+						<?php 
+							foreach($state in $states) {
+								echo "<option value='$state'>$state</option>";
+							}
+						?>
+					</select><br/>  
 				</div>
 			</div>
 			<hr></hr>
