@@ -1,6 +1,25 @@
 <?php
 //start the session
 session_start();
+
+// create/call the items session variable
+$_SESSION["items[]"];
+
+// get the input data
+if($_SERVER["REQUEST_METHOD"]=="POST") {
+	$pineQty = cleanInputs($_POST["pineQty"]);
+	$mahoganyQty = cleanInputs($_POST["mahoganyQty"]);
+	$cedarQty = cleanInputs($_POST["cedarQty"]);
+	$beachQty = cleanInputs($_POST["beachQty"]);
+}
+
+// a function to clean the data
+function cleanInputs($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
 ?>
 
 <!DOCTYPE html>
@@ -26,12 +45,7 @@ session_start();
 </head>
 <body>
 	<?php
-		$_SESSION["items[]"];
 
-		$pineQty = $_POST["pineQty"];
-		$mahoganyQty = $_POST["mahoganyQty"];
-		$cedarQty = $_POST["cedarQty"];
-		$beachQty = $_POST["beachQty"];
 
 		$items[] = $_SESSION["items"];
 		
@@ -42,7 +56,7 @@ session_start();
 
 		$_SESSION["items"] = $items[];
 
-		echo "<div class='alert container'>$_SESSION['items']</div>";
+		echo "<div>$_SESSION['items']</div>";
 	?>
 
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
