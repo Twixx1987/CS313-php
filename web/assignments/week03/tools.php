@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	}
 
 		// get the session array
-	$sessionItem = $_SESSION["items"];
+	$sessionItems = $_SESSION["items"];
 
 	// merge new array with the session array
 	$merged = array_merge($sessionItems, $items);
