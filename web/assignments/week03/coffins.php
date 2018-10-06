@@ -36,7 +36,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$merged = array_merge($sessionItems, $items);
 
 	// set the session variable
-	$_SESSION["items"] = $items;
+	$_SESSION["items"] = $merged;
 }
 
 // a function to clean the data

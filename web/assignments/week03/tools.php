@@ -11,11 +11,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$items = array();
 
 	// add items to the array if they were submitted via post
-	if($pineQty>0) {
+	if($blueQty>0) {
 		$items["blueQty"] = $blueQty; 
 	}
 
-	if($mahoganyQty>0) {
+	if($pinkQty>0) {
 		$items["pinkQty"] = $pinkQty; 
 	}
 
@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$merged = array_merge($sessionItems, $items);
 
 	// set the session variable
-	$_SESSION["items"] = $items;
+	$_SESSION["items"] = $merged;
 }
 
 // a function to clean the data
