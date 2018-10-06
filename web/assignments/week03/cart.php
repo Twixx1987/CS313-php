@@ -242,14 +242,11 @@ function cleanInputs($data) {
 			<div class="row">
 				<div class="col-sm">
 				</div>
-				<div class="col-md">
-					<h3>Total # of Items <?php echo $pineQty + $mahoganyQty + $cedarQty + $beachQty + $dellQty + $compQty + $blueQty + $pinkQty; ?></h3>
-				</div>
-				<div class="col-md">
-					<h3>Total $<?php echo $pineQty*1500 + $mahoganyQty*2500 + $cedarQty*3500 + $beachQty*4500 + $dellQty*500 + $compQty*1500 + $blueQty*40 + $pinkQty*40; ?></h3>
+				<div class="col-lg">
+					<h3><?php echo $pineQty + $mahoganyQty + $cedarQty + $beachQty + $dellQty + $compQty + $blueQty + $pinkQty; ?> Items Totaling $<?php echo $pineQty*1500 + $mahoganyQty*2500 + $cedarQty*3500 + $beachQty*4500 + $dellQty*500 + $compQty*1500 + $blueQty*40 + $pinkQty*40; ?></h3>
 				</div>
 				<div class="col-sm">
-					<input type="button" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Checkout">
+					<input type="button" id="checkout" name="checkout" class="btnAddCart" value="Checkout">
 				</div>
 			</div>
 		</form>
