@@ -10,12 +10,6 @@ body
     @include rounded;
 }
 
-.carouselContainer
-{
-    max-height: 700px;
-    max-width: 1000px;
-}
-
 .carouselImage
 {
     @include px-auto;

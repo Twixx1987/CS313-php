@@ -35,7 +35,7 @@ session_start();
 	</div>
 	<div class="container">
 		<h2>Our Catalog</h2>
-		<div id="featuredProducts" class="carousel slide carouselContainer" data-ride="carousel">
+		<div id="featuredProducts" class="carousel slide" data-ride="carousel">
 			<h3>Featured Product</h3>
 			<ol class="carousel-indicators">
 				<li data-target="#featuredProducts" data-slide-to="0" class="active"></li>
@@ -66,9 +66,6 @@ session_start();
 					<a href="tools.php">
 						<img class="carouselImage mx-auto px-auto" src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:600px; height:600px;" alt="Deluxe Children's Toolset">
 					</a>
-					<div class="subtext">
-						<p>We even have great tools for sale.</p>
-					</div>
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#featuredProducts" role="button" data-slide="prev">
