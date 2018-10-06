@@ -48,7 +48,7 @@ session_start();
 						<p>We have a large selection of stock and custom coffins.</p>
 					</div>
 					<a href="coffins.php">
-						<img class="carouselImage d-block img-fluid" src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:600px; height:600px;" alt="Deluxe Pine Coffin">
+						<img class="rounded mx-auto d-block" src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:600px; height:600px;" alt="Deluxe Pine Coffin">
 					</a>
 				</div>
 				<div class="carousel-item">
@@ -56,7 +56,7 @@ session_start();
 						<p>Our computer selection is noteable.</p>
 					</div>
 					<a href="computers.php">
-						<img class="carouselImage d-block img-fluid" src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:600px; height:600px;" alt="Deluxe Computer">
+						<img class="rounded mx-auto d-block" src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:600px; height:600px;" alt="Deluxe Computer">
 					</a>
 				</div>
 				<div class="carousel-item">
@@ -64,7 +64,7 @@ session_start();
 						<p>We even have great tools for sale.</p>
 					</div>
 					<a href="tools.php">
-						<img class="carouselImage d-block img-fluid" src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:600px; height:600px;" alt="Deluxe Children's Toolset">
+						<img class="rounded mx-auto d-block" src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:600px; height:600px;" alt="Deluxe Children's Toolset">
 					</a>
 				</div>
 			</div>

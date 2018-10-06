@@ -10,12 +10,6 @@ body
     @include rounded;
 }
 
-.carouselImage
-{
-    @include d-block;
-    @include w-100;
-}
-
 .cartQty
 {
     @include border;
