@@ -17,6 +17,68 @@ $compQty = $computers["compQty"];
 $blueQty = $tools["blueQty"];
 $pinkQty = $tools["pinkQty"];
 
+// get the input data
+if($_SERVER["REQUEST_METHOD"]=="POST") {
+	$pineQty = cleanInputs($_POST["pineQty"]);
+	$mahoganyQty = cleanInputs($_POST["mahoganyQty"]);
+	$cedarQty = cleanInputs($_POST["cedarQty"]);
+	$beachQty = cleanInputs($_POST["beachQty"]);
+	$dellQty = cleanInputs($_POST["dellQty"]);
+	$compQty = cleanInputs($_POST["compQty"]);
+	$blueQty = cleanInputs($_POST["blueQty"]);
+	$pinkQty = cleanInputs($_POST["pinkQty"]);
+	
+	// Create the Arrays of items
+	$coffins = array();
+	$computers = array();
+	$tools = array();
+
+	// add items to the arrays if they were submitted via post
+	if($pineQty>0) {
+		$coffins["pineQty"] = $pineQty; 
+	}
+
+	if($mahoganyQty>0) {
+		$coffins["mahoganyQty"] = $mahoganyQty; 
+	}
+
+	if($cedarQty>0) {
+		$coffins["cedarQty"] = $cedarQty;
+	}
+	
+	if($beachQty>0) {
+		$coffins["beachQty"] = $beachQty;
+	}
+	
+	if($dellQty>0) {
+		$computers["dellQty"] = $dellQty; 
+	}
+
+	if($compQty>0) {
+		$computers["compQty"] = $compQty; 
+	}
+	
+	if($blueQty>0) {
+		$tools["blueQty"] = $blueQty; 
+	}
+
+	if($pinkQty>0) {
+		$tools["pinkQty"] = $pinkQty; 
+	}
+
+	// set the session variables
+	$_SESSION["coffins"] = $coffins;
+	$_SESSION["computers"] = $computers;
+	$_SESSION["tools"] = $tools;
+}
+
+// a function to clean the data
+function cleanInputs($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
 ?>
 
 <!DOCTYPE html>
@@ -70,13 +132,15 @@ $pinkQty = $tools["pinkQty"];
 					<img src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:150px; height:150px;" alt="Deluxe Mahogany Coffin">
 				</div>
 				<div class="col-md">
-					<p>Qty <?php echo $mahoganyQty;?> @ $2,500 each</p>
+					<label for="mahoganyQty">Qty</label><input type="number" class="cartQty" id="mahoganyQty" name="mahoganyQty" min="0" placeholder="0" 
+						<?php echo "value='$mahoganyQty'";?>
+					> @ $2,500 each</p>
 				</div>
 				<div class="col-md">
 					<p>Subtotal $<?php echo $mahoganyQty*2500; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" id="mahoganySubmit" name="mahoganySubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row">
@@ -84,10 +148,15 @@ $pinkQty = $tools["pinkQty"];
 					<img src="http://newhavenfunerals.com.au/wp-content/uploads/2014/05/ASHURST-CEDAR.jpg" style="width:213px; height:150px;" alt="Deluxe Cedar Coffin">
 				</div>
 				<div class="col-md">
-					<p>Qty <?php echo $cedarQty;?> @ $3,500 each</p>
+					<label for="cedarQty">Qty</label><input type="number" class="cartQty" id="cedarQty" name="cedarQty" min="0" placeholder="0" 
+						<?php echo "value='$cedarQty'";?>
+					> @ $3,500 each</p>
 				</div>
 				<div class="col-md">
-					<p>Subtotal $<?php echo $mahoganyQty*3500; ?></p>
+					<p>Subtotal $<?php echo $cedarQty*3500; ?></p>
+				</div>
+				<div class="col-sm">
+					<input type="submit" id="cedarSubmit" name="cedarSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row">
@@ -95,13 +164,15 @@ $pinkQty = $tools["pinkQty"];
 					<img class="mx-auto" src="https://i0.wp.com/newhavenfunerals.com.au/wp-content/uploads/2014/05/BEACH-FISHING.jpg" style="width:225px; height:150px;" alt="Deluxe Beach Coffin">
 				</div>
 				<div class="col-md">
-					<p>Qty <?php echo $beachQty;?> @ $4,500 each</p>
+					<label for="beachQty">Qty</label><input type="number" class="cartQty" id="beachQty" name="beachQty" min="0" placeholder="0" 
+						<?php echo "value='$beachQty'";?>
+					> @ $4,500 each</p>
 				</div>
 				<div class="col-md">
 					<p>Subtotal $<?php echo $beachQty*4500; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" id="beachSubmit" name="beachSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row">
@@ -109,13 +180,15 @@ $pinkQty = $tools["pinkQty"];
 					<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:150px; height:150px;" alt="Industrial Dell Computer">
 				</div>
 				<div class="col-md">
-					<p>Qty <?php echo $dellQty; ?> @ $500 each</p>
+					<label for="dellQty">Qty</label><input type="number" class="cartQty" id="dellQty" name="dellQty" min="0" placeholder="0" 
+						<?php echo "value='$dellQty'";?>
+					> @ $500 each</p>
 				</div>
 				<div class="col-md">
 					<p>Subtotal $<?php echo $dellQty*500; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" id="dellSubmit" name="dellSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row">
@@ -123,13 +196,15 @@ $pinkQty = $tools["pinkQty"];
 					<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:112px; height:150px;" alt="Deluxe Computer">
 				</div>
 				<div class="col-md">
-					<p>Qty <?php echo $compQty; ?> @ $1,500 each</p>
+					<label for="compQty">Qty</label><input type="number" class="cartQty" id="compQty" name="compQty" min="0" placeholder="0" 
+						<?php echo "value='$compQty'";?>
+					> @ $1,500 each</p>
 				</div>
 				<div class="col-md">
 					<p>Subtotal $<?php echo $compQty*1500; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" id="compSubmit" name="compSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row">
@@ -137,13 +212,15 @@ $pinkQty = $tools["pinkQty"];
 					<img src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Blue">
 				</div>
 				<div class="col-md">
-					<p>Qty <?php echo $blueQty; ?> @ $40 each</p>
+					<label for="blueQty">Qty</label><input type="number" class="cartQty" id="blueQty" name="blueQty" min="0" placeholder="0" 
+						<?php echo "value='$blueQty'";?>
+					> @ $40 each</p>
 				</div>
 				<div class="col-md">
 					<p>Subtotal $<?php echo $blueQty*40; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" id="blueSubmit" name="blueSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row">
@@ -151,20 +228,22 @@ $pinkQty = $tools["pinkQty"];
 					<img src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Pink">
 				</div>
 				<div class="col-md">
-					<p>Qty <?php echo $pinkQty; ?> @ $40 each</p>
+					<label for="pinkQty">Qty</label><input type="number" class="cartQty" id="pinkQty" name="pinkQty" min="0" placeholder="0" 
+						<?php echo "value='$pinkQty'";?>
+					> @ $40 each</p>
 				</div>
 				<div class="col-md">
 					<p>Subtotal $<?php echo $pinkQty*40; ?></p>
 				</div>
 				<div class="col-sm">
-					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+					<input type="submit" id="pinkSubmit" name="pinkSubmit" class="btnAddCart" value="Update Cart">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm">
 				</div>
 				<div class="col-md">
-					<h3>Total Number of Items <?php echo $pineQty + $mahoganyQty + $cedarQty + $beachQty + $dellQty + $compQty + $blueQty + $pinkQty; ?></h3>
+					<h3>Total # of Items <?php echo $pineQty + $mahoganyQty + $cedarQty + $beachQty + $dellQty + $compQty + $blueQty + $pinkQty; ?></h3>
 				</div>
 				<div class="col-md">
 					<h3>Total $<?php echo $pineQty*1500 + $mahoganyQty*2500 + $cedarQty*3500 + $beachQty*4500 + $dellQty*500 + $compQty*1500 + $blueQty*40 + $pinkQty*40; ?></h3>
