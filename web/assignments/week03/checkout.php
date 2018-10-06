@@ -45,6 +45,7 @@ session_start();
 			<label for="state">State</label><br/><input type="text" id="state" name="state" placeholder="State"><br/> 
 			<label for="zip">Zip Code</label><br/><input type="text" id="zip" name="zip" placeholder="Zip Code"><br/> 
 			<label for="country">Country</label><br/><input type="text" id="country" name="country" placeholder="Country"><br/> 
+			<input type="submit" role="button" id="checkoutSubmit" name="submit" class="btnAddCart btn btn-secondary" value="Finalize Purchase"><br/> 
 		</form>
 	</div>
 	<div class="menu container">
