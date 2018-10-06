@@ -60,7 +60,6 @@ function cleanInputs($data) {
     <title>Order Confirmation</title>
 </head>
 <body>
-<?php print_r($_SESSION); ?>
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "shopping_menu.php"; ?>
@@ -213,9 +212,7 @@ function cleanInputs($data) {
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md">
-			</div>
-			<div class="col-lg">
+			<div class="col-lg text-center">
 				<h3><?php echo $pineQty + $mahoganyQty + $cedarQty + $beachQty + $dellQty + $compQty + $blueQty + $pinkQty; ?> Items Totaling $<?php echo $pineQty*1500 + $mahoganyQty*2500 + $cedarQty*3500 + $beachQty*4500 + $dellQty*500 + $compQty*1500 + $blueQty*40 + $pinkQty*40; ?></h3>
 			</div>
 		</div>

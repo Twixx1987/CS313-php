@@ -25,7 +25,6 @@ session_start();
     <title>Checkout</title>
 </head>
 <body>
-<?php print_r($_SESSION); ?>
 	<?php
 		$_SESSION["items[]"];
 	?>
