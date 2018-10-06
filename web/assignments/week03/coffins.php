@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$beachQty = cleanInputs($_POST["beachQty"]);
 
 	// Create an Array of the items added to the cart
-	$items[] = ("pineQty" => $pineQty, "mahoganyQty" => $mahoganyQty, "cedarQty" => $cedarQty, "beachQty" =>$beachQty);
+	$items = array("pineQty" => $pineQty, "mahoganyQty" => $mahoganyQty, "cedarQty" => $cedarQty, "beachQty" =>$beachQty);
 
 	// get the session array
 	$sessionItem = $_SESSION["items"];
