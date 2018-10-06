@@ -64,7 +64,7 @@ session_start();
 						<p>We even have great tools for sale.</p>
 					</div>
 					<a href="tools.php">
-						<img class="carouselImage rounded mx-auto d-block" src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" alt="Deluxe Children's Toolset">
+						<img class="carouselImage rounded mx-auto d-block" src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" alt="Deluxe Children's Toolset">
 					</a>
 				</div>
 			</div>
