@@ -68,8 +68,8 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 				<div class="col">
 					<label class="label" for="state">State</label><br/><select id="state" name="state">
 						<?php 
-							foreach($state in $states) {
-								echo "<option value='$state'>$state</option>";
+							foreach($countries as $country) {
+								echo "<option value='$country'>$country</option>";
 							}
 						?>
 					</select><br/> 
@@ -82,7 +82,7 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 				<div class="col">
 					<label class="label" for="country">Country</label><br/><select id="country" name="country">
 						<?php 
-							foreach($state in $states) {
+							foreach($states as $state) {
 								echo "<option value='$state'>$state</option>";
 							}
 						?>
