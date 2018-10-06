@@ -32,6 +32,13 @@ session_start();
 		$mahoganyQty = $_POST["mahoganyQty"];
 		$cedarQty = $_POST["cedarQty"];
 		$beachQty = $_POST["beachQty"];
+
+		$items[] = $_SESSION["items"];
+		
+		$items["pineQty"] = $pineQty;
+		$items["mahoganyQty"] = $mahoganyQty;
+		$items["cedarQty"] = $cedarQty;
+		$items["beachQty"] = $beachQty;
 	?>
 
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
@@ -61,7 +68,9 @@ session_start();
 			<div class="col-md">
 				<p>A beautiful dark Mahogany coffin that goes with anything. The smooth finish is always a pleaser.</p>
 				<form id="mahoganyCoffin" action="coffins.php" method="post">
-					<label for="mahoganyQty">Qty</label><input type="number" class="cartQty" id="mahoganyQty" name="mahoganyQty" min="0" placeholder="0"> at $2,500 each<br/>
+					<label for="mahoganyQty">Qty</label><input type="number" class="cartQty" id="mahoganyQty" name="mahoganyQty" min="0" placeholder="0"
+						<?php echo "value='$mahoganyQty'";?>
+					> at $2,500 each<br/>
 					<input type="submit" id="mahoganySubmit" name="mahoganySubmit" class="btnAddCart" value="Add to Cart">
 				</form>
 			</div>
@@ -73,7 +82,9 @@ session_start();
 			<div class="col-md">
 				<p>This deluxe Cedar coffin is perfect for everyone. The hand carved finish work makes it one of our most beautiful products.</p>
 				<form id="cedarCoffin" action="coffins.php" method="post">
-					<label for="cedarQty">Qty </label><input type="number" class="cartQty" id="cedarQty" name="cedarQty" min="0" placeholder="0"> at $3,500 each<br/>
+					<label for="cedarQty">Qty </label><input type="number" class="cartQty" id="cedarQty" name="cedarQty" min="0" placeholder="0"
+						<?php echo "value='$cedarQty'";?>
+					> at $3,500 each<br/>
 					<input type="submit" id="cedarSubmit" name="cedarSubmit" class="btnAddCart" value="Add to Cart">
 				</form>
 			</div>
@@ -85,7 +96,9 @@ session_start();
 			<div class="col-md">
 				<p>The beautiful hand painted beach finish on this coffin is sure to lighten the mood. This is especially popular among those who love aquatics.</p>
 				<form id="beachCoffin" action="coffins.php" method="post">
-					<label for="beachQty">Qty</label><input type="number" class="cartQty" id="beachQty" name="beachQty" min="0" placeholder="0"> at $4,500 each<br/>
+					<label for="beachQty">Qty</label><input type="number" class="cartQty" id="beachQty" name="beachQty" min="0" placeholder="0"
+						<?php echo "value='$beachQty'";?>
+					> at $4,500 each<br/>
 					<input type="submit" id="beachSubmit" name="beachSubmit" class="btnAddCart" value="Add to Cart">
 				</form>
 			</div>
