@@ -13,13 +13,21 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
 	$items = array();
 
 	// add items to the array if they were submitted via post
-	if($pineQty>0) $items["pineQty] = $pineQty; 
+	if($pineQty>0) {
+		$items["pineQty] = $pineQty; 
+	}
+
+	if($mahoganyQty>0) {
+		$items["mahoganyQty"] = $mahoganyQty; 
+	}
+
+	if($cedarQty>0) {
+		$items["cedarQty"] = $cedarQty;
+	}
 	
-	if($mahoganyQty>0) $items["mahoganyQty"] = $mahoganyQty; 
-	
-	if($cedarQty>0) $items["cedarQty"] = $cedarQty;
-	
-	if($beachQty>0) $items["beachQty"] = $beachQty;
+	if($beachQty>0) {
+		$items["beachQty"] = $beachQty;
+	}
 
 	// get the session array
 	$sessionItem = $_SESSION["items"];
