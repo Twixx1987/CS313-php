@@ -51,24 +51,24 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 		<form id="checkout" action="confirmation.php" method="post">
 			<div class="row">
 				<div class="col">
-					<label class="label" for="firstName">First Name</label><br/><input type="text" id="firstName" name="firstName" placeholder="First Name"><br/> 
+					<label class="label" for="firstName">First Name</label><br/><input type="text" id="firstName" name="firstName" placeholder="First Name" required><br/> 
 				</div>
 				<div class="col">
-					<label class="label" for="lastName">Last Name</label><br/><input type="text" id="lastName" name="lastName" placeholder="Last Name"><br/> 
+					<label class="label" for="lastName">Last Name</label><br/><input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br/> 
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<label class="label" for="street1">Street address</label><br/><input type="text" id="street1" name="street1" placeholder="Street address line 1"><br/>
+					<label class="label" for="street1">Street address</label><br/><input type="text" id="street1" name="street1" placeholder="Street address line 1" required><br/>
 					<input type="text" id="street2" name="street2" placeholder="Street address line 2"><br/> 
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<label class="label" for="city">City</label><br/><input type="text" id="city" name="city" placeholder="City"><br/> 
+					<label class="label" for="city">City</label><br/><input type="text" id="city" name="city" placeholder="City" required><br/> 
 				</div>
 				<div class="col">
-					<label class="label" for="state">State</label><br/><select id="state" name="state">
+					<label class="label" for="state">State</label><br/><select id="state" name="state" required>
 						<?php 
 							foreach($states as $state) {
 								echo "<option value='$state'>$state</option>";
@@ -79,10 +79,10 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 			</div>
 			<div class="row">
 				<div class="col">
-					<label class="label" for="zip">Zip Code</label><br/><input type="number" id="zip" name="zip" placeholder="Zip Code"><br/> 
+					<label class="label" for="zip">Zip Code</label><br/><input type="number" id="zip" name="zip" placeholder="Zip Code" required><br/> 
 				</div>
 				<div class="col">
-					<label class="label" for="country">Country</label><br/><select id="country" name="country">
+					<label class="label" for="country">Country</label><br/><select id="country" name="country" required>
 						<?php 
 							foreach($countries as $country) {
 								echo "<option value='$country'"
@@ -98,7 +98,7 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 			<hr></hr>
 			<div class="row">
 				<div class="col">
-					<a href="cart.php" role="button" id="cartReturn" name="submit" class="btnAddCart btn btn-warning">Return to Cart</a><br/>
+					<input type="submit" formaction="cart.php" id="cartReturn" name="submit" class="btnAddCart btn btn-warning" value="Return to Cart"><br/>
 				</div>
 				<div class="col">
 					<input type="submit" role="button" id="checkoutSubmit" name="submit" class="btnAddCart btn btn-success" value="Finalize Purchase"><br/>
