@@ -3,17 +3,19 @@
 session_start();
 
 // get the session variable values
-$items = array_merge($_SESSION["coffins"], $_SESSION["tools"], $_SESSION["computers"]);
+$coffins = $_SESSION["coffins"];
+$computers = $_SESSION["computers"];
+$tools = $_SESSION["tools"];
 
 // get the individual items
-$pineQty = $items["pineQty"];
-$mahoganyQty = $items["mahoganyQty"];
-$cedarQty = $items["cedarQty"];
-$beachQty = $items["beachQty"];
-$blueQty = $items["blueQty"];
-$pinkQty = $items["pinkQty"];
-$dellQty = $items["dellQty"];
-$compQty = $items["compQty"];
+$pineQty = $coffins["pineQty"];
+$mahoganyQty = $coffins["mahoganyQty"];
+$cedarQty = $coffins["cedarQty"];
+$beachQty = $coffins["beachQty"];
+$dellQty = $computers["dellQty"];
+$compQty = $computers["compQty"];
+$blueQty = $tools["blueQty"];
+$pinkQty = $tools["pinkQty"];
 
 ?>
 
