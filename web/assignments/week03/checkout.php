@@ -52,24 +52,24 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 			<p class="required">* Indicates required fields</p>
 			<div class="row">
 				<div class="col">
-					<label class="label" for="firstName">First Name</label><br/><input type="text" id="firstName" name="firstName" placeholder="First Name" required><span class="required">*</span><br/> 
+					<label class="label" for="firstName">First Name<span class="required">*</span></label><br/><input type="text" id="firstName" name="firstName" placeholder="First Name" required><br/> 
 				</div>
 				<div class="col">
-					<label class="label" for="lastName">Last Name</label><br/><input type="text" id="lastName" name="lastName" placeholder="Last Name" required><span class="required">*</span><br/> 
+					<label class="label" for="lastName">Last Name<span class="required">*</span></label><br/><input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br/> 
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<label class="label" for="street1">Street address</label><br/><input type="text" id="street1" name="street1" placeholder="Street address line 1" required><span class="required">*</span><br/>
+					<label class="label" for="street1">Street address<span class="required">*</span></label><br/><input type="text" id="street1" name="street1" placeholder="Street address line 1" required><br/>
 					<input type="text" id="street2" name="street2" placeholder="Street address line 2"><br/> 
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<label class="label" for="city">City</label><br/><input type="text" id="city" name="city" placeholder="City" required><span class="required">*</span><br/> 
+					<label class="label" for="city">City<span class="required">*</span></label><br/><input type="text" id="city" name="city" placeholder="City" required><br/> 
 				</div>
 				<div class="col">
-					<label class="label" for="state">State</label><br/><select id="state" name="state">
+					<label class="label" for="state">State<span class="required">*</span></label><br/><select id="state" name="state">
 						<?php 
 							foreach($states as $state) {
 								echo "<option value='$state'>$state</option>";
@@ -80,10 +80,10 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 			</div>
 			<div class="row">
 				<div class="col">
-					<label class="label" for="zip">Zip Code</label><br/><input type="number" id="zip" name="zip" placeholder="Zip Code" required><span class="required">*</span><br/> 
+					<label class="label" for="zip">Zip Code<span class="required">*</span></label><br/><input type="number" id="zip" name="zip" placeholder="Zip Code" required><br/> 
 				</div>
 				<div class="col">
-					<label class="label" for="country">Country</label><br/><select id="country" name="country">
+					<label class="label" for="country">Country<span class="required">*</span></label><br/><select id="country" name="country">
 						<?php 
 							foreach($countries as $country) {
 								echo "<option value='$country'";
