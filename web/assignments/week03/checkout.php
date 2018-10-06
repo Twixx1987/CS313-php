@@ -31,10 +31,13 @@ session_start();
 
     <h1 class="pagetitle container">Coffins and More</h1>
 	<div class="menu container">
-		<?php include "../../top_menu.php"; ?>
+		<?php include "shopping_menu.php"; ?>
 	</div>
 	<div class="container">
 		<h2>Checkout</h2>
+	</div>
+	<div class="menu container">
+		<?php include "../../top_menu.php"; ?>
 	</div>
 </body>
 </html>

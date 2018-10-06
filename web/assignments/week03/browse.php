@@ -31,7 +31,7 @@ session_start();
 
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
-		<?php include "../../top_menu.php"; ?>
+		<?php include "shopping_menu.php"; ?>
 	</div>
 	<div class="container">
 		<h2>Our Catalog</h2>
@@ -77,6 +77,9 @@ session_start();
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
+	</div>
+	<div class="menu container">
+		<?php include "../../top_menu.php"; ?>
 	</div>
 </body>
 </html>
