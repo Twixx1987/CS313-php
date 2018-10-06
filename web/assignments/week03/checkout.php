@@ -51,7 +51,7 @@ $states = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Color
 		<form id="checkout" action="confirmation.php" method="post">
 			<div class="row">
 				<div class="col">
-					<label class="label" for="firstName">First Name</label><br/><input type="text" id="firstName" name="firstName" placeholder="First Name" required><br/> 
+					<label class="label" for="firstName">First Name</label><br/><input type="text" id="firstName" name="firstName" placeholder="First Name"><br/> 
 				</div>
 				<div class="col">
 					<label class="label" for="lastName">Last Name</label><br/><input type="text" id="lastName" name="lastName" placeholder="Last Name"><br/> 
