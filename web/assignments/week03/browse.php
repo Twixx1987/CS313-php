@@ -48,7 +48,7 @@ session_start();
 						<p>We have a large selection of stock and custom coffins.</p>
 					</div>
 					<a href="coffins.php">
-						<img class="rounded mx-auto d-block" src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:600px; height:600px;" alt="Deluxe Pine Coffin">
+						<img class="carouselImage rounded mx-auto d-block" src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" alt="Deluxe Pine Coffin">
 					</a>
 				</div>
 				<div class="carousel-item">

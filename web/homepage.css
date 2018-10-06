@@ -10,6 +10,12 @@ body
     @include rounded;
 }
 
+.carouselImage
+{
+    max-width: 600px; 
+    max-height: 600px; 
+}
+
 .cartQty
 {
     @include border;
