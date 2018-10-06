@@ -44,6 +44,7 @@ function cleanInputs($data) {
     <title>Catalog</title>
 </head>
 <body>
+<?php echo "<div>$_SESSION['items']</div>"; ?>
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "shopping_menu.php"; ?>
@@ -51,60 +52,54 @@ function cleanInputs($data) {
 	<div class="container">
 		<h2>The Coffins Catalog</h2>
 		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:401px; height:300px;" alt="Deluxe Pine Coffin">
-			</div>
-			<div class="col-md">
-				<p>A simple yet rustic coffin for a reasonable price. This is made of solid pine planks giving it that beautiful rustic look.</p>
-				<form id="pineCoffin" action="coffins.php" method="post">
+			<form id="coffins" action="coffins.php" method="post">
+				<div class="col-sm mx-auto">
+					<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:401px; height:300px;" alt="Deluxe Pine Coffin">
+				</div>
+				<div class="col-md">
+					<p>A simple yet rustic coffin for a reasonable price. This is made of solid pine planks giving it that beautiful rustic look.</p>
 					<label for="pineQty">Qty</label><input type="number" class="cartQty" id="pineQty" name="pineQty" min="0" placeholder="0" 
 						<?php echo "value='$pineQty'";?>
 					> at $1,500 each<br/>
 					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Add to Cart">
-				</form>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:300px; height:300px;" alt="Deluxe Mahogany Coffin">
-			</div>
-			<div class="col-md">
-				<p>A beautiful dark Mahogany coffin that goes with anything. The smooth finish is always a pleaser.</p>
-				<form id="mahoganyCoffin" action="coffins.php" method="post">
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:300px; height:300px;" alt="Deluxe Mahogany Coffin">
+				</div>
+				<div class="col-md">
+					<p>A beautiful dark Mahogany coffin that goes with anything. The smooth finish is always a pleaser.</p>
 					<label for="mahoganyQty">Qty</label><input type="number" class="cartQty" id="mahoganyQty" name="mahoganyQty" min="0" placeholder="0"
 						<?php echo "value='$mahoganyQty'";?>
 					> at $2,500 each<br/>
 					<input type="submit" id="mahoganySubmit" name="mahoganySubmit" class="btnAddCart" value="Add to Cart">
-				</form>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="http://newhavenfunerals.com.au/wp-content/uploads/2014/05/ASHURST-CEDAR.jpg" style="width:425px; height:300px;" alt="Deluxe Cedar Coffin">
-			</div>
-			<div class="col-md">
-				<p>This deluxe Cedar coffin is perfect for everyone. The hand carved finish work makes it one of our most beautiful products.</p>
-				<form id="cedarCoffin" action="coffins.php" method="post">
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="http://newhavenfunerals.com.au/wp-content/uploads/2014/05/ASHURST-CEDAR.jpg" style="width:425px; height:300px;" alt="Deluxe Cedar Coffin">
+				</div>
+				<div class="col-md">
+					<p>This deluxe Cedar coffin is perfect for everyone. The hand carved finish work makes it one of our most beautiful products.</p>
 					<label for="cedarQty">Qty </label><input type="number" class="cartQty" id="cedarQty" name="cedarQty" min="0" placeholder="0"
 						<?php echo "value='$cedarQty'";?>
 					> at $3,500 each<br/>
 					<input type="submit" id="cedarSubmit" name="cedarSubmit" class="btnAddCart" value="Add to Cart">
-				</form>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="https://i0.wp.com/newhavenfunerals.com.au/wp-content/uploads/2014/05/BEACH-FISHING.jpg" style="width:449px; height:300px;" alt="Deluxe Beach Coffin">
-			</div>
-			<div class="col-md">
-				<p>The beautiful hand painted beach finish on this coffin is sure to lighten the mood. This is especially popular among those who love aquatics.</p>
-				<form id="beachCoffin" action="coffins.php" method="post">
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="https://i0.wp.com/newhavenfunerals.com.au/wp-content/uploads/2014/05/BEACH-FISHING.jpg" style="width:449px; height:300px;" alt="Deluxe Beach Coffin">
+				</div>
+				<div class="col-md">
+					<p>The beautiful hand painted beach finish on this coffin is sure to lighten the mood. This is especially popular among those who love aquatics.</p>
 					<label for="beachQty">Qty</label><input type="number" class="cartQty" id="beachQty" name="beachQty" min="0" placeholder="0"
 						<?php echo "value='$beachQty'";?>
 					> at $4,500 each<br/>
 					<input type="submit" id="beachSubmit" name="beachSubmit" class="btnAddCart" value="Add to Cart">
-				</form>
-			</div>
+				</div>
+			</form>
 		</div>
 	</div>
 	<div class="menu container">
