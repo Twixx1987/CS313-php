@@ -70,7 +70,7 @@ function cleanInputs($data) {
 					<label for="dellQty">Qty</label><input type="number" class="cartQty" id="dellQty" name="dellQty" min="0" placeholder="0"
 						<?php echo "value='$dellQty'";?>
 					> at $500 each<br/>
-					<input type="submit" role="button" id="dellSubmit" name="dellSubmit" class="btnAddCart" value="Add to Cart">
+					<input type="submit" role="button" id="dellSubmit" name="dellSubmit" class="btnAddCart btn btn-secondary" value="Add to Cart">
 				</div>
 			</div>
 			<div class="row">
@@ -82,7 +82,7 @@ function cleanInputs($data) {
 					<label for="compQty">Qty</label><input type="number" class="cartQty" id="compQty" name="compQty" min="0" placeholder="0"
 						<?php echo "value='$compQty'";?>
 					> at $1,500 each<br/>
-					<input type="submit" role="button" id="compSubmit" name="compSubmit" class="btnAddCart" value="Add to Cart">
+					<input type="submit" role="button" id="compSubmit" name="compSubmit" class="btnAddCart btn btn-secondary" value="Add to Cart">
 				</div>
 			</div>
 		</form>
