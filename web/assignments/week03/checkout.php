@@ -36,7 +36,7 @@ session_start();
 	</div>
 	<div class="container">
 		<h2>Checkout</h2>
-		<form id="checkout" action="checkout.php" method="post">
+		<form id="checkout" action="confirmation.php" method="post">
 			<div class="row">
 				<div class="col">
 					<label for="firstName">First Name</label><br/><input type="text" id="firstName" name="firstName" placeholder="First Name"><br/> 
