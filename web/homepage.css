@@ -12,8 +12,7 @@ body
 
 .carouselImage
 {
-    @include px-auto;
-    @include mx-auto;
+    @include w-100;
 }
 
 .cartQty
