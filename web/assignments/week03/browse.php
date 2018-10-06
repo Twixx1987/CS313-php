@@ -48,7 +48,7 @@ session_start();
 						<p>We have a large selection of stock and custom coffins.</p>
 					</div>
 					<a href="coffins.php">
-						<img class="carouselImage" src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:802px; height:600px;" alt="Deluxe Pine Coffin">
+						<img class="carouselImage" src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:600px; height:600px;" alt="Deluxe Pine Coffin">
 					</a>
 				</div>
 				<div class="carousel-item">
@@ -56,7 +56,7 @@ session_start();
 						<p>Our computer selection is noteable.</p>
 					</div>
 					<a href="computers.php">
-						<img class="carouselImage" src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:449px; height:600px;" alt="Deluxe Computer">
+						<img class="carouselImage" src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:600px; height:600px;" alt="Deluxe Computer">
 					</a>
 				</div>
 				<div class="carousel-item">
