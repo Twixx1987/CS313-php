@@ -12,6 +12,7 @@ body
 
 .carouselImage
 {
+    @include d-block;
     @include w-100;
 }
 
