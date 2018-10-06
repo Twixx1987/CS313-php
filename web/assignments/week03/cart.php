@@ -111,7 +111,7 @@ function cleanInputs($data) {
 	<div class="container">
 		<h2>Cart</h2>
 		<form id="cart" action="cart.php" method="post">
-			<div class="row">
+			<div class="row <?php echo if($pineQty>0) 'invisible'; else 'visible';?>">
 				<div class="col-sm mx-auto">
 					<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:200px; height:150px;" alt="Deluxe Pine Coffin">
 				</div>

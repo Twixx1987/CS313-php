@@ -25,10 +25,7 @@ session_start();
     <title>Order Confirmation</title>
 </head>
 <body>
-    <?php
-		$_SESSION["items[]"];
-	?>
-
+<?php print_r($_SESSION); ?>
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "shopping_menu.php"; ?>
