@@ -48,94 +48,132 @@ $pinkQty = $tools["pinkQty"];
 	</div>
 	<div class="container">
 		<h2>Cart</h2>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:200px; height:150px;" alt="Deluxe Pine Coffin">
+		<form id="cart" action="cart.php" method="post">
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:200px; height:150px;" alt="Deluxe Pine Coffin">
+				</div>
+				<div class="col-md">
+					<label for="pineQty">Qty</label><input type="number" class="cartQty" id="pineQty" name="pineQty" min="0" placeholder="0" 
+						<?php echo "value='$pineQty'";?>
+					> @ $1,500 each</p>
+				</div>
+				<div class="col-md">
+					<p>Subtotal $<?php echo $pineQty*1500; ?></p>
+				</div>
+				<div class="col-sm">
+					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+				</div>
 			</div>
-			<div class="col-md">
-				<p>Qty <?php echo $pineQty; ?> @ $1,500 each</p>
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:150px; height:150px;" alt="Deluxe Mahogany Coffin">
+				</div>
+				<div class="col-md">
+					<p>Qty <?php echo $mahoganyQty;?> @ $2,500 each</p>
+				</div>
+				<div class="col-md">
+					<p>Subtotal $<?php echo $mahoganyQty*2500; ?></p>
+				</div>
+				<div class="col-sm">
+					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+				</div>
 			</div>
-			<div class="col-md">
-				<p>Subtotal $<?php echo $pineQty*1500; ?></p>
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="http://newhavenfunerals.com.au/wp-content/uploads/2014/05/ASHURST-CEDAR.jpg" style="width:213px; height:150px;" alt="Deluxe Cedar Coffin">
+				</div>
+				<div class="col-md">
+					<p>Qty <?php echo $cedarQty;?> @ $3,500 each</p>
+				</div>
+				<div class="col-md">
+					<p>Subtotal $<?php echo $mahoganyQty*3500; ?></p>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="https://static.turbosquid.com/Preview/2014/07/11__22_47_27/Coffin2_2.jpgb9394da4-5103-4409-9c3b-07fbc28eeaf1Original.jpg" style="width:150px; height:150px;" alt="Deluxe Mahogany Coffin">
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img class="mx-auto" src="https://i0.wp.com/newhavenfunerals.com.au/wp-content/uploads/2014/05/BEACH-FISHING.jpg" style="width:225px; height:150px;" alt="Deluxe Beach Coffin">
+				</div>
+				<div class="col-md">
+					<p>Qty <?php echo $beachQty;?> @ $4,500 each</p>
+				</div>
+				<div class="col-md">
+					<p>Subtotal $<?php echo $beachQty*4500; ?></p>
+				</div>
+				<div class="col-sm">
+					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+				</div>
 			</div>
-			<div class="col-md">
-				<p>Qty <?php echo $mahoganyQty;?> @ $2,500 each</p>
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:150px; height:150px;" alt="Industrial Dell Computer">
+				</div>
+				<div class="col-md">
+					<p>Qty <?php echo $dellQty; ?> @ $500 each</p>
+				</div>
+				<div class="col-md">
+					<p>Subtotal $<?php echo $dellQty*500; ?></p>
+				</div>
+				<div class="col-sm">
+					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+				</div>
 			</div>
-			<div class="col-md">
-				<p>Subtotal $<?php echo $mahoganyQty*2500; ?></p>
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:112px; height:150px;" alt="Deluxe Computer">
+				</div>
+				<div class="col-md">
+					<p>Qty <?php echo $compQty; ?> @ $1,500 each</p>
+				</div>
+				<div class="col-md">
+					<p>Subtotal $<?php echo $compQty*1500; ?></p>
+				</div>
+				<div class="col-sm">
+					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="http://newhavenfunerals.com.au/wp-content/uploads/2014/05/ASHURST-CEDAR.jpg" style="width:213px; height:150px;" alt="Deluxe Cedar Coffin">
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Blue">
+				</div>
+				<div class="col-md">
+					<p>Qty <?php echo $blueQty; ?> @ $40 each</p>
+				</div>
+				<div class="col-md">
+					<p>Subtotal $<?php echo $blueQty*40; ?></p>
+				</div>
+				<div class="col-sm">
+					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+				</div>
 			</div>
-			<div class="col-md">
-				<p>Qty <?php echo $cedarQty;?> @ $3,500 each</p>
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Pink">
+				</div>
+				<div class="col-md">
+					<p>Qty <?php echo $pinkQty; ?> @ $40 each</p>
+				</div>
+				<div class="col-md">
+					<p>Subtotal $<?php echo $pinkQty*40; ?></p>
+				</div>
+				<div class="col-sm">
+					<input type="submit" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Update Cart">
+				</div>
 			</div>
-			<div class="col-md">
-				<p>Subtotal $<?php echo $mahoganyQty*3500; ?></p>
+			<div class="row">
+				<div class="col-sm">
+				</div>
+				<div class="col-md">
+					<h3>Total Number of Items <?php echo $pineQty + $mahoganyQty + $cedarQty + $beachQty + $dellQty + $compQty + $blueQty + $pinkQty; ?></h3>
+				</div>
+				<div class="col-md">
+					<h3>Total $<?php echo $pineQty*1500 + $mahoganyQty*2500 + $cedarQty*3500 + $beachQty*4500 + $dellQty*500 + $compQty*1500 + $blueQty*40 + $pinkQty*40; ?></h3>
+				</div>
+				<div class="col-sm">
+					<input type="button" id="pineSubmit" name="pineSubmit" class="btnAddCart" value="Checkout">
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img class="mx-auto" src="https://i0.wp.com/newhavenfunerals.com.au/wp-content/uploads/2014/05/BEACH-FISHING.jpg" style="width:225px; height:150px;" alt="Deluxe Beach Coffin">
-			</div>
-			<div class="col-md">
-				<p>Qty <?php echo $beachQty;?> @ $4,500 each</p>
-			</div>
-			<div class="col-md">
-				<p>Subtotal $<?php echo $beachQty*4500; ?></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:150px; height:150px;" alt="Industrial Dell Computer">
-			</div>
-			<div class="col-md">
-				<p>Qty <?php echo $dellQty; ?> @ $500 each</p>
-			</div>
-			<div class="col-md">
-				<p>Subtotal $<?php echo $dellQty*500; ?></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:112px; height:150px;" alt="Deluxe Computer">
-			</div>
-			<div class="col-md">
-				<p>Qty <?php echo $compQty; ?> @ $1,500 each</p>
-			</div>
-			<div class="col-md">
-				<p>Subtotal $<?php echo $compQty*1500; ?></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Blue">
-			</div>
-			<div class="col-md">
-				<p>Qty <?php echo $blueQty; ?> @ $40 each</p>
-			</div>
-			<div class="col-md">
-				<p>Subtotal $<?php echo $blueQty*40; ?></p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" style="width:150px; height:150px;" alt="Deluxe Children's Toolset - Pink">
-			</div>
-			<div class="col-md">
-				<p>Qty <?php echo $pinkQty; ?> @ $40 each</p>
-			</div>
-			<div class="col-md">
-				<p>Subtotal $<?php echo $pinkQty*40; ?></p>
-			</div>
-		</div>
+		</form>
 	</div>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>
