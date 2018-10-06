@@ -1,6 +1,41 @@
 <?php
 //start the session
 session_start();
+
+// get the input data
+if($_SERVER["REQUEST_METHOD"]=="POST") {
+	$dellQty = cleanInputs($_POST["dellQty"]);
+	$compQty = cleanInputs($_POST["compQty"]);
+
+	// Create an Array of items
+	$items = array();
+
+	// add items to the array if they were submitted via post
+	if($dellQty>0) {
+		$items["dellQty"] = $dellQty; 
+	}
+
+	if($compQty>0) {
+		$items["compQty"] = $compQty; 
+	}
+
+	// get the session array
+	$sessionItem = $_SESSION["items"];
+
+	// merge new array with the session array
+	$merged = array_merge($sessionItems, $items);
+
+	// set the session variable
+	$_SESSION["items"] = $items;
+}
+
+// a function to clean the data
+function cleanInputs($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
 ?>
 
 <!DOCTYPE html>
@@ -25,40 +60,34 @@ session_start();
     <title>Computers</title>
 </head>
 <body>
-	<?php
-		$_SESSION["items[]"];
-	?>
-
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "shopping_menu.php"; ?>
 	</div>
 	<div class="container">
 		<h2>The Computers Catalog</h2>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:300px; height:300px;" alt="Industrial Dell Computer">
-			</div>
-			<div class="col-md">
-				<p>This industrial strength Dell computer is perfect for all but the heavy users. Just add a monitor, mouse, and keyboard and you will be set.</p>
-				<form id="dellComp" action="computers.php" method="post">
+		<form id="computers" action="computers.php" method="post">
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="http://www.device.pl/content/images/thumbs/0002415_dell-optiplex-380-pentium-dc.jpeg" style="width:300px; height:300px;" alt="Industrial Dell Computer">
+				</div>
+				<div class="col-md">
+					<p>This industrial strength Dell computer is perfect for all but the heavy users. Just add a monitor, mouse, and keyboard and you will be set.</p>
 					<label for="dellQty">Qty</label><input type="number" class="cartQty" id="dellQty" name="dellQty" min="0" placeholder="0"> at $500 each<br/>
 					<input type="submit" id="dellSubmit" name="dellSubmit" class="btnAddCart" value="Add to Cart">
-				</form>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:224px; height:300px;" alt="Deluxe Computer">
-			</div>
-			<div class="col-md">
-				<p>Though this computer appears to be from a bygone age, it is truly a powerhouse. The casing is just a facade to help protect your assets.</p>
-				<form id="powerComp" action="computers.php" method="post">
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="https://thumbs.dreamstime.com/b/old-computer-6729508.jpg" style="width:224px; height:300px;" alt="Deluxe Computer">
+				</div>
+				<div class="col-md">
+					<p>Though this computer appears to be from a bygone age, it is truly a powerhouse. The casing is just a facade to help protect your assets.</p>
 					<label for="compQty">Qty</label><input type="number" class="cartQty" id="compQty" name="compQty" min="0" placeholder="0"> at $1,500 each<br/>
 					<input type="submit" id="compSubmit" name="compSubmit" class="btnAddCart" value="Add to Cart">
-				</form>
+				</div>
 			</div>
-		</div>
+		</form>
 	</div>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>

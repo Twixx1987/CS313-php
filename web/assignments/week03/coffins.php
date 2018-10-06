@@ -70,15 +70,14 @@ function cleanInputs($data) {
     <title>Catalog</title>
 </head>
 <body>
-<?php print_r($_SESSION); ?>
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "shopping_menu.php"; ?>
 	</div>
 	<div class="container">
 		<h2>The Coffins Catalog</h2>
-		<div class="row">
-			<form id="coffins" action="coffins.php" method="post">
+		<form id="coffins" action="coffins.php" method="post">
+			<div class="row">
 				<div class="col-sm mx-auto">
 					<img src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:401px; height:300px;" alt="Deluxe Pine Coffin">
 				</div>
@@ -125,8 +124,8 @@ function cleanInputs($data) {
 					> at $4,500 each<br/>
 					<input type="submit" id="beachSubmit" name="beachSubmit" class="btnAddCart" value="Add to Cart">
 				</div>
-			</form>
-		</div>
+			</div>
+		</form>
 	</div>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>

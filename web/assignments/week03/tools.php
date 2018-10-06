@@ -1,6 +1,41 @@
 <?php
 //start the session
 session_start();
+
+// get the input data
+if($_SERVER["REQUEST_METHOD"]=="POST") {
+	$blueQty = cleanInputs($_POST["blueQty"]);
+	$pinkQty = cleanInputs($_POST["pinkQty"]);
+	
+	// Create an Array of items
+	$items = array();
+
+	// add items to the array if they were submitted via post
+	if($pineQty>0) {
+		$items["blueQty"] = $blueQty; 
+	}
+
+	if($mahoganyQty>0) {
+		$items["pinkQty"] = $pinkQty; 
+	}
+
+		// get the session array
+	$sessionItem = $_SESSION["items"];
+
+	// merge new array with the session array
+	$merged = array_merge($sessionItems, $items);
+
+	// set the session variable
+	$_SESSION["items"] = $items;
+}
+
+// a function to clean the data
+function cleanInputs($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
 ?>
 
 <!DOCTYPE html>
@@ -25,40 +60,34 @@ session_start();
     <title>Tools</title>
 </head>
 <body>
-	<?php
-		$_SESSION["items[]"];
-	?>
-
     <h1 class="pagetitle container"><a href="browse.php">Coffins and More</a></h1>
 	<div class="menu container">
 		<?php include "shopping_menu.php"; ?>
 	</div>
 	<div class="container">
 		<h2>The Tools Catalog</h2>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:300px; height:300px;" alt="Deluxe Children's Toolset - Blue">
-			</div>
-			<div class="col-md">
-				<p>Do you have a young one ready to create? This deluxe blue children's toolset is perfect for teaching your son how to work with his hands.</p>
-				<form id="blueTool" action="tools.php" method="post">
+		<form id="tools" action="tools.php" method="post">
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="http://woodworking-kids.com/content/2010/09/51EGTV0Xb2L._SL500_AA300_1.jpg" style="width:300px; height:300px;" alt="Deluxe Children's Toolset - Blue">
+				</div>
+				<div class="col-md">
+					<p>Do you have a young one ready to create? This deluxe blue children's toolset is perfect for teaching your son how to work with his hands.</p>
 					<label for="blueQty">Qty </label><input type="number" class="cartQty" id="blueQty" name="blueQty" min="0" placeholder="0"> at $40 each<br/>
 					<input type="submit" id="blueSubmit" name="blueSubmit" class="btnAddCart" value="Add to Cart">
-				</form>
+				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm mx-auto">
-				<img src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" style="width:300px; height:300px;" alt="Deluxe Children's Toolset - Pink">
-			</div>
-			<div class="col-md">
-				<p>Do you have an avid young engineer to be in your household? This deluxe pink children's toolset is perfect for teaching your daughter the tricks of the trade.</p>
-				<form id="pinkTool" action="tools.php" method="post">
+			<div class="row">
+				<div class="col-sm mx-auto">
+					<img src="https://grkids.com/wp-content/uploads/2013/06/grip-pink-set.jpg" style="width:300px; height:300px;" alt="Deluxe Children's Toolset - Pink">
+				</div>
+				<div class="col-md">
+					<p>Do you have an avid young engineer to be in your household? This deluxe pink children's toolset is perfect for teaching your daughter the tricks of the trade.</p>
 					<label for="pinkQty">Qty</label><input type="number" class="cartQty" id="pinkQty" name="pinkQty" min="0" placeholder="0"> at $40 each<br/>
 					<input type="submit" id="pinkSubmit" name="pinkSubmit" class="btnAddCart" value="Add to Cart">
-				</form>
+				</div>
 			</div>
-		</div>
+		</form>
 	</div>
 	<div class="menu container">
 		<?php include "../../top_menu.php"; ?>
