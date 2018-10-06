@@ -43,10 +43,10 @@ session_start();
 				<li data-target="#featuredProducts" data-slide-to="2"></li>
 			</ol>
 			<div class="carousel-inner bg-light">
+				<div class="carousel-item active">
 					<div class="subtext">
 						<p>We have a large selection of stock and custom coffins.</p>
 					</div>
-				<div class="carousel-item active">
 					<a href="coffins.php">
 						<img class="carouselImage mx-auto px-auto" src="http://www.goodfuneralguide.co.uk/wp-content/uploads/2013/01/Honest-Coffin.jpg" style="width:802px; height:600px;" alt="Deluxe Pine Coffin">
 					</a>
