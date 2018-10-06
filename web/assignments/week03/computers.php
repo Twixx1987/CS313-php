@@ -74,7 +74,9 @@ function cleanInputs($data) {
 				</div>
 				<div class="col-md">
 					<p>This industrial strength Dell computer is perfect for all but the heavy users. Just add a monitor, mouse, and keyboard and you will be set.</p>
-					<label for="dellQty">Qty</label><input type="number" class="cartQty" id="dellQty" name="dellQty" min="0" placeholder="0"> at $500 each<br/>
+					<label for="dellQty">Qty</label><input type="number" class="cartQty" id="dellQty" name="dellQty" min="0" placeholder="0"
+						<?php echo "value='$dellQty'";?>
+					> at $500 each<br/>
 					<input type="submit" id="dellSubmit" name="dellSubmit" class="btnAddCart" value="Add to Cart">
 				</div>
 			</div>
@@ -84,7 +86,9 @@ function cleanInputs($data) {
 				</div>
 				<div class="col-md">
 					<p>Though this computer appears to be from a bygone age, it is truly a powerhouse. The casing is just a facade to help protect your assets.</p>
-					<label for="compQty">Qty</label><input type="number" class="cartQty" id="compQty" name="compQty" min="0" placeholder="0"> at $1,500 each<br/>
+					<label for="compQty">Qty</label><input type="number" class="cartQty" id="compQty" name="compQty" min="0" placeholder="0"
+						<?php echo "value='$compQty'";?>
+					> at $1,500 each<br/>
 					<input type="submit" id="compSubmit" name="compSubmit" class="btnAddCart" value="Add to Cart">
 				</div>
 			</div>

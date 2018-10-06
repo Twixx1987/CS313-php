@@ -98,7 +98,7 @@ $compQty = $items["compQty"];
 				<p>Qty <?php echo $dellQty; ?> @ $500 each</p>
 			</div>
 			<div class="col-md">
-				<p>Subtotal $<?php $dellQty*500; ?></p>
+				<p>Subtotal $<?php echo $dellQty*500; ?></p>
 			</div>
 		</div>
 		<div class="row">
@@ -109,7 +109,7 @@ $compQty = $items["compQty"];
 				<p>Qty <?php echo $compQty; ?> @ $1,500 each</p>
 			</div>
 			<div class="col-md">
-				<p>Subtotal $<?php $compQty*1500; ?></p>
+				<p>Subtotal $<?php echo $compQty*1500; ?></p>
 			</div>
 		</div>
 		<div class="row">
@@ -120,7 +120,7 @@ $compQty = $items["compQty"];
 				<p>Qty <?php echo $blueQty; ?> @ $40 each</p>
 			</div>
 			<div class="col-md">
-				<p>Subtotal $<?php $blueQty*40; ?></p>
+				<p>Subtotal $<?php echo $blueQty*40; ?></p>
 			</div>
 		</div>
 		<div class="row">
@@ -131,7 +131,7 @@ $compQty = $items["compQty"];
 				<p>Qty <?php echo $pinkQty; ?> @ $40 each</p>
 			</div>
 			<div class="col-md">
-				<p>Subtotal $<?php $pinkQty*40; ?></p>
+				<p>Subtotal $<?php echo $pinkQty*40; ?></p>
 			</div>
 		</div>
 	</div>

@@ -74,7 +74,9 @@ function cleanInputs($data) {
 				</div>
 				<div class="col-md">
 					<p>Do you have a young one ready to create? This deluxe blue children's toolset is perfect for teaching your son how to work with his hands.</p>
-					<label for="blueQty">Qty </label><input type="number" class="cartQty" id="blueQty" name="blueQty" min="0" placeholder="0"> at $40 each<br/>
+					<label for="blueQty">Qty </label><input type="number" class="cartQty" id="blueQty" name="blueQty" min="0" placeholder="0"
+						<?php echo "value='$blueQty'";?>
+					> at $40 each<br/>
 					<input type="submit" id="blueSubmit" name="blueSubmit" class="btnAddCart" value="Add to Cart">
 				</div>
 			</div>
@@ -84,7 +86,9 @@ function cleanInputs($data) {
 				</div>
 				<div class="col-md">
 					<p>Do you have an avid young engineer to be in your household? This deluxe pink children's toolset is perfect for teaching your daughter the tricks of the trade.</p>
-					<label for="pinkQty">Qty</label><input type="number" class="cartQty" id="pinkQty" name="pinkQty" min="0" placeholder="0"> at $40 each<br/>
+					<label for="pinkQty">Qty</label><input type="number" class="cartQty" id="pinkQty" name="pinkQty" min="0" placeholder="0"
+						<?php echo "value='$pinkQty'";?>
+					> at $40 each<br/>
 					<input type="submit" id="pinkSubmit" name="pinkSubmit" class="btnAddCart" value="Add to Cart">
 				</div>
 			</div>
