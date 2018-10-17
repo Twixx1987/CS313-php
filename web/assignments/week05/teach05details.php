@@ -66,14 +66,12 @@ function cleanInputs($data) {
 			  die();
 			}
 
-			if($_SERVER["REQUEST_METHOD"]=="POST") {
-				$statement = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id=:id');
-				$statement->execute(array(':id' => $id));
-				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-				{
-				  echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
-				  echo ' - "' . $row['content'] . '"<br/>'; 
-				}
+			$statement = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id=:id');
+			$statement->execute(array(':id' => $id));
+			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+			{
+				echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
+				echo ' - "' . $row['content'] . '"<br/>'; 
 			}
 		?>
 	</div>
