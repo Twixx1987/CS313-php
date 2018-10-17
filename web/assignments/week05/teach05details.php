@@ -4,7 +4,7 @@ $book = "";
 
 // get the input data
 if($_SERVER["REQUEST_METHOD"]=="get") {
-	$id = cleanInputs($_POST["q"]);
+	$id = cleanInputs($_GET["q"]);
 }
 
 // a function to clean the data
