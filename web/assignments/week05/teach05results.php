@@ -68,8 +68,8 @@ function cleanInputs($data) {
 			  die();
 			}
 
-			$statement = $db->query('SELECT book, chapter, verse, id FROM scriptures WHERE book = :book');
-			$stmt->execute(array(':book' => $book));
+			$statement = $db->prepare('SELECT book, chapter, verse, id FROM scriptures WHERE book=:book');
+			$statement->execute(array(':book' => $book));
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
 				echo '<a href="teach05details.php"><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong></a><br/>'; 

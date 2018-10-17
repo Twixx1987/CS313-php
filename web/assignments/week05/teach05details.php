@@ -67,7 +67,8 @@ function cleanInputs($data) {
 			}
 
 			if($_SERVER["REQUEST_METHOD"]=="POST") {
-				$statement = $db->query('SELECT book, chapter, verse, content FROM scriptures WHERE book=' . $book);
+				$statement = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE book=:book');
+				$statement->execute(array(':book' => $book));
 				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 				{
 				  echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
