@@ -21,15 +21,16 @@
     <title>Scripture Resources</title>
 </head>
 <body>
-	<h1>Scripture Resources</h1>
+	<h1 class="pagetitle container">Scripture Resources</h1>
 	<div class="menu container">
 		<?php include '../../top_menu.php'; ?>
 	</div>
-	<form id="search" name="search" method="post" action="teach05results.php">
-		<label for="book">Enter the name of a book to search for content from it.</label><br />
-		<input type="text" name="book" id="book" placeholder="Book" <?php if ($_SERVER["REQUEST_METHOD"]=="POST") echo 'value="' . $book .'"';?>><br/>
-		<input type="submit" value="Submit" name="submit">
-	</form>
-
+	<div class="container">
+		<form id="search" name="search" method="post" action="teach05results.php">
+			<label for="book">Enter the name of a book to search for content from it.</label><br />
+			<input type="text" name="book" id="book" placeholder="Book" <?php if ($_SERVER["REQUEST_METHOD"]=="POST") echo 'value="' . $book .'"';?>><br/>
+			<input type="submit" value="Submit" name="submit">
+		</form>
+	</div>
 </body>
 </html>

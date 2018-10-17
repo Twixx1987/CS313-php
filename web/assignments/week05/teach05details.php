@@ -38,41 +38,43 @@ function cleanInputs($data) {
     <title>Scripture Resources</title>
 </head>
 <body>
-	<h1>Scripture Resources</h1>
+	<h1 class="pagetitle container">Scripture Details</h1>
 	<div class="menu container">
 		<?php include '../../top_menu.php'; ?>
 	</div>
-	<?php
-		try
-		{
-		  $dbUrl = getenv('DATABASE_URL');
-
-		  $dbOpts = parse_url($dbUrl);
-
-		  $dbHost = $dbOpts["host"];
-		  $dbPort = $dbOpts["port"];
-		  $dbUser = $dbOpts["user"];
-		  $dbPassword = $dbOpts["pass"];
-		  $dbName = ltrim($dbOpts["path"],'/');
-
-		  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-		  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		}
-		catch (PDOException $ex)
-		{
-		  echo 'Error!: ' . $ex->getMessage();
-		  die();
-		}
-
-		if($_SERVER["REQUEST_METHOD"]=="POST") {
-			$statement = $db->query('SELECT book, chapter, verse, content FROM scriptures WHERE book=' . $book);
-			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+	<div class="container">
+		<?php
+			try
 			{
-			  echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
-			  echo ' - "' . $row['content'] . '"<br/>'; 
+			  $dbUrl = getenv('DATABASE_URL');
+
+			  $dbOpts = parse_url($dbUrl);
+
+			  $dbHost = $dbOpts["host"];
+			  $dbPort = $dbOpts["port"];
+			  $dbUser = $dbOpts["user"];
+			  $dbPassword = $dbOpts["pass"];
+			  $dbName = ltrim($dbOpts["path"],'/');
+
+			  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+			  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			}
-		}
-	?>
+			catch (PDOException $ex)
+			{
+			  echo 'Error!: ' . $ex->getMessage();
+			  die();
+			}
+
+			if($_SERVER["REQUEST_METHOD"]=="POST") {
+				$statement = $db->query('SELECT book, chapter, verse, content FROM scriptures WHERE book=' . $book);
+				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+				{
+				  echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
+				  echo ' - "' . $row['content'] . '"<br/>'; 
+				}
+			}
+		?>
+	</div>
 </body>
 </html>

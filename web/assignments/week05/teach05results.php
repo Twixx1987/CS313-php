@@ -40,39 +40,41 @@ function cleanInputs($data) {
     <title>Scripture Resources</title>
 </head>
 <body>
-	<h1>Scripture Resources</h1>
+	<h1 class="pagetitle container">Scripture Results</h1>
 	<div class="menu container">
 		<?php include '../../top_menu.php'; ?>
 	</div>
-	<?php
-		try
-		{
-		  $dbUrl = getenv('DATABASE_URL');
+	<div class="container">
+		<?php
+			try
+			{
+				$dbUrl = getenv('DATABASE_URL');
 
-		  $dbOpts = parse_url($dbUrl);
+				$dbOpts = parse_url($dbUrl);
 
-		  $dbHost = $dbOpts["host"];
-		  $dbPort = $dbOpts["port"];
-		  $dbUser = $dbOpts["user"];
-		  $dbPassword = $dbOpts["pass"];
-		  $dbName = ltrim($dbOpts["path"],'/');
+				$dbHost = $dbOpts["host"];
+				$dbPort = $dbOpts["port"];
+				$dbUser = $dbOpts["user"];
+				$dbPassword = $dbOpts["pass"];
+				$dbName = ltrim($dbOpts["path"],'/');
 
-		  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+				$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
-		  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		}
-		catch (PDOException $ex)
-		{
-		  echo 'Error!: ' . $ex->getMessage();
-		  die();
-		}
+				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			}
+			catch (PDOException $ex)
+			{
+			  echo 'Error!: ' . $ex->getMessage();
+			  die();
+			}
 
-		$statement = $db->query('SELECT book, chapter, verse, id FROM scriptures WHERE book = :book');
-		$stmt->execute(array(':book' => $book));
-		while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-		{
-			echo '<a href="teach05details.php"><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong></a><br/>'; 
-		}
-	?>
+			$statement = $db->query('SELECT book, chapter, verse, id FROM scriptures WHERE book = :book');
+			$stmt->execute(array(':book' => $book));
+			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+			{
+				echo '<a href="teach05details.php"><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong></a><br/>'; 
+			}
+		?>
+	</div>
 </body>
 </html>
