@@ -1,4 +1,23 @@
+<?php
+// set variables for the inputs
+$book = "";
 
+// get the input data
+if($_SERVER["REQUEST_METHOD"]=="POST") {
+	$book = cleanInputs($_POST["book"]);
+}
+
+// a function to clean the data
+function cleanInputs($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	$data = strtolower($data);
+	$data = ucwords($data);
+	return $data;
+}
+
+?>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -26,11 +45,42 @@
 		<?php include '../../top_menu.php'; ?>
 	</div>
 	<div class="container">
-		<form id="search" name="search" method="post" action="teach05results.php">
+		<form id="search" name="search" method="post" action="teach05.php">
 			<label for="book">Enter the name of a book to search for content from it.</label><br />
 			<input type="text" name="book" id="book" placeholder="Book" <?php if ($_SERVER["REQUEST_METHOD"]=="POST") echo 'value="' . $book .'"';?>><br/>
 			<input type="submit" value="Submit" name="submit">
 		</form>
+		<h2 class="container">Results</h2>
+		<?php
+			try
+			{
+				$dbUrl = getenv('DATABASE_URL');
+
+				$dbOpts = parse_url($dbUrl);
+
+				$dbHost = $dbOpts["host"];
+				$dbPort = $dbOpts["port"];
+				$dbUser = $dbOpts["user"];
+				$dbPassword = $dbOpts["pass"];
+				$dbName = ltrim($dbOpts["path"],'/');
+
+				$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			}
+			catch (PDOException $ex)
+			{
+			  echo 'Error!: ' . $ex->getMessage();
+			  die();
+			}
+
+			$statement = $db->prepare('SELECT book, chapter, verse, id FROM scriptures WHERE book=:book');
+			$statement->execute(array(':book' => $book));
+			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+			{
+				echo '<a href="teach05details.php?id=' . $row['id'] . '"><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong></a><br/>'; 
+			}
+		?>
 	</div>
 </body>
 </html>
