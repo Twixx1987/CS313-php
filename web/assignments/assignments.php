@@ -51,10 +51,10 @@
 		</div>
 		<div class="row">
 			<div class="col-sm">
-			
+				<a class="btn btn-secondary" role="button" href="/assignments/week05/teach05.php">Teach 05 - PHP Database Access</a>
 			</div>
 			<div class="col-sm">
-			
+				<a class="btn btn-secondary" role="button" href="/assignments/week05/teach05.php">Teach 05 - PHP Database Access</a>
 			</div>
 		</div>
 		<div class="row">

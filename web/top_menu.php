@@ -10,6 +10,7 @@ echo '<ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-s
             <div class="dropdown-divider"></div>
             <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week02/teach02.php">Teach 02 - Web Refresher</a>
             <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week03/teach03.php">Teach 03 - PHP Forms</a>
+            <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week05/teach05.php">Teach 05 - PHP Database Access</a>
           </div>
         </li>
         <li class="nav-item dropdown flex-sm-fill text-sm-center">
@@ -19,6 +20,7 @@ echo '<ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-s
             <div class="dropdown-divider"></div>
             <a class="dropdown-item menu btn btn-secondary" role="button" href="/homepage.php">Ponder 02 - King\'s Initiative Blog</a>
             <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week03/browse.php">Ponder 03 - Shopping Cart</a>
+            <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week05/teach05.php">Teach 05 - PHP Database Access</a>
           </div>
         </li>
       </ul>';
