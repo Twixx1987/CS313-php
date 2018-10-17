@@ -3,8 +3,8 @@
 $book = "";
 
 // get the input data
-if($_SERVER["REQUEST_METHOD"]=="POST") {
-	$book = cleanInputs($_POST["book"]);
+if($_SERVER["REQUEST_METHOD"]=="get") {
+	$id = cleanInputs($_POST["q"]);
 }
 
 // a function to clean the data
@@ -67,8 +67,8 @@ function cleanInputs($data) {
 			}
 
 			if($_SERVER["REQUEST_METHOD"]=="POST") {
-				$statement = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE book=:book');
-				$statement->execute(array(':book' => $book));
+				$statement = $db->prepare('SELECT book, chapter, verse, content FROM scriptures WHERE id=:id');
+				$statement->execute(array(':id' => $id));
 				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 				{
 				  echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
