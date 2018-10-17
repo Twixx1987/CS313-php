@@ -12,6 +12,8 @@ function cleanInputs($data) {
 	$data = trim($data);
 	$data = stripslashes($data);
 	$data = htmlspecialchars($data);
+	$data = strtolower($data);
+	$data = ucwords($data);
 	return $data;
 }
 
@@ -52,10 +54,11 @@ function cleanInputs($data) {
 		}
 
 		if($_SERVER["REQUEST_METHOD"]=="POST") {
-			$statement = $db->query('SELECT book, chapter, verse, id FROM scriptures WHERE book=' . $book);
+			$statement = $db->query('SELECT book, chapter, verse, id FROM scriptures WHERE book=:book');
+			$stmt->execute(array(':book' => $book));
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
-			  echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong><br/>'; 
+			  echo '<a href="teach05details.php"><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong></a><br/>'; 
 			}
 		}
 	?>
