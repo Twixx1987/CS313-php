@@ -1,10 +1,10 @@
 <?php
 // set variables for the inputs
-$book = "";
+$id = "";
 
 // get the input data
-if($_SERVER["REQUEST_METHOD"]=="get") {
-	$id = cleanInputs($_GET["q"]);
+if($_SERVER["REQUEST_METHOD"]=="GET") {
+	$id = cleanInputs($_GET["id"]);
 }
 
 // a function to clean the data
