@@ -67,7 +67,7 @@ function cleanInputs($data) {
 		  die();
 		}
 
-		$statement = $db->query('SELECT book, chapter, verse, id FROM scriptures WHERE book=:book');
+		$statement = $db->query('SELECT book, chapter, verse, id FROM scriptures WHERE book = :book');
 		$stmt->execute(array(':book' => $book));
 		while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 		{
