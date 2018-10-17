@@ -72,7 +72,7 @@ function cleanInputs($data) {
 			$statement->execute(array(':book' => $book));
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 			{
-				echo '<a href="teach05details.php?q=' . $id . '"><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong></a><br/>'; 
+				echo '<a href="teach05details.php?q=' . $row['id'] . '"><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong></a><br/>'; 
 			}
 		?>
 	</div>
