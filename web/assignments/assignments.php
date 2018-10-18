@@ -32,6 +32,9 @@
 			<div class="col-sm">
 				<h2>Ponder Assignments</h2>
 			</div>
+			<div class="col-sm">
+				<h2>Projects</h2>
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm">
@@ -39,6 +42,9 @@
 			</div>
 			<div class="col-sm">
 				<a class="btn btn-secondary" role="button" href="homepage.php">Ponder 02 - King's Initiative Blog</a>
+			</div>
+			<div class="col-sm">
+				<a class="btn btn-secondary" role="button" href="/assignments/project1/rdilogin.php">Project 1 - Red Dragon Inn Tracker</a>
 			</div>
 		</div>
 		<div class="row">
@@ -48,6 +54,9 @@
 			<div class="col-sm">
 				<a class="btn btn-secondary" role="button" href="/assignments/week03/browse.php">Ponder 03 - Shopping Cart</a>
 			</div>
+			<div class="col-sm">
+			
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm">
@@ -55,11 +64,6 @@
 			</div>
 			<div class="col-sm">
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm">
-			
-			</div>
 			<div class="col-sm">
 			
 			</div>
@@ -68,11 +72,6 @@
 			<div class="col-sm">
 			
 			</div>
-			<div class="col-sm">
-			
-			</div>
-		</div>
-		<div class="row">
 			<div class="col-sm">
 			
 			</div>
@@ -87,11 +86,6 @@
 			<div class="col-sm">
 			
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm">
-			
-			</div>
 			<div class="col-sm">
 			
 			</div>
@@ -100,11 +94,6 @@
 			<div class="col-sm">
 			
 			</div>
-			<div class="col-sm">
-			
-			</div>
-		</div>
-		<div class="row">
 			<div class="col-sm">
 			
 			</div>
@@ -119,6 +108,9 @@
 			<div class="col-sm">
 			
 			</div>
+			<div class="col-sm">
+			
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm">
@@ -127,8 +119,58 @@
 			<div class="col-sm">
 			
 			</div>
+			<div class="col-sm">
+			
+			</div>
 		</div>
 		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+			<div class="col-sm">
+			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+			
+			</div>
 			<div class="col-sm">
 			
 			</div>
