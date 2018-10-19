@@ -1,5 +1,9 @@
 <?php 
-//start the session
+// upon navigating to the login page the session variables will be cleared and the session destroyed
+session_unset();
+session_destroy();
+
+// now start a new session for new login
 session_start();
 
 // include the DB connection
