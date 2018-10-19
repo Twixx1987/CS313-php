@@ -1,4 +1,10 @@
-<?php include 'rdidbconnect.php'; ?>
+<?php 
+//start the session
+session_start();
+
+// include the DB connection
+include 'rdidbconnect.php'; 
+?>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -21,7 +27,7 @@
     <title>RDI Home</title>
 </head>
 <body>
-	<h1 class="pagetitle container">RDI Home</h1>
+	<h1 class="pagetitle container">Welcome <?php echo $_SESSION['username'];?>!</h1>
 	<div class="menu container">
 		<?php include 'rdimenu.php'; ?>
 	</div>

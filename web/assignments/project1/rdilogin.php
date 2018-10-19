@@ -21,13 +21,14 @@ if (isset($_POST['username'])) {
 	{
 		// check to see if the username/password combo match the DB
 		if ($row['user_name'] == $username && $row['password'] == $password) {
-			// set the user_id session variable
+			// set the user_id and username to session variables
 			$_SESSION['user_id'] = $row['user_id'];
+			$_SESSION['username'] = $row['user_name'];
 
 			// clean the output buffer
 			ob_clean();
 			// redirect to the home page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
-			header('Location: http://' . $_SERVER['HTTP_HOST'] . '/rdihome.php', true, 303);
+			header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdihome.php', true, 303);
 
 			// terminate php script upon redirect
 			exit();
@@ -62,7 +63,7 @@ function cleanInputs($data) {
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="../assignments.js"></script>
+    <script src="rdi.js"></script>
 
     <!-- Page title -->
     <title>RDI Login</title>
@@ -73,9 +74,8 @@ function cleanInputs($data) {
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
-		<div class="container">
+		<div class="container error">
 			<p><?php echo $error;?></p>
-			<p><?php echo $_SESSION['user_id'];?></p>
 		</div>
 		<form id="login" name="login" method="post" action="rdilogin.php">
 			<label for="username">Username:</label><br/>
