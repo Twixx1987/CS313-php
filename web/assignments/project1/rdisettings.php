@@ -74,10 +74,10 @@
 						} 
 						echo '</label></td>';
 						echo '<td><input type="checkbox" id="character_' . $row['character_id'] . '" name="character_' . $row['character_id'] . '" value="' . $row['character'] . '"';
-						if ($_POST["'character_" . $row['character_id'] . "'"] == "'character_" . $row['character_id'] . "'") {
+						if ($_POST["'character_" . $row['character_id'] . "'"] == $row['character']) {
 						    echo 'checked';
                         }
-                        echo '>' . $_POST["character_" . $row['character_id']] . '</td></tr>';
+                        echo '>' . $_POST["character_" . $row['character_id']] == $row['character'] . '</td></tr>';
 					}
 				?>
 			</table>
