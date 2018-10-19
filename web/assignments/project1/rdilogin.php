@@ -26,7 +26,6 @@ if (isset($_POST['username'])) {
 
 			// clean the output buffer
 			ob_clean();
-
 			// redirect to the home page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
 			header('Location: http://' . $_SERVER['HTTP_HOST'] . '/rdihome.php', true, 303);
 
