@@ -34,10 +34,10 @@ include 'rdidbconnect.php';
 	<div class="container">
 		<h2 class="container">A Brief Synopsis of the Red Dragon Inn</h2>
 		<p>You and your adventuring companions have spent all day slogging through the Dungeon, killing monsters and taking 
-		their stuff. Now you’re back in town, healed up, cleaned up, and ready to party at the Red Dragon Inn.</p>
-		<p>Drink, gamble, and roughhouse with your friends. But don’t forget to keep an eye on your Gold. If you run out, 
-		you’ll have to spend the night in the stables. Oh… and try not to get too beaten up or too drunk. If you black out, 
-		your friends will continue the party without you… after they loot your body for Gold of course!</p>
+		their stuff. Now you're back in town, healed up, cleaned up, and ready to party at the Red Dragon Inn.</p>
+		<p>Drink, gamble, and roughhouse with your friends. But don't forget to keep an eye on your Gold. If you run out, 
+		you'll have to spend the night in the stables. Oh... and try not to get too beaten up or too drunk. If you black out, 
+		your friends will continue the party without you... after they loot your body for Gold of course!</p>
 		<p>The last conscious adventurer with Gold wins the game!</p>
 		<p>This description is courtesy of SlugFest Games.</p>
 	</div>
