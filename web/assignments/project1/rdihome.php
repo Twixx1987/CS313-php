@@ -55,7 +55,7 @@ include 'rdidbconnect.php';
 					echo '<td>' . $row['rdi_characters.race'] . '</td>';
 					echo '<td>'. $row['rdi_characters.class'] . '</td>';
 					echo '<td><strong>The Good:</strong>'. $row['rdi_characters.good'] . '<br/><strong>The Bad:</strong>'. $row['rdi_characters.bad'];
-					if(!isnull($row['rdi_characters.worse'])) {
+					if($row['rdi_characters.worse'] != "") {
 						echo '<br/><strong>The Worse:</strong>'. $row['rdi_characters.worse']; 
 					} 
 					echo '</td></tr>';
