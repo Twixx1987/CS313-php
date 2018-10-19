@@ -26,6 +26,44 @@
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
+		<form name="settings" action="rdisettings.php" method="post">
+			<h2 class="container">Box Sets</h2>
+			<table class="versions">
+				<?php
+					// query the database for the list of versions
+					$statement = $db->query('SELECT v.version_name as version, c.character_name as character, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id)');
+					while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+					{
+						echo '<tr class="' . $row['version'] . '"><td><label for="' . $row['version'] . '">' . $row['version'] . '</label></td>';
+						echo '<td><input type="checkbox" id="' . $row['version'] . '" value="' . $row['version'] . '"></td></tr>';
+					}
+				?>
+			</table>
+			<h2 class="container">Individual Characters</h2>
+			<table class="characters">
+				<?php
+					// query the database for the list of characters
+					$statement = $db->query('SELECT v.version_name as version, c.character_name as character, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id)' GROUP BY v.version_name, c.character_name);
+					while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+					{
+						echo '<tr class="' . $row['version'] . ' ' . $row['character'] . '"><td><label for="' . $row['character'] . '">' . $row['version'] . '</label></td>';
+						echo '<td><label for="' . $row['character'] . '">' . $row['character'] . '</label></td>';
+						echo '<td><label for="' . $row['character'] . '">' . $row['race'] . '</label></td>';
+						echo '<td><label for="' . $row['character'] . '">'. $row['class'] . '</label></td>';
+						echo '<td><label for="' . $row['character'] . '">';
+						if($row['good'] != "") {
+							echo '<strong>The Good:</strong>'. $row['good'] . '<br/>';
+						}
+						echo '<strong>The Bad:</strong>'. $row['bad'];
+						if($row['worse'] != "") {
+							echo '<br/><strong>The Worse:</strong>'. $row['worse']; 
+						} 
+						echo '</label></td>';
+						echo '<td><input type="checkbox" id="' . $row['character'] . '" value="' . $row['character'] . '"></td></tr>';
+					}
+				?>
+			</table>
+		</form>
 	</div>
 </body>
 </html>
