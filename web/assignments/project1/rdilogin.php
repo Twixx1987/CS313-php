@@ -5,6 +5,9 @@ session_start();
 // include the DB connection
 include 'rdidbconnect.php'; 
 
+// initialize the username variable
+$username = "";
+
 // check for post login button
 if (isset($_POST['login'])) {
 	$username = $_POST['login'];
