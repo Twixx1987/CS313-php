@@ -2,6 +2,9 @@
     //start the session
     session_start();
 
+    // get the user_id session variable
+    $user_id = $_SESSION['user_id'];
+
     // include the DB connection
     include 'rdidbconnect.php';
 ?>
@@ -33,7 +36,32 @@
 	</div>
 	<div class="container">
         <h2 class="container"><?php echo $_SESSION['user_name']; ?>'s Statistics</h2>
-
+        <p>
+            You have played
+            <?php
+            // query the database for the list of versions
+            $statement = $db->prepare('SELECT count(*) as game_count FROM rdi_player WHERE user_id=:user_id');
+            $statement->execute(array(':user_id' => $user_id));
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+            {
+                echo $row['game_count'];
+            }
+            ?>
+            games.
+        </p>
+        <p>
+            You have won
+            <?php
+            // query the database for the list of versions
+            $statement = $db->prepare('SELECT count(*) as game_count FROM rdi_player WHERE user_id=:user_id AND placement=1');
+            $statement->execute(array(':user_id' => $user_id));
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+            {
+                echo $row['game_count'];
+            }
+            ?>
+            games.
+        </p>
 	</div>
 </body>
 </html>
