@@ -25,12 +25,12 @@ if (isset($_POST['username'])) {
 			$_SESSION['user_id'] = $row['user_id'];
 
 			// clean the output buffer
-			ob_clean();
+			//ob_clean();
 			// redirect to the home page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
-			header('Location: http://' . $_SERVER['HTTP_HOST'] . '/rdihome.php', true, 303);
+			//header('Location: http://' . $_SERVER['HTTP_HOST'] . '/rdihome.php', true, 303);
 
 			// terminate php script upon redirect
-			exit();
+			//exit();
 		}
 	}
 
@@ -74,7 +74,8 @@ function cleanInputs($data) {
 	</div>
 	<div class="container">
 		<div class="container">
-			<?php echo $error;?>
+			<p><?php echo $error;?></p>
+			<p><?php echo $_SESSION['user_id'];?></p>
 		</div>
 		<form id="login" name="login" method="post" action="rdilogin.php">
 			<label for="username">Username:</label><br/>
