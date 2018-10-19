@@ -43,7 +43,7 @@
 			<table class="characters">
 				<?php
 					// query the database for the list of characters
-					$statement = $db->query('SELECT v.version_name as version, c.character_name as character, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id)' GROUP BY v.version_name, c.character_name);
+					$statement = $db->query('SELECT v.version_name as version, c.character_name as character, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) ORDER BY v.version_name, c.character_name');
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 					{
 						echo '<tr class="' . $row['version'] . ' ' . $row['character'] . '"><td><label for="' . $row['character'] . '">' . $row['version'] . '</label></td>';
