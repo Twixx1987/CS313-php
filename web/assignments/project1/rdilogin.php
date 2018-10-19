@@ -1,4 +1,15 @@
-<?php include 'rdidbconnect.php'; ?>
+<?php 
+//start the session
+session_start();
+
+// include the DB connection
+include 'rdidbconnect.php'; 
+
+// check for post login button
+if (isset($_POST['login'])) {
+	$username = $_POST['login'];
+}
+?>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -26,9 +37,9 @@
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
-		<form id="login" name="login" method="post" action="">
+		<form id="login" name="login" method="post" action="rdilogin.php">
 			<label for="username">Username:</label><br/>
-			<input type="text" name="username"><br/>
+			<input type="text" name="username" <?php echo "value='" . $username . "'";><br/>
 			<label for="password">Password:</label><br/>
 			<input type="password" name="password"><br/>
 			<input type="submit" name="login" value="Login">
