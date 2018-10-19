@@ -31,7 +31,7 @@
 			<table class="versions">
 				<?php
 					// query the database for the list of versions
-					$statement = $db->query('SELECT version_name as version, FROM rdi_version  ORDER BY version_name');
+					$statement = $db->query('SELECT version_name as version FROM rdi_version  ORDER BY version_name');
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 					{
 						echo '<tr class="' . $row['version'] . '"><td><label for="' . $row['version'] . '">' . $row['version'] . '</label></td>';
