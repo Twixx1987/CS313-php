@@ -71,6 +71,8 @@
 						echo '<td><input type="checkbox" id="' . $row['character'] . '" name="' . $row['character'] . '" value="' . $row['character'] . '" ';
 						if ($_POST[$row['character']] == $row['character']) {
 						    echo 'checked';
+                        } else {
+						    echo "not found";
                         }
                         echo '></td></tr>';
 					}
