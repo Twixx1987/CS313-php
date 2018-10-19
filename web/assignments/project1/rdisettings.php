@@ -68,7 +68,11 @@
 							echo '<br/><strong>The Worse:</strong>'. $row['worse']; 
 						} 
 						echo '</label></td>';
-						echo '<td><input type="checkbox" id="' . $row['character'] . '" name="' . $row['character'] . '" value="' . $row['character'] . '"></td></tr>';
+						echo '<td><input type="checkbox" id="' . $row['character'] . '" name="' . $row['character'] . '" value="' . $row['character'] . '" ';
+						if ($_POST[$row['character']] == $row['character']) {
+						    echo 'checked';
+                        }
+                        echo '></td></tr>';
 					}
 				?>
 			</table>
