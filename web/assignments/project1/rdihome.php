@@ -50,7 +50,15 @@ include 'rdidbconnect.php';
 				$statement = $db->query('SELECT v.version_name, c.character_name, c.race, c.class, c.good, c.bad, c.worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id)  WHERE c.worse IS NULL OR v.version_id = 3');
 				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 				{
-					echo '<tr><td>' . $row['v.version_name'] . '</td><td>' . $row['c.character_name'] . '</td><td>' . $row['c.race'] . '</td><td>'. $row['c.class'] . '</td><td><strong>The Good:</strong>'. $row['c.good'] . '<br/><strong>The Bad:</strong>'. $row['c.bad'] . '</td></tr>';
+					echo '<tr><td>' . $row['rdi_version.version_name'] . '</td>';
+					echo '<td>' . $row['rdi_characters.character_name'] . '</td>';
+					echo '<td>' . $row['rdi_characters.race'] . '</td>';
+					echo '<td>'. $row['rdi_characters.class'] . '</td>';
+					echo '<td><strong>The Good:</strong>'. $row['rdi_characters.good'] . '<br/><strong>The Bad:</strong>'. $row['rdi_characters.bad'];
+					if(!isnull($row['rdi_characters.worse'])) {
+						echo '<br/><strong>The Worse:</strong>'. $row['rdi_characters.worse']; 
+					} 
+					echo '</td></tr>';
 				}
 			?>
 		</table>
@@ -62,7 +70,11 @@ include 'rdidbconnect.php';
 				$statement = $db->query('SELECT v.version_name, c.character_name, c.race, c.class, c.good, c.bad, c.worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) WHERE c.good IS NULL');
 				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 				{
-					echo '<tr><td>' . $row['v.version_name'] . '</td><td>' . $row['c.character_name'] . '</td><td>' . $row['c.race'] . '</td><td>'. $row['c.class'] . '</td><td><strong>The Bad:</strong>'. $row['c.bad'] . '<br/><strong>The Worse:</strong>'. $row['c.worse'] . '</td></tr>';
+					echo '<tr><td>' . $row['rdi_version.version_name'] . '</td>';
+					echo '<td>' . $row['rdi_characters.character_name'] . '</td>';
+					echo '<td>' . $row['rdi_characters.race'] . '</td>';
+					echo '<td>'. $row['rdi_characters.class'] . '</td>';
+					echo '<td><strong>The Bad:</strong>'. $row['rdi_characters.bad'] . '<br/><strong>The Worse:</strong>'. $row['rdi_characters.worse'] . '</td></tr>';
 				}
 			?>
 		</table>
