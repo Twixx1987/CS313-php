@@ -77,7 +77,7 @@
 						if ($_POST["'character_" . $row['character_id'] . "'"] == "'character_" . $row['character_id'] . "'") {
 						    echo 'checked';
                         }
-                        echo '></td></tr>';
+                        echo '>' . $_POST["'character_" . $row['character_id'] . "'"] . '</td></tr>';
 					}
 				?>
 			</table>
