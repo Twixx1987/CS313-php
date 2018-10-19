@@ -74,7 +74,7 @@
 						} 
 						echo '</label></td>';
 						echo '<td><input type="checkbox" id="character_' . $row['character_id'] . '" name="character_' . $row['character_id'] . '" value="' . $row['character'] . '"';
-						if ($_POST["'character_" . $row['character_id'] . "'"] == $row['character']) {
+						if ($_POST["'character_" . $row['character_id'] . "'"] == "'character_" . $row['character_id'] . "'") {
 						    echo 'checked';
                         }
                         echo '></td></tr>';
