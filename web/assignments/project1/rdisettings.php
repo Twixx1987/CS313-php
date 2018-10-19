@@ -32,6 +32,7 @@
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
+        print_r($_POST,true);
 		<form name="settings" action="rdisettings.php" method="post">
             <button id="selectAll" name="selectAll" onclick="">Select All</button>
             <input type="submit" value="Update Settings" id="allUpdate">
@@ -71,8 +72,6 @@
 						echo '<td><input type="checkbox" id="' . $row['character'] . '" name="' . $row['character'] . '" value="' . $row['character'] . '">';
 						if ($_POST["'" . $row['character'] . "'"] == $row['character']) {
 						    echo 'checked';
-                        } else {
-						    echo 'not found';
                         }
                         echo '</td></tr>';
 					}
