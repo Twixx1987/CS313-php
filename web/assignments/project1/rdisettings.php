@@ -57,14 +57,14 @@
 			<table class="characters">
 				<?php
 					// query the database for the list of characters
-					$statement = $db->query('SELECT v.version_name as version, c.character_name as character, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) ORDER BY v.version_name, c.character_name');
+					$statement = $db->query('SELECT v.version_name as version, c.character_name as character, c.character_id as character_id, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) ORDER BY v.version_name, c.character_name');
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 					{
 						echo '<tr class="' . $row['version'] . ' ' . $row['character'] . '"><td><label for="' . $row['character'] . '">' . $row['version'] . '</label></td>';
-						echo '<td><label for="' . $row['character'] . '">' . $row['character'] . '</label></td>';
-						echo '<td><label for="' . $row['character'] . '">' . $row['race'] . '</label></td>';
-						echo '<td><label for="' . $row['character'] . '">'. $row['class'] . '</label></td>';
-						echo '<td><label for="' . $row['character'] . '">';
+						echo '<td><label for="character_' . $row['character_id'] . '">' . $row['character'] . '</label></td>';
+						echo '<td><label for="character_' . $row['character_id'] . '">' . $row['race'] . '</label></td>';
+						echo '<td><label for="character_' . $row['character_id'] . '">'. $row['class'] . '</label></td>';
+						echo '<td><label for="character_' . $row['character_id'] . '">';
 						if($row['good'] != "") {
 							echo '<strong>The Good:</strong>'. $row['good'] . '<br/>';
 						}
@@ -73,11 +73,11 @@
 							echo '<br/><strong>The Worse:</strong>'. $row['worse']; 
 						} 
 						echo '</label></td>';
-						echo '<td><input type="checkbox" id="' . $row['character'] . '" name="' . $row['character'] . '" value="' . $row['character'] . '">';
-						if ($_POST["'" . $row['character'] . "'"] == $row['character']) {
+						echo '<td><input type="checkbox" id="' . $row['character'] . '" name="character_' . $row['character_id'] . '" value="' . $row['character'] . '"';
+						if ($_POST["'character_" . $row['character_id'] . "'"] == "character_" . $row['character_id']) {
 						    echo 'checked';
                         }
-                        echo '</td></tr>';
+                        echo '></td></tr>';
 					}
 				?>
 			</table>
