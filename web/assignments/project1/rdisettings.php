@@ -32,7 +32,11 @@
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
-        <?php print_r($_POST,true); ?>
+        <?php
+            foreach ($_POST as $key => $value)
+                $body .= $key . ' -> ' . $value . '<br>';
+            echo $body;
+        ?>
 		<form name="settings" action="rdisettings.php" method="post">
             <button id="selectAll" name="selectAll" onclick="">Select All</button>
             <input type="submit" value="Update Settings" id="allUpdate">
