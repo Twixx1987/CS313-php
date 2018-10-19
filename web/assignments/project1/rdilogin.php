@@ -9,8 +9,8 @@ include 'rdidbconnect.php';
 $username = "";
 
 // check for post login button
-if (isset($_POST['login'])) {
-	$username = $_POST['login'];
+if (isset($_POST['username'])) {
+	$username = $_POST['username'];
 }
 ?>
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ if (isset($_POST['login'])) {
 	<div class="container">
 		<form id="login" name="login" method="post" action="rdilogin.php">
 			<label for="username">Username:</label><br/>
-			<input type="text" name="username" <?php echo "value='" . $username . "'";><br/>
+			<input type="text" name="username" value="<?php echo $username;?>"<br/>
 			<label for="password">Password:</label><br/>
 			<input type="password" name="password"><br/>
 			<input type="submit" name="login" value="Login">
