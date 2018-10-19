@@ -1,4 +1,5 @@
 <?php
+    // connect to the database
 	try
 	{
 		$dbUrl = getenv('DATABASE_URL');

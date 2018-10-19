@@ -1,55 +1,55 @@
 <?php 
-// upon navigating to the login page the session variables will be cleared and the session destroyed
-session_unset();
-session_destroy();
+    // upon navigating to the login page the session variables will be cleared and the session destroyed
+    session_unset();
+    session_destroy();
 
-// now start a new session for new login
-session_start();
+    // now start a new session for new login
+    session_start();
 
-// include the DB connection
-include 'rdidbconnect.php'; 
+    // include the DB connection
+    include 'rdidbconnect.php';
 
-// create a variable to store a login error if needed
-$error = "";
+    // create a variable to store a login error if needed
+    $error = "";
 
-// check for post login button
-if (isset($_POST['username'])) {
-	// get the username and password and clean the inputs
-	$username = cleanInputs($_POST['username']);
-	$password = cleanInputs($_POST['password']);
+    // check for post login button
+    if (isset($_POST['username'])) {
+        // get the username and password and clean the inputs
+        $username = cleanInputs($_POST['username']);
+        $password = cleanInputs($_POST['password']);
 
-	// query the database for the username and password
-	$statement = $db->prepare('SELECT user_name, password, user_id FROM rdi_user WHERE user_name=:username');
-	$statement->execute(array(':username' => $username));
-	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-	{
-		// check to see if the username/password combo match the DB
-		if ($row['user_name'] == $username && $row['password'] == $password) {
-			// set the user_id and username to session variables
-			$_SESSION['user_id'] = $row['user_id'];
-			$_SESSION['username'] = $row['user_name'];
+        // query the database for the username and password
+        $statement = $db->prepare('SELECT user_name, password, user_id FROM rdi_user WHERE user_name=:username');
+        $statement->execute(array(':username' => $username));
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+        {
+            // check to see if the username/password combo match the DB
+            if ($row['user_name'] == $username && $row['password'] == $password) {
+                // set the user_id and username to session variables
+                $_SESSION['user_id'] = $row['user_id'];
+                $_SESSION['username'] = $row['user_name'];
 
-			// clean the output buffer
-			ob_clean();
-			// redirect to the home page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
-			header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdihome.php', true, 303);
+                // clean the output buffer
+                ob_clean();
+                // redirect to the home page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
+                header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdihome.php', true, 303);
 
-			// terminate php script upon redirect
-			exit();
-		}
-	}
+                // terminate php script upon redirect
+                exit();
+            }
+        }
 
-	// if no match was found populate an error message
-	$error = "Username and/or password not found. Please try again.";
-}
+        // if no match was found populate an error message
+        $error = "Username and/or password not found. Please try again.";
+    }
 
-// a function to clean the data
-function cleanInputs($data) {
-	$data = trim($data);
-	$data = stripslashes($data);
-	$data = htmlspecialchars($data);
-	return $data;
-}
+    // a function to clean the data
+    function cleanInputs($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
 ?>
 <!DOCTYPE html>
 

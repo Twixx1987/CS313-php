@@ -1,4 +1,10 @@
-<?php include 'rdidbconnect.php'; ?>
+<?php
+    //start the session
+    session_start();
+
+    // include the DB connection
+    include 'rdidbconnect.php';
+?>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -27,6 +33,8 @@
 	</div>
 	<div class="container">
 		<form name="settings" action="rdisettings.php" method="post">
+            <button id="selectAll" name="selectAll" onclick="">Select All</button>
+            <input type="submit" value="Update Settings" id="allUpdate">
 			<h2 class="container">Box Sets</h2>
 			<table class="versions">
 				<?php
@@ -35,10 +43,11 @@
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 					{
 						echo '<tr class="' . $row['version'] . '"><td><label for="' . $row['version'] . '">' . $row['version'] . '</label></td>';
-						echo '<td><input type="checkbox" id="' . $row['version'] . '" value="' . $row['version'] . '"></td></tr>';
+						echo '<td><input type="checkbox" id="' . $row['version'] . '" name="' . $row['version'] . '" value="' . $row['version'] . '"></td></tr>';
 					}
 				?>
 			</table>
+            <input type="submit" value="Update Settings" id="boxUpdate">
 			<h2 class="container">Individual Characters</h2>
 			<table class="characters">
 				<?php
@@ -59,10 +68,11 @@
 							echo '<br/><strong>The Worse:</strong>'. $row['worse']; 
 						} 
 						echo '</label></td>';
-						echo '<td><input type="checkbox" id="' . $row['character'] . '" value="' . $row['character'] . '"></td></tr>';
+						echo '<td><input type="checkbox" id="' . $row['character'] . '" name="' . $row['character'] . '" value="' . $row['character'] . '"></td></tr>';
 					}
 				?>
 			</table>
+            <input type="submit" value="Update Settings" id="characterUpdate">
 		</form>
 	</div>
 </body>

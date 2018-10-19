@@ -1,4 +1,10 @@
-<?php include 'rdidbconnect.php'; ?>
+<?php
+    //start the session
+    session_start();
+
+    // include the DB connection
+    include 'rdidbconnect.php';
+?>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">

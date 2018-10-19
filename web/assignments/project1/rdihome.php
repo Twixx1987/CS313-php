@@ -1,9 +1,9 @@
 <?php 
-//start the session
-session_start();
+    //start the session
+    session_start();
 
-// include the DB connection
-include 'rdidbconnect.php'; 
+    // include the DB connection
+    include 'rdidbconnect.php';
 ?>
 <!DOCTYPE html>
 
