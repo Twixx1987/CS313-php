@@ -32,6 +32,8 @@
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
+        <h2 class="container"><?php echo $_SESSION['user_name']; ?>'s Statistics</h2>
+
 	</div>
 </body>
 </html>
