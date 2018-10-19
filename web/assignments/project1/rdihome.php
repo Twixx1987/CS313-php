@@ -32,6 +32,7 @@ include 'rdidbconnect.php';
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
+		<h2 class="container">A Brief Synopsis of the Red Dragon Inn</h2>
 		<p>You and your adventuring companions have spent all day slogging through the Dungeon, killing monsters and taking 
 		their stuff. Now you’re back in town, healed up, cleaned up, and ready to party at the Red Dragon Inn.</p>
 		<p>Drink, gamble, and roughhouse with your friends. But don’t forget to keep an eye on your Gold. If you run out, 
@@ -39,6 +40,34 @@ include 'rdidbconnect.php';
 		your friends will continue the party without you… after they loot your body for Gold of course!</p>
 		<p>The last conscious adventurer with Gold wins the game!</p>
 		<p>This description is courtesy of SlugFest Games.</p>
+	</div>
+	<div class="container">
+		<h2 class="container">The Heroes of the Red Dragon Inn</h2>
+		<table>
+			<tr><th>Version</th><th>Hero</th><th>Race</th><th>Class</th><th>Details</th></tr>
+			<?php 
+				// query the database for the username and password
+				$statement = $db->prepare('SELECT v.version_id, c.character_name, c.race, c.class, c.good, c.bad, c.worse FROM rdi_characters as c, rdi_version as v WHERE c.worse IS NULL');
+				$statement->execute();
+				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+				{
+					echo '<tr><td>' . $row['v.version_name'] . '</td><td>' . $row['c.character_name'] . '</td><td>' . $row['c.race'] . '</td><td>'. $row['c.class'] . '</td><td><strong>The Good:</strong>'. $row['c.good'] . '<br/><strong>The Bad:</strong>'. $row['c.bad'] . '</td></tr>'
+				}
+			?>
+		</table>
+		<h2 class="container">The Villains of the Black Dragon Depths</h2>
+		<table>
+			<tr><th>Version</th><th>Villain</th><th>Race</th><th>Class</th><th>Details</th></tr>
+			<?php
+				// query the database for the username and password
+				$statement = $db->prepare('SELECT v.version_name, c.character_name, c.race, c.class, c.good, c.bad, c.worse FROM rdi_characters as c, rdi_version as v WHERE c.good IS NULL');
+				$statement->execute();
+				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+				{
+					echo '<tr><td>' . $row['v.version_name'] . '</td><td>' . $row['c.character_name'] . '</td><td>' . $row['c.race'] . '</td><td>'. $row['c.class'] . '</td><td><strong>The Bad:</strong>'. $row['c.bad'] . '<br/><strong>The Worse:</strong>'. $row['c.worse'] . '</td></tr>'
+				}
+			?>
+		</table>
 	</div>
 </body>
 </html>
