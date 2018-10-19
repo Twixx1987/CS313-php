@@ -67,14 +67,14 @@ include 'rdidbconnect.php';
 			<tr><th>Version</th><th>Villain</th><th>Race</th><th>Class</th><th>Details</th></tr>
 			<?php
 				// query the database for the username and password
-				$statement = $db->query('SELECT v.version_name, c.character_name, c.race, c.class, c.good, c.bad, c.worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) WHERE c.good IS NULL');
+				$statement = $db->query('SELECT v.version_name as version, c.character_name as character, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) WHERE c.good IS NULL');
 				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 				{
-					echo '<tr><td>' . $row['rdi_version.version_name'] . '</td>';
-					echo '<td>' . $row['rdi_characters.character_name'] . '</td>';
-					echo '<td>' . $row['rdi_characters.race'] . '</td>';
-					echo '<td>'. $row['rdi_characters.class'] . '</td>';
-					echo '<td><strong>The Bad:</strong>'. $row['rdi_characters.bad'] . '<br/><strong>The Worse:</strong>'. $row['rdi_characters.worse'] . '</td></tr>';
+					echo '<tr><td>' . $row['version'] . '</td>';
+					echo '<td>' . $row['character'] . '</td>';
+					echo '<td>' . $row['race'] . '</td>';
+					echo '<td>'. $row['class'] . '</td>';
+					echo '<td><strong>The Bad:</strong>'. $row['bad'] . '<br/><strong>The Worse:</strong>'. $row['worse'] . '</td></tr>';
 				}
 			?>
 		</table>
