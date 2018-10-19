@@ -15,12 +15,12 @@ if (isset($_POST['username'])) {
 	$password = cleanInputs($_POST['password']);
 
 	// query the database for the username and password
-	$statement = $db->prepare('SELECT username, password, user_id FROM rdi_user WHERE username=:username');
+	$statement = $db->prepare('SELECT user_name, password, user_id FROM rdi_user WHERE user_name=:username');
 	$statement->execute(array(':username' => $username));
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		// check to see if the username/password combo match the DB
-		if ($row['username'] == $username && $row['password'] == $password) {
+		if ($row['user_name'] == $username && $row['password'] == $password) {
 			// set the user_id session variable
 			$_SESSION['user_id'] = $row['user_id'];
 
