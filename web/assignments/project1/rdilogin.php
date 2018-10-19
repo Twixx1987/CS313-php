@@ -25,17 +25,17 @@ if (isset($_POST['username'])) {
 			$_SESSION['user_id'] = $row['user_id'];
 
 			// clean the output buffer
-			//ob_clean();
+			ob_clean();
 			// redirect to the home page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
-			//header('Location: http://' . $_SERVER['HTTP_HOST'] . '/rdihome.php', true, 303);
+			header('Location: http://' . $_SERVER['HTTP_HOST'] . '/rdihome.php', true, 303);
 
 			// terminate php script upon redirect
-			//exit();
+			exit();
 		}
 	}
 
 	// if no match was found populate an error message
-	$error = "Username nad Password not found. Please try again.";
+	$error = "Username and/or password not found. Please try again.";
 }
 
 // a function to clean the data
