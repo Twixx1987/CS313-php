@@ -2,8 +2,9 @@
     //start the session
     session_start();
 
-    // get the user_id session variable
+    // get the user_id and username session variables
     $user_id = $_SESSION['user_id'];
+    $username = $_SESSION['username'];
 
     // include the DB connection
     include 'rdidbconnect.php';
@@ -35,7 +36,7 @@
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
-        <h2 class="container"><?php echo $_SESSION['user_name']; ?>'s Statistics</h2>
+        <h2 class="container"><?php echo $_SESSION['username']; ?>'s Statistics</h2>
         <p>
             You have played
             <?php
@@ -62,6 +63,24 @@
             ?>
             games.
         </p>
+        <h3>Your play frequency for each character is:</h3>
+            <table>
+                <tr>
+                    <th>Character Played</th>
+                    <th>Number of Games</th>
+                </tr>
+                <?php
+                // query the database for the list of versions
+                $statement = $db->prepare('SELECT MAX(char.char_count) AS char_count, char.character AS character FROM (SELECT rdi_characters.character_name AS character, COUNT(rdi_player.character_id) AS char_count FROM rdi_player JOIN rdi_characters ON (rdi_player.character_id=rdi_characters.character_id) WHERE user_id=:user_id GROUP BY rdi_characters.character_name) as char GROUP BY character ORDER BY char_count DESC');
+                $statement->execute(array(':user_id' => $user_id));
+                while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+                {
+                    echo '<tr><td>' . $row['character'] . '</td>';
+                    echo '<td>' . $row['char_count'] . '</td></tr>';
+                }
+                ?>
+            </table>
+        ;
 	</div>
 </body>
 </html>
