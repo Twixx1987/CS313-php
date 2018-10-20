@@ -2,6 +2,9 @@
     //start the session
     session_start();
 
+    // create an array variable to add all checked characters to the session variables
+    $characters = array();
+
     // include the DB connection
     include 'rdidbconnect.php';
 ?>
@@ -70,10 +73,14 @@
 						echo '</label></td>';
 						echo '<td><input type="checkbox" id="character_' . $row['character_id'] . '" name="character_' . $row['character_id'] . '" value="' . $row['character'] . '"';
 						if ($_POST["character_" . $row['character_id']] == $row['character']) {
+                            $characters["character_" . $row['character_id']] = $row['character'];
 						    echo 'checked';
                         }
                         echo '></td></tr>';
 					}
+
+					// add the array of characters to the session variables
+					$_SESSION['characters'] = $characters;
 				?>
 			</table>
             <input type="submit" value="Update Settings" id="characterUpdate">
