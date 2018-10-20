@@ -51,11 +51,11 @@
 				while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
             ?>
 			<tr>
-                <td><?php $row['version'] ?></td>
-			    <td><?php $row['character'] ?></td>
-			    <td><?php $row['race'] ?></td>
-				<td><?php $row['class'] ?></td>
-				<td><strong>The Good:</strong><?php $row['good'] ?><br/>
+                <td><?php $row['version']; ?></td>
+			    <td><?php $row['character']; ?></td>
+			    <td><?php $row['race']; ?></td>
+				<td><?php $row['class']; ?></td>
+				<td><strong>The Good:</strong><?php $row['good']; ?><br/>
                     <strong>The Bad:</strong><?php $row['bad'];
 					if($row['worse'] != ""):
 					?>
