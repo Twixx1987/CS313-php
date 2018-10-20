@@ -73,14 +73,14 @@
                 // query the database for the list of versions
                 $statement = $db->prepare('SELECT MAX(char.char_count) AS char_count, char.character AS character FROM (SELECT rdi_characters.character_name AS character, COUNT(rdi_player.character_id) AS char_count FROM rdi_player JOIN rdi_characters ON (rdi_player.character_id=rdi_characters.character_id) WHERE user_id=:user_id GROUP BY rdi_characters.character_name) as char GROUP BY character ORDER BY char_count DESC, character');
                 $statement->execute(array(':user_id' => $user_id));
-                while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-                {
-                    echo '<tr><td>' . $row['character'] . '</td>';
-                    echo '<td>' . $row['char_count'] . '</td></tr>';
-                }
+                while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                 ?>
+                <tr>
+                    <td><?php $row['character']; ?></td>
+                    <td><?php $row['char_count']; ?></td>
+                </tr>
+                <?php endwhile; ?>
             </table>
-        ;
 	</div>
 </body>
 </html>

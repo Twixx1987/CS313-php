@@ -48,19 +48,24 @@
 			<?php 
 				// query the database for the hero characters
 				$statement = $db->query('SELECT v.version_name as version, c.character_name as character, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id)  WHERE c.worse IS NULL OR v.version_id = 3 ORDER BY v.version_name, c.character_name');
-				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-				{
-					echo '<tr><td>' . $row['version'] . '</td>';
-					echo '<td>' . $row['character'] . '</td>';
-					echo '<td>' . $row['race'] . '</td>';
-					echo '<td>'. $row['class'] . '</td>';
-					echo '<td><strong>The Good:</strong>'. $row['good'] . '<br/><strong>The Bad:</strong>'. $row['bad'];
-					if($row['worse'] != "") {
-						echo '<br/><strong>The Worse:</strong>'. $row['worse']; 
-					} 
-					echo '</td></tr>';
-				}
-			?>
+				while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+            ?>
+			<tr>
+                <td><?php $row['version']; ?></td>
+			    <td><?php $row['character']; ?></td>
+			    <td><?php $row['race']; ?></td>
+				<td><?php $row['class']; ?></td>
+				<td><strong>The Good:</strong><?php $row['good']; ?><br/><strong>The Bad:</strong><?php $row['bad'];
+					if($row['worse'] != ""):
+					?>
+						<br/><strong>The Worse:</strong><?php $row['worse'];
+					endif; ?>
+					</td>
+            </tr>
+            <?php
+                // end the while loop
+                endwhile;
+            ?>
 		</table>
 		<h2 class="container">The Villains of the Black Dragon Depths</h2>
 		<table>
@@ -68,15 +73,19 @@
 			<?php
 				// query the database for the villain characters
 				$statement = $db->query('SELECT v.version_name as version, c.character_name as character, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) WHERE c.good IS NULL ORDER BY v.version_name, c.character_name');
-				while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-				{
-					echo '<tr><td>' . $row['version'] . '</td>';
-					echo '<td>' . $row['character'] . '</td>';
-					echo '<td>' . $row['race'] . '</td>';
-					echo '<td>'. $row['class'] . '</td>';
-					echo '<td><strong>The Bad:</strong>'. $row['bad'] . '<br/><strong>The Worse:</strong>'. $row['worse'] . '</td></tr>';
-				}
-			?>
+				while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+            ?>
+            <tr>
+                <td><?php $row['version']; ?></td>
+                <td><?php $row['character']; ?></td>
+                <td><?php $row['race']; ?></td>
+                <td><?php $row['class']; ?></td>
+                <td><strong>The Bad:</strong><?php $row['bad']; ?><br/><strong>The Worse:</strong><?php $row['worse']; ?></td>
+            </tr>
+            <?php
+                // end the while loop
+                endwhile;
+            ?>
 		</table>
 	</div>
 </body>

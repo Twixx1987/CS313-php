@@ -43,11 +43,12 @@
 				<?php
 					// query the database for the list of versions
 					$statement = $db->query('SELECT version_name as version, version_id FROM rdi_version  ORDER BY version_name');
-					while ($row = $statement->fetch(PDO::FETCH_ASSOC));
+					while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
 				?>
-						<tr class="version_<?php $row['version_id'];?>">
-                            <td><label for="version_<?php $row['version_id'];?>"><?php $row['version'];?></label></td>
-						    <td><input type="checkbox" class="versionSelector version_<?php $row['version_id']?>" id="version_<?php $row['version_id']?>" name="version_<?php $row['version_id']?>" value="version_<?php $row['version_id']?>"></td>
+						<tr class="version_<?php $row['version_id']; ?>">
+                            <td><label for="version_<?php $row['version_id']; ?>"><?php $row['version']; ?></label></td>
+						    <td><input type="checkbox" class="versionSelector version_<?php $row['version_id']; ?>" id="version_<?php $row['version_id']; ?>"
+                                       name="version_<?php $row['version_id']; ?>" value="version_<?php $row['version_id']; ?>"></td>
                         </tr>
 				<?php endwhile; ?>
 			</table>
@@ -56,29 +57,39 @@
 			<table class="characters">
 				<?php
 					// query the database for the list of characters
-					$statement = $db->query('SELECT v.version_name as version, v.version_id as version_id, c.character_name as character, c.character_id as character_id, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) ORDER BY v.version_name, c.character_name');
-					while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-					{
-						echo '<tr class="version_' . $row['version_id'] . ' character_' . $row['character_id'] . '"><td><label for="character_' . $row['character_id'] . '">' . $row['version'] . '</label></td>';
-						echo '<td><label for="character_' . $row['character_id'] . '">' . $row['character'] . '</label></td>';
-						echo '<td><label for="character_' . $row['character_id'] . '">' . $row['race'] . '</label></td>';
-						echo '<td><label for="character_' . $row['character_id'] . '">'. $row['class'] . '</label></td>';
-						echo '<td><label for="character_' . $row['character_id'] . '">';
-						if($row['good'] != "") {
-							echo '<strong>The Good:</strong>'. $row['good'] . '<br/>';
-						}
-						echo '<strong>The Bad:</strong>'. $row['bad'];
-						if($row['worse'] != "") {
-							echo '<br/><strong>The Worse:</strong>'. $row['worse']; 
-						} 
-						echo '</label></td>';
-						echo '<td><input type="checkbox" class="version_' . $row['version_id'] . ' character_' . $row['character_id'] . '" id="character_' . $row['character_id'] . '" name="character_' . $row['character_id'] . '" value="character_' . $row['character_id'] . '"';
-						if ($_POST["character_" . $row['character_id']] == $row['character']) {
-                            $characters["character_" . $row['character_id']] = $row['character'];
-						    echo 'checked';
-                        }
-                        echo '></td></tr>';
-					}
+					$statement = $db->query('SELECT v.version_name as version, v.version_id as version_id, c.character_name as character, 
+                                            c.character_id as character_id, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse 
+                                            FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) ORDER BY v.version_name, c.character_name');
+					while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+                ?>
+				<tr class="version_<?php $row['version_id']; ?> character_<?php $row['character_id']; ?>">
+                    <td><label for="character_<?php $row['character_id']; ?>"><?php $row['version']; ?></label></td>
+					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['character']; ?></label></td>';
+					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['race']; ?></label></td>';
+					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['class']; ?></label></td>';
+					<td><label for="character_<?php $row['character_id']; ?>">
+					    <?php if($row['good'] != ""): ?>
+                            <strong>The Good:</strong><?php $row['good']; ?><br/>
+                        <?php endif; ?>
+    					<strong>The Bad:</strong><?php $row['bad']; ?>
+                        <?php if($row['worse'] != ""): ?>
+		    				<br/><strong>The Worse:</strong><?php $row['worse']; ?>
+                        <?php endif; ?>
+                        </label></td>
+                    <td><input type="checkbox" class="version_<?php $row['version_id']; ?> character_<?php $row['character_id']; ?>"
+                                id="character_<?php $row['character_id']; ?>" name="character_<?php $row['character_id']; ?>" value="character_<?php $row['character_id']; ?>"
+                                <?php
+                                    if ($_POST["character_" . $row['character_id']] == $row['character']) {
+                                        // add the character to the array of characters
+                                        $characters["character_" . $row['character_id']] = $row['character'];
+						                echo 'checked';
+                                    }
+                                ?>
+                    ></td>
+                </tr>
+                <?php
+                    // end the while loop
+                    endwhile;
 
 					// add the array of characters to the session variables
 					$_SESSION['characters'] = $characters;
