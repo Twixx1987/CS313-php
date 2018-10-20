@@ -35,30 +35,31 @@
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
+        <button id="selectAll" name="selectAll">Select All</button>
 		<form name="settings" action="rdisettings.php" method="post">
-            <button id="selectAll" name="selectAll" onclick="">Select All</button>
             <input type="submit" value="Update Settings" id="allUpdate">
 			<h2 class="container">Box Sets</h2>
 			<table class="versions">
 				<?php
 					// query the database for the list of versions
-					$statement = $db->query('SELECT version_name as version FROM rdi_version  ORDER BY version_name');
-					while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-					{
-						echo '<tr class="' . $row['version'] . '"><td><label for="' . $row['version'] . '">' . $row['version'] . '</label></td>';
-						echo '<td><input type="checkbox" id="' . $row['version'] . '" name="' . $row['version'] . '" value="' . $row['version'] . '"></td></tr>';
-					}
+					$statement = $db->query('SELECT version_name as version, version_id FROM rdi_version  ORDER BY version_name');
+					while ($row = $statement->fetch(PDO::FETCH_ASSOC));
 				?>
+						<tr class="version_<?php $row['version_id'];?>">
+                            <td><label for="version_<?php $row['version_id'];?>"><?php $row['version'];?></label></td>
+						    <td><input type="checkbox" class="versionSelector version_<?php $row['version_id']?>" id="version_<?php $row['version_id']?>" name="version_<?php $row['version_id']?>" value="version_<?php $row['version_id']?>"></td>
+                        </tr>
+				<?php endwhile; ?>
 			</table>
             <input type="submit" value="Update Settings" id="boxUpdate">
 			<h2 class="container">Individual Characters</h2>
 			<table class="characters">
 				<?php
 					// query the database for the list of characters
-					$statement = $db->query('SELECT v.version_name as version, c.character_name as character, c.character_id as character_id, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) ORDER BY v.version_name, c.character_name');
+					$statement = $db->query('SELECT v.version_name as version, v.version_id as version_id, c.character_name as character, c.character_id as character_id, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) ORDER BY v.version_name, c.character_name');
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 					{
-						echo '<tr class="' . $row['version'] . ' ' . $row['character'] . '"><td><label for="character_' . $row['character_id'] . '">' . $row['version'] . '</label></td>';
+						echo '<tr class="version_' . $row['version_id'] . ' character_' . $row['character_id'] . '"><td><label for="character_' . $row['character_id'] . '">' . $row['version'] . '</label></td>';
 						echo '<td><label for="character_' . $row['character_id'] . '">' . $row['character'] . '</label></td>';
 						echo '<td><label for="character_' . $row['character_id'] . '">' . $row['race'] . '</label></td>';
 						echo '<td><label for="character_' . $row['character_id'] . '">'. $row['class'] . '</label></td>';
@@ -71,7 +72,7 @@
 							echo '<br/><strong>The Worse:</strong>'. $row['worse']; 
 						} 
 						echo '</label></td>';
-						echo '<td><input type="checkbox" id="character_' . $row['character_id'] . '" name="character_' . $row['character_id'] . '" value="' . $row['character'] . '"';
+						echo '<td><input type="checkbox" class="version_' . $row['version_id'] . ' character_' . $row['character_id'] . '" id="character_' . $row['character_id'] . '" name="character_' . $row['character_id'] . '" value="character_' . $row['character_id'] . '"';
 						if ($_POST["character_" . $row['character_id']] == $row['character']) {
                             $characters["character_" . $row['character_id']] = $row['character'];
 						    echo 'checked';
