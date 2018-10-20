@@ -64,9 +64,9 @@
                 ?>
 				<tr class="version_<?php $row['version_id']; ?> character_<?php $row['character_id']; ?>">
                     <td><label for="character_<?php $row['character_id']; ?>"><?php $row['version']; ?></label></td>
-					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['character']; ?></label></td>';
-					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['race']; ?></label></td>';
-					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['class']; ?></label></td>';
+					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['character']; ?></label></td>
+					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['race']; ?></label></td>
+					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['class']; ?></label></td>
 					<td><label for="character_<?php $row['character_id']; ?>">
 					    <?php if($row['good'] != ""): ?>
                             <strong>The Good:</strong><?php $row['good']; ?><br/>
