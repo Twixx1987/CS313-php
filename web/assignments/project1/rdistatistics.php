@@ -76,8 +76,8 @@
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                 ?>
                 <tr>
-                    <td><?php $row['character']; ?></td>
-                    <td><?php $row['char_count']; ?></td>
+                    <td><?php echo $row['character']; ?></td>
+                    <td><?php echo $row['char_count']; ?></td>
                 </tr>
                 <?php endwhile; ?>
             </table>

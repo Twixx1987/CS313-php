@@ -45,10 +45,10 @@
 					$statement = $db->query('SELECT version_name as version, version_id FROM rdi_version  ORDER BY version_name');
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
 				?>
-						<tr class="version_<?php $row['version_id']; ?>">
-                            <td><label for="version_<?php $row['version_id']; ?>"><?php $row['version']; ?></label></td>
-						    <td><input type="checkbox" class="versionSelector version_<?php $row['version_id']; ?>" id="version_<?php $row['version_id']; ?>"
-                                       name="version_<?php $row['version_id']; ?>" value="version_<?php $row['version_id']; ?>"></td>
+						<tr class="version_<?php echo $row['version_id']; ?>">
+                            <td><label for="version_<?php echo $row['version_id']; ?>"><?php echo $row['version']; ?></label></td>
+						    <td><input type="checkbox" class="versionSelector version_<?php echo $row['version_id']; ?>" id="version_<?php echo $row['version_id']; ?>"
+                                       name="version_<?php echo $row['version_id']; ?>" value="version_<?php echo $row['version_id']; ?>"></td>
                         </tr>
 				<?php endwhile; ?>
 			</table>
@@ -60,22 +60,22 @@
 					$statement = $db->query('SELECT v.version_name as version, v.version_id as version_id, c.character_name as character, c.character_id as character_id, c.race as race, c.class as class, c.good as good, c.bad as bad, c.worse as worse FROM rdi_characters as c JOIN rdi_version as v ON (v.version_id = c.version_id) ORDER BY v.version_name, c.character_name');
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                 ?>
-				<tr class="version_<?php $row['version_id']; ?> character_<?php $row['character_id']; ?>">
-                    <td><label for="character_<?php $row['character_id']; ?>"><?php $row['version']; ?></label></td>
-					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['character']; ?></label></td>
-					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['race']; ?></label></td>
-					<td><label for="character_<?php $row['character_id']; ?>"><?php $row['class']; ?></label></td>
-					<td><label for="character_<?php $row['character_id']; ?>">
+				<tr class="version_<?php echo $row['version_id']; ?> character_<?php echo $row['character_id']; ?>">
+                    <td><label for="character_<?php echo $row['character_id']; ?>"><?php echo $row['version']; ?></label></td>
+					<td><label for="character_<?php echo $row['character_id']; ?>"><?php echo $row['character']; ?></label></td>
+					<td><label for="character_<?php echo $row['character_id']; ?>"><?php echo $row['race']; ?></label></td>
+					<td><label for="character_<?php echo $row['character_id']; ?>"><?php echo $row['class']; ?></label></td>
+					<td><label for="character_<?php echo $row['character_id']; ?>">
 					    <?php if($row['good'] != ""): ?>
-                            <strong>The Good:</strong><?php $row['good']; ?><br/>
+                            <strong>The Good:</strong><?php echo $row['good']; ?><br/>
                         <?php endif; ?>
-    					<strong>The Bad:</strong><?php $row['bad']; ?>
+    					<strong>The Bad:</strong><?php echo $row['bad']; ?>
                         <?php if($row['worse'] != ""): ?>
-		    				<br/><strong>The Worse:</strong><?php $row['worse']; ?>
+		    				<br/><strong>The Worse:</strong><?php echo $row['worse']; ?>
                         <?php endif; ?>
                         </label></td>
-                    <td><input type="checkbox" class="version_<?php $row['version_id']; ?> character_<?php $row['character_id']; ?>"
-                                id="character_<?php $row['character_id']; ?>" name="character_<?php $row['character_id']; ?>" value="character_<?php $row['character_id']; ?>"
+                    <td><input type="checkbox" class="version_<?php echo $row['version_id']; ?> character_<?php echo $row['character_id']; ?>"
+                                id="character_<?php echo $row['character_id']; ?>" name="character_<?php echo $row['character_id']; ?>" value="character_<?php echo $row['character_id']; ?>"
                                 <?php
                                     if ($_POST["character_" . $row['character_id']] == $row['character']) {
                                         // add the character to the array of characters

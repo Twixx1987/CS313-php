@@ -51,15 +51,15 @@
 				while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                     ?>
                     <tr>
-                        <td><?php $row['version']; ?></td>
-                        <td><?php $row['character']; ?></td>
-                        <td><?php $row['race']; ?></td>
-                        <td><?php $row['class']; ?></td>
-                        <td><strong>The Good:</strong><?php $row['good']; ?><br/>
-                            <strong>The Bad:</strong><?php $row['bad'];
+                        <td><?php echo $row['version']; ?></td>
+                        <td><?php echo $row['character']; ?></td>
+                        <td><?php echo $row['race']; ?></td>
+                        <td><?php echo $row['class']; ?></td>
+                        <td><strong>The Good:</strong><?php echo $row['good']; ?><br/>
+                            <strong>The Bad:</strong><?php echo $row['bad'];
                             if ($row['worse'] != "") {
                                 ?>
-                                <br/><strong>The Worse:</strong><?php $row['worse'];
+                                <br/><strong>The Worse:</strong><?php echo $row['worse'];
                             } ?>
                         </td>
                     </tr>
@@ -76,11 +76,11 @@
 				while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
             ?>
             <tr>
-                <td><?php $row['version']; ?></td>
-                <td><?php $row['character']; ?></td>
-                <td><?php $row['race']; ?></td>
-                <td><?php $row['class']; ?></td>
-                <td><strong>The Bad:</strong><?php $row['bad']; ?><br/><strong>The Worse:</strong><?php $row['worse']; ?></td>
+                <td><?php echo $row['version']; ?></td>
+                <td><?php echo $row['character']; ?></td>
+                <td><?php echo $row['race']; ?></td>
+                <td><?php echo $row['class']; ?></td>
+                <td><strong>The Bad:</strong><?php echo $row['bad']; ?><br/><strong>The Worse:</strong><?php echo $row['worse']; ?></td>
             </tr>
             <?php
                 // end the while loop
