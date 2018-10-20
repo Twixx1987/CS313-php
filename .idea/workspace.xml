@@ -4,7 +4,6 @@
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,14 +55,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1358" />
-          <entry key="txt" value="99" />
+          <entry key="php" value="1371" />
+          <entry key="txt" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1358" />
-          <entry key="PLAIN_TEXT" value="99" />
+          <entry key="PHP" value="1371" />
+          <entry key="PLAIN_TEXT" value="119" />
         </counts>
       </usages-collector>
     </session>
@@ -120,16 +119,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+            <state relative-caret-position="554">
+              <caret line="71" column="95" lean-forward="true" selection-start-line="71" selection-start-column="95" selection-end-line="71" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdistatistics.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="602">
@@ -156,8 +155,8 @@
         <option value="$PROJECT_DIR$/web/assignments/project1/rdigame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdidbconnect.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdimenu.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" />
       </list>
     </option>
   </component>
@@ -239,7 +238,7 @@
       <updated>1539125718844</updated>
       <workItem from="1539125723954" duration="1566000" />
       <workItem from="1539127522078" duration="1620000" />
-      <workItem from="1539979534953" duration="12635000" />
+      <workItem from="1539979534953" duration="13324000" />
     </task>
     <task id="LOCAL-00001" summary="Updated query to select each version once.">
       <created>1539980406887</created>
@@ -374,11 +373,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539992479888</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Begin Statistics page">
+      <created>1539995961360</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1539995961360</updated>
+    </task>
+    <task id="LOCAL-00021" summary="update settings page">
+      <created>1539996444581</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1539996444581</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15821000" />
+    <option name="totallyTimeSpent" value="16510000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,9 +435,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated query to select each version once." />
-    <MESSAGE value="update settings page" />
     <MESSAGE value="Begin Statistics page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Begin Statistics page" />
+    <MESSAGE value="update settings page" />
+    <option name="LAST_COMMIT_MESSAGE" value="update settings page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -454,13 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="78" column="25" lean-forward="true" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdilogin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -479,6 +485,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
           <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="71" column="95" lean-forward="true" selection-start-line="71" selection-start-column="95" selection-end-line="71" selection-end-column="95" />
         </state>
       </provider>
     </entry>
