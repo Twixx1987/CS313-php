@@ -56,10 +56,10 @@
 			    <td><?php $row['race'] ?></td>
 				<td><?php $row['class'] ?></td>
 				<td><strong>The Good:</strong><?php $row['good'] ?><br/>
-                    <strong>The Bad:</strong><?php $row['bad']
+                    <strong>The Bad:</strong><?php $row['bad'];
 					if($row['worse'] != ""):
 					?>
-                    <br/><strong>The Worse:</strong><?php $row['worse']
+                    <br/><strong>The Worse:</strong><?php $row['worse'];
 					endif; ?>
                 </td>
             </tr>
