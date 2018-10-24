@@ -46,37 +46,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="menu container">
         <?php include '../../top_menu.php'; ?>
     </div>
-    <?php
-		$statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
-		while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
-    ?>
-	<p class="container"><strong><?php echo $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse']; ?></strong> - "<?php echo $row['content']; ?>"</p>
-    <?php
+    <div class="container">
+        <h2>Add new Scriptures</h2>
+        <form  class="container"action="teach06.php" method="POST">
+            <label>Book</label>
+            <input type="text" name="book">
+            <br />
+            <label>Chapter</label>
+            <input type="text" name="chapter">
+            <br />
+            <label>Verse</label>
+            <input type="text" name="verse">
+            <br />
+            <textarea name="content" rows=5 cols=40 placeholder="Contents"></textarea><br>
+
+            <!-- fetch the list of topics from database -->
+            <?php
+                $statement = $db->query('SELECT * FROM topic ORDER BY name');
+                while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+            ?>
+            <input type="checkbox" name="topics[]" value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?><br>
+            <?php
+                endwhile;
+            ?>
+            <input type="submit" name="submit" value="Submit" class="btn btn-secondary">
+        </form>
+    </div>
+    <div>
+        <h2>Scripture Reference List</h2>
+        <?php
+        $statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+            ?>
+            <p class="container"><strong><?php echo $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse']; ?></strong> - "<?php echo $row['content']; ?>"</p>
+        <?php
         endwhile;
-	?>
-
-    <form  class="container"action="teach06.php" method="POST">
-        <label>Book</label>
-		<input type="text" name="book">
-		<br />
-        <label>Chapter</label>
-		<input type="text" name="chapter">
-		<br />
-        <label>Verse</label>
-        <input type="text" name="verse">
-		<br />
-        <textarea name="content" rows=5 cols=40 placeholder="Contents"></textarea><br>
-
-		<!-- fetch the list of topics from database -->
-		<?php
-		    $statement = $db->query('SELECT * FROM topic ORDER BY name');
-		    while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
-		?>
-        <input type="checkbox" name="topics[]" value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?><br>
-		<?php
-            endwhile;
-		?>
-        <input type="submit" name="submit" value="Submit" class="btn btn-secondary">
-    </form>
+        ?>
+    </div>
 </body>
 </html>
