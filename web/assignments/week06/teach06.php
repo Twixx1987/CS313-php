@@ -2,6 +2,8 @@
 // include the DB access
 include "../week05/teach05dbaccess.php";
 
+var_dump($_POST);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Insert into db
 
@@ -10,6 +12,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$stmt->execute(array(':book' => $_POST['book'], ':chapter' => $_POST['chapter'], ':verse' => $_POST['verse'], ':content' => $_POST['content']));
 
 	$newId = $db->lastInsertId('scriptures_id_seq');
+
+	if(isset($_POST['newTopicName'])) {
+        $query2 = 'INSERT INTO topic (name) VALUES (:name)';
+        $stmt2 = $db->prepare($query2);
+        $stmt2->exeecute(array(':name' => $_POST['newTopicName']));
+
+        $topicId = $db->lastInsertId('topic_id_seq');
+
+        $query = 'INSERT INTO scripture_topic (scriptures_id, topic_id) VALUES (:scripture, :topic)';
+        $stmt = $db->prepare($query);
+        $stmt->execute(array(':scripture' => $newId, ':topic' => $topicId));
+    }
 
 	foreach ($_POST['topics'] as $topic) {
 		$query = 'INSERT INTO scripture_topic (scriptures_id, topic_id) VALUES (:scripture, :topic)';
@@ -70,12 +84,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php
                 endwhile;
             ?>
-            <input type="checkbox" name="newTopic" value="newTopic"/><input type="text" name="newTopic" placeholder="New Topic"/>
+            <input type="checkbox" name="newTopic" value="newTopic"/><input type="text" name="newTopicName" placeholder="New Topic"/>
             <br/>
             <input type="submit" name="submit" value="Submit" class="btn btn-secondary"/>
         </form>
     </div>
-    <div>
+    <div class="container">
         <h2>Scripture Reference List</h2>
         <?php
         $statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
