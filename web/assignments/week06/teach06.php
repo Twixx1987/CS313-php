@@ -43,38 +43,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 	<h1 class="container">Scripture Resources</h1>
-	<?php
+    <div class="menu container">
+        <?php include '../../top_menu.php'; ?>
+    </div>
+    <?php
 		$statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
-		while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-		{
-		  echo '<p class="container"><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
-		  echo ' - "' . $row['content'] . '"</p>';
-		}
-
+		while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+    ?>
+	<p class="container"><strong><?php echo $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse']; ?></strong> - "<?php echo $row['content']; ?>"</p>
+    <?php
+        endwhile;
 	?>
 
     <form  class="container"action="team_assignment_06.php" method="POST">
-      <label>Book
-				<input type="text" name="book">
-			</label><br>
-      <label>Chapter
-				<input type="text" name="chapter">
-			</label><br>
-      <label>Verse
-				<input type="text" name="verse">
-			</label><br>
+        <label>Book</label>
+		<input type="text" name="book">
+		<br />
+        <label>Chapter</label>
+		<input type="text" name="chapter">
+		<br />
+        <label>Verse</label>
+        <input type="text" name="verse">
+		<br />
+        <textarea name="content" rows=5 cols=40 placeholder="Contents"></textarea><br>
 
-      <textarea name="content" rows=5 cols=40 placeholder="Contents"></textarea><br>
-
-			<!-- fetch the list of topics from database -->
-			<?php
-		$statement = $db->query('SELECT * FROM topic ORDER BY name');
-		while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-			echo '<input type="checkbox" name="topics[]" value="' . $row['id'] . '">' . $row['name'] . '<br>';
-		}
+		<!-- fetch the list of topics from database -->
+		<?php
+		    $statement = $db->query('SELECT * FROM topic ORDER BY name');
+		    while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
 		?>
-
-      <input type="submit" name="submit" value="Submit">
+        <input type="checkbox" name="topics[]" value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?><br>
+		<?php
+            endwhile;
+		?>
+        <input type="submit" name="submit" value="Submit">
     </form>
 </body>
 </html>
