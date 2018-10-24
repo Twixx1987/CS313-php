@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Scripture Resources</title>
 </head>
 <body>
-	<h1>Scripture Resources</h1>
+	<h1 class="container">Scripture Resources</h1>
 	<?php
 		$statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
 		while ($row = $statement->fetch(PDO::FETCH_ASSOC))
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	?>
 
-    <form action="team_assignment_06.php" method="POST">
+    <form  class="container"action="team_assignment_06.php" method="POST">
       <label>Book
 				<input type="text" name="book">
 			</label><br>
