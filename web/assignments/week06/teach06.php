@@ -47,8 +47,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
 		while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 		{
-		  echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
-		  echo ' - "' . $row['content'] . '"<br/>';
+		  echo '<p class="container"><strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
+		  echo ' - "' . $row['content'] . '"</p>';
 		}
 
 	?>
