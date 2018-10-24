@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $newId = $db->lastInsertId('scriptures_id_seq');
 
-    if(isset($_POST['newTopicName'])) {
+    if(isset($_POST['newTopicName']) && isset($_POST['newTopic'])) {
         $query2 = 'INSERT INTO topic (name) VALUES (:name)';
         $stmt2 = $db->prepare($query2);
         $stmt2->execute(array(':name' => $_POST['newTopicName']));
