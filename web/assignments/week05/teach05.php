@@ -1,4 +1,7 @@
 <?php
+// include the DB access
+include "teach05dbaccess.php";
+
 // set variables for the inputs
 $book = "";
 
@@ -52,28 +55,6 @@ function cleanInputs($data) {
 		</form>
 		<h2 class="container">Results</h2>
 		<?php
-			try
-			{
-				$dbUrl = getenv('DATABASE_URL');
-
-				$dbOpts = parse_url($dbUrl);
-
-				$dbHost = $dbOpts["host"];
-				$dbPort = $dbOpts["port"];
-				$dbUser = $dbOpts["user"];
-				$dbPassword = $dbOpts["pass"];
-				$dbName = ltrim($dbOpts["path"],'/');
-
-				$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-				$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			}
-			catch (PDOException $ex)
-			{
-			  echo 'Error!: ' . $ex->getMessage();
-			  die();
-			}
-
 			$statement = $db->prepare('SELECT book, chapter, verse, id FROM scriptures WHERE book=:book');
 			$statement->execute(array(':book' => $book));
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
