@@ -7,7 +7,7 @@
     session_start();
 
     // include the DB connection
-    include 'rdidbconnect.php';
+    require 'rdidbconnect.php';
 
     // create a variable to store a login error if needed
     $error = "";

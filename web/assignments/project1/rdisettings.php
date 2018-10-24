@@ -6,7 +6,7 @@
     $characters = array();
 
     // include the DB connection
-    include 'rdidbconnect.php';
+    require 'rdidbconnect.php';
 ?>
 <!DOCTYPE html>
 
