@@ -61,7 +61,18 @@ include "../week05/teach05dbaccess.php";
     </div>
     <div class="container">
         <h2>Scripture Reference List</h2>
-        <div id="scriptureList" class="container"></div>
+        <div id="scriptureList" class="container">
+            <ul>
+                <?php
+                $statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
+                while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+                    ?>
+                    <li><strong><?php echo $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse']; ?></strong> - "<?php echo $row['content']; ?>"</li>
+                <?php
+                endwhile;
+                ?>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
