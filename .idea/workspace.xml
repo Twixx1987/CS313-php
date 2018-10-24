@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/week05/teach05.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/week05/teach05.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/assignments/week06/teach06.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/week06/teach06.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +46,7 @@
         <counts>
           <entry key="css" value="2" />
           <entry key="js" value="3" />
-          <entry key="php" value="30" />
+          <entry key="php" value="31" />
           <entry key="sql" value="2" />
         </counts>
       </usages-collector>
@@ -53,7 +54,7 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="30" />
+          <entry key="PHP" value="31" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -61,17 +62,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="275" />
-          <entry key="php" value="3060" />
+          <entry key="php" value="3079" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="456" />
+          <entry key="txt" value="481" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="275" />
-          <entry key="PHP" value="3030" />
-          <entry key="PLAIN_TEXT" value="456" />
+          <entry key="PHP" value="3049" />
+          <entry key="PLAIN_TEXT" value="481" />
           <entry key="SQL" value="132" />
         </counts>
       </usages-collector>
@@ -81,6 +82,9 @@
         </counts>
       </usages-collector>
     </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="cs313-php" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -120,20 +124,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/week05/teach05.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" selection-start-line="46" selection-end-line="48" selection-end-column="10" />
+            <state relative-caret-position="534">
+              <caret line="53" column="88" selection-start-line="53" selection-start-column="88" selection-end-line="53" selection-end-column="88" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assignments/week03/checkout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="619">
+              <caret line="104" column="124" selection-start-line="104" selection-start-column="89" selection-end-line="104" selection-end-column="124" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/week06/teach06.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="79" column="11" lean-forward="true" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
+            <state relative-caret-position="714">
+              <caret line="78" column="57" lean-forward="true" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -166,10 +179,10 @@
         <option value="$PROJECT_DIR$/web/assignments/project1/rdihome.php" />
         <option value="$PROJECT_DIR$/web/db/teach06.sql" />
         <option value="$PROJECT_DIR$/web/assignments/week05/teach05dbaccess.php" />
-        <option value="$PROJECT_DIR$/web/assignments/week05/teach05.php" />
         <option value="$PROJECT_DIR$/web/assignments/assignments.php" />
         <option value="$PROJECT_DIR$/web/top_menu.php" />
         <option value="$PROJECT_DIR$/web/assignments/week06/teach06.php" />
+        <option value="$PROJECT_DIR$/web/assignments/week05/teach05.php" />
       </list>
     </option>
   </component>
@@ -207,6 +220,13 @@
               <item name="cs313-php" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="assignments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs313-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cs313-php" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="assignments" type="462c0819:PsiDirectoryNode" />
+              <item name="week03" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cs313-php" type="b2602c69:ProjectViewProjectNode" />
@@ -260,7 +280,7 @@
       <workItem from="1539127522078" duration="1620000" />
       <workItem from="1539979534953" duration="22213000" />
       <workItem from="1540339729462" duration="2139000" />
-      <workItem from="1540346848598" duration="1608000" />
+      <workItem from="1540346848598" duration="2032000" />
     </task>
     <task id="LOCAL-00001" summary="Updated query to select each version once.">
       <created>1539980406887</created>
@@ -549,11 +569,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540351657351</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="update layout of teach06">
+      <created>1540352024105</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1540352024105</updated>
+    </task>
+    <task id="LOCAL-00043" summary="update form action">
+      <created>1540352270758</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1540352270758</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31180000" />
+    <option name="totallyTimeSpent" value="31604000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,17 +602,17 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49838188" weight="0.18336888" />
+      <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.18336888" />
+      <window_info id="Favorites" order="2" sideWeight="0.50161815" side_tool="true" weight="0.18336888" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.329718" />
@@ -609,7 +643,9 @@
     <MESSAGE value="update menu paths" />
     <MESSAGE value="update formatting and scripting links for teach06" />
     <MESSAGE value="update formatting of teach06" />
-    <option name="LAST_COMMIT_MESSAGE" value="update formatting of teach06" />
+    <MESSAGE value="update layout of teach06" />
+    <MESSAGE value="update form action" />
+    <option name="LAST_COMMIT_MESSAGE" value="update form action" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -715,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/week05/teach05.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" selection-start-line="46" selection-end-line="48" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdistatistics.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -729,10 +758,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/week03/checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="104" column="124" selection-start-line="104" selection-start-column="89" selection-end-line="104" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/week06/teach06.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="79" column="11" lean-forward="true" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
+        <state relative-caret-position="714">
+          <caret line="78" column="57" lean-forward="true" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/week05/teach05.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="53" column="88" selection-start-line="53" selection-start-column="88" selection-end-line="53" selection-end-column="88" />
         </state>
       </provider>
     </entry>

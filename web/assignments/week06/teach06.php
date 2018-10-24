@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<?php
             endwhile;
 		?>
-        <input type="submit" name="submit" value="Submit">
+        <input type="submit" name="submit" value="Submit" class="btn btn-secondary">
     </form>
 </body>
 </html>

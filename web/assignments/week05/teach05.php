@@ -51,7 +51,7 @@ function cleanInputs($data) {
 		<form id="search" name="search" method="post" action="teach05.php">
 			<label for="book">Enter the name of a book to search for content from it.</label><br />
 			<input type="text" name="book" id="book" placeholder="Book" <?php if ($_SERVER["REQUEST_METHOD"]=="POST") echo 'value="' . $book .'"';?>><br/>
-			<input type="submit" value="Submit" name="submit">
+			<input type="submit" value="Submit" name="submit"  class="btn btn-secondary">
 		</form>
 		<h2 class="container">Results</h2>
 		<?php
