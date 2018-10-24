@@ -70,7 +70,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm">
-			
+                <a class="btn btn-secondary" role="button" href="/assignments/week06/teach06.php">Teach 06 - PHP Database Update</a>
 			</div>
 			<div class="col-sm">
 			
