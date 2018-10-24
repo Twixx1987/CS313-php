@@ -61,17 +61,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="275" />
-          <entry key="php" value="3554" />
+          <entry key="php" value="3555" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="571" />
+          <entry key="txt" value="583" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="275" />
-          <entry key="PHP" value="3524" />
-          <entry key="PLAIN_TEXT" value="571" />
+          <entry key="PHP" value="3525" />
+          <entry key="PLAIN_TEXT" value="583" />
           <entry key="SQL" value="132" />
         </counts>
       </usages-collector>
@@ -126,8 +126,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/week06/teach06.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+            <state relative-caret-position="704">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
             </state>
           </provider>
         </entry>
@@ -261,7 +261,7 @@
       <workItem from="1539127522078" duration="1620000" />
       <workItem from="1539979534953" duration="22213000" />
       <workItem from="1540339729462" duration="2139000" />
-      <workItem from="1540346848598" duration="4330000" />
+      <workItem from="1540346848598" duration="4822000" />
     </task>
     <task id="LOCAL-00001" summary="Updated query to select each version once.">
       <created>1539980406887</created>
@@ -592,11 +592,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540354208195</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="correct typo">
+      <created>1540354747392</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1540354747392</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33902000" />
+    <option name="totallyTimeSpent" value="34394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -658,7 +665,8 @@
     <MESSAGE value="update teach06 page layout" />
     <MESSAGE value="add new topic option" />
     <MESSAGE value="add new topic db update functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new topic db update functionality" />
+    <MESSAGE value="correct typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct typo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -787,8 +795,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/week06/teach06.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        <state relative-caret-position="704">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
