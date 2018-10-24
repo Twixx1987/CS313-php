@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         endwhile;
 	?>
 
-    <form  class="container"action="team_assignment_06.php" method="POST">
+    <form  class="container"action="teach06.php" method="POST">
         <label>Book</label>
 		<input type="text" name="book">
 		<br />
