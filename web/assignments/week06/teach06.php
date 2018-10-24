@@ -2,36 +2,6 @@
 // include the DB access
 include "../week05/teach05dbaccess.php";
 
-var_dump($_POST);
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-// Insert into db
-
-	$query = 'INSERT INTO scriptures (book, chapter, verse, content) VALUES (:book, :chapter, :verse, :content)';
-	$stmt = $db->prepare($query);
-	$stmt->execute(array(':book' => $_POST['book'], ':chapter' => $_POST['chapter'], ':verse' => $_POST['verse'], ':content' => $_POST['content']));
-
-	$newId = $db->lastInsertId('scriptures_id_seq');
-
-	if(isset($_POST['newTopicName'])) {
-        $query2 = 'INSERT INTO topic (name) VALUES (:name)';
-        $stmt2 = $db->prepare($query2);
-        $stmt2->execute(array(':name' => $_POST['newTopicName']));
-
-        $topicId = $db->lastInsertId('topic_id_seq');
-
-        $query = 'INSERT INTO scripture_topic (scriptures_id, topic_id) VALUES (:scripture, :topic)';
-        $stmt = $db->prepare($query);
-        $stmt->execute(array(':scripture' => $newId, ':topic' => $topicId));
-    }
-
-	foreach ($_POST['topics'] as $topic) {
-		$query = 'INSERT INTO scripture_topic (scriptures_id, topic_id) VALUES (:scripture, :topic)';
-		$stmt = $db->prepare($query);
-		$stmt->execute(array(':scripture' => $newId, ':topic' => $topic));
-	}
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -50,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="teach06.js"></script>
 
     <!-- Page title -->
     <title>Scripture Resources</title>
@@ -61,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div class="container">
         <h2>Add new Scriptures</h2>
-        <form  class="container"action="teach06.php" method="POST">
+        <form  class="container" name="scriptureForm" action="teach06ajaxdata.php" onsubmit="ajaxSubmit(); return false;" method="POST">
             <label>Book</label>
             <input type="text" name="book">
             <br />
@@ -90,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div class="container">
         <h2>Scripture Reference List</h2>
-
+        <div id="scriptureList" class="container"></div>
     </div>
 </body>
 </html>
