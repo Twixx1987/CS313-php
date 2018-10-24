@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	$query = 'INSERT INTO scriptures (book, chapter, verse, content) VALUES (:book, :chapter, :verse, :content)';
 	$stmt = $db->prepare($query);
-	$pdo = $stmt->execute(array(':book' => $_POST['book'], ':chapter' => $_POST['chapter'], ':verse' => $_POST['verse'], ':content' => $_POST['content']));
+	$stmt->execute(array(':book' => $_POST['book'], ':chapter' => $_POST['chapter'], ':verse' => $_POST['verse'], ':content' => $_POST['content']));
 
 	$newId = $db->lastInsertId('scriptures_id_seq');
 
@@ -65,11 +65,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $statement = $db->query('SELECT * FROM topic ORDER BY name');
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
             ?>
-            <input type="checkbox" name="topics[]" value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?><br>
+            <input type="checkbox" name="topics[]" value="<?php echo $row['id']; ?>"/><?php echo $row['name']; ?>
+            <br />
             <?php
                 endwhile;
             ?>
-            <input type="submit" name="submit" value="Submit" class="btn btn-secondary">
+            <input type="checkbox" name="newTopic" value="newTopic"/><input type="text" name="newTopic" placeholder="New Topic"/>
+            <br/>
+            <input type="submit" name="submit" value="Submit" class="btn btn-secondary"/>
         </form>
     </div>
     <div>
