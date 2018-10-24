@@ -11,7 +11,7 @@ function ajaxSubmit() {
         // check for completion and ok status
         if (this.readyState == 4 && this.status == 200) {
             // initiate function to update the display
-            document.getElementById("scriptureList").innerHTML = this.responseText;
+            document.getElementById("scripturePage").innerHTML = this.responseText;
         }
     }
     // create the request specifics

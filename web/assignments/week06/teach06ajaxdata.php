@@ -30,14 +30,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+<h2>Add new Scriptures</h2>
+<form  class="container" name="scriptureForm" action="teach06ajaxdata.php" onsubmit="ajaxSubmit(); return false;" method="POST">
+    <label>Book</label>
+    <input type="text" name="book">
+    <br />
+    <label>Chapter</label>
+    <input type="text" name="chapter">
+    <br />
+    <label>Verse</label>
+    <input type="text" name="verse">
+    <br />
+    <textarea name="content" rows=5 cols=40 placeholder="Contents"></textarea><br>
+
+    <ul id="topics">
+        <!-- fetch the list of topics from database -->
+        <?php
+        $statement = $db->query('SELECT * FROM topic ORDER BY name');
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+            ?>
+            <li><input type="checkbox" name="topics[]" value="<?php echo $row['id']; ?>"/><?php echo $row['name']; ?></li>
+        <?php
+        endwhile;
+        ?>
+        <li><input type="checkbox" name="newTopic" value="newTopic"/><input type="text" name="newTopicName" placeholder="New Topic"/></li>
+    </ul>
+    <br/>
+    <input type="submit" name="submit" value="Submit" class="btn btn-secondary"/>
+</form>
+<h2>Scripture Reference List</h2>
 <ul>
     <?php
-        $statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
-    ?>
+    $statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+        ?>
         <li><strong><?php echo $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse']; ?></strong> - "<?php echo $row['content']; ?>"</li>
     <?php
-        endwhile;
+    endwhile;
     ?>
 </ul>
 <?php

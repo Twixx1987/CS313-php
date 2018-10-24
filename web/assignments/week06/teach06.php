@@ -30,7 +30,7 @@ include "../week05/teach05dbaccess.php";
     <div class="menu container">
         <?php include '../../top_menu.php'; ?>
     </div>
-    <div class="container">
+    <div id="scripturePage" class="container">
         <h2>Add new Scriptures</h2>
         <form  class="container" name="scriptureForm" action="teach06ajaxdata.php" onsubmit="ajaxSubmit(); return false;" method="POST">
             <label>Book</label>
@@ -44,35 +44,32 @@ include "../week05/teach05dbaccess.php";
             <br />
             <textarea name="content" rows=5 cols=40 placeholder="Contents"></textarea><br>
 
+            <ul id="topics">
             <!-- fetch the list of topics from database -->
             <?php
                 $statement = $db->query('SELECT * FROM topic ORDER BY name');
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
             ?>
-            <input type="checkbox" name="topics[]" value="<?php echo $row['id']; ?>"/><?php echo $row['name']; ?>
-            <br />
+            <li><input type="checkbox" name="topics[]" value="<?php echo $row['id']; ?>"/><?php echo $row['name']; ?></li>
             <?php
                 endwhile;
             ?>
-            <input type="checkbox" name="newTopic" value="newTopic"/><input type="text" name="newTopicName" placeholder="New Topic"/>
+            <li><input type="checkbox" name="newTopic" value="newTopic"/><input type="text" name="newTopicName" placeholder="New Topic"/></li>
+            </ul>
             <br/>
             <input type="submit" name="submit" value="Submit" class="btn btn-secondary"/>
         </form>
-    </div>
-    <div class="container">
         <h2>Scripture Reference List</h2>
-        <div id="scriptureList" class="container">
-            <ul>
-                <?php
-                $statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
-                while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
-                    ?>
-                    <li><strong><?php echo $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse']; ?></strong> - "<?php echo $row['content']; ?>"</li>
-                <?php
-                endwhile;
+        <ul>
+            <?php
+            $statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                 ?>
-            </ul>
-        </div>
+                <li><strong><?php echo $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse']; ?></strong> - "<?php echo $row['content']; ?>"</li>
+            <?php
+            endwhile;
+            ?>
+        </ul>
     </div>
 </body>
 </html>
