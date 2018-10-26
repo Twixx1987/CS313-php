@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdi.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdi.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -282,14 +281,7 @@
       <workItem from="1540339729462" duration="2139000" />
       <workItem from="1540346848598" duration="10933000" />
       <workItem from="1540442984827" duration="1559000" />
-      <workItem from="1540566147206" duration="7922000" />
-    </task>
-    <task id="LOCAL-00014" summary="update settings page">
-      <created>1539990433948</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1539990433948</updated>
+      <workItem from="1540566147206" duration="7952000" />
     </task>
     <task id="LOCAL-00015" summary="update settings page">
       <created>1539990884231</created>
@@ -627,11 +619,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540574128293</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Add JS for settings handling">
+      <created>1540574712691</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1540574712691</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49986000" />
+    <option name="totallyTimeSpent" value="50016000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

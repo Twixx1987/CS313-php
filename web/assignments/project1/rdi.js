@@ -24,10 +24,10 @@ $(document).ready(function(){
         // check the status of the activating object
         if (this.checked == true) {
             // uncheck all characters from that version
-            $("." + checkValue).attr("checked", false);
+            $("." + checkValue).attr("checked", true);
         } else {
             // uncheck all characters from that version
-            $("." + checkValue).attr("checked", true);
+            $("." + checkValue).attr("checked", false);
         }
     });
 });
