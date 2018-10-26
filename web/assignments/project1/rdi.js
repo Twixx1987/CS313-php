@@ -28,15 +28,16 @@ $(document).ready(function(){
         var stringStart = classes.indexOf("character_");
 
         // find the character_ class name
-        var id = classes.substring(stringStart);
+        var id = "#" + classes.substring(stringStart);
+        console.log(id);
 
         // check the status of the associated checkbox
-        if ($("#" + id).checked == false) {
+        if ($(id).checked === false) {
             // uncheck all characters from that version
-            $("#" + id).attr("checked", true);
+            $(id).attr("checked", true);
         } else {
             // uncheck all characters from that version
-            $("#" + id).removeAttr("checked");
+            $(id).removeAttr("checked");
         }
     });
 });

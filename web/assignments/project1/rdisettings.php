@@ -65,11 +65,11 @@
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                 ?>
 				<tr class="version_<?php echo $row['version_id']; ?> character character_<?php echo $row['character_id']; ?>">
-                    <td class="character character_<?php echo $row['character_id']; ?>"><?php echo $row['version']; ?></td>
-					<td class="character character_<?php echo $row['character_id']; ?>"><?php echo $row['character']; ?></td>
-					<td class="character character_<?php echo $row['character_id']; ?>"><?php echo $row['race']; ?></td>
-					<td class="character character_<?php echo $row['character_id']; ?>"><?php echo $row['class']; ?></td>
-					<td class="character character_<?php echo $row['character_id']; ?>">
+                    <td class="character_<?php echo $row['character_id']; ?>"><?php echo $row['version']; ?></td>
+					<td class="character_<?php echo $row['character_id']; ?>"><?php echo $row['character']; ?></td>
+					<td class="character_<?php echo $row['character_id']; ?>"><?php echo $row['race']; ?></td>
+					<td class="character_<?php echo $row['character_id']; ?>"><?php echo $row['class']; ?></td>
+					<td class="character_<?php echo $row['character_id']; ?>">
 					    <?php if($row['good'] != ""): ?>
                             <strong>The Good:</strong><?php echo $row['good']; ?><br/>
                         <?php endif; ?>
