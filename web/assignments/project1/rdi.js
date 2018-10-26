@@ -32,12 +32,12 @@ $(document).ready(function(){
         console.log(id);
 
         // check the status of the associated checkbox
-        if ($(id).checked === false) {
-            // uncheck all characters from that version
-            $(id).attr("checked", true);
-        } else {
+        if ($(id).checked === true) {
             // uncheck all characters from that version
             $(id).removeAttr("checked");
+        } else {
+            // uncheck all characters from that version
+            $(id).attr("checked", true);
         }
     });
 });
