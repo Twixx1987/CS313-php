@@ -8,15 +8,22 @@
     // include the DB connection
     require 'rdidbconnect.php';
 
-    // create an array variable to add all checked characters to the session variables
-    $characters = array();
-
-var_dump($_POST);
-    // if the user has submitted populate the character settings array
+    // if the user has submitted, populate the character settings array
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        var_dump($_POST);
+        // create an array variable to add all checked characters to the session variables
+        $characters = array();
 
+        // loop through the POST array adding each character to the character array
+        foreach ($_POST as $value) {
+            // check to see if the item is a character
+            if (strpos($value, "character_")) {
+                // the value is a character, append it to the characters array
+                array_push($characters, $value);
+            }
+        }
 
+        // add the characters array to the session
+        $_SESSION["characters"] = $characters;
     }
 ?>
 <!DOCTYPE html>
@@ -88,9 +95,8 @@ var_dump($_POST);
                         <input type="checkbox" class="version_<?php echo $row['version_id']; ?> character_<?php echo $row['character_id']; ?>"
                                 id="character_<?php echo $row['character_id']; ?>" name="character_<?php echo $row['character_id']; ?>" value="character_<?php echo $row['character_id']; ?>"
                                 <?php
-                                    if ($_POST["character_" . $row['character_id']] == $row['character']) {
-                                        // add the character to the array of characters
-                                        $characters["character_" . $row['character_id']] = $row['character'];
+                                    if (in_array("character_" . $row['character_id'], $_SESSION["characters"])) {
+                                        // check the current row
 						                echo 'checked';
                                     }
                                 ?>
