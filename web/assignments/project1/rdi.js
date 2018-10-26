@@ -35,9 +35,11 @@ $(document).ready(function(){
         if ($(id).checked) {
             // uncheck all characters from that version
             $(id).removeAttr("checked");
+            $(this).css("background-color", "white");
         } else {
             // uncheck all characters from that version
             $(id).attr("checked", true);
+            $(this).css("background-color", "#fabdb8");
         }
     });
 });
