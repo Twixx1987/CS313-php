@@ -5,6 +5,9 @@
     // create an array variable to add all checked characters to the session variables
     $characters = array();
 
+    // include the logged in verification
+    require 'rdiverifylogin.php';
+
     // include the DB connection
     require 'rdidbconnect.php';
 ?>
@@ -36,6 +39,7 @@
 	</div>
 	<div class="container">
         <button id="selectAll" name="selectAll">Select All</button>
+        <button id="clearAll" name="clearAll">Clear All</button>
 		<form name="settings" action="rdisettings.php" method="post">
             <input type="submit" value="Update Settings" id="allUpdate">
 			<h2 class="container">Box Sets</h2>

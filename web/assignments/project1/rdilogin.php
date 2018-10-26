@@ -10,8 +10,6 @@
         array_pop($_SESSION);
     }
 
-    var_dump($_SESSION);
-
     // include the DB connection
     require 'rdidbconnect.php';
 
