@@ -22,7 +22,7 @@ $(document).ready(function(){
         var checkValue = this.value;
 
         // check the status of the activating object
-        if (this.checked) {
+        if (this.checked == true) {
             // uncheck all characters from that version
             $("." + checkValue).attr("checked", "false");
         } else {
