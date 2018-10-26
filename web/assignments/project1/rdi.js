@@ -27,17 +27,17 @@ $(document).ready(function(){
         // find the character_ class name
         var id = "#" + classes.substring(stringStart);
         console.log(id);
-        console.log($(id));
+        console.log(document.getElementById(id));
 
         // check the status of the associated checkbox
-        if ($(id).checked === undefined) {
+        if (document.getElementById(id).checked === undefined) {
             // uncheck all characters from that version
-            $(id).attr("checked", true);
+            document.getElementById(id).attr("checked", true);
             $(this).css("background-color", "#fabdb8");
-            console.log($(id).checked);
-        } else if ($(id).checked === "checked") {
+            console.log(document.getElementById(id).checked);
+        } else if (document.getElementById(id).checked === "checked") {
             // uncheck all characters from that version
-            $(id).removeAttr("checked");
+            document.getElementById(id).removeAttr("checked");
             $(this).css("background-color", "white");
         }
     });
