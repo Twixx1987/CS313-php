@@ -2,7 +2,7 @@
 $(document).ready(function(){
     // select all was clicked
    $('#selectAll').click(function() {
-       $('.versionSelector').attr("checked", "true");
+       $('.versionSelector').attr("checked", true);
    });
 });
 
@@ -10,7 +10,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     // select all was clicked
     $('#clearAll').click(function() {
-        $('.versionSelector').attr("checked", "false");
+        $('.versionSelector').attr("checked", false);
     });
 });
 
@@ -24,10 +24,10 @@ $(document).ready(function(){
         // check the status of the activating object
         if (this.checked == true) {
             // uncheck all characters from that version
-            $("." + checkValue).attr("checked", "false");
+            $("." + checkValue).attr("checked", false);
         } else {
             // uncheck all characters from that version
-            $("." + checkValue).attr("checked", "true");
+            $("." + checkValue).attr("checked", true);
         }
     });
 });
