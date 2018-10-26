@@ -4,7 +4,6 @@
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdi.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,18 +62,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1504" />
+          <entry key="js" value="1510" />
           <entry key="php" value="4352" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="935" />
+          <entry key="txt" value="936" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="4" />
-          <entry key="JavaScript" value="1504" />
+          <entry key="JavaScript" value="1510" />
           <entry key="PHP" value="4322" />
-          <entry key="PLAIN_TEXT" value="935" />
+          <entry key="PLAIN_TEXT" value="936" />
           <entry key="SQL" value="132" />
         </counts>
       </usages-collector>
@@ -139,7 +138,7 @@
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="488">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+              <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -274,21 +273,7 @@
       <workItem from="1540339729462" duration="2139000" />
       <workItem from="1540346848598" duration="10933000" />
       <workItem from="1540442984827" duration="1559000" />
-      <workItem from="1540566147206" duration="12001000" />
-    </task>
-    <task id="LOCAL-00019" summary="Begin Statistics page">
-      <created>1539992479888</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1539992479888</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Begin Statistics page">
-      <created>1539995961360</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1539995961360</updated>
+      <workItem from="1540566147206" duration="12738000" />
     </task>
     <task id="LOCAL-00021" summary="update settings page">
       <created>1539996444581</created>
@@ -619,11 +604,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540578013847</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Add JS for settings handling">
+      <created>1540578844416</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1540578844416</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Add JS for settings handling">
+      <created>1540579503326</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1540579503326</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54065000" />
+    <option name="totallyTimeSpent" value="54802000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -842,7 +841,7 @@
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
         </state>
       </provider>
     </entry>
