@@ -1,24 +1,17 @@
 <?php
-    // connect to the database
-	try
-	{
-		$dbUrl = getenv('DATABASE_URL');
+// check to see if the user is logged in
+if (isset($_SESSION['username']) && isset($_SESSION['user_id'])) {
+    // set the user_id and username variables
+    $user_id = $_SESSION['user_id'];
+    $username = $_SESSION['username'];
+} else {
+    // clean the output buffer
+    ob_clean();
 
-		$dbOpts = parse_url($dbUrl);
+    // redirect to the login page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
+    header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdilogin.php', true, 303);
 
-		$dbHost = $dbOpts["host"];
-		$dbPort = $dbOpts["port"];
-		$dbUser = $dbOpts["user"];
-		$dbPassword = $dbOpts["pass"];
-		$dbName = ltrim($dbOpts["path"],'/');
-
-		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	}
-	catch (PDOException $ex)
-	{
-	  echo 'Error!: ' . $ex->getMessage();
-	  die();
-	}
+    // terminate php script upon redirect
+    exit();
+}
 ?>

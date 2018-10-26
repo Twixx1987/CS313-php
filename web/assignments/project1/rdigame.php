@@ -2,9 +2,8 @@
     //start the session
     session_start();
 
-    // get the user_id and username session variables
-    $user_id = $_SESSION['user_id'];
-    $username = $_SESSION['username'];
+    // include the logged in verification
+    require 'rdiverifylogin.php';
 
     // include the DB connection
     require 'rdidbconnect.php';

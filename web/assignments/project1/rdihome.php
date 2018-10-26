@@ -2,6 +2,9 @@
     //start the session
     session_start();
 
+    // include the logged in verification
+    require 'rdiverifylogin.php';
+
     // include the DB connection
     require 'rdidbconnect.php';
 ?>
