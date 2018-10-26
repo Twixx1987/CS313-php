@@ -2,10 +2,10 @@
 $(document).ready(function(){
     // select all was clicked
    $('#selectAll').click(function() {
-       // remove the checked attribute
-       $(':checkbox').removeAttr("checked");
        // set the checked attribute
        $(':checkbox').attr("checked", true);
+       // set the background color
+       $('tr').css("background-color", "#fabdb8");
    });
 });
 
@@ -13,7 +13,10 @@ $(document).ready(function(){
 $(document).ready(function(){
     // select all was clicked
     $('#clearAll').click(function() {
+        // remove the checked attribute
         $(':checkbox').removeAttr("checked");
+        // set the background color
+        $('tr').css("background-color", "white");
     });
 });
 
@@ -40,6 +43,7 @@ $(document).ready(function(){
             // uncheck all characters from that version
             $(id).attr("checked", true);
             $(this).css("background-color", "#fabdb8");
+            console.log($(id).checked);
         }
     });
 });
