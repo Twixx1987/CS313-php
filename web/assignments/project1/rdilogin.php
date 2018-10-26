@@ -1,6 +1,8 @@
 <?php 
     // upon navigating to the login page the session variables will be cleared and the session destroyed
-    session_unset();
+    while (count($_SESSION)) {
+        array_pop($_SESSION);
+    }
     session_destroy();
 
     // use_strict_mode is mandatory for security reasons.
