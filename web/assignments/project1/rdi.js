@@ -27,6 +27,7 @@ $(document).ready(function(){
         // find the character_ class name
         var id = "#" + classes.substring(stringStart);
         console.log(id);
+        console.log($(id));
 
         // check the status of the associated checkbox
         if ($(id).checked === undefined) {

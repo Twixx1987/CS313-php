@@ -62,7 +62,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1707" />
+          <entry key="js" value="1749" />
           <entry key="php" value="4352" />
           <entry key="sql" value="106" />
           <entry key="txt" value="936" />
@@ -71,7 +71,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="4" />
-          <entry key="JavaScript" value="1707" />
+          <entry key="JavaScript" value="1749" />
           <entry key="PHP" value="4322" />
           <entry key="PLAIN_TEXT" value="936" />
           <entry key="SQL" value="132" />
@@ -137,8 +137,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+            <state relative-caret-position="350">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -273,14 +273,7 @@
       <workItem from="1540339729462" duration="2139000" />
       <workItem from="1540346848598" duration="10933000" />
       <workItem from="1540442984827" duration="1559000" />
-      <workItem from="1540566147206" duration="15756000" />
-    </task>
-    <task id="LOCAL-00028" summary="Update while loop to separate HTML and PHP code on settings page">
-      <created>1540010792791</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1540010792791</updated>
+      <workItem from="1540566147206" duration="16807000" />
     </task>
     <task id="LOCAL-00029" summary="Update while loops to separate HTML and PHP code">
       <created>1540012527911</created>
@@ -618,11 +611,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540582273661</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Add JS for settings handling">
+      <created>1540588980069</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1540588980069</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57820000" />
+    <option name="totallyTimeSpent" value="58871000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -840,8 +840,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        <state relative-caret-position="350">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
         </state>
       </provider>
     </entry>
