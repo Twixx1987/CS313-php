@@ -56,14 +56,14 @@ $(document).ready(function(){
         var checkValue = this.value;
 
         // check the status of the activating object
-        if (this.checked === undefined) {
-            // uncheck all characters from that version
-            $("." + checkValue).removeAttr("checked");
-            $("." + checkValue).css("background-color", "white");
-        } else {
+        if (this.checked === true) {
             // check all characters from that version
             $("." + checkValue).attr("checked", true);
             $("." + checkValue).css("background-color", "#fabdb8");
+        } else {
+            // uncheck all characters from that version
+            $("." + checkValue).css("background-color", "white");
+            $("." + checkValue).removeAttr("checked");
         }
     });
 });
