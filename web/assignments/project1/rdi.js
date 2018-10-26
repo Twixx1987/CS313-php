@@ -10,7 +10,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     // select all was clicked
     $('#clearAll').click(function() {
-        $('.versionSelector').attr("checked", false);
+        $('.versionSelector').removeAttr("checked");
     });
 });
 
@@ -27,7 +27,7 @@ $(document).ready(function(){
             $("." + checkValue).attr("checked", true);
         } else {
             // uncheck all characters from that version
-            $("." + checkValue).attr("checked", false);
+            $("." + checkValue).removeAttr("checked");
         }
     });
 });
