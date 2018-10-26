@@ -4,7 +4,6 @@
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +63,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="741" />
-          <entry key="php" value="4148" />
+          <entry key="php" value="4158" />
           <entry key="sql" value="106" />
           <entry key="txt" value="905" />
         </counts>
@@ -73,7 +72,7 @@
         <counts>
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="741" />
-          <entry key="PHP" value="4118" />
+          <entry key="PHP" value="4128" />
           <entry key="PLAIN_TEXT" value="905" />
           <entry key="SQL" value="132" />
         </counts>
@@ -129,8 +128,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdilogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="125">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -322,21 +321,7 @@
       <workItem from="1540339729462" duration="2139000" />
       <workItem from="1540346848598" duration="10933000" />
       <workItem from="1540442984827" duration="1559000" />
-      <workItem from="1540566147206" duration="2751000" />
-    </task>
-    <task id="LOCAL-00006" summary="update settings page">
-      <created>1539986391127</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1539986391127</updated>
-    </task>
-    <task id="LOCAL-00007" summary="update settings page">
-      <created>1539986428292</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1539986428292</updated>
+      <workItem from="1540566147206" duration="4127000" />
     </task>
     <task id="LOCAL-00008" summary="update settings page">
       <created>1539988296078</created>
@@ -667,11 +652,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540568835788</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="update RDI pages to require login verification">
+      <created>1540569426453</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1540569426453</updated>
+    </task>
+    <task id="LOCAL-00056" summary="update RDI pages to require login verification">
+      <created>1540570777407</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1540570777407</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44815000" />
+    <option name="totallyTimeSpent" value="46191000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -889,8 +888,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdilogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="125">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
         </state>
       </provider>
     </entry>
