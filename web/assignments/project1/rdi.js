@@ -1,28 +1,22 @@
-// a function to check all versions and characters
+// jQuery functions to process clicks
 $(document).ready(function(){
-    // select all was clicked
+    // a function to check all versions and characters
    $('#selectAll').click(function() {
        // set the checked attribute
        $(':checkbox').attr("checked", true);
        // set the background color
        $('tr').css("background-color", "#fabdb8");
    });
-});
 
-// a function to clear all versions and characters
-$(document).ready(function(){
-    // select all was clicked
+    // a function to clear all versions and characters
     $('#clearAll').click(function() {
         // remove the checked attribute
         $(':checkbox').removeAttr("checked");
         // set the background color
         $('tr').css("background-color", "white");
     });
-});
 
-// a function to check the characters
-$(document).ready(function(){
-    // version was clicked
+    // a function to check the characters
     $('.character').click(function() {
         // get the version value
         var classes = this.className;
@@ -40,17 +34,14 @@ $(document).ready(function(){
             $(id).attr("checked", true);
             $(this).css("background-color", "#fabdb8");
             console.log($(id).checked);
-        } else {
+        } else if ($(id).checked === "checked") {
             // uncheck all characters from that version
             $(id).removeAttr("checked");
             $(this).css("background-color", "white");
         }
     });
-});
 
-// a function to check the characters of selected version
-$(document).ready(function(){
-    // version was clicked
+    // a function to check the characters of selected version
     $('.versionSelector').change(function() {
         // get the version value
         var checkValue = this.value;
