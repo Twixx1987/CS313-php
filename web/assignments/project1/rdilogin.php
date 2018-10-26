@@ -6,6 +6,8 @@
     // now start a new session for new login
     session_start();
 
+    var_dump($_SESSION);
+
     // include the DB connection
     require 'rdidbconnect.php';
 
