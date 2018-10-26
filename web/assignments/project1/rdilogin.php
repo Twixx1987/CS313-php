@@ -1,15 +1,14 @@
 <?php 
     // upon navigating to the login page the session variables will be cleared and the session destroyed
-    while (count($_SESSION)) {
-        array_pop($_SESSION);
-    }
     session_destroy();
-
-    // use_strict_mode is mandatory for security reasons.
-    ini_set('session.use_strict_mode', 1);
 
     // now start a new session for new login
     session_start();
+
+    // clear any restored session variables
+    while (count($_SESSION)) {
+        array_pop($_SESSION);
+    }
 
     var_dump($_SESSION);
 
