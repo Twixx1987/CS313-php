@@ -1,16 +1,16 @@
-// a function to check all versions
+// a function to check all versions and characters
 $(document).ready(function(){
     // select all was clicked
    $('#selectAll').click(function() {
-       $('.versionSelector').attr("checked", true);
+       $(':checkbox').attr("checked", true);
    });
 });
 
-// a function to clear all versions
+// a function to clear all versions and characters
 $(document).ready(function(){
     // select all was clicked
     $('#clearAll').click(function() {
-        $('.versionSelector').removeAttr("checked");
+        $(':checkbox').removeAttr("checked");
     });
 });
 
