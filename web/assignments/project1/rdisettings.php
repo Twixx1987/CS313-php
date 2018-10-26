@@ -24,6 +24,8 @@
 
         // add the characters array to the session
         $_SESSION["characters"] = $characters;
+
+        var_dump($_SESSION);
     }
 ?>
 <!DOCTYPE html>
