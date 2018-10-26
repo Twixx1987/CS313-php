@@ -35,15 +35,15 @@ $(document).ready(function(){
         console.log(id);
 
         // check the status of the associated checkbox
-        if ($(id).checked === true) {
-            // uncheck all characters from that version
-            $(id).removeAttr("checked");
-            $(this).css("background-color", "white");
-        } else {
+        if ($(id).checked === undefined) {
             // uncheck all characters from that version
             $(id).attr("checked", true);
             $(this).css("background-color", "#fabdb8");
             console.log($(id).checked);
+        } else {
+            // uncheck all characters from that version
+            $(id).removeAttr("checked");
+            $(this).css("background-color", "white");
         }
     });
 });
@@ -56,14 +56,14 @@ $(document).ready(function(){
         var checkValue = this.value;
 
         // check the status of the activating object
-        if (this.checked === true) {
+        if (this.checked === undefined) {
             // uncheck all characters from that version
+            $("." + checkValue).removeAttr("checked");
+            $("." + checkValue).css("background-color", "white");
+        } else {
+            // check all characters from that version
             $("." + checkValue).attr("checked", true);
             $("." + checkValue).css("background-color", "#fabdb8");
-        } else {
-            // uncheck all characters from that version
-            $("." + checkValue).css("background-color", "white");
-            $("." + checkValue).removeAttr("checked");
         }
     });
 });
