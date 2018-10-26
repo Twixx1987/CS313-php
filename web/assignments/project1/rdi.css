@@ -71,3 +71,9 @@ td, th {
     margin: 4px;
     border: 1px solid #93160a;
 }
+
+button {
+    @include btn;
+    @include btn-secondary;
+    @include rounded;
+}
