@@ -12,7 +12,11 @@
     $characters = array();
 
     // if the user has submitted populate the character settings array
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        var_dump($_POST);
 
+
+    }
 ?>
 <!DOCTYPE html>
 
