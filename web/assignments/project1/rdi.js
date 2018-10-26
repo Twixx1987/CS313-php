@@ -32,7 +32,7 @@ $(document).ready(function(){
         console.log(id);
 
         // check the status of the associated checkbox
-        if ($(id).checked) {
+        if ($(id).checked === true) {
             // uncheck all characters from that version
             $(id).removeAttr("checked");
             $(this).css("background-color", "white");
@@ -52,11 +52,13 @@ $(document).ready(function(){
         var checkValue = this.value;
 
         // check the status of the activating object
-        if (this.checked == true) {
+        if (this.checked === true) {
             // uncheck all characters from that version
             $("." + checkValue).attr("checked", true);
+            $("." + checkValue).css("background-color", "#fabdb8");
         } else {
             // uncheck all characters from that version
+            $("." + checkValue).css("background-color", "white");
             $("." + checkValue).removeAttr("checked");
         }
     });
