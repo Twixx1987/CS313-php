@@ -32,7 +32,7 @@ $(document).ready(function(){
         console.log(id);
 
         // check the status of the associated checkbox
-        if ($(id).checked == true) {
+        if ($(id).checked) {
             // uncheck all characters from that version
             $(id).removeAttr("checked");
         } else {
