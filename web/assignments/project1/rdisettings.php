@@ -11,6 +11,7 @@
     // create an array variable to add all checked characters to the session variables
     $characters = array();
 
+var_dump($_POST);
     // if the user has submitted populate the character settings array
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         var_dump($_POST);
