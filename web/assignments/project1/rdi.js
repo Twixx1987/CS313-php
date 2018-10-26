@@ -30,15 +30,15 @@ $(document).ready(function(){
         console.log(document.getElementById(id));
 
         // check the status of the associated checkbox
-        if (document.getElementById(id).checked === undefined) {
-            // uncheck all characters from that version
-            document.getElementById(id).attr("checked", true);
-            $(this).css("background-color", "#fabdb8");
-            console.log(document.getElementById(id).checked);
-        } else if (document.getElementById(id).checked === "checked") {
-            // uncheck all characters from that version
-            document.getElementById(id).removeAttr("checked");
+        if ($(id).checked === "checked") {
+            // uncheck the character
+            $(id).removeAttr("checked");
             $(this).css("background-color", "white");
+        } else {
+            // check the character
+            $(id).attr("checked", true);
+            $(this).css("background-color", "#fabdb8");
+            console.log($(id).checked);
         }
     });
 

@@ -2,14 +2,17 @@
     //start the session
     session_start();
 
-    // create an array variable to add all checked characters to the session variables
-    $characters = array();
-
     // include the logged in verification
     require 'rdiverifylogin.php';
 
     // include the DB connection
     require 'rdidbconnect.php';
+
+    // create an array variable to add all checked characters to the session variables
+    $characters = array();
+
+    // if the user has submitted populate the character settings array
+
 ?>
 <!DOCTYPE html>
 
