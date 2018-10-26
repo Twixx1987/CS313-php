@@ -1,5 +1,6 @@
 <?php 
     // upon navigating to the login page the session variables will be cleared and the session destroyed
+    session_unset();
     session_destroy();
 
     // use_strict_mode is mandatory for security reasons.
