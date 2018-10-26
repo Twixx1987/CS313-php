@@ -97,7 +97,7 @@
                                 <?php
                                     if (in_array("character_" . $row['character_id'], $_SESSION["characters"])) {
                                         // check the current row
-						                echo 'checked';
+						                echo 'checked="checked"';
                                     }
                                 ?>
                     ></td>

@@ -63,7 +63,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="1789" />
-          <entry key="php" value="4476" />
+          <entry key="php" value="4991" />
           <entry key="sql" value="106" />
           <entry key="txt" value="969" />
         </counts>
@@ -72,7 +72,7 @@
         <counts>
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="1789" />
-          <entry key="PHP" value="4446" />
+          <entry key="PHP" value="4961" />
           <entry key="PLAIN_TEXT" value="969" />
           <entry key="SQL" value="132" />
         </counts>
@@ -128,8 +128,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="450">
+              <caret line="99" column="63" selection-start-line="99" selection-start-column="63" selection-end-line="99" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -280,21 +280,7 @@
       <workItem from="1540339729462" duration="2139000" />
       <workItem from="1540346848598" duration="10933000" />
       <workItem from="1540442984827" duration="1559000" />
-      <workItem from="1540566147206" duration="18343000" />
-    </task>
-    <task id="LOCAL-00033" summary="Update while loops to separate HTML and PHP code">
-      <created>1540013569659</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1540013569659</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Update while loops to separate HTML and PHP code">
-      <created>1540013639469</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1540013639469</updated>
+      <workItem from="1540566147206" duration="20188000" />
     </task>
     <task id="LOCAL-00035" summary="Update while loops to separate HTML and PHP code">
       <created>1540015516476</created>
@@ -625,11 +611,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540590846732</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="begin server handling of settings">
+      <created>1540591502561</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1540591502561</updated>
+    </task>
+    <task id="LOCAL-00083" summary="begin server handling of settings">
+      <created>1540592791259</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1540592791259</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60407000" />
+    <option name="totallyTimeSpent" value="62252000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -775,13 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigame.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -817,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/week06/teach06.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-487">
@@ -838,6 +824,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -845,10 +838,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="450">
+          <caret line="99" column="63" selection-start-line="99" selection-start-column="63" selection-end-line="99" selection-end-column="63" />
         </state>
       </provider>
     </entry>
