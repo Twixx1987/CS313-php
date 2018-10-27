@@ -67,3 +67,21 @@
 // output a joined game message
 ?>
 <p class="container">SUCCESS: You have created Game #<?php echo $game_id; ?></p>
+<p class="container">The characters selected are:</p>
+<ul>
+    <?php
+    // create the prepared query to find the character name
+    $statement = $db->prepare('SELECT character_name, race, class FROM rdi_characters WHERE character_id=:character_id');
+
+    for ($count = 0; $count < $player_count; $count++):
+    ?>
+    <li><?php
+        $statement->execute(array(':character_id' => $characters[$rand_keys[$count]]));
+        while ($row = $statement2->fetch(PDO::FETCH_ASSOC)){
+            echo $row['character_name'];
+        }
+        ?></li>
+    <?php
+    endfor;
+    ?>
+</ul>
