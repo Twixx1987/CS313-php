@@ -6,7 +6,7 @@
     require 'rdiverifylogin.php';
 
     // get the data from the request
-    $player_count = $_POST["playerCount"];
+    $player_count = intval($_POST["playerCount"]);
 
     // create the prepared query to create the game_id
     $dbInsert = $db->prepare('INSERT INTO rdi_game (player_count) VALUES (:player_count)');
@@ -27,7 +27,7 @@
         $character_id = $characters[$rand_keys[$count]];
 
         // parse out the 'character_' part of the character id
-        $character_id = str_replace("character_","", $character_id);
+        $character_id = intval(str_replace("character_","", $character_id));
 
         // create the prepared query to add the game characters
         $dbInsert2 = $db->prepare('INSERT INTO rdi_game_characters (game_id, character_id) VALUES (:game_id, :character_id)');
@@ -38,7 +38,7 @@
     $character_id = $characters[$rand_keys[0]];
 
     // parse out the 'character_' part of the character id
-    $character_id = str_replace("character_","", $character_id);
+    $character_id = intval(str_replace("character_","", $character_id));
 
     // insert creator into the game
     $dbInsert3 = $db->prepare('INSERT INTO rdi_player (game_id, user_id, character_id) VALUES (:game_id, :user_id, :character_id)');
