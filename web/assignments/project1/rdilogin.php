@@ -23,7 +23,7 @@
         $password = cleanInputs($_POST['password']);
 
         // query the database for the username and password
-        $statement = $db->prepare('SELECT user_name, password, user_id FROM rdi_user WHERE user_name=:username');
+        $statement = $db->prepare('SELECT user_name, password, user_id FROM rdi_user WHERE user_name=:username LIMIT 1');
         $statement->execute(array(':username' => $username));
         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
         {

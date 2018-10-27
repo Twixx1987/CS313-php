@@ -2,11 +2,11 @@
     //start the session
     session_start();
 
-    // include the logged in verification
-    require 'rdiverifylogin.php';
-
     // include the DB connection
     require 'rdidbconnect.php';
+
+    // include the logged in verification
+    require 'rdiverifylogin.php';
 
     // if the user has submitted, populate the character settings array
     if ($_SERVER["REQUEST_METHOD"] == "POST") {

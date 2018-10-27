@@ -1,17 +1,42 @@
 <?php
-    // check to see if the user is logged in
-    if (isset($_SESSION['username']) && isset($_SESSION['user_id'])) {
-        // set the user_id and username variables
-        $user_id = $_SESSION['user_id'];
-        $username = $_SESSION['username'];
-    } else {
-        // clean the output buffer
-        ob_clean();
+    // include the DB connection
+    require 'rdidbconnect.php';
 
-        // redirect to the login page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
-        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdilogin.php', true, 303);
+    // include the logged in verification
+    require 'rdiverifylogin.php';
 
-        // terminate php script upon redirect
-        exit();
+    // get the data from the request
+    $game_id = $_POST["gameId"];
+
+    // create the prepared query to find the game_id
+    $statement = $db->prepare('SELECT rdi_game.game_id, game_open, player_count, COUNT(rdi_player.game_id) AS joined_count FROM rdi_game JOIN rdi_player ON (rdi_player.game_id=rdi_game.game_id) WHERE rdi_game.game_id=:game_id GROUP BY rdi_game.game_id LIMIT 1');
+    $statement->execute(array(':game_id' => $game_id));
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        // is the game ID is valid
+        if ($row["game_id"] == $game_id && $row["game_open"] && $row["player_count"] > $row["joined_count"]) {
+            // get a character from the game_character table
+            $statement2 = $db->prepare('SELECT character_id FROM rdi_game_characters WHERE game_id=:game_id LIMIT 1');
+            $statement2->execute(array(':game_id' => $game_id));
+            while ($row2 = $statement2->fetch(PDO::FETCH_ASSOC)) {
+                $character_id = $row2["character_id"];
+            }
+
+            // insert the player into the game
+            $insert = $db->prepare('INSERT INTO rdi_player (game_id, user_id, character_id) VALUES (:game_id, :user_id, :character_id)');
+            $insert->execute(array(':game_id' => $game_id, ':user_id' => $user_id));
+
+            // remove that
+
+
+            // output a joined game message
+            ?>
+            <p class="container">SUCCESS: You have joined Game #<?php echo $game_id; ?></p>
+            <?php
+        } else {
+            // output an error message
+            ?>
+            <p class="container error">ERROR: Invalid Game ID <?php echo $game_id; ?></p>
+            <?php
+        }
     }
 ?>
