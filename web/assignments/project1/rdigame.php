@@ -61,7 +61,7 @@
                     <label for="nonUsers">Anticipated number of players that will not use this program:</label>
                     <input type="number" id="nonUsers" name="nonUsers" />
                     <br />
-                    <button id="startGame" name="startGame" onclick="$('#gameCreatedStatus'.load('rdistartgame.php', {playerCount : $('#playerCount').val() })">Host Game</button>
+                    <button id="startGame" name="startGame" onclick="$('#gameCreatedStatus').load('rdistartgame.php', {playerCount : $('#playerCount').val() })">Host Game</button>
                 </div>
             </div>
 	    </div>
