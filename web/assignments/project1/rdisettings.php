@@ -24,8 +24,11 @@
                 // the value is a character, append it to the characters array
                 array_push($characters, $value);
 
-                echo "<br />Characters array<br />";
-                var_dump($characters);
+                echo "<br />Character checkbox value<br />";
+                var_dump($value);
+
+                echo "<br />Character value?<br />";
+                var_dump(strpos($value, "character_"));
             }
         }
 
@@ -117,7 +120,6 @@
 
 					// add the array of characters to the session variables
 					$_SESSION['characters'] = $characters;
-					var_dump($_SESSION);
 				?>
 			</table>
             <input type="submit" value="Update Settings" id="characterUpdate">
