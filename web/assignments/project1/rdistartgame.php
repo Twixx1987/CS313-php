@@ -84,7 +84,7 @@
 
         // run the query
         $statement->execute(array(':character_id' => $character_id));
-        while ($row = $statement2->fetch(PDO::FETCH_ASSOC)){
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
             echo $row['character_name'];
         }
         ?></li>
