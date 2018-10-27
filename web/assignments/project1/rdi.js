@@ -58,4 +58,35 @@ $(document).ready(function(){
             $("." + checkValue).removeAttr("checked");
         }
     });
+
+    // a function to add any non-user name entry input fields
+    $('#nonUsers').blur(function() {
+        // remove any existing non_user class inputs and labels
+        $("label").remove(".non_user");
+        $("input").remove(".non_user");
+
+        // get the value
+        var nonUserCount = $(this).value;
+
+        // loop through the count of non-user players
+        for (var count = nonUserCount; count > 0; count--) {
+            // create an line break
+            var lineBreak = $("<br />");
+
+            // create an label for an input field and set its attributes
+            var label = $("<label><label/>");
+            label.attr("class","non_user");
+            label.attr("for","non_user_" + count);
+
+            // create an input field and set its attributes
+            var input = $("<input/>");
+            input.attr("type", "text");
+            input.attr("class","non_user");
+            input.attr("id","non_user_" + count);
+            input.attr("name","non_user_" + count);
+
+            // insert the new label and input field after the number prompt
+            $(this).after(lineBreak, label, lineBreak, input);
+        }
+    });
 });

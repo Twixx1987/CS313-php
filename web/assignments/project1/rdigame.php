@@ -35,8 +35,35 @@
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
-        <button id="joinGame" name="joinGame" onclick="">Join Game</button>
-        <button id="startGame" name="startGame" onclick="">Start Game</button>
-	</div>
+        <div class="row">
+            <div class="col-sm">
+                <h2>Join a Game</h2>
+                <p>To join a game you will need the Game ID provided to the game host.</p>
+                <label for="gameId">Enter the Game ID provided to the game host:</label>
+                <br />
+                <input type="text" id="gameId" name="gameId" />
+                <br />
+                <br />
+                <button id="joinGame" name="joinGame" onclick="">Join Game</button>
+            </div>
+            <div class="col-lg">
+                <h2>Host a Game</h2>
+                <p>To host a game you first need to ensure that you have setup the character
+                    choices on the settings page. You will need to provide a Game ID to the
+                    players that will join. This ID will be provided once the game is
+                    initialized. Please enter the following information to start hosting a
+                    new game.</p>
+                <label for="playerCount">Anticipated number of players:</label>
+                <br />
+                <input type="number" id="playerCount" name="playerCount" />
+                <br />
+                <br />
+                <label for="nonUsers">Anticipated number of players that will not use this program:</label>
+                <input type="number" id="nonUsers" name="nonUsers" />
+                <br />
+                <button id="startGame" name="startGame" onclick="">Host Game</button>
+            </div>
+	    </div>
+    </div>
 </body>
 </html>
