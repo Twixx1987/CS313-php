@@ -19,7 +19,7 @@ var_dump($game_id);
         var_dump($row);
 
         // is the game ID is valid
-        if ($row["game_id"] == $game_id && $row["game_open"] && $row["player_count"] > $row["joined_count"]) {
+        if ($row["game_id"] === $game_id && $row["game_open"] && $row["player_count"] > $row["joined_count"]) {
             // get a character from the game_character table
             $statement2 = $db->prepare('SELECT character_id FROM rdi_game_characters WHERE game_id=:game_id LIMIT 1');
             $statement2->execute(array(':game_id' => $game_id));
