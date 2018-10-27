@@ -8,6 +8,8 @@
     // set a characters array to the session contents if any
     if (isset($_SESSION['characters'])) {
         $characters = $_SESSION['characters'];
+
+        var_dump($_SESSION);
     }
 
     // if the user has submitted, populate the character settings array
