@@ -20,7 +20,7 @@
         // loop through the POST array adding each character to the character array
         foreach ($_POST as $value) {
             // check to see if the item is a character
-            if (strpos($value, "character_") == 0) {
+            if (strpos($value, "character_") === 0) {
                 // the value is a character, append it to the characters array
                 array_push($characters, $value);
 
