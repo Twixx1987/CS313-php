@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdistartgame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdistartgame.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,9 +64,9 @@
         <counts>
           <entry key="css" value="27" />
           <entry key="js" value="2581" />
-          <entry key="php" value="8337" />
+          <entry key="php" value="8389" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="1311" />
+          <entry key="txt" value="1361" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -75,8 +74,8 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="2581" />
-          <entry key="PHP" value="8307" />
-          <entry key="PLAIN_TEXT" value="1311" />
+          <entry key="PHP" value="8359" />
+          <entry key="PLAIN_TEXT" value="1361" />
           <entry key="SQL" value="132" />
         </counts>
       </usages-collector>
@@ -119,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdistartgame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-63">
-              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            <state relative-caret-position="426">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -146,11 +145,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="100" column="111" selection-start-line="100" selection-start-column="111" selection-end-line="100" selection-end-column="111" />
+            <state relative-caret-position="-13">
+              <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -209,8 +208,8 @@
         <option value="$PROJECT_DIR$/web/assignments/project1/rdihome.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdigame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdijoingame.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdistartgame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdistartgame.php" />
       </list>
     </option>
   </component>
@@ -305,14 +304,7 @@
       <workItem from="1540346848598" duration="10933000" />
       <workItem from="1540442984827" duration="1559000" />
       <workItem from="1540566147206" duration="20502000" />
-      <workItem from="1540614129598" duration="14315000" />
-    </task>
-    <task id="LOCAL-00048" summary="correct typo">
-      <created>1540354747392</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1540354747392</updated>
+      <workItem from="1540614129598" duration="14612000" />
     </task>
     <task id="LOCAL-00049" summary="create AJAX code to update display">
       <created>1540357713359</created>
@@ -650,11 +642,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540627625194</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="dump the characters session array into an array">
+      <created>1540628608133</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1540628608133</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76881000" />
+    <option name="totallyTimeSpent" value="77178000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,7 +696,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update menu paths" />
     <MESSAGE value="update formatting and scripting links for teach06" />
     <MESSAGE value="update formatting of teach06" />
     <MESSAGE value="update layout of teach06" />
@@ -722,7 +720,8 @@
     <MESSAGE value="begin creating php file to process the game start" />
     <MESSAGE value="attach jQuery function to make ajax call to execute php scripts" />
     <MESSAGE value="convert strings to ints for db comparison" />
-    <option name="LAST_COMMIT_MESSAGE" value="convert strings to ints for db comparison" />
+    <MESSAGE value="dump the characters session array into an array" />
+    <option name="LAST_COMMIT_MESSAGE" value="dump the characters session array into an array" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -884,17 +883,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdistartgame.php">
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        <state relative-caret-position="-13">
+          <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdistartgame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="100" column="111" selection-start-line="100" selection-start-column="111" selection-end-line="100" selection-end-column="111" />
+        <state relative-caret-position="426">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
         </state>
       </provider>
     </entry>
