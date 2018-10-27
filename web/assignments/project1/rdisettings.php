@@ -8,8 +8,6 @@
     // set a characters array to the session contents if any
     if (isset($_SESSION['characters'])) {
         $characters = $_SESSION['characters'];
-
-        var_dump($_SESSION);
     }
 
     // if the user has submitted, populate the character settings array
@@ -23,19 +21,11 @@
             if (strpos($value, "character_") === 0) {
                 // the value is a character, append it to the characters array
                 array_push($characters, $value);
-
-                echo "<br />Character checkbox value<br />";
-                var_dump($value);
-
-                echo "<br />Character value?<br />";
-                var_dump(strpos($value, "character_"));
             }
         }
 
         // add the characters array to the session
         $_SESSION["characters"] = $characters;
-
-        var_dump($_SESSION);
     }
 ?>
 <!DOCTYPE html>
