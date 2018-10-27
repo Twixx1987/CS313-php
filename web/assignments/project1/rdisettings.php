@@ -23,6 +23,9 @@
             if (strpos($value, "character_") == 0) {
                 // the value is a character, append it to the characters array
                 array_push($characters, $value);
+
+                echo "<br />Characters array<br />";
+                var_dump($characters);
             }
         }
 
@@ -114,6 +117,7 @@
 
 					// add the array of characters to the session variables
 					$_SESSION['characters'] = $characters;
+					var_dump($_SESSION);
 				?>
 			</table>
             <input type="submit" value="Update Settings" id="characterUpdate">
