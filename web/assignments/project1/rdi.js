@@ -67,7 +67,7 @@ $(document).ready(function(){
         console.log("made it here");
 
         // get the value
-        var nonUserCount = $(this).value;
+        var nonUserCount = $(this).val();
 
         console.log("made it here" + nonUserCount);
         // loop through the count of non-user players
