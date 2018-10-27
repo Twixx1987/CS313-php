@@ -76,7 +76,7 @@ $(document).ready(function(){
             var lineBreak = $("<br />");
 
             // create an label for an input field and set its attributes
-            var label = $("<label><label/>");
+            var label = $("<label><label/>").text("Non-User Player " + count + ":");
             label.attr("class","non_user");
             label.attr("for","non_user_" + count);
 
