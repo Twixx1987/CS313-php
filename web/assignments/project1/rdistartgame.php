@@ -39,6 +39,9 @@
 
     // parse out the 'character_' part of the character id
     $character_id = intval(str_replace("character_","", $character_id));
+    ?>
+<script>console.log(<?php echo $character_id; ?>);</script>
+<?php
 
     // insert creator into the game
     $dbInsert3 = $db->prepare('INSERT INTO rdi_player (game_id, user_id, character_id) VALUES (:game_id, :user_id, :character_id)');
