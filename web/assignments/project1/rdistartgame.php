@@ -4,9 +4,12 @@
 
     // include the logged in verification
     require 'rdiverifylogin.php';
-
+var_dump($player_count);
     // get the data from the request
     $player_count = intval($_POST["playerCount"]);
+echo "<br/>^pre-parsed char_id<br/>";
+var_dump($player_count);
+echo "<br/>^post-parsed char_id<br/>";
 
     // create the prepared query to create the game_id
     $dbInsert = $db->prepare('INSERT INTO rdi_game (player_count) VALUES (:player_count)');
@@ -26,31 +29,43 @@
         // get the character id
         $character_id = $characters[$rand_keys[$count]];
 
+        var_dump($characters);
+        echo "<br/>^added characters<br/>";
+        var_dump($rand_keys);
+        echo "<br/>^random keys<br/>";
         var_dump($character_id);
 
         // parse out the 'character_' part of the character id
         $character_id = intval(str_replace("character_","", $character_id));
 
+        echo "<br/>^pre-parsed char_id<br/>";
         var_dump($character_id);
+        echo "<br/>^post-parsed char_id<br/>";
 
         // create the prepared query to add the game characters
-        $dbInsert2 = $db->prepare('INSERT INTO rdi_game_characters (game_id, character_id) VALUES (:game_id, :character_id)');
-        $dbInsert2->execute(array(':game_id' => $game_id, ':character_id' => $character_id));
+//        $dbInsert2 = $db->prepare('INSERT INTO rdi_game_characters (game_id, character_id) VALUES (:game_id, :character_id)');
+//        $dbInsert2->execute(array(':game_id' => $game_id, ':character_id' => $character_id));
     }
 
     // get the first character from the array
     $character_id = $characters[$rand_keys[0]];
-
+var_dump($characters);
+echo "<br/>^added characters<br/>";
+var_dump($rand_keys);
+echo "<br/>^random keys<br/>";
+var_dump($character_id);
     // parse out the 'character_' part of the character id
     $character_id = intval(str_replace("character_","", $character_id));
-
+echo "<br/>^pre-parsed char_id<br/>";
+var_dump($character_id);
+echo "<br/>^post-parsed char_id<br/>";
     // insert creator into the game
-    $dbInsert3 = $db->prepare('INSERT INTO rdi_player (game_id, user_id, character_id) VALUES (:game_id, :user_id, :character_id)');
-    $dbInsert3->execute(array(':game_id' => $game_id, ':user_id' => $user_id, ':character_id' => $character_id));
+//    $dbInsert3 = $db->prepare('INSERT INTO rdi_player (game_id, user_id, character_id) VALUES (:game_id, :user_id, :character_id)');
+//    $dbInsert3->execute(array(':game_id' => $game_id, ':user_id' => $user_id, ':character_id' => $character_id));
 
     // remove that character from the game_characters table
-    $dbDelete = $db->prepare('DELETE FROM rdi_game_characters WHERE game_id=:game_id AND character_id=:character_id)');
-    $dbDelete->execute(array(':game_id' => $game_id, ':character_id' => $character_id));
+//    $dbDelete = $db->prepare('DELETE FROM rdi_game_characters WHERE game_id=:game_id AND character_id=:character_id)');
+//    $dbDelete->execute(array(':game_id' => $game_id, ':character_id' => $character_id));
 
 // output a joined game message
 ?>
