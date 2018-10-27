@@ -26,8 +26,12 @@
         // get the character id
         $character_id = $characters[$rand_keys[$count]];
 
+        var_dump($character_id);
+
         // parse out the 'character_' part of the character id
         $character_id = intval(str_replace("character_","", $character_id));
+
+        var_dump($character_id);
 
         // create the prepared query to add the game characters
         $dbInsert2 = $db->prepare('INSERT INTO rdi_game_characters (game_id, character_id) VALUES (:game_id, :character_id)');
