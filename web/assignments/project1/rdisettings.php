@@ -5,6 +5,11 @@
     // include the logged in verification
     require 'rdiverifylogin.php';
 
+    // set a characters array to the session contents if any
+    if (isset($_SESSION['characters'])) {
+        $characters = $_SESSION['characters'];
+    }
+
     // if the user has submitted, populate the character settings array
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // create an array variable to add all checked characters to the session variables
@@ -94,7 +99,7 @@
                         <input type="checkbox" class="version_<?php echo $row['version_id']; ?> character_<?php echo $row['character_id']; ?>"
                                 id="character_<?php echo $row['character_id']; ?>" name="character_<?php echo $row['character_id']; ?>" value="character_<?php echo $row['character_id']; ?>"
                                 <?php
-                                    if (in_array("character_" . $row['character_id'], $_SESSION["characters"])) {
+                                    if (in_array("character_" . $row['character_id'], $characters)) {
                                         // check the current row
 						                echo 'checked="checked"';
                                     }
