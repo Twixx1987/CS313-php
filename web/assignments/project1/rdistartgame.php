@@ -76,7 +76,14 @@
     for ($count = 0; $count < $player_count; $count++):
     ?>
     <li><?php
-        $statement->execute(array(':character_id' => $characters[$rand_keys[$count]]));
+        // get the random character
+        $character_id = $characters[$rand_keys[$count]];
+
+        // parse out the 'character_' part of the character id
+        $character_id = intval(str_replace("character_","", $character_id));
+
+        // run the query
+        $statement->execute(array(':character_id' => $character_id));
         while ($row = $statement2->fetch(PDO::FETCH_ASSOC)){
             echo $row['character_name'];
         }
