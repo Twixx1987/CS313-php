@@ -64,10 +64,12 @@ $(document).ready(function(){
         // remove any existing non_user class inputs and labels
         $("label").remove(".non_user");
         $("input").remove(".non_user");
+        console.log("made it here");
 
         // get the value
         var nonUserCount = $(this).value;
 
+        console.log("made it here");
         // loop through the count of non-user players
         for (var count = nonUserCount; count > 0; count--) {
             // create an line break
@@ -78,6 +80,7 @@ $(document).ready(function(){
             label.attr("class","non_user");
             label.attr("for","non_user_" + count);
 
+            console.log("made it here");
             // create an input field and set its attributes
             var input = $("<input/>");
             input.attr("type", "text");
@@ -85,8 +88,10 @@ $(document).ready(function(){
             input.attr("id","non_user_" + count);
             input.attr("name","non_user_" + count);
 
+            console.log("made it here");
             // insert the new label and input field after the number prompt
             $(this).after(lineBreak, label, lineBreak, input);
+            console.log("made it here");
         }
     });
 });
