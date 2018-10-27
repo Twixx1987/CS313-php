@@ -69,7 +69,7 @@ $(document).ready(function(){
         // get the value
         var nonUserCount = $(this).value;
 
-        console.log("made it here");
+        console.log("made it here" + nonUserCount);
         // loop through the count of non-user players
         for (var count = nonUserCount; count > 0; count--) {
             // create an line break
