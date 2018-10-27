@@ -42,7 +42,7 @@
                     <input type="text" id="gameId" name="gameId" />
                     <br />
                     <br />
-                    <button id="joinGame" name="joinGame" onclick="$('gameIdLoadStatus').load('rdijoingame.php', {gameId : $('#gameId').val()})">Join Game</button>
+                    <button id="joinGame" name="joinGame" onclick="$('#gameIdLoadStatus').load('rdijoingame.php', {gameId : $('#gameId').val()})">Join Game</button>
                 </div>
             </div>
             <div class="col-lg">
