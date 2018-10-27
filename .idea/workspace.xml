@@ -65,9 +65,9 @@
         <counts>
           <entry key="css" value="27" />
           <entry key="js" value="2581" />
-          <entry key="php" value="8787" />
+          <entry key="php" value="8807" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="1529" />
+          <entry key="txt" value="1533" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -75,8 +75,8 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="2581" />
-          <entry key="PHP" value="8757" />
-          <entry key="PLAIN_TEXT" value="1529" />
+          <entry key="PHP" value="8777" />
+          <entry key="PLAIN_TEXT" value="1533" />
           <entry key="SQL" value="132" />
         </counts>
       </usages-collector>
@@ -131,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="225">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -305,21 +305,7 @@
       <workItem from="1540346848598" duration="10933000" />
       <workItem from="1540442984827" duration="1559000" />
       <workItem from="1540566147206" duration="20502000" />
-      <workItem from="1540614129598" duration="22088000" />
-    </task>
-    <task id="LOCAL-00062" summary="Add JS for settings handling">
-      <created>1540574128293</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1540574128293</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Add JS for settings handling">
-      <created>1540574712691</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1540574712691</updated>
+      <workItem from="1540614129598" duration="22969000" />
     </task>
     <task id="LOCAL-00064" summary="Add JS for settings handling">
       <created>1540574900063</created>
@@ -650,11 +636,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540678126966</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="testing game join">
+      <created>1540678677435</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1540678677435</updated>
+    </task>
+    <task id="LOCAL-00112" summary="testing game join">
+      <created>1540679246354</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1540679246354</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84654000" />
+    <option name="totallyTimeSpent" value="85535000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,7 +697,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add new topic db update functionality" />
     <MESSAGE value="correct typo" />
     <MESSAGE value="create AJAX code to update display" />
     <MESSAGE value="update teach06 page layout" />
@@ -722,7 +721,8 @@
     <MESSAGE value="test character insert and delete" />
     <MESSAGE value="add # to properly call jQuery selector" />
     <MESSAGE value="testing game creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing game creation" />
+    <MESSAGE value="testing game join" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing game join" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -893,8 +893,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="225">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
         </state>
       </provider>
     </entry>
