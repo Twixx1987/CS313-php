@@ -64,19 +64,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="27" />
-          <entry key="js" value="2519" />
+          <entry key="js" value="2581" />
           <entry key="php" value="6139" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="1005" />
+          <entry key="txt" value="1032" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="27" />
           <entry key="HTML" value="4" />
-          <entry key="JavaScript" value="2519" />
+          <entry key="JavaScript" value="2581" />
           <entry key="PHP" value="6109" />
-          <entry key="PLAIN_TEXT" value="1005" />
+          <entry key="PLAIN_TEXT" value="1032" />
           <entry key="SQL" value="132" />
         </counts>
       </usages-collector>
@@ -149,8 +149,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+            <state relative-caret-position="676">
+              <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -294,21 +294,7 @@
       <workItem from="1540346848598" duration="10933000" />
       <workItem from="1540442984827" duration="1559000" />
       <workItem from="1540566147206" duration="20502000" />
-      <workItem from="1540614129598" duration="4363000" />
-    </task>
-    <task id="LOCAL-00040" summary="update formatting and scripting links for teach06">
-      <created>1540351523048</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1540351523048</updated>
-    </task>
-    <task id="LOCAL-00041" summary="update formatting of teach06">
-      <created>1540351657351</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1540351657351</updated>
+      <workItem from="1540614129598" duration="4874000" />
     </task>
     <task id="LOCAL-00042" summary="update layout of teach06">
       <created>1540352024105</created>
@@ -639,11 +625,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540618324190</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="begin game creation/join handling">
+      <created>1540618588056</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1540618588056</updated>
+    </task>
+    <task id="LOCAL-00090" summary="added non-user label text">
+      <created>1540618758897</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1540618758897</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66929000" />
+    <option name="totallyTimeSpent" value="67440000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -686,7 +686,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="start game page" />
     <MESSAGE value="Add RDI.JS to each page" />
     <MESSAGE value="Update Menu and add session tracking of settings." />
     <MESSAGE value="begin adding javascript functions" />
@@ -711,7 +710,8 @@
     <MESSAGE value="Add JS for settings handling" />
     <MESSAGE value="begin server handling of settings" />
     <MESSAGE value="begin game creation/join handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="begin game creation/join handling" />
+    <MESSAGE value="added non-user label text" />
+    <option name="LAST_COMMIT_MESSAGE" value="added non-user label text" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -868,8 +868,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+        <state relative-caret-position="676">
+          <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
         </state>
       </provider>
     </entry>

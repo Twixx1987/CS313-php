@@ -73,7 +73,10 @@ $(document).ready(function(){
         // loop through the count of non-user players
         for (var count = nonUserCount; count > 0; count--) {
             // create an line break
-            var lineBreak = $("<br />");
+            var lb1 = $("<br />");
+
+            // create an line break
+            var lb2 = $("<br />");
 
             // create an label for an input field and set its attributes
             var label = $("<label><label/>").text("Non-User Player " + count + ":");
@@ -90,7 +93,7 @@ $(document).ready(function(){
 
             console.log("made it here");
             // insert the new label and input field after the number prompt
-            $(this).after(lineBreak, label, lineBreak, input);
+            $(this).after(lb1, label, lb2, input);
             console.log("made it here");
         }
     });
