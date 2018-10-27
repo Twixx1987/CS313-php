@@ -1,4 +1,7 @@
 <?php
+    //start the session
+    session_start();
+
     // check to see if the user is logged in
     if (isset($_SESSION['username']) && isset($_SESSION['user_id'])) {
         // set the user_id and username variables

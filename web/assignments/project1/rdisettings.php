@@ -1,7 +1,4 @@
 <?php
-    //start the session
-    session_start();
-
     // include the DB connection
     require 'rdidbconnect.php';
 

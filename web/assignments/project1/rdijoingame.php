@@ -22,11 +22,12 @@
             }
 
             // insert the player into the game
-            $insert = $db->prepare('INSERT INTO rdi_player (game_id, user_id, character_id) VALUES (:game_id, :user_id, :character_id)');
-            $insert->execute(array(':game_id' => $game_id, ':user_id' => $user_id));
+            $dbInsert = $db->prepare('INSERT INTO rdi_player (game_id, user_id, character_id) VALUES (:game_id, :user_id, :character_id)');
+            $dbInsert->execute(array(':game_id' => $game_id, ':user_id' => $user_id, ':character_id' => $character_id));
 
-            // remove that
-
+            // remove that character from the game_characters table
+            $dbDelete = $db->prepare('DELETE FROM rdi_game_characters WHERE game_id=:game_id AND character_id=:character_id)');
+            $dbDelete->execute(array(':game_id' => $game_id, ':character_id' => $character_id));
 
             // output a joined game message
             ?>
