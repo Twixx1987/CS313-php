@@ -65,9 +65,9 @@
         <counts>
           <entry key="css" value="27" />
           <entry key="js" value="2581" />
-          <entry key="php" value="9312" />
+          <entry key="php" value="9389" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="1733" />
+          <entry key="txt" value="1791" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -75,8 +75,8 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="2581" />
-          <entry key="PHP" value="9282" />
-          <entry key="PLAIN_TEXT" value="1733" />
+          <entry key="PHP" value="9359" />
+          <entry key="PLAIN_TEXT" value="1791" />
           <entry key="SQL" value="132" />
         </counts>
       </usages-collector>
@@ -131,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="1287">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -305,21 +305,7 @@
       <workItem from="1540346848598" duration="10933000" />
       <workItem from="1540442984827" duration="1559000" />
       <workItem from="1540566147206" duration="20502000" />
-      <workItem from="1540614129598" duration="29886000" />
-    </task>
-    <task id="LOCAL-00075" summary="Add JS for settings handling">
-      <created>1540580904037</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1540580904037</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Add JS for settings handling">
-      <created>1540582273661</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1540582273661</updated>
+      <workItem from="1540614129598" duration="30952000" />
     </task>
     <task id="LOCAL-00077" summary="Add JS for settings handling">
       <created>1540588980069</created>
@@ -650,11 +636,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540701476384</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="try adjusting the comparison of the game id">
+      <created>1540702959816</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1540702959816</updated>
+    </task>
+    <task id="LOCAL-00125" summary="debugging added">
+      <created>1540703259899</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1540703259899</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92452000" />
+    <option name="totallyTimeSpent" value="93518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,8 +697,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add JS for settings handling" />
-    <MESSAGE value="begin server handling of settings" />
     <MESSAGE value="begin game creation/join handling" />
     <MESSAGE value="added non-user label text" />
     <MESSAGE value="added another line break tag" />
@@ -722,7 +720,9 @@
     <MESSAGE value="testing bind parameter" />
     <MESSAGE value="removed limit 1" />
     <MESSAGE value="test with fetchall and new data" />
-    <option name="LAST_COMMIT_MESSAGE" value="test with fetchall and new data" />
+    <MESSAGE value="try adjusting the comparison of the game id" />
+    <MESSAGE value="debugging added" />
+    <option name="LAST_COMMIT_MESSAGE" value="debugging added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -893,8 +893,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="1287">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
         </state>
       </provider>
     </entry>
