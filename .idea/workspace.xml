@@ -65,9 +65,9 @@
         <counts>
           <entry key="css" value="27" />
           <entry key="js" value="2581" />
-          <entry key="php" value="9229" />
+          <entry key="php" value="9289" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="1630" />
+          <entry key="txt" value="1685" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -75,8 +75,8 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="2581" />
-          <entry key="PHP" value="9199" />
-          <entry key="PLAIN_TEXT" value="1630" />
+          <entry key="PHP" value="9259" />
+          <entry key="PLAIN_TEXT" value="1685" />
           <entry key="SQL" value="132" />
         </counts>
       </usages-collector>
@@ -131,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="300">
+              <caret line="13" column="219" lean-forward="true" selection-start-line="13" selection-start-column="219" selection-end-line="13" selection-end-column="219" />
             </state>
           </provider>
         </entry>
@@ -221,9 +221,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1633" />
-    <option name="y" value="-8" />
-    <option name="width" value="1918" />
+    <option name="x" value="1618" />
+    <option name="y" value="-10" />
+    <option name="width" value="1920" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
@@ -305,21 +305,7 @@
       <workItem from="1540346848598" duration="10933000" />
       <workItem from="1540442984827" duration="1559000" />
       <workItem from="1540566147206" duration="20502000" />
-      <workItem from="1540614129598" duration="27403000" />
-    </task>
-    <task id="LOCAL-00071" summary="Add JS for settings handling">
-      <created>1540579712484</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1540579712484</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Add JS for settings handling">
-      <created>1540580033493</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1540580033493</updated>
+      <workItem from="1540614129598" duration="28639000" />
     </task>
     <task id="LOCAL-00073" summary="Add JS for settings handling">
       <created>1540580345532</created>
@@ -650,11 +636,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540683787215</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="debugging code added to join game">
+      <created>1540689350003</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1540689350003</updated>
+    </task>
+    <task id="LOCAL-00121" summary="testing bind parameter">
+      <created>1540700636748</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1540700636748</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89969000" />
+    <option name="totallyTimeSpent" value="91205000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -669,7 +669,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.18496802" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49838188" weight="0.18496802" />
       <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.18336888" />
       <window_info id="Favorites" order="2" sideWeight="0.50161815" side_tool="true" weight="0.18336888" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -697,8 +697,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update teach06 page to dynamically update the main content (form and scripture list)" />
-    <MESSAGE value="attempt to correct always entering the added field whether data exists or not." />
     <MESSAGE value="update RDI pages to require db connection not include" />
     <MESSAGE value="update RDI pages to require login verification" />
     <MESSAGE value="Add JS for settings handling" />
@@ -722,7 +720,9 @@
     <MESSAGE value="add character list to bottom of game creation" />
     <MESSAGE value="remove debugging code from settings page" />
     <MESSAGE value="remove debugging code from start game page" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove debugging code from start game page" />
+    <MESSAGE value="debugging code added to join game" />
+    <MESSAGE value="testing bind parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing bind parameter" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -893,8 +893,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="300">
+          <caret line="13" column="219" lean-forward="true" selection-start-line="13" selection-start-column="219" selection-end-line="13" selection-end-column="219" />
         </state>
       </provider>
     </entry>

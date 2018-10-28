@@ -11,7 +11,7 @@ echo "Game ID:";
 var_dump($game_id);
 
     // create the prepared query to find the game_id
-    $statement = $db->prepare('SELECT rdi_game.game_id, game_open, player_count, COUNT(rdi_player.game_id) AS joined_count FROM rdi_game JOIN rdi_player ON (rdi_player.game_id=rdi_game.game_id) WHERE rdi_game.game_id=:game_id GROUP BY rdi_game.game_id LIMIT 1');
+    $statement = $db->prepare('SELECT g.game_id, g.game_open, g.player_count, COUNT(p.game_id) AS joined_count FROM rdi_game AS g JOIN rdi_player as p ON (p.game_id=g.game_id) WHERE g.game_id=:game_id GROUP BY g.game_id');
     $statement->bindParam(':game_id', $game_id);
     $statement->execute();
 
