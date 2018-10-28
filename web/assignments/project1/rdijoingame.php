@@ -7,8 +7,7 @@
 
     // get the data from the request
     $game_id = intval($_POST["gameId"]);
-echo "Game ID:";
-var_dump($game_id);
+
 
     // create the prepared query to find the game_id
     $statement = $db->prepare('SELECT g.game_id, g.game_open, g.player_count, COUNT(p.game_id) AS joined_count FROM rdi_game AS g JOIN rdi_player as p ON (p.game_id=g.game_id) WHERE g.game_id=:game_id GROUP BY g.game_id');
@@ -16,8 +15,16 @@ var_dump($game_id);
     $statement->execute();
     $result = $statement->fetchAll();
 
-    echo "<br />row contents:";
-    var_dump($result);
+echo "Game ID:";
+var_dump($game_id);
+echo "<br />Game ID:";
+    var_dump($result["game_id"]);
+echo "<br />Game Open?:";
+var_dump($result["game_open"]);
+echo "<br />Player Count:";
+var_dump($result["player_count"]);
+echo "<br />Joined Count:";
+var_dump($result["joined_count"]);
 
     // is the game ID is valid
     if ($result["game_id"] == $game_id && $result["game_open"] && $result["player_count"] > $result["joined_count"]) {
