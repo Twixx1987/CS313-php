@@ -16,11 +16,11 @@ var_dump($game_id);
     $statement->execute();
     $result = $statement->fetchAll();
 
-    echo "row contents:";
+    echo "<br />row contents:";
     var_dump($result);
 
     // is the game ID is valid
-    if ($result["game_id"] === $game_id && $result["game_open"] && $result["player_count"] > $result["joined_count"]) {
+    if ($result["game_id"] == $game_id && $result["game_open"] && $result["player_count"] > $result["joined_count"]) {
         // get a character from the game_character table
         $statement2 = $db->prepare('SELECT character_id FROM rdi_game_characters WHERE game_id=:game_id LIMIT 1');
         $statement2->execute(array(':game_id' => $game_id));
