@@ -8,7 +8,6 @@
     // get the data from the request
     $game_id = intval($_POST["gameId"]);
 
-
     // create the prepared query to find the game_id
     $statement = $db->prepare('SELECT g.game_id, g.game_open, g.player_count, COUNT(p.game_id) AS joined_count FROM rdi_game AS g JOIN rdi_player as p ON (p.game_id=g.game_id) WHERE g.game_id=:game_id GROUP BY g.game_id');
     $statement->execute(array(':game_id' => $game_id));
@@ -28,7 +27,9 @@
 
             // remove that character from the game_characters table
             $dbDelete = $db->prepare('DELETE FROM rdi_game_characters WHERE game_id=:game_id AND character_id=:character_id)');
-            $dbDelete->execute(array(':game_id' => $game_id, ':character_id' => $character_id));
+            $dbDelete->bindParam(":game_id", $game_id);
+            $dbDelete->bindParam(":character_id", $character_id);
+            $dbDelete->execute();
 
             // output a joined game message
             ?>
