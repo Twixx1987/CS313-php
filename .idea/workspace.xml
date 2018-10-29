@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdijoingame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdijoingame.php" afterDir="false" />
-    </list>
+    <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +29,7 @@
     <session id="1557354213">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.5" value="1" />
@@ -67,7 +64,7 @@
           <entry key="js" value="2581" />
           <entry key="php" value="9520" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="1853" />
+          <entry key="txt" value="1883" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -76,7 +73,7 @@
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="2581" />
           <entry key="PHP" value="9490" />
-          <entry key="PLAIN_TEXT" value="1853" />
+          <entry key="PLAIN_TEXT" value="1883" />
           <entry key="SQL" value="132" />
         </counts>
       </usages-collector>
@@ -131,8 +128,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            <state relative-caret-position="775">
+              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -305,14 +302,7 @@
       <workItem from="1540346848598" duration="10933000" />
       <workItem from="1540442984827" duration="1559000" />
       <workItem from="1540566147206" duration="20502000" />
-      <workItem from="1540614129598" duration="32979000" />
-    </task>
-    <task id="LOCAL-00079" summary="Add JS for settings handling">
-      <created>1540590244801</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1540590244801</updated>
+      <workItem from="1540614129598" duration="33331000" />
     </task>
     <task id="LOCAL-00080" summary="Add JS for settings handling">
       <created>1540590529584</created>
@@ -650,11 +640,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540704375822</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="try bindparam instead fo array">
+      <created>1540706082829</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1540706082829</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95545000" />
+    <option name="totallyTimeSpent" value="95897000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,7 +664,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49838188" weight="0.18496802" />
       <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.18336888" />
@@ -697,7 +693,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added another line break tag" />
     <MESSAGE value="begin creating php file to process the game join&#10;update order of require statements" />
     <MESSAGE value="begin creating php file to process the game start&#10;move session start into verify login file" />
     <MESSAGE value="begin creating php file to process the game start" />
@@ -722,7 +717,8 @@
     <MESSAGE value="debugging added" />
     <MESSAGE value="switch back to fetch row" />
     <MESSAGE value="add code to display the character name" />
-    <option name="LAST_COMMIT_MESSAGE" value="add code to display the character name" />
+    <MESSAGE value="try bindparam instead fo array" />
+    <option name="LAST_COMMIT_MESSAGE" value="try bindparam instead fo array" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -893,8 +889,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        <state relative-caret-position="775">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
         </state>
       </provider>
     </entry>
