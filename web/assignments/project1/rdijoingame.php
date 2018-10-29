@@ -27,9 +27,7 @@
 
             // remove that character from the game_characters table
             $dbDelete = $db->prepare('DELETE FROM rdi_game_characters WHERE game_id=:game_id AND character_id=:character_id');
-            $dbDelete->bindValue(":game_id", $game_id);
-            $dbDelete->bindValue(":character_id", $character_id);
-            $dbDelete->execute();
+            $dbDelete->execute(array(":game_id" => $game_id, ":character_id" => $character_id));
 
             // output a joined game message
             ?>
