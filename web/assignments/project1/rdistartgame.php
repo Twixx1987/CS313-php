@@ -69,7 +69,8 @@
         ?>
          -
         <?php
-            echo $row['player']
+            echo $row['player'];
+            endwhile;
         ?>
     </li>
     <?php
