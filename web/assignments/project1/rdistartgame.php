@@ -44,10 +44,6 @@
     $dbInsert3 = $db->prepare('INSERT INTO rdi_player (game_id, user_id, character_id) VALUES (:game_id, :user_id, :character_id)');
     $dbInsert3->execute(array(':game_id' => $game_id, ':user_id' => $user_id, ':character_id' => $character_id));
 
-    // remove that character from the game_characters table
-//    $dbDelete = $db->prepare('DELETE FROM rdi_game_characters WHERE game_id=:game_id AND character_id=:character_id)');
-//    $dbDelete->execute(array(':game_id' => $game_id, ':character_id' => $character_id));
-
 // output a joined game message
 ?>
 <p class="container">SUCCESS: You have created Game #<?php echo $game_id; ?></p>
@@ -55,7 +51,7 @@
 <ul>
     <?php
     // create the prepared query to find the character name
-    $statement = $db->prepare('SELECT character_name, race, class FROM rdi_characters WHERE character_id=:character_id');
+    $statement = $db->prepare('SELECT c.character_name AS character, up.user_name AS player FROM rdi_characters AS c LEFT JOIN (SELECT p.character_id, u.user_name FROM rdi_player AS p NATURAL JOIN rdi_user AS u WHERE p.game_id=:game_id AND p.character_id=:character_id) AS up ON (c.character_id = up.character_id) WHERE c.character_id=:character_id');
 
     for ($count = 0; $count < $player_count; $count++):
     ?>
@@ -67,11 +63,15 @@
         $character_id = intval(str_replace("character_","", $character_id));
 
         // run the query
-        $statement->execute(array(':character_id' => $character_id));
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-            echo $row['character_name'];
-        }
-        ?></li>
+        $statement->execute(array(':game_id' => $game_id, ':character_id' => $character_id));
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+            echo $row['character'];
+        ?>
+         -
+        <?php
+            echo $row['player']
+        ?>
+    </li>
     <?php
     endfor;
     ?>

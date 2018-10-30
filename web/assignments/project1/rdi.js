@@ -97,4 +97,16 @@ $(document).ready(function(){
             console.log("made it here");
         }
     });
+
+    // a function to create an AJAX call to join a game
+    $('#gameIdLoadStatus').click(function() {
+        // the AJAX call
+        $('#gameIdLoadStatus').load('rdijoingame.php', {gameId: $('#gameId').val()});
+    });
+
+    // a function to create an AJAX call to Start a game
+    $('#gameCreatedStatus').click(function() {
+        // the AJAX call
+        $('#gameCreatedStatus').load('rdistartgame.php', {playerCount : $('#playerCount').val() })
+    });
 });
