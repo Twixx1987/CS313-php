@@ -47,33 +47,24 @@
 // output a joined game message
 ?>
 <p class="container">SUCCESS: You have created Game #<?php echo $game_id; ?></p>
-<p class="container">The characters selected along with who will play them are:</p>
+<p class="container">The following players have joined your game:</p>
 <ul>
     <?php
     // create the prepared query to find the character name
-    $statement = $db->prepare('SELECT c.character_name AS character, up.user_name AS player FROM rdi_characters AS c LEFT JOIN (SELECT p.character_id, u.user_name FROM rdi_player AS p NATURAL JOIN rdi_user AS u WHERE p.game_id=:game_id AND p.character_id=:character_id) AS up ON (c.character_id = up.character_id) WHERE c.character_id=:character_id');
+    $statement = $db->prepare('SELECT u.user_name AS player FROM rdi_user AS u NATURAL JOIN rdi_player AS p WHERE p.game_id=:game_id');
 
-    for ($count = 0; $count < $player_count; $count++):
+    // run the query
+    $statement->execute(array(':game_id' => $game_id));
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
     ?>
-    <li><?php
-        // get the random character
-        $character_id = $characters[$rand_keys[$count]];
-
-        // parse out the 'character_' part of the character id
-        $character_id = intval(str_replace("character_","", $character_id));
-
-        // run the query
-        $statement->execute(array(':game_id' => $game_id, ':character_id' => $character_id));
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
-            echo $row['character'];
-        ?>
-         -
+    <li>
         <?php
             echo $row['player'];
-            endwhile;
         ?>
     </li>
     <?php
-    endfor;
+        endwhile;
     ?>
 </ul>
+<button id="updatePlayers" name="updatePlayers" onclick="">Update Joined Players List</button>
+<button id="closeGame" name="closeGame" onclick="">Close Game and Generate Characters</button>
