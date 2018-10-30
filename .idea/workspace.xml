@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdijoingame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdijoingame.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,9 +65,9 @@
         <counts>
           <entry key="css" value="27" />
           <entry key="js" value="2581" />
-          <entry key="php" value="9526" />
+          <entry key="php" value="9544" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="1897" />
+          <entry key="txt" value="2008" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -76,8 +75,8 @@
           <entry key="CSS" value="27" />
           <entry key="HTML" value="4" />
           <entry key="JavaScript" value="2581" />
-          <entry key="PHP" value="9496" />
-          <entry key="PLAIN_TEXT" value="1897" />
+          <entry key="PHP" value="9514" />
+          <entry key="PLAIN_TEXT" value="2008" />
           <entry key="SQL" value="132" />
         </counts>
       </usages-collector>
@@ -132,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="28" column="123" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="123" />
+            <state relative-caret-position="350">
+              <caret line="29" column="95" selection-start-line="29" selection-start-column="95" selection-end-line="29" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -221,9 +220,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1618" />
-    <option name="y" value="-10" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1714" />
+    <option name="y" value="-8" />
     <option name="width" value="1920" />
     <option name="height" value="1040" />
   </component>
@@ -269,21 +268,7 @@
       <workItem from="1540442984827" duration="1559000" />
       <workItem from="1540566147206" duration="20502000" />
       <workItem from="1540614129598" duration="33331000" />
-      <workItem from="1540830704227" duration="794000" />
-    </task>
-    <task id="LOCAL-00081" summary="begin server handling of settings">
-      <created>1540590846732</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1540590846732</updated>
-    </task>
-    <task id="LOCAL-00082" summary="begin server handling of settings">
-      <created>1540591502561</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1540591502561</updated>
+      <workItem from="1540830704227" duration="2122000" />
     </task>
     <task id="LOCAL-00083" summary="begin server handling of settings">
       <created>1540592791259</created>
@@ -614,11 +599,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540830847519</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="remove ) from delete statement">
+      <created>1540832195705</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1540832195705</updated>
+    </task>
+    <task id="LOCAL-00131" summary="switched the delete statement back to execute(array()) format">
+      <created>1540832824250</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1540832824250</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96691000" />
+    <option name="totallyTimeSpent" value="98019000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -630,7 +629,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49838188" weight="0.18496802" />
@@ -661,8 +660,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="begin creating php file to process the game start&#10;move session start into verify login file" />
-    <MESSAGE value="begin creating php file to process the game start" />
     <MESSAGE value="attach jQuery function to make ajax call to execute php scripts" />
     <MESSAGE value="convert strings to ints for db comparison" />
     <MESSAGE value="dump the characters session array into an array" />
@@ -686,7 +683,9 @@
     <MESSAGE value="add code to display the character name" />
     <MESSAGE value="try bindparam instead fo array" />
     <MESSAGE value="try bind value" />
-    <option name="LAST_COMMIT_MESSAGE" value="try bind value" />
+    <MESSAGE value="remove ) from delete statement" />
+    <MESSAGE value="switched the delete statement back to execute(array()) format" />
+    <option name="LAST_COMMIT_MESSAGE" value="switched the delete statement back to execute(array()) format" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -857,8 +856,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="28" column="123" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="123" />
+        <state relative-caret-position="350">
+          <caret line="29" column="95" selection-start-line="29" selection-start-column="95" selection-end-line="29" selection-end-column="95" />
         </state>
       </provider>
     </entry>
