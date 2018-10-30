@@ -99,13 +99,13 @@ $(document).ready(function(){
     });
 
     // a function to create an AJAX call to join a game
-    $('#gameIdLoadStatus').click(function() {
+    $('#joinGame').click(function() {
         // the AJAX call
         $('#gameIdLoadStatus').load('rdijoingame.php', {gameId: $('#gameId').val()});
     });
 
     // a function to create an AJAX call to Start a game
-    $('#gameCreatedStatus').click(function() {
+    $('#startGame').click(function() {
         // the AJAX call
         $('#gameCreatedStatus').load('rdistartgame.php', {playerCount : $('#playerCount').val() })
     });
