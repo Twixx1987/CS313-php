@@ -32,18 +32,8 @@
             // output a joined game message
             ?>
             <p class="container">SUCCESS: You have joined Game #<?php echo $game_id; ?></p>
-            <p class="container">You will be playing:
-                <?php
-                    // create the prepared query to find the character name
-                    $statement3 = $db->prepare('SELECT character_name, race, class FROM rdi_characters WHERE character_id=:character_id');
-
-                    // run the query
-                    $statement3->execute(array(':character_id' => $character_id));
-                    while ($row3 = $statement3->fetch(PDO::FETCH_ASSOC)){
-                        echo $row3['character_name'];
-                    }
-                ?>
-            </p>
+            <p class="container">Once the Host has closed the game the character selections will be available to the Host.
+                The Host can will then inform everyone about the character selections.</p>
             <?php
         } else {
             // output an error message
