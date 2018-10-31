@@ -36,8 +36,13 @@
         <p>
             You have played
             <?php
+            // create the query statement
+            $query  = 'SELECT count(p.player_id) as game_count FROM rdi_player AS p';
+            $query .= ' NATURAL JOIN rdi_game AS g';
+            $query .= ' WHERE p.user_id=:user_id AND g.game_complete=TRUE';
+
             // query the database for the list of versions
-            $statement = $db->prepare('SELECT count(*) as game_count FROM rdi_player WHERE user_id=:user_id');
+            $statement = $db->prepare($query);
             $statement->execute(array(':user_id' => $user_id));
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
@@ -49,8 +54,11 @@
         <p>
             You have won
             <?php
+            // update the query statement adding the placement callout
+            $query .= ' AND placement=1';
+
             // query the database for the list of versions
-            $statement = $db->prepare('SELECT count(*) as game_count FROM rdi_player WHERE user_id=:user_id AND placement=1');
+            $statement = $db->prepare($query);
             $statement->execute(array(':user_id' => $user_id));
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
@@ -66,8 +74,16 @@
                 <th>Number of Games</th>
             </tr>
             <?php
+            // create the query string
+            $query2  = 'SELECT MAX(char.char_count) AS char_count, char.character AS character';
+            $query2 .= ' FROM (SELECT c.character_name AS character, COUNT(gp.character_id) AS char_count';
+            $query2 .= ' FROM (SELECT p.character_id AS character_id, p.user_id AS user_id FROM rdi_player AS p';
+            $query2 .= ' JOIN rdi_game AS g ON (p.game_id=g.game_id) WHERE g.game_complete = TRUE) AS gp';
+            $query2 .= ' JOIN rdi_characters AS c ON (gp.character_id=c.character_id) WHERE gp.user_id=:user_id';
+            $query2 .= ' GROUP BY c.character_name) AS char GROUP BY character ORDER BY char_count DESC, character;';
+
             // query the database for the list of versions
-            $statement = $db->prepare('SELECT MAX(char.char_count) AS char_count, char.character AS character FROM (SELECT rdi_characters.character_name AS character, COUNT(rdi_player.character_id) AS char_count FROM rdi_player JOIN rdi_characters ON (rdi_player.character_id=rdi_characters.character_id) WHERE user_id=:user_id GROUP BY rdi_characters.character_name) as char GROUP BY character ORDER BY char_count DESC, character');
+            $statement = $db->prepare($query2);
             $statement->execute(array(':user_id' => $user_id));
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
             ?>
