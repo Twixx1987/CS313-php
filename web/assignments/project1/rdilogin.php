@@ -100,7 +100,7 @@
 			<input type="text" name="username"><br/>
 			<label for="password">Password:</label><br/>
 			<input type="password" name="password"><br/>
-			<input type="submit" name="login" value="Login">
+			<input type="submit" class="btn btn-secondary" name="login" value="Login">
 		</form>
         <a class="btn btn-secondary" role="button" href="/assignments/project1/rdisignup.php">Sign Up</a>
 	</div>
