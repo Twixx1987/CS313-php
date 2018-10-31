@@ -3,10 +3,11 @@
     session_start();
 
     // include the logged in verification
-    require 'rdiverifylogin.php';
+    //require 'rdiverifylogin.php';
 
     // include the DB connection
     require 'rdidbconnect.php';
+    var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 
