@@ -15,7 +15,7 @@
 
     // create a variable to store a login error if needed
     $error = "";
-
+var_dump($_POST);
     // check for post login button
     if (isset($_POST['username'])) {
         // get the username and password and clean the inputs

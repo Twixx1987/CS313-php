@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,7 +66,7 @@
         <counts>
           <entry key="css" value="59" />
           <entry key="js" value="3854" />
-          <entry key="php" value="12437" />
+          <entry key="php" value="12482" />
           <entry key="sql" value="106" />
           <entry key="txt" value="2826" />
         </counts>
@@ -77,7 +76,7 @@
           <entry key="CSS" value="59" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="3854" />
-          <entry key="PHP" value="12405" />
+          <entry key="PHP" value="12450" />
           <entry key="PLAIN_TEXT" value="2826" />
           <entry key="SQL" value="133" />
         </counts>
@@ -115,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdilogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+            <state relative-caret-position="450">
+              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -283,14 +282,7 @@
       <workItem from="1540614129598" duration="33331000" />
       <workItem from="1540830704227" duration="6671000" />
       <workItem from="1540919739721" duration="6303000" />
-      <workItem from="1540949957169" duration="9915000" />
-    </task>
-    <task id="LOCAL-00108" summary="testing game creation">
-      <created>1540677734505</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1540677734505</updated>
+      <workItem from="1540949957169" duration="10340000" />
     </task>
     <task id="LOCAL-00109" summary="testing game creation">
       <created>1540677858776</created>
@@ -628,11 +620,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540960301824</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="correct login verification php code">
+      <created>1540960475282</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1540960475282</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118786000" />
+    <option name="totallyTimeSpent" value="119211000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -929,8 +928,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdilogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+        <state relative-caret-position="450">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
         </state>
       </provider>
     </entry>
