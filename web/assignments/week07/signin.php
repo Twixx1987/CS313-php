@@ -46,9 +46,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Week 07 - Welcome</title>
 </head>
     <body>
+        <h1 class="pagetitle container">User Login</h1>
+        <div class="menu container">
+            <?php include '../../top_menu.php'; ?>
+        </div>
         <div class="container" id="signup"><a href="signup.php">Create an account</a></div>
         <div class="container" id="login">
-	        <h1>Please sign in</h1>
             <p class="error"><?php echo $error; ?></p>
             <form action="signin.php" method="POST">
                 <span>Username<input type="text" name="username" value=""></span><br>

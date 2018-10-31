@@ -31,8 +31,12 @@
     <title>Week 07 - Welcome</title>
 </head>
     <body>
+        <h1 class="pagetitle container">Welcome <?php echo $user; ?></h1>
+        <div class="menu container">
+            <?php include '../../top_menu.php'; ?>
+        </div>
         <div class="container">
-            <h1>Welcome <?php echo $user; ?></h1>
+            <p>This is the home page that does nothing. It is just to demonstrate the login page.</p>
         </div>
     </body>
 </html>

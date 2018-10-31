@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
     $password2 = $_POST['password2'];
 
-    $numbermatch = preg_match('/\d/',$password);
+    $numbermatch = preg_match('/\d/', $password);
 
 
     if ($password == $password2 && strlen($password) > 7 && $numbermatch == 1) {
@@ -53,8 +53,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Week 07 - Welcome</title>
 </head>
     <body>
+        <h1 class="pagetitle container">Create an Account</h1>
+        <div class="menu container">
+            <?php include '../../top_menu.php'; ?>
+        </div>
         <div class="container" id="login">
-	        <h1>Create an Account</h1>
             <p><?php echo $error; ?></p>
             <form action="signup.php" method="POST">
                 <span>Username<input type="text" name="username" value=""></span><br>
