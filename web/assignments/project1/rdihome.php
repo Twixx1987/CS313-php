@@ -7,7 +7,6 @@
 
     // include the DB connection
     require 'rdidbconnect.php';
-    var_dump($_SESSION);
 ?>
 <!DOCTYPE html>
 

@@ -15,22 +15,17 @@
 
     // create a variable to store a login error if needed
     $error = "";
-var_dump($_POST);
+
     // check for post login button
     if (isset($_POST['username']) && isset($_POST['password'])) {
         // get the username and password and clean the inputs
         $username = cleanInputs($_POST['username']);
         $password = cleanInputs($_POST['password']);
 
-        var_dump($username);
-        var_dump($password);
-
         // query the database for the username and password
         $statement = $db->prepare('SELECT password, user_id FROM rdi_user WHERE user_name=:username');
         $statement->execute(array(':username' => $username));
         $result = $statement->fetch();
-
-        var_dump($result);
 
         // get the user_id
         $user_id = $result['user_id'];
@@ -38,14 +33,12 @@ var_dump($_POST);
         // verify the password
         $loggedIn = password_verify($password, $result['password']);
 
-        var_dump($loggedIn);
         // check to see if the username/password combo match the DB
         if ($loggedIn) {
             // set the user_id and username to session variables
             $_SESSION['user_id'] = $user_id;
             $_SESSION['username'] = $username;
 
-            var_dump($_SESSION);
             // clean the output buffer
             ob_clean();
 
