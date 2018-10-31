@@ -117,19 +117,11 @@ function validateForm(){
     let pass1 = document.getElementById("password").value;
     let pass2 = document.getElementById("password2").value;
 
-    console.log("pass1 = " + pass1 + " pass2 = " + pass2);
-
     // get the length of password
     let passLength = pass1.length;
 
-    console.log("pass1.length = " + passLength);
-
-    // use regex to check for a number in password
-    let number = pass1.search(/\d/);
-
-    console.log("number = " + number);
-
-    if (pass1 == pass2 && passLength > 7 && number != -1) {
+    // verify passwords match and length is greater than 7
+    if (pass1 == pass2 && passLength > 7) {
         //return true form is valid
         return true;
     } else {
