@@ -50,10 +50,10 @@ var_dump($_POST);
 
             // terminate php script upon redirect
             die();
+        } else {
+            // if no match was found populate an error message
+            $error = "Incorrect login credentials. Please try again.";
         }
-
-        // if no match was found populate an error message
-        $error = "Incorrect login credentials. Please try again.";
     }
 
     // a function to clean the data

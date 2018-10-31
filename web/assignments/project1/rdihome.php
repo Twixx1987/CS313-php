@@ -1,4 +1,7 @@
-<?php 
+<?php
+    //start the session
+    session_start();
+
     // include the logged in verification
     require 'rdiverifylogin.php';
 
