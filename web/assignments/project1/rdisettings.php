@@ -65,13 +65,12 @@
 			<table class="versions">
 				<?php
                     // create a counter variable
-                    $count = 1;
+                    $count = 0;
 
 					// query the database for the list of versions
 					$statement = $db->query('SELECT version_name as version, version_id FROM rdi_version  ORDER BY version_name');
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
-                        // increase count
-                        $count++;
+
 					var_dump($count);
                         echo $count % 4;
 
@@ -87,7 +86,13 @@
                 <?php if ($count % 4 == 0): ?>
                 </tr>
                 <?php endif; ?>
-				<?php endwhile; ?>
+				<?php
+                    // increase count
+                    $count++;
+
+                    // end the loop
+                    endwhile;
+                ?>
 			</table>
             <input type="submit" value="Update Settings" id="boxUpdate" class="btn btn-secondary">
 			<h2 class="container">Individual Characters</h2>
