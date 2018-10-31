@@ -11,6 +11,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $numbermatch = preg_match('/\d/', $password);
 
+    var_dump($_POST);
+    var_dump($password);
+    var_dump($password2);
+    var_dump(strlen($password));
+    var_dump($numbermatch);
+
 
     if ($password == $password2 && strlen($password) > 7 && $numbermatch == 1) {
 
