@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/assignments/project1/rdirightsfooter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdigame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdigame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdihome.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdihome.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdihostgame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdihostgame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdisignup.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdisignup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdirightsfooter.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdirightsfooter.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +51,7 @@
         <counts>
           <entry key="css" value="8" />
           <entry key="js" value="13" />
-          <entry key="php" value="146" />
+          <entry key="php" value="147" />
           <entry key="sql" value="2" />
         </counts>
       </usages-collector>
@@ -67,7 +59,7 @@
         <counts>
           <entry key="CSS" value="8" />
           <entry key="JavaScript" value="13" />
-          <entry key="PHP" value="146" />
+          <entry key="PHP" value="147" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -76,9 +68,9 @@
         <counts>
           <entry key="css" value="59" />
           <entry key="js" value="4557" />
-          <entry key="php" value="13565" />
+          <entry key="php" value="13569" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="3047" />
+          <entry key="txt" value="3094" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -86,8 +78,8 @@
           <entry key="CSS" value="59" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="4557" />
-          <entry key="PHP" value="13533" />
-          <entry key="PLAIN_TEXT" value="3047" />
+          <entry key="PHP" value="13537" />
+          <entry key="PLAIN_TEXT" value="3094" />
           <entry key="SQL" value="133" />
         </counts>
       </usages-collector>
@@ -130,11 +122,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="87">
               <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdirightsfooter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -182,15 +183,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdilogin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="108" column="10" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -232,7 +224,6 @@
         <option value="$PROJECT_DIR$/web/assignments/project1/rdistartgame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdi.js" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdirightsfooter.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdisignup.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" />
@@ -241,6 +232,7 @@
         <option value="$PROJECT_DIR$/web/assignments/project1/rdihome.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdigame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdirightsfooter.php" />
       </list>
     </option>
   </component>
@@ -344,14 +336,7 @@
       <workItem from="1540830704227" duration="6671000" />
       <workItem from="1540919739721" duration="6303000" />
       <workItem from="1540949957169" duration="19123000" />
-      <workItem from="1541002733849" duration="1517000" />
-    </task>
-    <task id="LOCAL-00127" summary="add code to display the character name">
-      <created>1540704375822</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1540704375822</updated>
+      <workItem from="1541002733849" duration="2092000" />
     </task>
     <task id="LOCAL-00128" summary="try bindparam instead fo array">
       <created>1540706082829</created>
@@ -689,11 +674,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540969212502</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="add footer containing rights belong to Slugfest">
+      <created>1541011246936</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1541011246937</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129511000" />
+    <option name="totallyTimeSpent" value="130086000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -736,7 +728,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="correct jQuery event handler" />
     <MESSAGE value="change game create to display joined players not characters" />
     <MESSAGE value="update close game file to display player-character combo and update game to closed status" />
     <MESSAGE value="update join game code to indicate that the Host will inform the players of the characters they will be playing." />
@@ -761,7 +752,8 @@
     <MESSAGE value="update game close" />
     <MESSAGE value="update button formatting" />
     <MESSAGE value="begin working on game completion functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="begin working on game completion functionality" />
+    <MESSAGE value="add footer containing rights belong to Slugfest" />
+    <option name="LAST_COMMIT_MESSAGE" value="add footer containing rights belong to Slugfest" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -930,13 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdirightsfooter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="126" selection-start-line="1" selection-start-column="126" selection-end-line="1" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdimygames.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-163" />
@@ -1014,6 +999,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdirightsfooter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
