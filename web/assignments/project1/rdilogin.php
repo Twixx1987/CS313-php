@@ -45,6 +45,7 @@ var_dump($_POST);
             $_SESSION['user_id'] = $user_id;
             $_SESSION['username'] = $username;
 
+            var_dump($_SESSION);
             // clean the output buffer
             //ob_clean();
 
