@@ -43,7 +43,7 @@
                     <input type="number" id="gameId" name="gameId" />
                     <br />
                     <br />
-                    <button id="joinGame" name="joinGame" onclick="">Join Game</button>
+                    <button id="joinGame" name="joinGame" class="btn btn-secondary" onclick="">Join Game</button>
                 </div>
             </div>
             <div class="col-lg">

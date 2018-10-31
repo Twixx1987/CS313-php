@@ -55,10 +55,10 @@
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
-        <button id="selectAll" name="selectAll">Select All</button>
-        <button id="clearAll" name="clearAll">Clear All</button>
+        <button id="selectAll" name="selectAll" class="btn btn-secondary">Select All</button>
+        <button id="clearAll" name="clearAll" class="btn btn-secondary">Clear All</button>
 		<form name="settings" action="rdisettings.php" method="post">
-            <input type="submit" value="Update Settings" id="allUpdate">
+            <input type="submit" value="Update Settings" id="allUpdate" class="btn btn-secondary">
 			<h2 class="container">Box Sets</h2>
 			<table class="versions">
 				<?php
@@ -73,7 +73,7 @@
                         </tr>
 				<?php endwhile; ?>
 			</table>
-            <input type="submit" value="Update Settings" id="boxUpdate">
+            <input type="submit" value="Update Settings" id="boxUpdate" class="btn btn-secondary">
 			<h2 class="container">Individual Characters</h2>
 			<table class="characters">
 				<?php
@@ -112,7 +112,7 @@
 					$_SESSION['characters'] = $characters;
 				?>
 			</table>
-            <input type="submit" value="Update Settings" id="characterUpdate">
+            <input type="submit" value="Update Settings" id="characterUpdate" class="btn btn-secondary">
 		</form>
 	</div>
 </body>
