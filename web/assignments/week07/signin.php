@@ -7,14 +7,14 @@ $error = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $query = 'SELECT name, password FROM week07user WHERE name=:name';
+    $query = 'SELECT name, password FROM week07user WHERE user_name=:username';
     $stmt = $db->prepare($query);
-    $pdo = $stmt->execute(array(':name' => $_POST['username']));
+    $pdo = $stmt->execute(array(':username' => $_POST['username']));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     $loggedIn = password_verify($_POST['password'], $rows[0]['password']);
     if ($loggedIn) {
-        $_SESSION['user'] = $_POST['username'];
+        $_SESSION['username'] = $_POST['username'];
         $newURL = "./welcome.php";
         header('Location: ' . $newURL);
         die();

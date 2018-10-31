@@ -9,19 +9,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
     $password2 = $_POST['password2'];
 
-    if ($password == $password2 && strlen($password) > 7) {
+    $numbermatch = preg_match('/\d/',$password);
+
+
+    if ($password == $password2 && strlen($password) > 7 && $numbermatch == 1) {
 
         $hashpassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
-        $query = 'INSERT INTO week07user (name, password) VALUES (:name, :password)';
+        $query = 'INSERT INTO week07user (user_name, password) VALUES (:username, :password)';
         $stmt = $db->prepare($query);
-        $pdo = $stmt->execute(array(':name' => $_POST['name'], ':password' => $hashpassword));
+        $pdo = $stmt->execute(array(':username' => $_POST['username'], ':password' => $hashpassword));
     
         $newURL = "./signin.php";
         header('Location: ' . $newURL);
         die();
 
     } else {
-        $error = 'ERROR: Passwords must match and contain a minimum of 7 characters.';
+        $error = 'Password requirements: Passwords must match. Passwords must contain a minimum of 7 characters. Passwords must include at least one number.';
     }
 
 }
@@ -54,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	        <h1>Create an Account</h1>
             <p><?php echo $error; ?></p>
             <form action="signup.php" method="POST">
-                <span>Username<input type="text" name="name" value=""></span><br>
+                <span>Username<input type="text" name="username" value=""></span><br>
                 <span>Password<input type="password" name="password" value=""></span><span class="error"><?php echo ($error == '') ? '' : '*';  ?></span><br>
                 <span>Retype Password <input type="password" name="password2" value=""></span><span class="error"><?php echo ($error == '') ? '' : '*';  ?></span><br>
                 <input type="submit">
