@@ -76,5 +76,8 @@
             </div>
         </div>
     </div>
+    <div class="footer container">
+        <?php include 'rdirightsfooter.php'; ?>
+    </div>
 </body>
 </html>

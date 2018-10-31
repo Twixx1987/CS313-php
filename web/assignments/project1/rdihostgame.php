@@ -27,26 +27,29 @@ require 'rdiverifylogin.php';
     <title>Play RDI</title>
 </head>
 <body>
-<h1 class="pagetitle container">Play RDI</h1>
-<div class="menu container">
-    <?php include 'rdimenu.php'; ?>
-</div>
-<div class="container">
-    <h2>Host a Game</h2>
+    <h1 class="pagetitle container">Play RDI</h1>
+    <div class="menu container">
+        <?php include 'rdimenu.php'; ?>
+    </div>
     <div class="container">
-        <p>To host a game you first need to ensure that you have setup the character
-            choices on the settings page. You will need to provide a Game ID to the
-            players that will join. This ID will be provided once the game is
-            initialized. Please enter the following information to start hosting a
-            new game.</p>
+        <h2>Host a Game</h2>
+        <div class="container">
+            <p>To host a game you first need to ensure that you have setup the character
+                choices on the settings page. You will need to provide a Game ID to the
+                players that will join. This ID will be provided once the game is
+                initialized. Please enter the following information to start hosting a
+                new game.</p>
+        </div>
+        <div id="gameCreatedStatus">
+            <label for="playerCount">Anticipated number of players:</label>
+            <br />
+            <input type="number" id="playerCount" name="playerCount" />
+            <br />
+            <button id="startGame" name="startGame" onclick="">Host Game</button>
+        </div>
     </div>
-    <div id="gameCreatedStatus">
-        <label for="playerCount">Anticipated number of players:</label>
-        <br />
-        <input type="number" id="playerCount" name="playerCount" />
-        <br />
-        <button id="startGame" name="startGame" onclick="">Host Game</button>
+    <div class="footer container">
+        <?php include 'rdirightsfooter.php'; ?>
     </div>
-</div>
 </body>
 </html>

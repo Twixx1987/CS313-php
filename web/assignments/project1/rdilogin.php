@@ -104,5 +104,8 @@
 		</form>
         <a class="btn btn-secondary" role="button" href="/assignments/project1/rdisignup.php">Sign Up</a>
 	</div>
+    <div class="footer container">
+        <?php include 'rdirightsfooter.php'; ?>
+    </div>
 </body>
 </html>
