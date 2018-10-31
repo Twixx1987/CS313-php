@@ -71,10 +71,12 @@
 					$statement = $db->query('SELECT version_name as version, version_id FROM rdi_version  ORDER BY version_name');
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
 
+
+                        echo '$count : ';
 					    echo $count;
-                        echo '<br>';
+                        echo ' $count % 3 : ';
                         echo $count % 3;
-                        echo '<br>';
+                        echo ' $count % 3 == 0 : ';
                         echo $count % 3 == 0;
                         echo '<br>';
 

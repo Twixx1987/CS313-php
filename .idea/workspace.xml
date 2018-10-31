@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +70,7 @@
         <counts>
           <entry key="css" value="141" />
           <entry key="js" value="4557" />
-          <entry key="php" value="14377" />
+          <entry key="php" value="14406" />
           <entry key="sql" value="106" />
           <entry key="txt" value="3618" />
         </counts>
@@ -81,7 +80,7 @@
           <entry key="CSS" value="141" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="4557" />
-          <entry key="PHP" value="14345" />
+          <entry key="PHP" value="14374" />
           <entry key="PLAIN_TEXT" value="3618" />
           <entry key="SQL" value="133" />
         </counts>
@@ -164,8 +163,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="85" column="46" lean-forward="true" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
+            <state relative-caret-position="376">
+              <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -328,21 +327,7 @@
       <workItem from="1540919739721" duration="6303000" />
       <workItem from="1540949957169" duration="19123000" />
       <workItem from="1541002733849" duration="6844000" />
-      <workItem from="1541020798556" duration="3729000" />
-    </task>
-    <task id="LOCAL-00144" summary="debugging for login functionality">
-      <created>1540952569655</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1540952569655</updated>
-    </task>
-    <task id="LOCAL-00145" summary="correct minimum password length check&#10;correct signin sql query">
-      <created>1540952757851</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1540952757851</updated>
+      <workItem from="1541020798556" duration="4586000" />
     </task>
     <task id="LOCAL-00146" summary="add JS validation">
       <created>1540954394682</created>
@@ -673,11 +658,25 @@
       <option name="project" value="LOCAL" />
       <updated>1541027293929</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="debugging for version table">
+      <created>1541027944400</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1541027944400</updated>
+    </task>
+    <task id="LOCAL-00194" summary="debugging for version table">
+      <created>1541028191593</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1541028191593</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138567000" />
+    <option name="totallyTimeSpent" value="139424000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -998,8 +997,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="85" column="46" lean-forward="true" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
+        <state relative-caret-position="376">
+          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
         </state>
       </provider>
     </entry>
