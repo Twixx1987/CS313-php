@@ -51,7 +51,7 @@
 </head>
 <body>
 	<h1 class="pagetitle container">RDI-Tracker Settings</h1>
-	<div class="menu container">
+	<div class="menu container fixed-top">
 		<?php include 'rdimenu.php'; ?>
 	</div>
 	<div class="container">
@@ -115,7 +115,7 @@
             <input type="submit" value="Update Settings" id="characterUpdate" class="btn btn-secondary">
 		</form>
 	</div>
-    <div class="footer text-sm-center container bg-dark">
+    <div class="footer text-sm-center container bg-secondary text-white fixed-bottom">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
 </body>
