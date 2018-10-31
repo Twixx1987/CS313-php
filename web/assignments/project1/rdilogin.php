@@ -23,28 +23,31 @@
         $password = cleanInputs($_POST['password']);
 
         // query the database for the username and password
-        $statement = $db->prepare('SELECT user_name, password, user_id FROM rdi_user WHERE user_name=:username LIMIT 1');
+        $statement = $db->prepare('SELECT password, user_id FROM rdi_user WHERE user_name=:username LIMIT 1');
         $statement->execute(array(':username' => $username));
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-        {
-            // check to see if the username/password combo match the DB
-            if ($row['user_name'] == $username && $row['password'] == $password) {
-                // set the user_id and username to session variables
-                $_SESSION['user_id'] = $row['user_id'];
-                $_SESSION['username'] = $row['user_name'];
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-                // clean the output buffer
-                ob_clean();
-                // redirect to the home page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
-                header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdihome.php', true, 303);
+        // verify the password
+        $loggedIn = password_verify($_POST['password'], $rows[0]['password']);
 
-                // terminate php script upon redirect
-                exit();
-            }
+        // check to see if the username/password combo match the DB
+        if ($row['user_name'] == $username && $loggedIn) {
+            // set the user_id and username to session variables
+            $_SESSION['user_id'] = $row['user_id'];
+            $_SESSION['username'] = $row['user_name'];
+
+            // clean the output buffer
+            ob_clean();
+
+            // redirect to the home page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
+            header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdihome.php', true, 303);
+
+            // terminate php script upon redirect
+            die();
         }
 
         // if no match was found populate an error message
-        $error = "Username and/or password not found. Please try again.";
+        $error = "Incorrect login credentials. Please try again.";
     }
 
     // a function to clean the data
@@ -95,9 +98,8 @@
 			<label for="password">Password:</label><br/>
 			<input type="password" name="password"><br/>
 			<input type="submit" name="login" value="Login">
-			<button id="signup" onclick="signup">Sign Up</button>
-			<input type="checkbox" name="signupcheck" id="signupcheck">
 		</form>
+        <a class="btn btn-secondary" role="button" href="/assignments/project1/rdisignup.php">Sign Up</a>
 	</div>
 </body>
 </html>
