@@ -46,25 +46,23 @@ $dbInsert3->execute(array(':game_id' => $game_id, ':user_id' => $user_id, ':char
 
 // output a joined game message
 ?>
-<p class="container">SUCCESS: You have created Game #<?php echo $game_id; ?></p>
+<p class="container">SUCCESS: You have created Game #<span id="game_id"><?php echo $game_id; ?></span></p>
 <p class="container">The following players have joined your game:</p>
-<ul>
-    <?php
-    // create the prepared query to find the character name
-    $statement = $db->prepare('SELECT u.user_name AS player FROM rdi_user AS u NATURAL JOIN rdi_player AS p WHERE p.game_id=:game_id');
-
-    // run the query
-    $statement->execute(array(':game_id' => $game_id));
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
-    ?>
-    <li>
+<div id="playerList" class="container">
+    <ul>
         <?php
-            echo $row['player'];
-        ?>
-    </li>
-    <?php
+        // create the prepared query to find the character name
+        $statement = $db->prepare('SELECT u.user_name AS player FROM rdi_user AS u NATURAL JOIN rdi_player AS p WHERE p.game_id=:game_id');
+
+        // run the query
+        $statement->execute(array(':game_id' => $game_id));
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+            ?>
+            <li><?php echo $row['player']; ?></li>
+        <?php
         endwhile;
-    ?>
-</ul>
-<button id="updatePlayers" name="updatePlayers" onclick="">Update Joined Players List</button>
-<button id="closeGame" name="closeGame" onclick="">Close Game and Generate Characters</button>
+        ?>
+    </ul>
+</div>
+<button id="refreshPlayersList" name="refreshPlayersList" onclick="">Refresh Joined Players List</button>
+<button id="closeGame" name="closeGame" onclick="closeGame(<?php echo $game_id; ?>)">Close Game and Generate Characters</button>

@@ -19,13 +19,13 @@ $(document).ready(function(){
     // a function to check the characters
     $('.character').click(function() {
         // get the version value
-        var classes = this.className;
+        let classes = this.className;
 
         // get the location of character_ class
-        var stringStart = classes.indexOf("character_");
+        let stringStart = classes.indexOf("character_");
 
         // find the character_ class name
-        var id = "#" + classes.substring(stringStart);
+        let id = "#" + classes.substring(stringStart);
         console.log(id);
         console.log(document.getElementById(id));
 
@@ -45,7 +45,7 @@ $(document).ready(function(){
     // a function to check the characters of selected version
     $('.versionSelector').change(function() {
         // get the version value
-        var checkValue = this.value;
+        let checkValue = this.value;
 
         // check the status of the activating object
         if (this.checked === true) {
@@ -67,25 +67,25 @@ $(document).ready(function(){
         console.log("made it here");
 
         // get the value
-        var nonUserCount = $(this).val();
+        let nonUserCount = $(this).val();
 
         console.log("made it here" + nonUserCount);
         // loop through the count of non-user players
-        for (var count = nonUserCount; count > 0; count--) {
+        for (let count = nonUserCount; count > 0; count--) {
             // create an line break
-            var lb1 = $("<br />");
+            let lb1 = $("<br />");
 
             // create an line break
-            var lb2 = $("<br />");
+            let lb2 = $("<br />");
 
             // create an label for an input field and set its attributes
-            var label = $("<label><label/>").text("Non-User Player " + count + ":");
+            let label = $("<label><label/>").text("Non-User Player " + count + ":");
             label.attr("class","non_user");
             label.attr("for","non_user_" + count);
 
             console.log("made it here");
             // create an input field and set its attributes
-            var input = $("<input/>");
+            let input = $("<input/>");
             input.attr("type", "text");
             input.attr("class","non_user");
             input.attr("id","non_user_" + count);
@@ -100,14 +100,39 @@ $(document).ready(function(){
 
     // a function to create an AJAX call to join a game
     $('#joinGame').click(function() {
-        // the AJAX call
-        $('#gameIdLoadStatus').load('rdijoingame.php', {gameId: $('#gameId').val()});
+        // get the game id
+        let gameId = $('#gameId').val();
+
+        // make sure a game id was entered
+        if (gameId > 0) {
+            // the AJAX call
+            $('#gameIdLoadStatus').load('rdijoingame.php', {gameId: $('#gameId').val()});
+        } else {
+            $('#gameIdLoadStatus').html('<p class="container error">ERROR: Invalid Game ID ' + gameId + '</p>');
+        }
     });
 
     // a function to create an AJAX call to Start a game
     $('#startGame').click(function() {
-        // the AJAX call
-        $('#gameCreatedStatus').load('rdistartgame.php', {playerCount : $('#playerCount').val() })
+        // get the game id
+        let playerCount = $('#playerCount').val();
+
+        // make sure a game id was entered
+        if (playerCount > 0) {
+            // the AJAX call
+            $('#gameCreatedStatus').load('rdistartgame.php', {playerCount : $('#playerCount').val()});
+        } else {
+            $('#gameCreatedStatus').html('<p class="container error">ERROR: Invalid Player Count ' + playerCount + '</p>');
+        }
+    });
+
+    // a function to update the list of players
+    $('#refreshPlayersList').click(function() {
+        // get the game id from the page
+        let gameId = $('#game_id').text();
+
+        // make an AJAX call to update the players list
+        $('#playerList').load('rdigameplayerlist.php', {game_id: gameId});
     });
 });
 
@@ -138,4 +163,10 @@ function validateForm(){
     }
 
     return false;
+}
+
+// a function to close an open game and display the character generation
+function closeGame(gameId) {
+    // use the window.location to redirect to the php page
+    window.location.replace("rdiclosegame.php?game_id=" + gameId);
 }

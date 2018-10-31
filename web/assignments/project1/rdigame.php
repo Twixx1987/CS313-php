@@ -27,7 +27,7 @@
     <title>Track RDI Games</title>
 </head>
 <body>
-	<h1 class="pagetitle container">Track your RDI Games</h1>
+	<h1 class="pagetitle container">Track Your RDI Games</h1>
 	<div class="menu container">
 		<?php include 'rdimenu.php'; ?>
 	</div>
@@ -35,11 +35,12 @@
         <div class="row">
             <div class="col-sm">
                 <h2>Join a Game</h2>
-                <div id="gameIdLoadStatus">
+                <div id="gameIdLoadStatus"></div>
+                <div class="container">
                     <p>To join a game you will need the Game ID provided to the game host.</p>
                     <label for="gameId">Enter the Game ID provided to the game host:</label>
                     <br />
-                    <input type="text" id="gameId" name="gameId" />
+                    <input type="number" id="gameId" name="gameId" />
                     <br />
                     <br />
                     <button id="joinGame" name="joinGame" onclick="">Join Game</button>
@@ -55,11 +56,9 @@
                     $statement->execute(array(':user_id' => $user_id));
                     while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                 ?>
-                <p>
-                    <a href="rdiclosegame.php?game_id=<?php echo $row['game_id']; ?>">Game #
-                        <?php echo $row['game_id']; ?> has <?php echo $row['joined_players']; ?>
-                        player(s) of the anticipated <?php echo $row['player_count']; ?>
-                    </a>
+                <p onclick="closeGame(<?php echo $row['game_id']; ?>)">Game #
+                    <?php echo $row['game_id']; ?> has <?php echo $row['joined_players']; ?>
+                    player(s) of the anticipated <?php echo $row['player_count']; ?>
                 </p>
                 <?php
                     endwhile;
@@ -73,7 +72,7 @@
                     choices on the settings page. You will need to provide a Game ID to the
                     players that will join. This ID will be provided once the game is
                     initialized.</p>
-                <button id="hostGame" name="hostGame" onclick="">Host Game</button>
+                <a href="rdihostgame.php" class="btn btn-secondary" role="button">Host Game</a>
             </div>
         </div>
     </div>

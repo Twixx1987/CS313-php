@@ -33,12 +33,14 @@ require 'rdiverifylogin.php';
 </div>
 <div class="container">
     <h2>Host a Game</h2>
-    <div id="gameCreatedStatus">
+    <div class="container">
         <p>To host a game you first need to ensure that you have setup the character
             choices on the settings page. You will need to provide a Game ID to the
             players that will join. This ID will be provided once the game is
             initialized. Please enter the following information to start hosting a
             new game.</p>
+    </div>
+    <div id="gameCreatedStatus">
         <label for="playerCount">Anticipated number of players:</label>
         <br />
         <input type="number" id="playerCount" name="playerCount" />
