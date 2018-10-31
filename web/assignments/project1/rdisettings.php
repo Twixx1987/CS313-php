@@ -50,13 +50,13 @@
     <title>RDI-Tracker Settings</title>
 </head>
 <body>
-    <div class="container position-relative">
+    <div class="container fixed-top">
         <h1 class="pagetitle">RDI-Tracker Settings</h1>
-        <div class="menu container">
+        <div class="menu container bg-secondary">
             <?php include 'rdimenu.php'; ?>
         </div>
     </div>
-	<div class="container">
+    <div class="container body">
         <button id="selectAll" name="selectAll" class="btn btn-secondary">Select All</button>
         <button id="clearAll" name="clearAll" class="btn btn-secondary">Clear All</button>
 		<form name="settings" action="rdisettings.php" method="post">

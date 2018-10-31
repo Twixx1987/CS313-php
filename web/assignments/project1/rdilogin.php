@@ -83,7 +83,7 @@
     <title>RDI-Tracker Login</title>
 </head>
 <body>
-    <div class="container position-relative">
+    <div class="container fixed-top">
         <h1 class="pagetitle">Login to RDI-Tracker</h1>
         <div class="menu container">
             <ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-secondary">
@@ -93,7 +93,7 @@
             </ul>
         </div>
     </div>
-	<div class="container">
+	<div class="container body">
 		<div class="container error">
 			<p><?php echo $error;?></p>
 		</div>

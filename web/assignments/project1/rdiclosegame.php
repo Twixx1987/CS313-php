@@ -35,13 +35,13 @@
     <title>Game #<?php echo $game_id; ?> Character Selection</title>
 </head>
 <body>
-    <div class="container position-relative">
+    <div class="container fixed-top">
         <h1 class="pagetitle">Game #<?php echo $game_id; ?> Character Selection</h1>
-        <div class="menu container">
+        <div class="menu container bg-secondary">
             <?php include 'rdimenu.php'; ?>
         </div>
     </div>
-    <div class="container">
+    <div class="container body">
         <p class="container">Game #<?php echo $game_id; ?> has started!</p>
         <p class="container">Here is the character lineup:</p>
         <ul>

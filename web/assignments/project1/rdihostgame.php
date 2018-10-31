@@ -27,13 +27,13 @@ require 'rdiverifylogin.php';
     <title>Host a New Game</title>
 </head>
 <body>
-    <div class="container position-relative">
+    <div class="container fixed-top">
         <h1 class="pagetitle">Host a New Game</h1>
-        <div class="menu container">
+        <div class="menu container bg-secondary">
             <?php include 'rdimenu.php'; ?>
         </div>
     </div>
-    <div class="container">
+    <div class="container body">
         <h2>Host a Game</h2>
         <div class="container">
             <p>To host a game you first need to ensure that you have setup the character

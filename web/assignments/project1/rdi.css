@@ -4,6 +4,9 @@ body
     font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
+.body {
+    top: 112px;
+}
 .btnAddClass {
     @include btn;
     @include btn-secondary;

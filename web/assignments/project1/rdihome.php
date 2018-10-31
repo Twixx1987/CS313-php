@@ -30,13 +30,13 @@
     <title>RDI-Tracker Home</title>
 </head>
 <body>
-    <div class="container position-relative">
+    <div class="container fixed-top">
         <h1 class="pagetitle">Welcome <?php echo $_SESSION['username'];?> to RDI-Tracker!</h1>
-        <div class="menu container">
+        <div class="menu container bg-secondary">
             <?php include 'rdimenu.php'; ?>
         </div>
     </div>
-	<div class="container">
+    <div class="container body">
 		<h2 class="container">A Brief Synopsis of the Red Dragon Inn</h2>
 		<p>You and your adventuring companions have spent all day slogging through the Dungeon, killing monsters and taking 
 		their stuff. Now you're back in town, healed up, cleaned up, and ready to party at the Red Dragon Inn.</p>

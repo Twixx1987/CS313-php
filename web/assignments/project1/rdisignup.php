@@ -67,13 +67,13 @@ function cleanInputs($data) {
     <title>RDI-Tracker Sign Up</title>
 </head>
     <body>
-        <div class="container position-relative">
+        <div class="container fixed-top">
             <h1 class="pagetitle">Create an RDI-Tracker Account</h1>
-            <div class="menu container">
-                <?php include '../../top_menu.php'; ?>
+            <div class="menu container bg-secondary">
+                <?php include 'rdimenu.php'; ?>
             </div>
         </div>
-        <div class="container" id="login">
+        <div class="container body" id="login">
             <div id="topError" class="error"><?php echo $error; ?></div>
             <form action="rdisignup.php" method="POST" onsubmit="return validateForm()">
                 <span>Username<input type="text" name="username" value=""></span><br>
