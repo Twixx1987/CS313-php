@@ -85,7 +85,7 @@
 <body>
     <div class="container fixed-top bg-white">
         <h1 class="pagetitle">Login to RDI-Tracker</h1>
-        <div class="menu container">
+        <div class="menu container bg-secondary">
             <ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-secondary">
                 <li class="nav-item flex-sm-fill text-sm-center">
                   <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="/homepage.php">CS313 Home</a>
