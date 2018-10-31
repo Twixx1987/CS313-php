@@ -31,7 +31,7 @@
         $loggedIn = password_verify($password, $result[0]['password']);
 
         // check to see if the username/password combo match the DB
-        if ($result['user_name'] == $username && $loggedIn) {
+        if ($loggedIn) {
             // set the user_id and username to session variables
             $_SESSION['user_id'] = $result['user_id'];
             $_SESSION['username'] = $username;
