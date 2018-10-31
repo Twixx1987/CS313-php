@@ -1,23 +1,22 @@
 // a function to check the password for matching, length, and at least one numerical character
 function validateForm(){
-    // set the return value to false initially
-    let returnVal = false;
-
     // get the password values
     let pass1 = document.getElementById("password").value;
     let pass2 = document.getElementById("password2").value;
-console.log("pass1 = " + pass1 + " pass2 = " + pass2);
+
+    console.log("pass1 = " + pass1 + " pass2 = " + pass2);
+
     // get the length of password
     let passLength = pass1.length;
 
     console.log("pass1.length = " + passLength);
 
     // use regex to check for a number in password
-    let number = pass1.includes(/\d/);
+    let number = pass1.search(/\d/);
 
     console.log("number = " + number);
 
-    if (pass1 == pass2 && passLength > 6 && number) {
+    if (pass1 == pass2 && passLength > 6 && number != -1) {
         //return true form is valid
         return true;
     } else {
