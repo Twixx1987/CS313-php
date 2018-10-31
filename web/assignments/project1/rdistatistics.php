@@ -27,10 +27,12 @@
     <title>RDI-Tracker Statistics</title>
 </head>
 <body>
-	<h1 class="pagetitle container">RDI-Tracker Statistics</h1>
-	<div class="menu container">
-		<?php include 'rdimenu.php'; ?>
-	</div>
+    <div class="container fixed-top">
+        <h1 class="pagetitle container">RDI-Tracker Statistics</h1>
+        <div class="menu container">
+            <?php include 'rdimenu.php'; ?>
+        </div>
+    </div>
 	<div class="container">
         <h2 class="container"><?php echo $_SESSION['username']; ?>'s Statistics</h2>
         <p>

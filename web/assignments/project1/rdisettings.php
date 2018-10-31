@@ -50,10 +50,12 @@
     <title>RDI-Tracker Settings</title>
 </head>
 <body>
-	<h1 class="pagetitle container">RDI-Tracker Settings</h1>
-	<div class="menu container fixed-top">
-		<?php include 'rdimenu.php'; ?>
-	</div>
+    <div class="container fixed-top">
+        <h1 class="pagetitle container">RDI-Tracker Settings</h1>
+        <div class="menu container">
+            <?php include 'rdimenu.php'; ?>
+        </div>
+    </div>
 	<div class="container">
         <button id="selectAll" name="selectAll" class="btn btn-secondary">Select All</button>
         <button id="clearAll" name="clearAll" class="btn btn-secondary">Clear All</button>
@@ -115,7 +117,7 @@
             <input type="submit" value="Update Settings" id="characterUpdate" class="btn btn-secondary">
 		</form>
 	</div>
-    <div class="footer text-sm-center container bg-secondary text-white fixed-bottom">
+    <div class="footer text-sm-center container bg-secondary text-white">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
 </body>

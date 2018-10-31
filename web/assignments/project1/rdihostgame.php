@@ -27,9 +27,11 @@ require 'rdiverifylogin.php';
     <title>Play RDI</title>
 </head>
 <body>
-    <h1 class="pagetitle container">Play RDI</h1>
-    <div class="menu container">
-        <?php include 'rdimenu.php'; ?>
+    <div class="container fixed-top">
+        <h1 class="pagetitle container">Play RDI</h1>
+        <div class="menu container">
+            <?php include 'rdimenu.php'; ?>
+        </div>
     </div>
     <div class="container">
         <h2>Host a Game</h2>

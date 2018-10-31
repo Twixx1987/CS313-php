@@ -27,10 +27,12 @@
     <title>Track RDI Games</title>
 </head>
 <body>
-	<h1 class="pagetitle container">Track Your RDI Games</h1>
-	<div class="menu container">
-		<?php include 'rdimenu.php'; ?>
-	</div>
+    <div class="container fixed-top">
+        <h1 class="pagetitle container">Track Your RDI Games</h1>
+        <div class="menu container">
+            <?php include 'rdimenu.php'; ?>
+        </div>
+    </div>
 	<div class="container">
         <div class="row">
             <div class="col-sm">
