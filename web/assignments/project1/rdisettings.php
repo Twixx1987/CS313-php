@@ -115,7 +115,7 @@
             <input type="submit" value="Update Settings" id="characterUpdate" class="btn btn-secondary">
 		</form>
 	</div>
-    <div class="footer container">
+    <div class="footer text-sm-center container">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
 </body>

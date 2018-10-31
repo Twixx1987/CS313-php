@@ -94,7 +94,7 @@
             <?php endwhile; ?>
         </table>
 	</div>
-    <div class="footer container">
+    <div class="footer text-sm-center container">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
 </body>
