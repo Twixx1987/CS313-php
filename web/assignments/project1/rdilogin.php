@@ -22,14 +22,20 @@
         $username = cleanInputs($_POST['username']);
         $password = cleanInputs($_POST['password']);
 
+        var_dump($username);
+        var_dump($password);
+
         // query the database for the username and password
         $statement = $db->prepare('SELECT password, user_id FROM rdi_user WHERE user_name=:username LIMIT 1');
         $statement->execute(array(':username' => $username));
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
 
+        var_dump($result);
+
         // verify the password
         $loggedIn = password_verify($password, $result[0]['password']);
 
+        var_dump($loggedIn);
         // check to see if the username/password combo match the DB
         if ($loggedIn) {
             // set the user_id and username to session variables
