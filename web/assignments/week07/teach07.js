@@ -14,10 +14,9 @@ function validateForm(){
     let number = pass1.includes(/\d/);
 
     if (pass1 == pass2 && passLength > 6 && number) {
-        returnVal = true;
+        //return true form is valid
+        return true;
     } else {
-        returnVal = false;
-
         // set the error messages
         document.getElementById("topError").innerHTML = "<p class='error'>Password Requirements: </p>"
                             + "<p class='error'>Passwords must match. </p>"
@@ -26,5 +25,10 @@ function validateForm(){
 
         document.getElementById("sideError1").innerHTML = "*";
         document.getElementById("sideError2").innerHTML = "*";
+
+        // return false failed to validate properly
+        return false;
     }
+
+    return false;
 }
