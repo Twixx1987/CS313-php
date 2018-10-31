@@ -64,15 +64,26 @@
 			<h2 class="container">Box Sets</h2>
 			<table class="versions">
 				<?php
+                    // create a counter variable
+                    $count = 0;
+
 					// query the database for the list of versions
 					$statement = $db->query('SELECT version_name as version, version_id FROM rdi_version  ORDER BY version_name');
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+                        $count++;
+					    if ($count % 3 == 0):
 				?>
-						<tr class="version_<?php echo $row['version_id']; ?>">
-                            <td class="version_<?php echo $row['version_id']; ?>"><?php echo $row['version']; ?>
-						    <input type="checkbox" class="versionSelector version_<?php echo $row['version_id']; ?>" id="version_<?php echo $row['version_id']; ?>"
-                                       name="version_<?php echo $row['version_id']; ?>" value="version_<?php echo $row['version_id']; ?>"></td>
-                        </tr>
+                <tr>
+                <?php endif; ?>
+                    <td class="version_<?php echo $row['version_id']; ?>"><?php echo $row['version']; ?>
+                        <input type="checkbox" class="versionSelector version_<?php echo $row['version_id']; ?>" id="version_<?php echo $row['version_id']; ?>"
+                                   name="version_<?php echo $row['version_id']; ?>" value="version_<?php echo $row['version_id']; ?>">
+                    </td>
+                <?php
+                    if ($count % 3 == 0):
+                ?>
+                </tr>
+                <?php endif; ?>
 				<?php endwhile; ?>
 			</table>
             <input type="submit" value="Update Settings" id="boxUpdate" class="btn btn-secondary">
