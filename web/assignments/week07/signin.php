@@ -1,11 +1,13 @@
-<?php include 'db.php';
+<?php
+
+require '../project1/rdidbconnect.php';
 
 session_start();
 $error = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $query = 'SELECT name, password FROM public.user WHERE name=:name';
+    $query = 'SELECT name, password FROM week07user WHERE name=:name';
     $stmt = $db->prepare($query);
     $pdo = $stmt->execute(array(':name' => $_POST['username']));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -47,12 +49,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="container" id="signup"><a href="signup.php">Create an account</a></div>
         <div class="container" id="login">
 	        <h1>Please sign in</h1>
+            <p class="error"><?php echo $error; ?></p>
             <form action="signin.php" method="POST">
                 <span>Username<input type="text" name="username" value=""></span><br>
                 <span>Password<input type="password" name="password" value=""></span><br>
                 <input type="submit">
             </form>
-            <?php echo $error; ?>
         </div>
     </body>
 </html>

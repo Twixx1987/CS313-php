@@ -1,4 +1,6 @@
-<?php include 'db.php';
+<?php
+
+require '../project1/rdidbconnect.php';
 
 $error = '';
 
@@ -7,10 +9,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
     $password2 = $_POST['password2'];
 
-    if ($password == $password2) {
+    if ($password == $password2 && strlen($password) > 7) {
 
         $hashpassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
-        $query = 'INSERT INTO public."user" (name, password) VALUES (:name, :password)';
+        $query = 'INSERT INTO week07user (name, password) VALUES (:name, :password)';
         $stmt = $db->prepare($query);
         $pdo = $stmt->execute(array(':name' => $_POST['name'], ':password' => $hashpassword));
     
@@ -19,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die();
 
     } else {
-        $error = 'Passwords must match';
+        $error = 'ERROR: Passwords must match and contain a minimum of 7 characters.';
     }
 
 }
