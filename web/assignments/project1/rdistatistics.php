@@ -24,10 +24,10 @@
     <script src="rdi.js"></script>
 
     <!-- Page title -->
-    <title>RDI Statistics</title>
+    <title>RDI-Tracker Statistics</title>
 </head>
 <body>
-	<h1 class="pagetitle container">RDI Statistics</h1>
+	<h1 class="pagetitle container">RDI-Tracker Statistics</h1>
 	<div class="menu container">
 		<?php include 'rdimenu.php'; ?>
 	</div>

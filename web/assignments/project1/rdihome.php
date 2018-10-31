@@ -27,10 +27,10 @@
     <script src="rdi.js"></script>
 
     <!-- Page title -->
-    <title>RDI Home</title>
+    <title>RDI-Tracker Home</title>
 </head>
 <body>
-	<h1 class="pagetitle container">Welcome <?php echo $_SESSION['username'];?>!</h1>
+	<h1 class="pagetitle container">Welcome <?php echo $_SESSION['username'];?> to RDI-Tracker!</h1>
 	<div class="menu container">
 		<?php include 'rdimenu.php'; ?>
 	</div>

@@ -24,10 +24,10 @@
     <script src="rdi.js"></script>
 
     <!-- Page title -->
-    <title>Play RDI</title>
+    <title>Track RDI Games</title>
 </head>
 <body>
-	<h1 class="pagetitle container">Play RDI</h1>
+	<h1 class="pagetitle container">Track your RDI Games</h1>
 	<div class="menu container">
 		<?php include 'rdimenu.php'; ?>
 	</div>
@@ -56,7 +56,10 @@
                     while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                 ?>
                 <p>
-                    <?php echo $row['game_id']; ?> has <?php echo $row['joined_players']; ?> players of the anticipated <?php echo $row['player_count']; ?>
+                    <a href="rdiclosegame.php?game_id=<?php echo $row['game_id']; ?>">Game #
+                        <?php echo $row['game_id']; ?> has <?php echo $row['joined_players']; ?>
+                        player(s) of the anticipated <?php echo $row['player_count']; ?>
+                    </a>
                 </p>
                 <?php
                     endwhile;

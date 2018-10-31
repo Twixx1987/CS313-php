@@ -7,7 +7,7 @@
               <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="/assignments/project1/rdihome.php">Home</a>
             </li>
             <li class="nav-item flex-sm-fill text-sm-center">
-              <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="/assignments/project1/rdigame.php">Play RDI</a>
+              <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="/assignments/project1/rdigame.php">RDI-Tracker Game Data</a>
             </li>
             <li class="nav-item flex-sm-fill text-sm-center">
               <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="/assignments/project1/rdistatistics.php">Statistics</a>

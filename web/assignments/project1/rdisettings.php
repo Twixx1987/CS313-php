@@ -47,10 +47,10 @@
     <script src="rdi.js"></script>
 
     <!-- Page title -->
-    <title>RDI Settings</title>
+    <title>RDI-Tracker Settings</title>
 </head>
 <body>
-	<h1 class="pagetitle container">RDI Settings</h1>
+	<h1 class="pagetitle container">RDI-Tracker Settings</h1>
 	<div class="menu container">
 		<?php include 'rdimenu.php'; ?>
 	</div>
