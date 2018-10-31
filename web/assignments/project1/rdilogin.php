@@ -26,7 +26,7 @@ var_dump($_POST);
         var_dump($password);
 
         // query the database for the username and password
-        $statement = $db->prepare('SELECT password, user_id FROM rdi_user WHERE user_name=:username LIMIT 1');
+        $statement = $db->prepare('SELECT password, user_id FROM rdi_user WHERE user_name=:username');
         $statement->execute(array(':username' => $username));
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
 

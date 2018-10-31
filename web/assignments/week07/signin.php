@@ -6,15 +6,18 @@ session_start();
 $error = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // get the username and password and clean the inputs
+    $username = cleanInputs($_POST['username']);
+    $password = cleanInputs($_POST['password']);
 
     $query = 'SELECT password FROM week07user WHERE user_name=:username';
     $stmt = $db->prepare($query);
-    $pdo = $stmt->execute(array(':username' => $_POST['username']));
+    $pdo = $stmt->execute(array(':username' => $username));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    $loggedIn = password_verify($_POST['password'], $rows[0]['password']);
+    $loggedIn = password_verify($password, $rows[0]['password']);
     if ($loggedIn) {
-        $_SESSION['username'] = $_POST['username'];
+        $_SESSION['username'] = $username;
         $newURL = "./welcome.php";
         header('Location: ' . $newURL);
         die();
@@ -23,6 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+// a function to clean the data
+function cleanInputs($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
 ?>
 <!DOCTYPE html>
 
