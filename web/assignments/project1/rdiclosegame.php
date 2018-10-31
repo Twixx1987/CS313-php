@@ -45,7 +45,7 @@
     <ul>
         <?php
         // create the prepared query to find the character name
-        $statement = $db->prepare('SELECT c.character_name AS character, up.user_name AS player FROM rdi_characters AS c RIGHT JOIN (SELECT p.character_id, u.user_name FROM rdi_player AS p NATURAL JOIN rdi_user AS u WHERE p.game_id=:game_id) AS up ON (c.character_id = up.character_id)');
+        $statement = $db->prepare('SELECT c.character_name AS character, up.user_name AS player, up.player_id AS player_id FROM rdi_characters AS c RIGHT JOIN (SELECT p.player_id, p.character_id, u.user_name FROM rdi_player AS p NATURAL JOIN rdi_user AS u WHERE p.game_id=:game_id) AS up ON (c.character_id = up.character_id)');
         $statement->execute(array(':game_id' => $game_id));
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
             ?>
@@ -56,7 +56,8 @@
                 </em> -
                 <?php
                 echo $row['character'];
-                ?>
+                ?> placed:
+                <input type="number" id="player<?php echo $row['player_id']; ?>" name="player<?php echo $row['player_id']; ?>">
             </li>
         <?php
         endwhile;
