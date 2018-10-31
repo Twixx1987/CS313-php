@@ -23,7 +23,7 @@
         $password = cleanInputs($_POST['password']);
 
         // query the database for the username and password
-        $statement = $db->prepare('SELECT password, user_id FROM rdi_user WHERE user_name=:username LIMIT 1');
+        $statement = $db->prepare('SELECT user_id FROM rdi_user WHERE user_name=:username LIMIT 1');
         $statement->execute(array(':username' => $username));
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
 
@@ -77,16 +77,16 @@
     <script src="rdi.js"></script>
 
     <!-- Page title -->
-    <title>RDI Login</title>
+    <title>RDI-Tracker Login</title>
 </head>
 <body>
-	<h1 class="pagetitle container">RDI Login</h1>
+	<h1 class="pagetitle container">Login to RDI-Tracker</h1>
 	<div class="menu container">
 		<ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-secondary">
-        <li class="nav-item flex-sm-fill text-sm-center">
-          <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="/homepage.php">CS313 Home</a>
-        </li>
-      </ul>
+            <li class="nav-item flex-sm-fill text-sm-center">
+              <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="/homepage.php">CS313 Home</a>
+            </li>
+        </ul>
 	</div>
 	<div class="container">
 		<div class="container error">
