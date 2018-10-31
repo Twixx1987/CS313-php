@@ -67,7 +67,7 @@ function cleanInputs($data) {
     <title>RDI-Tracker Sign Up</title>
 </head>
     <body>
-        <div class="container fixed-top">
+        <div class="container fixed-top bg-white">
             <h1 class="pagetitle">Create an RDI-Tracker Account</h1>
             <div class="menu container bg-secondary">
                 <?php include 'rdimenu.php'; ?>

@@ -35,7 +35,7 @@
     <title>Game #<?php echo $game_id; ?> Character Selection</title>
 </head>
 <body>
-    <div class="container fixed-top">
+    <div class="container fixed-top bg-white">
         <h1 class="pagetitle">Game #<?php echo $game_id; ?> Character Selection</h1>
         <div class="menu container bg-secondary">
             <?php include 'rdimenu.php'; ?>

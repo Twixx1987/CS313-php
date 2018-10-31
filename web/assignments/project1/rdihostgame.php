@@ -27,7 +27,7 @@ require 'rdiverifylogin.php';
     <title>Host a New Game</title>
 </head>
 <body>
-    <div class="container fixed-top">
+    <div class="container fixed-top bg-white">
         <h1 class="pagetitle">Host a New Game</h1>
         <div class="menu container bg-secondary">
             <?php include 'rdimenu.php'; ?>
