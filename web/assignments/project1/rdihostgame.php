@@ -48,7 +48,7 @@ require 'rdiverifylogin.php';
             <button id="startGame" name="startGame" onclick="">Host Game</button>
         </div>
     </div>
-    <div class="footer text-sm-center container">
+    <div class="footer text-sm-center container bg-dark">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
 </body>
