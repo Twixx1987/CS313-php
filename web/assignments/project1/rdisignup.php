@@ -85,6 +85,7 @@ function cleanInputs($data) {
             </form>
             <a class="btn btn-secondary" role="button" href="/assignments/project1/rdilogin.php">Return to Sign In</a>
         </div>
+        <br />
         <div class="footer text-sm-center container bg-secondary text-white">
             <?php include 'rdirightsfooter.php'; ?>
         </div>

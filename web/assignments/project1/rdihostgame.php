@@ -50,6 +50,7 @@ require 'rdiverifylogin.php';
             <button id="startGame" name="startGame" onclick="">Host Game</button>
         </div>
     </div>
+    <br />
     <div class="footer text-sm-center container bg-secondary text-white">
         <?php include 'rdirightsfooter.php'; ?>
     </div>

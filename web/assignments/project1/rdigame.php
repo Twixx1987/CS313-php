@@ -78,6 +78,7 @@
             </div>
         </div>
     </div>
+    <br />
     <div class="footer text-sm-center container bg-secondary text-white">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
