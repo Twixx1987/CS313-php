@@ -65,13 +65,16 @@
 			<table class="versions">
 				<?php
                     // create a counter variable
-                    $count = 0;
+                    $count = 1;
 
 					// query the database for the list of versions
 					$statement = $db->query('SELECT version_name as version, version_id FROM rdi_version  ORDER BY version_name');
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+                        // increase count
                         $count++;
-					    if ($count % 3 == 0):
+
+					    // every third cell start a new row
+					    if ($count % 4 == 0):
 				?>
                 <tr>
                 <?php endif; ?>
@@ -79,9 +82,7 @@
                         <input type="checkbox" class="versionSelector version_<?php echo $row['version_id']; ?>" id="version_<?php echo $row['version_id']; ?>"
                                    name="version_<?php echo $row['version_id']; ?>" value="version_<?php echo $row['version_id']; ?>">
                     </td>
-                <?php
-                    if ($count % 3 == 0):
-                ?>
+                <?php if ($count % 3 == 0): ?>
                 </tr>
                 <?php endif; ?>
 				<?php endwhile; ?>
