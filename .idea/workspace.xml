@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdihome.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdihome.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdijoingame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdijoingame.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +68,7 @@
         <counts>
           <entry key="css" value="59" />
           <entry key="js" value="3854" />
-          <entry key="php" value="12515" />
+          <entry key="php" value="12571" />
           <entry key="sql" value="106" />
           <entry key="txt" value="2871" />
         </counts>
@@ -79,7 +78,7 @@
           <entry key="CSS" value="59" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="3854" />
-          <entry key="PHP" value="12483" />
+          <entry key="PHP" value="12539" />
           <entry key="PLAIN_TEXT" value="2871" />
           <entry key="SQL" value="133" />
         </counts>
@@ -128,8 +127,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdilogin.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="500">
-                  <caret line="41" column="49" lean-forward="true" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+                <state relative-caret-position="300">
+                  <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -137,8 +136,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihome.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="3" selection-start-line="3" selection-end-line="3" />
+                <state relative-caret-position="225">
+                  <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -177,8 +176,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="25">
-                  <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="20" />
+                <state relative-caret-position="175">
+                  <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -213,7 +212,6 @@
         <option value="$PROJECT_DIR$/web/assignments/week06/teach06.js" />
         <option value="$PROJECT_DIR$/web/assignments/week06/teach06ajaxdata.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdi.css" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" />
@@ -229,9 +227,10 @@
         <option value="$PROJECT_DIR$/web/assignments/project1/rdisignup.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdi.js" />
         <option value="$PROJECT_DIR$/web/assignments/week07/signin.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdihome.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdijoingame.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdihome.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php" />
       </list>
     </option>
   </component>
@@ -329,28 +328,7 @@
       <workItem from="1540614129598" duration="33331000" />
       <workItem from="1540830704227" duration="6671000" />
       <workItem from="1540919739721" duration="6303000" />
-      <workItem from="1540949957169" duration="11389000" />
-    </task>
-    <task id="LOCAL-00112" summary="testing game join">
-      <created>1540679246354</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1540679246354</updated>
-    </task>
-    <task id="LOCAL-00113" summary="testing game join">
-      <created>1540679555345</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1540679555345</updated>
-    </task>
-    <task id="LOCAL-00114" summary="testing game join">
-      <created>1540679785002</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1540679785002</updated>
+      <workItem from="1540949957169" duration="12026000" />
     </task>
     <task id="LOCAL-00115" summary="add character list to bottom of game creation">
       <created>1540682908290</created>
@@ -674,11 +652,32 @@
       <option name="project" value="LOCAL" />
       <updated>1540961498739</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="debug code added to determine login error">
+      <created>1540961789565</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1540961789565</updated>
+    </task>
+    <task id="LOCAL-00162" summary="debug code added to determine login error">
+      <created>1540961891873</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1540961891873</updated>
+    </task>
+    <task id="LOCAL-00163" summary="debug code added to determine login error">
+      <created>1540962150255</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1540962150255</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120260000" />
+    <option name="totallyTimeSpent" value="120897000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -938,27 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/week07/signin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisignup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1850">
@@ -973,10 +951,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/week07/signin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdilogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="41" column="49" lean-forward="true" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+        <state relative-caret-position="300">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
         </state>
       </provider>
     </entry>

@@ -17,7 +17,7 @@
     $error = "";
 var_dump($_POST);
     // check for post login button
-    if (isset($_POST['username'])) {
+    if (isset($_POST['username']) && isset($_POST['password'])) {
         // get the username and password and clean the inputs
         $username = cleanInputs($_POST['username']);
         $password = cleanInputs($_POST['password']);
@@ -28,28 +28,31 @@ var_dump($_POST);
         // query the database for the username and password
         $statement = $db->prepare('SELECT password, user_id FROM rdi_user WHERE user_name=:username');
         $statement->execute(array(':username' => $username));
-        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        $result = $statement->fetch();
 
         var_dump($result);
 
+        // get the user_id
+        $user_id = $result['user_id'];
+
         // verify the password
-        $loggedIn = password_verify($password, $result[0]['password']);
+        $loggedIn = password_verify($password, $result['password']);
 
         var_dump($loggedIn);
         // check to see if the username/password combo match the DB
         if ($loggedIn) {
             // set the user_id and username to session variables
-            $_SESSION['user_id'] = $result['user_id'];
+            $_SESSION['user_id'] = $user_id;
             $_SESSION['username'] = $username;
 
             // clean the output buffer
-            ob_clean();
+            //ob_clean();
 
             // redirect to the home page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
-            header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdihome.php', true, 303);
+            //header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdihome.php', true, 303);
 
             // terminate php script upon redirect
-            die();
+            //die();
         } else {
             // if no match was found populate an error message
             $error = "Incorrect login credentials. Please try again.";
