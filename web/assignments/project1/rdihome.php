@@ -30,8 +30,8 @@
     <title>RDI-Tracker Home</title>
 </head>
 <body>
-    <div class="container fixed-top">
-        <h1 class="pagetitle container">Welcome <?php echo $_SESSION['username'];?> to RDI-Tracker!</h1>
+    <div class="container position-relative">
+        <h1 class="pagetitle">Welcome <?php echo $_SESSION['username'];?> to RDI-Tracker!</h1>
         <div class="menu container">
             <?php include 'rdimenu.php'; ?>
         </div>

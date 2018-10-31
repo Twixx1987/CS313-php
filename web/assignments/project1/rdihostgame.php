@@ -24,11 +24,11 @@ require 'rdiverifylogin.php';
     <script src="rdi.js"></script>
 
     <!-- Page title -->
-    <title>Play RDI</title>
+    <title>Host a New Game</title>
 </head>
 <body>
-    <div class="container fixed-top">
-        <h1 class="pagetitle container">Play RDI</h1>
+    <div class="container position-relative">
+        <h1 class="pagetitle">Host a New Game</h1>
         <div class="menu container">
             <?php include 'rdimenu.php'; ?>
         </div>

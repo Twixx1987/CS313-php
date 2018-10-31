@@ -27,8 +27,8 @@
     <title>Track RDI Games</title>
 </head>
 <body>
-    <div class="container fixed-top">
-        <h1 class="pagetitle container">Track Your RDI Games</h1>
+    <div class="container position-relative">
+        <h1 class="pagetitle">Track Your RDI Games</h1>
         <div class="menu container">
             <?php include 'rdimenu.php'; ?>
         </div>

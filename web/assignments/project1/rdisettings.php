@@ -50,8 +50,8 @@
     <title>RDI-Tracker Settings</title>
 </head>
 <body>
-    <div class="container fixed-top">
-        <h1 class="pagetitle container">RDI-Tracker Settings</h1>
+    <div class="container position-relative">
+        <h1 class="pagetitle">RDI-Tracker Settings</h1>
         <div class="menu container">
             <?php include 'rdimenu.php'; ?>
         </div>

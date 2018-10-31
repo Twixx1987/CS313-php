@@ -83,8 +83,8 @@
     <title>RDI-Tracker Login</title>
 </head>
 <body>
-    <div class="container fixed-top">
-        <h1 class="pagetitle container">Login to RDI-Tracker</h1>
+    <div class="container position-relative">
+        <h1 class="pagetitle">Login to RDI-Tracker</h1>
         <div class="menu container">
             <ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-secondary">
                 <li class="nav-item flex-sm-fill text-sm-center">

@@ -27,8 +27,8 @@
     <title>RDI-Tracker Statistics</title>
 </head>
 <body>
-    <div class="container fixed-top">
-        <h1 class="pagetitle container">RDI-Tracker Statistics</h1>
+    <div class="container position-relative">
+        <h1 class="pagetitle">RDI-Tracker Statistics</h1>
         <div class="menu container">
             <?php include 'rdimenu.php'; ?>
         </div>
