@@ -46,25 +46,33 @@
                 </div>
             </div>
             <div class="col-lg">
-                <h2>Host a Game</h2>
-                <div id="gameCreatedStatus">
-                    <p>To host a game you first need to ensure that you have setup the character
-                        choices on the settings page. You will need to provide a Game ID to the
-                        players that will join. This ID will be provided once the game is
-                        initialized. Please enter the following information to start hosting a
-                        new game.</p>
-                    <label for="playerCount">Anticipated number of players:</label>
-                    <br />
-                    <input type="number" id="playerCount" name="playerCount" />
-                    <br />
-                    <br />
-                    <label for="nonUsers">Anticipated number of players that will not use this program:</label>
-                    <input type="number" id="nonUsers" name="nonUsers" />
-                    <br />
-                    <button id="startGame" name="startGame" onclick="">Host Game</button>
-                </div>
+                <h2>My Open Games</h2>
+                <?php
+                    // create the prepared query to find the open games the player has joined
+                    $statement = $db->prepare('SELECT g.game_id AS game_id, g.player_count AS player_count, COUNT(p.player_id) AS joined_players FROM rdi_game AS g NATURAL JOIN rdi_player AS p WHERE g.host_user = :user_id AND g.game_open = TRUE GROUP BY g.game_id, g.player_count');
+
+                    // run the query
+                    $statement->execute(array(':user_id' => $user_id));
+                    while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+                ?>
+                <p>
+                    <?php echo $row['game_id']; ?> has <?php echo $row['joined_players']; ?> players of the anticipated <?php echo $row['player_count']; ?>
+                </p>
+                <?php
+                    endwhile;
+                ?>
             </div>
-	    </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h2>Host a Game</h2>
+                <p>To host a game you first need to ensure that you have setup the character
+                    choices on the settings page. You will need to provide a Game ID to the
+                    players that will join. This ID will be provided once the game is
+                    initialized.</p>
+                <button id="hostGame" name="hostGame" onclick="">Host Game</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

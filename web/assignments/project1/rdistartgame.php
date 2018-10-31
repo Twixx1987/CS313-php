@@ -1,48 +1,48 @@
 <?php
-    // include the DB connection
-    require 'rdidbconnect.php';
+// include the DB connection
+require 'rdidbconnect.php';
 
-    // include the logged in verification
-    require 'rdiverifylogin.php';
+// include the logged in verification
+require 'rdiverifylogin.php';
 
-    // get the data from the request
-    $player_count = intval($_POST["playerCount"]);
+// get the data from the request
+$player_count = intval($_POST["playerCount"]);
 
-    // create the prepared query to create the game_id
-    $dbInsert = $db->prepare('INSERT INTO rdi_game (player_count) VALUES (:player_count)');
-    $dbInsert->execute(array(':player_count' => $player_count));
+// create the prepared query to create the game_id
+$dbInsert = $db->prepare('INSERT INTO rdi_game (player_count, host_user) VALUES (:player_count, :host_user)');
+$dbInsert->execute(array(':player_count' => $player_count, ':host_user' => $user_id));
 
-    // get the game id
-    $game_id = $db->lastInsertId('rdi_game_game_id_seq');
+// get the game id
+$game_id = $db->lastInsertId('rdi_game_game_id_seq');
 
-    // get the characters array from the session
-    $characters = $_SESSION["characters"];
+// get the characters array from the session
+$characters = $_SESSION["characters"];
 
-    // create a random keys array
-    $rand_keys = array_rand($characters, $player_count);
+// create a random keys array
+$rand_keys = array_rand($characters, $player_count);
 
-    // add random characters equal to the number of anticipated players
-    for ($count = 1; $count < $player_count; $count++) {
-        // get the character id
-        $character_id = $characters[$rand_keys[$count]];
-
-        // parse out the 'character_' part of the character id
-        $character_id = intval(str_replace("character_","", $character_id));
-
-        // create the prepared query to add the game characters
-        $dbInsert2 = $db->prepare('INSERT INTO rdi_game_characters (game_id, character_id) VALUES (:game_id, :character_id)');
-        $dbInsert2->execute(array(':game_id' => $game_id, ':character_id' => $character_id));
-    }
-
-    // get the first character from the array
-    $character_id = $characters[$rand_keys[0]];
+// add random characters equal to the number of anticipated players
+for ($count = 1; $count < $player_count; $count++) {
+    // get the character id
+    $character_id = $characters[$rand_keys[$count]];
 
     // parse out the 'character_' part of the character id
     $character_id = intval(str_replace("character_","", $character_id));
 
-    // insert creator into the game
-    $dbInsert3 = $db->prepare('INSERT INTO rdi_player (game_id, user_id, character_id) VALUES (:game_id, :user_id, :character_id)');
-    $dbInsert3->execute(array(':game_id' => $game_id, ':user_id' => $user_id, ':character_id' => $character_id));
+    // create the prepared query to add the game characters
+    $dbInsert2 = $db->prepare('INSERT INTO rdi_game_characters (game_id, character_id) VALUES (:game_id, :character_id)');
+    $dbInsert2->execute(array(':game_id' => $game_id, ':character_id' => $character_id));
+}
+
+// get the first character from the array
+$character_id = $characters[$rand_keys[0]];
+
+// parse out the 'character_' part of the character id
+$character_id = intval(str_replace("character_","", $character_id));
+
+// insert creator into the game
+$dbInsert3 = $db->prepare('INSERT INTO rdi_player (game_id, user_id, character_id) VALUES (:game_id, :user_id, :character_id)');
+$dbInsert3->execute(array(':game_id' => $game_id, ':user_id' => $user_id, ':character_id' => $character_id));
 
 // output a joined game message
 ?>
