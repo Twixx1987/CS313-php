@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src=""></script>
+    <script src="./teach07.js"></script>
 
     <!-- Page title -->
     <title>Week 07 - Welcome</title>
@@ -57,12 +57,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php include '../../top_menu.php'; ?>
         </div>
         <div class="container" id="login">
-            <p><?php echo $error; ?></p>
-            <form action="signup.php" method="POST">
+            <div id="topError" class="error"><?php echo $error; ?></div>
+            <form action="signup.php" method="POST" onsubmit="validateForm()">
                 <span>Username<input type="text" name="username" value=""></span><br>
-                <span>Password<input type="password" name="password" value=""></span><span class="error"><?php echo ($error == '') ? '' : '*';  ?></span><br>
-                <span>Retype Password <input type="password" name="password2" value=""></span><span class="error"><?php echo ($error == '') ? '' : '*';  ?></span><br>
-                <input type="submit">
+                <span>Password<input type="password" name="password" id="password" value=""></span>
+                <span id="sideError1" class="error"><?php echo ($error == '') ? '' : '*';  ?></span><br>
+                <span>Retype Password <input type="password" name="password2" id="password2" value=""></span>
+                <span id="sideError2" class="error"><?php echo ($error == '') ? '' : '*';  ?></span><br>
+                <input type="submit" class="btn btn-secondary">
             </form>
         </div>
     </body>

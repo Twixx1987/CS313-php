@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form action="signin.php" method="POST">
                 <span>Username<input type="text" name="username" value=""></span><br>
                 <span>Password<input type="password" name="password" value=""></span><br>
-                <input type="submit">
+                <input type="submit" class="btn btn-secondary">
             </form>
         </div>
     </body>
