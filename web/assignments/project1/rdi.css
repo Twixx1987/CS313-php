@@ -5,7 +5,7 @@ body
 }
 
 .body {
-    top: 112px;
+    padding-top: 112px;
 }
 .btnAddClass {
     @include btn;
