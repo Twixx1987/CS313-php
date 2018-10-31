@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/week07/signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/week07/signin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/assignments/week07/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/week07/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/week07/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/week07/welcome.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,9 +66,9 @@
         <counts>
           <entry key="css" value="59" />
           <entry key="js" value="2714" />
-          <entry key="php" value="11601" />
+          <entry key="php" value="11739" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="2516" />
+          <entry key="txt" value="2575" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -79,8 +76,8 @@
           <entry key="CSS" value="59" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="2714" />
-          <entry key="PHP" value="11569" />
-          <entry key="PLAIN_TEXT" value="2516" />
+          <entry key="PHP" value="11707" />
+          <entry key="PLAIN_TEXT" value="2575" />
           <entry key="SQL" value="133" />
         </counts>
       </usages-collector>
@@ -99,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/week07/signin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            <state relative-caret-position="426">
+              <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -108,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/week07/signup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state relative-caret-position="400">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -126,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/week05/teach05.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="33" column="51" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="51" />
+            <state relative-caret-position="559">
+              <caret line="45" selection-start-line="45" selection-end-line="48" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -135,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/week07/welcome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-188">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+            <state relative-caret-position="726">
+              <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -309,21 +306,7 @@
       <workItem from="1540614129598" duration="33331000" />
       <workItem from="1540830704227" duration="6671000" />
       <workItem from="1540919739721" duration="6303000" />
-      <workItem from="1540949957169" duration="2174000" />
-    </task>
-    <task id="LOCAL-00093" summary="begin creating php file to process the game start&#10;move session start into verify login file">
-      <created>1540625081855</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1540625081856</updated>
-    </task>
-    <task id="LOCAL-00094" summary="begin creating php file to process the game start">
-      <created>1540626403122</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1540626403122</updated>
+      <workItem from="1540949957169" duration="2592000" />
     </task>
     <task id="LOCAL-00095" summary="attach jQuery function to make ajax call to execute php scripts">
       <created>1540626801293</created>
@@ -654,11 +637,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540951443591</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="update password verification">
+      <created>1540952150795</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1540952150795</updated>
+    </task>
+    <task id="LOCAL-00143" summary="add menu week07 files">
+      <created>1540952466657</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1540952466657</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111045000" />
+    <option name="totallyTimeSpent" value="111463000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -701,8 +698,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add character list to bottom of game creation" />
-    <MESSAGE value="remove debugging code from settings page" />
     <MESSAGE value="remove debugging code from start game page" />
     <MESSAGE value="debugging code added to join game" />
     <MESSAGE value="testing bind parameter" />
@@ -726,7 +721,9 @@
     <MESSAGE value="added week 07 files" />
     <MESSAGE value="stretch 2" />
     <MESSAGE value="update menu paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="update menu paths" />
+    <MESSAGE value="update password verification" />
+    <MESSAGE value="add menu week07 files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add menu week07 files" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -883,13 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/week05/teach05.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="33" column="51" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdidbconnect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -925,24 +915,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/week05/teach05.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="45" selection-start-line="45" selection-end-line="48" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/week07/signin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        <state relative-caret-position="426">
+          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/week07/welcome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-188">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        <state relative-caret-position="726">
+          <caret line="38" column="97" selection-start-line="38" selection-start-column="97" selection-end-line="38" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/week07/signup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="400">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>

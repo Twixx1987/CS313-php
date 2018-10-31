@@ -7,7 +7,7 @@ $error = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $query = 'SELECT name, password FROM week07user WHERE user_name=:username';
+    $query = 'SELECT user_name, password FROM week07user WHERE user_name=:username';
     $stmt = $db->prepare($query);
     $pdo = $stmt->execute(array(':username' => $_POST['username']));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
