@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="container" id="login">
             <div id="topError" class="error"><?php echo $error; ?></div>
-            <form action="signup.php" method="POST" onsubmit="validateForm()">
+            <form action="signup.php" method="POST" onsubmit="return validateForm()">
                 <span>Username<input type="text" name="username" value=""></span><br>
                 <span>Password<input type="password" name="password" id="password" value=""></span>
                 <span id="sideError1" class="error"><?php echo ($error == '') ? '' : '*';  ?></span><br>
