@@ -82,7 +82,7 @@
                         <input type="checkbox" class="versionSelector version_<?php echo $row['version_id']; ?>" id="version_<?php echo $row['version_id']; ?>"
                                    name="version_<?php echo $row['version_id']; ?>" value="version_<?php echo $row['version_id']; ?>">
                     </td>
-                <?php if ($count % 3 == 0): ?>
+                <?php if ($count % 4 == 0): ?>
                 </tr>
                 <?php endif; ?>
 				<?php endwhile; ?>
