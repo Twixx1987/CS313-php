@@ -34,7 +34,7 @@
         if ($result['user_name'] == $username && $loggedIn) {
             // set the user_id and username to session variables
             $_SESSION['user_id'] = $result['user_id'];
-            $_SESSION['username'] = $result['user_name'];
+            $_SESSION['username'] = $username;
 
             // clean the output buffer
             ob_clean();
