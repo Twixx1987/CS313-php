@@ -72,6 +72,8 @@
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                         // increase count
                         $count++;
+					var_dump($count);
+                        echo $count % 4;
 
 					    // every third cell start a new row
 					    if ($count % 4 == 0):

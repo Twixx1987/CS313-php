@@ -8,11 +8,6 @@ body
     padding-top: 112px;
     top: 112px;
 }
-.btnAddClass {
-    @include btn;
-    @include btn-secondary;
-    @include rounded;
-}
 
 .carouselImage
 {
@@ -76,8 +71,7 @@ td, th {
     border: 1px solid #93160a;
 }
 
-button {
-    @include btn;
-    @include btn-secondary;
-    @include rounded;
+.thumbnail {
+    width: 200px;
+    height: 200px;
 }
