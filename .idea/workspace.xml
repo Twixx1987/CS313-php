@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/assignments/project1/rdigameplayerlist.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdi.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdi.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdigame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdigame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdigameplayers.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdigameplayer-character.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdihostgame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdihostgame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdistartgame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdistartgame.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,9 +67,9 @@
         <counts>
           <entry key="css" value="59" />
           <entry key="js" value="4557" />
-          <entry key="php" value="13183" />
+          <entry key="php" value="13229" />
           <entry key="sql" value="106" />
-          <entry key="txt" value="2959" />
+          <entry key="txt" value="2984" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -83,8 +77,8 @@
           <entry key="CSS" value="59" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="4557" />
-          <entry key="PHP" value="13151" />
-          <entry key="PLAIN_TEXT" value="2959" />
+          <entry key="PHP" value="13197" />
+          <entry key="PLAIN_TEXT" value="2984" />
           <entry key="SQL" value="133" />
         </counts>
       </usages-collector>
@@ -136,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+            <state relative-caret-position="-138">
+              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -163,7 +157,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigameplayer-character.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -323,21 +317,7 @@
       <workItem from="1540614129598" duration="33331000" />
       <workItem from="1540830704227" duration="6671000" />
       <workItem from="1540919739721" duration="6303000" />
-      <workItem from="1540949957169" duration="17357000" />
-    </task>
-    <task id="LOCAL-00122" summary="removed limit 1">
-      <created>1540700907299</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1540700907299</updated>
-    </task>
-    <task id="LOCAL-00123" summary="test with fetchall and new data">
-      <created>1540701476384</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1540701476384</updated>
+      <workItem from="1540949957169" duration="17854000" />
     </task>
     <task id="LOCAL-00124" summary="try adjusting the comparison of the game id">
       <created>1540702959816</created>
@@ -668,11 +648,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540964104544</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="update game handling">
+      <created>1540967777564</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1540967777564</updated>
+    </task>
+    <task id="LOCAL-00172" summary="update game close">
+      <created>1540968013902</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1540968013902</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126228000" />
+    <option name="totallyTimeSpent" value="126725000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,8 +709,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove ) from delete statement" />
-    <MESSAGE value="switched the delete statement back to execute(array()) format" />
     <MESSAGE value="move AJAX functions to JS file.&#10;add player to game create page" />
     <MESSAGE value="add missing semicolon" />
     <MESSAGE value="correct jQuery event handler" />
@@ -740,7 +732,9 @@
     <MESSAGE value="formatting for login button" />
     <MESSAGE value="replace RDI with RDI-Tracker" />
     <MESSAGE value="update menu wording" />
-    <option name="LAST_COMMIT_MESSAGE" value="update menu wording" />
+    <MESSAGE value="update game handling" />
+    <MESSAGE value="update game close" />
+    <option name="LAST_COMMIT_MESSAGE" value="update game close" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -973,15 +967,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigameplayer-character.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

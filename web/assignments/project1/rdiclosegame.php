@@ -32,10 +32,10 @@
     <script src="rdi.js"></script>
 
     <!-- Page title -->
-    <title>Game #<?php $game_id; ?> Character Selection</title>
+    <title>Game #<?php echo $game_id; ?> Character Selection</title>
 </head>
 <body>
-<h1 class="pagetitle container">Game #<?php $game_id; ?> Character Selection</h1>
+<h1 class="pagetitle container">Game #<?php echo $game_id; ?> Character Selection</h1>
 <div class="menu container">
     <?php include 'rdimenu.php'; ?>
 </div>
