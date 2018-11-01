@@ -57,8 +57,10 @@
         </div>
     </div>
     <div class="container body">
+        <br />
         <button id="selectAll" name="selectAll" class="btn btn-secondary">Select All</button>
         <button id="clearAll" name="clearAll" class="btn btn-secondary">Clear All</button>
+        <br />
 		<form name="settings" action="rdisettings.php" method="post">
             <input type="submit" value="Update Settings" id="allUpdate" class="btn btn-secondary">
 			<h2 class="container">Box Sets</h2>
@@ -70,15 +72,6 @@
 					// query the database for the list of versions
 					$statement = $db->query('SELECT version_name as version, version_id FROM rdi_version  ORDER BY version_name');
 					while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
-
-
-                        echo '$count : ';
-					    echo $count;
-                        echo ' $count % 3 : ';
-                        echo $count % 3;
-                        echo ' $count % 3 == 0 : ';
-                        echo $count % 3 === 0;
-                        echo '<br>';
 
 					    // every third cell start a new row
 					    if ($count % 3 === 0):
@@ -100,7 +93,9 @@
                     endwhile;
                 ?>
 			</table>
+            <br />
             <input type="submit" value="Update Settings" id="boxUpdate" class="btn btn-secondary">
+            <br />
 			<h2 class="container">Individual Characters</h2>
 			<table class="characters">
 				<?php
@@ -139,6 +134,7 @@
 					$_SESSION['characters'] = $characters;
 				?>
 			</table>
+            <br />
             <input type="submit" value="Update Settings" id="characterUpdate" class="btn btn-secondary">
 		</form>
 	</div>
