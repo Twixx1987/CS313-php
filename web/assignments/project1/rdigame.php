@@ -58,9 +58,9 @@
                     $statement->execute(array(':user_id' => $user_id));
                     while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                 ?>
-                <p onclick="closeGame(<?php echo $row['game_id']; ?>)">Game #
+                <p onclick="closeGame(<?php echo $row['game_id']; ?>)" class="psuedoLink">Game #
                     <?php echo $row['game_id']; ?> has <?php echo $row['joined_players']; ?>
-                    player(s) of the anticipated <?php echo $row['player_count']; ?>
+                    of the anticipated <?php echo $row['player_count']; ?> players. Click to see details.
                 </p>
                 <?php
                     endwhile;

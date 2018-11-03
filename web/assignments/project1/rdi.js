@@ -117,8 +117,8 @@ $(document).ready(function(){
         // get the game id
         let playerCount = $('#playerCount').val();
 
-        // make sure a game id was entered
-        if (playerCount > 0) {
+        // make sure a player count was entered and is sufficiently large
+        if (playerCount >= 2) {
             // the AJAX call
             $('#gameCreatedStatus').load('rdistartgame.php', {playerCount : $('#playerCount').val()});
         } else {

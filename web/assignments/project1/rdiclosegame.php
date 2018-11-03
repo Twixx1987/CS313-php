@@ -8,10 +8,32 @@
     // get the data from the request
     $game_id = intval($_GET["game_id"]);
 
-    // Update the game table to indicate the game is closed
-    $dbUpdate = $db->prepare('UPDATE rdi_game SET game_open = FALSE WHERE game_id=:game_id AND host_user=:host_user');
-    $dbUpdate->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
+    // create the query to verify joined players
+    $query = "SELECT 
+                g.player_count AS player_count, 
+                COUNT(p.player_id) AS joined_players 
+            FROM rdi_game AS g 
+            LEFT JOIN rdi_player AS p
+            ON (g.game_id=p.game_id) 
+            WHERE 
+                g.host_user = :host_user
+                AND
+                g.game_id = :game_id
+                AND
+                g.game_open = TRUE 
+            GROUP BY g.player_count
+            LIMIT 1";
+    $dbSelect = $db->prepare($query);
+    $result = $dbSelect->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
 
+    // check the joined players to the player count
+    if ($result['joined_players'] > 2 && $result['joined_players'] <= $result['player_count']) {
+        // Update the game table to indicate the game is closed
+        $dbUpdate = $db->prepare('UPDATE rdi_game SET game_open = FALSE WHERE game_id=:game_id AND host_user=:host_user');
+        $dbUpdate->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
+    }  else {
+        
+    }
 ?>
 <!DOCTYPE html>
 
