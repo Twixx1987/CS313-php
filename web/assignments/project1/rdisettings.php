@@ -58,11 +58,11 @@
     </div>
     <div class="container body">
         <br />
-        <button id="selectAll" name="selectAll" class="btn btn-secondary">Select All</button>
-        <button id="clearAll" name="clearAll" class="btn btn-secondary">Clear All</button>
+        <button id="selectAll" name="selectAll" class="btn btn-secondary button">Select All</button>
+        <button id="clearAll" name="clearAll" class="btn btn-secondary button">Clear All</button>
         <br />
 		<form name="settings" action="rdisettings.php" method="post">
-            <input type="submit" value="Update Settings" id="allUpdate" class="btn btn-secondary">
+            <input type="submit" value="Update Settings" id="allUpdate" class="btn btn-secondary button">
 			<h2 class="container">Box Sets</h2>
 			<table class="versions">
 				<?php
@@ -94,7 +94,7 @@
                 ?>
 			</table>
             <br />
-            <input type="submit" value="Update Settings" id="boxUpdate" class="btn btn-secondary">
+            <input type="submit" value="Update Settings" id="boxUpdate" class="btn btn-secondary button">
             <br />
 			<h2 class="container">Individual Characters</h2>
 			<table class="characters">
@@ -135,7 +135,7 @@
 				?>
 			</table>
             <br />
-            <input type="submit" value="Update Settings" id="characterUpdate" class="btn btn-secondary">
+            <input type="submit" value="Update Settings" id="characterUpdate" class="btn btn-secondary button">
 		</form>
 	</div>
     <br />

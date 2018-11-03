@@ -64,5 +64,5 @@ $dbInsert3->execute(array(':game_id' => $game_id, ':user_id' => $user_id, ':char
         ?>
     </ul>
 </div>
-<button id="refreshPlayersList" name="refreshPlayersList" onclick="">Refresh Joined Players List</button>
-<button id="closeGame" name="closeGame" onclick="closeGame(<?php echo $game_id; ?>)">Close Game and Generate Characters</button>
+<button class="btn btn-secondary button" id="refreshPlayersList" name="refreshPlayersList" onclick="">Refresh Joined Players List</button>
+<button class="btn btn-secondary button" id="closeGame" name="closeGame" onclick="closeGame(<?php echo $game_id; ?>)">Close Game and Generate Characters</button>

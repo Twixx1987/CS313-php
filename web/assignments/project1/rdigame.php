@@ -45,7 +45,7 @@
                     <input type="number" id="gameId" name="gameId" />
                     <br />
                     <br />
-                    <button id="joinGame" name="joinGame" class="btn btn-secondary" onclick="">Join Game</button>
+                    <button id="joinGame" name="joinGame" class="btn btn-secondary button" onclick="">Join Game</button>
                 </div>
             </div>
             <div class="col-lg">
@@ -74,7 +74,7 @@
                     choices on the settings page. You will need to provide a Game ID to the
                     players that will join. This ID will be provided once the game is
                     initialized.</p>
-                <a href="rdihostgame.php" class="btn btn-secondary" role="button">Host Game</a>
+                <a href="rdihostgame.php" class="btn btn-secondary button" role="button">Host Game</a>
             </div>
         </div>
     </div>

@@ -101,10 +101,10 @@
 			<label for="username">Username:</label><br/>
 			<input type="text" name="username"><br/>
 			<label for="password">Password:</label><br/>
-			<input type="password" name="password"><br/>
-			<input type="submit" class="btn btn-secondary" name="login" value="Login">
+			<input type="password" name="password"><br/><br />
+			<input type="submit" class="btn btn-secondary button" name="login" value="Login">
+            <a class="btn btn-secondary button" role="button" href="/assignments/project1/rdisignup.php">Sign Up</a>
 		</form>
-        <a class="btn btn-secondary" role="button" href="/assignments/project1/rdisignup.php">Sign Up</a>
 	</div>
     <br />
     <div class="footer text-sm-center container bg-secondary text-white">

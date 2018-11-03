@@ -80,10 +80,10 @@ function cleanInputs($data) {
                 <span>Password<input type="password" name="password" id="password" value=""></span>
                 <span id="sideError1" class="error"></span><br>
                 <span>Retype Password <input type="password" name="password2" id="password2" value=""></span>
-                <span id="sideError2" class="error"></span><br>
-                <input type="submit" class="btn btn-secondary">
+                <span id="sideError2" class="error"></span><br /><br />
+                <input type="submit" class="btn btn-secondary button">
+                <a class="btn btn-secondary button" role="button" href="/assignments/project1/rdilogin.php">Return to Sign In</a>
             </form>
-            <a class="btn btn-secondary" role="button" href="/assignments/project1/rdilogin.php">Return to Sign In</a>
         </div>
         <br />
         <div class="footer text-sm-center container bg-secondary text-white">
