@@ -46,11 +46,11 @@
         <p class="container">Below is the character lineup. As players are eliminated please indicate which
             placement they received. The last surviving player receives placement 1 and subsequent players
             rank accordingly.</p>
-        <table>
+        <table class="noBorder">
             <tr>
-                <th>Player</th>
-                <th>Character</th>
-                <th>Placement</th>
+                <th class="noBorder">Player</th>
+                <th class="noBorder">Character</th>
+                <th class="noBorder">Placement</th>
             </tr>
             <?php
             // create the prepared query to find the character name
@@ -58,18 +58,18 @@
             $statement->execute(array(':game_id' => $game_id));
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                 ?>
-                <tr>
-                    <td><em>
+                <tr class="noBorder">
+                    <td class="noBorder"><em>
                         <?php
                         echo $row['player'];
                         ?>
                     </em></td>
-                    <td>
+                    <td class="noBorder">
                         <?php
                         echo $row['character'];
                         ?>
                     </td>
-                    <td><input type="number" id="player<?php echo $row['player_id']; ?>" name="player<?php echo $row['player_id']; ?>"></td>
+                    <td class="noBorder"><input type="number" id="player<?php echo $row['player_id']; ?>" name="player<?php echo $row['player_id']; ?>"></td>
                 </tr>
             <?php
             endwhile;
