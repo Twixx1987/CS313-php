@@ -43,11 +43,12 @@ require 'rdiverifylogin.php';
                 new game.</p>
         </div>
         <div id="gameCreatedStatus">
+            <p id="hostGameError"></p>
             <label for="playerCount">Anticipated number of players:</label>
             <br />
             <input type="number" id="playerCount" name="playerCount" />
             <br />
-            <button id="startGame" name="startGame" onclick="">Host Game</button>
+            <button id="startGame" name="startGame" class="btn btn-secondary button" onclick="">Host Game</button>
         </div>
     </div>
     <br />

@@ -122,7 +122,7 @@ $(document).ready(function(){
             // the AJAX call
             $('#gameCreatedStatus').load('rdistartgame.php', {playerCount : $('#playerCount').val()});
         } else {
-            $('#gameCreatedStatus').html('<p class="container error">ERROR: Invalid Player Count ' + playerCount + '</p>');
+            $('#hostGameError').html('<p class="container error">ERROR: Invalid Player Count ' + playerCount + '</p>');
         }
     });
 
