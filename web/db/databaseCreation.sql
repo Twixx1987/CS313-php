@@ -16,14 +16,16 @@ CREATE TABLE rdi_characters (
 
 CREATE TABLE rdi_game (
 	game_id serial PRIMARY KEY,
-	player_count integer NOT NULL CHECK (player_count > 1)
+	player_count integer NOT NULL CHECK (player_count > 1),
+  game_open boolean DEFAULT true,
+  game_complete boolean DEFAULT false,
+  host_user integer NOT NULL REFERENCES rdi_user (user_id),
 );
 
 CREATE TABLE rdi_user (
 	user_id serial PRIMARY KEY,
 	user_name varchar(80) UNIQUE NOT NULL,
-	email text UNIQUE NOT NULL,
-	password varchar(80) NOT NULL
+	password varchar(255) NOT NULL
 );
 
 CREATE TABLE rdi_player (
@@ -34,3 +36,10 @@ CREATE TABLE rdi_player (
 	placement integer
 );
 
+CREATE TABLE rdi_game_characters (
+    game_characters_id serial NOT NULL PRIMARY KEY,
+    game_id integer NOT NULL REFERENCES rdi_game (game_id),
+    character_id integer NOT NULL REFERENCES rdi_characters (character_id),
+    CONSTRAINT rdi_player_game_id_character_id_key UNIQUE (game_id, character_id),
+    CONSTRAINT rdi_player_game_id_user_id_key UNIQUE (game_id, user_id)
+);
