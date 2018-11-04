@@ -24,10 +24,10 @@
     if ($result[0]['joined_players'] >= 2 && $result[0]['joined_players'] <= $result[0]['player_count']) {
         // Update the game table to indicate the game is closed
         $updateQuery = "UPDATE rdi_game 
-                        SET game_open = FALSE 
+                        SET game_open = FALSE, player_count = :player_count
                         WHERE game_id=:game_id AND host_user=:host_user";
         $dbUpdate = $db->prepare($updateQuery);
-        $dbUpdate->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
+        $dbUpdate->execute(array(':player_count' => $result[0]['player_count'], ':game_id' => $game_id, ':host_user' => $user_id));
     }  else {
         // clean the output buffer
         ob_clean();
