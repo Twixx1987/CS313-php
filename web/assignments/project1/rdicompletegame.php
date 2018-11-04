@@ -100,7 +100,6 @@ foreach ($_POST as $key => $value) {
         endwhile;
         ?>
     </table>
-    <br />
 </div>
 <br />
 <div class="footer text-sm-center container bg-secondary text-white">
