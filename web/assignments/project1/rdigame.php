@@ -70,11 +70,13 @@
         <div class="row">
             <div class="col-sm">
                 <h2>Host a Game</h2>
-                <p>To host a game you first need to ensure that you have setup the character
-                    choices on the settings page. You will need to provide a Game ID to the
-                    players that will join. This ID will be provided once the game is
-                    initialized.</p>
-                <a href="rdihostgame.php" class="btn btn-secondary button" role="button">Host Game</a>
+                <div class="container">
+                    <p>To host a game you first need to ensure that you have setup the character
+                        choices on the settings page. You will need to provide a Game ID to the
+                        players that will join. This ID will be provided once the game is
+                        initialized.</p>
+                    <a href="rdihostgame.php" class="btn btn-secondary button" role="button">Host Game</a>
+                </div>
             </div>
         </div>
     </div>
