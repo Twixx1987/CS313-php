@@ -8,17 +8,17 @@ require 'rdiverifylogin.php';
 // get the data from the request
 $player_count = intval($_POST["playerCount"]);
 
-// create the prepared query to create the game_id
-$insertQuery = "INSERT INTO rdi_game (player_count, host_user) 
-                VALUES (:player_count, :host_user)";
-$dbInsert = $db->prepare($insertQuery);
-$dbInsert->execute(array(':player_count' => $player_count, ':host_user' => $user_id));
-
-// get the game id
-$game_id = $db->lastInsertId('rdi_game_game_id_seq');
-
 // check for character settings
 if (isset($_SESSION["characters"])) {
+    // create the prepared query to create the game_id
+    $insertQuery = "INSERT INTO rdi_game (player_count, host_user) 
+                    VALUES (:player_count, :host_user)";
+    $dbInsert = $db->prepare($insertQuery);
+    $dbInsert->execute(array(':player_count' => $player_count, ':host_user' => $user_id));
+
+    // get the game id
+    $game_id = $db->lastInsertId('rdi_game_game_id_seq');
+
     // get the characters array from the session
     $characters = $_SESSION["characters"];
 
