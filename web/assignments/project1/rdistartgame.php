@@ -77,9 +77,9 @@ if (isset($_SESSION["characters"])) {
         </ul>
     </div>
     <button class="btn btn-secondary button" id="refreshPlayersList" name="refreshPlayersList" onclick="">
-        Refresh Joined Players List</button>
+        Refresh Players List</button>
     <button class="btn btn-secondary button" id="closeGame" name="closeGame"
-            onclick="closeGame(<?php echo $game_id; ?>)">Close Game and Generate Characters</button>
+            onclick="closeGame(<?php echo $game_id; ?>)">Generate Characters</button>
 <?php
 } else {
 ?>
