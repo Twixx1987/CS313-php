@@ -61,9 +61,6 @@
     <title>Game #<?php echo $game_id; ?> Character Selection</title>
 </head>
 <body>
-<?php
-var_dump($result);
-?>
     <div class="container fixed-top bg-white">
         <h1 class="pagetitle">Game #<?php echo $game_id; ?> Character Selection</h1>
         <div class="menu container bg-secondary">
@@ -71,6 +68,9 @@ var_dump($result);
         </div>
     </div>
     <div class="container body">
+        <?php
+        var_dump($result);
+        ?>
         <h2 class="container">Game #<?php echo $game_id; ?> has started!</h2>
         <p class="container">Below is the character lineup. As players are eliminated please indicate which
             placement they received. The last surviving player receives placement 1 and subsequent players
