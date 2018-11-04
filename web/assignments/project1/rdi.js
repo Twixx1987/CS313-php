@@ -174,5 +174,5 @@ function closeGame(gameId) {
 // a function to show game details page
 function gameDetails(gameId) {
     // use the window.location to redirect to the php page
-    window.location.replace("rdimygame.php?game_id=" + gameId);
+    window.location.replace("rdigamedetails.php?game_id=" + gameId);
 }
