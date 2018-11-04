@@ -9,19 +9,19 @@
     $game_id = intval($_GET["game_id"]);
 
     // create the query to verify joined players
-    $query = "SELECT g.player_count AS player_count, COUNT(p.player_id) AS joined_players 
+    $selectQuery = "SELECT g.player_count AS player_count, COUNT(p.player_id) AS joined_players 
               FROM rdi_game AS g 
               LEFT JOIN rdi_player AS p
               ON (g.game_id=p.game_id) 
               WHERE g.host_user = :host_user AND g.game_id = :game_id AND g.game_open = TRUE 
               GROUP BY g.player_count
               LIMIT 1";
-    $dbSelect = $db->prepare($query);
-    $result = $dbSelect->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
-
+    $dbSelect = $db->prepare($selectQuery);
+    $dbSelect->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
+    $result = $dbSelect->fetch(PDO::FETCH_ASSOC);
 
     // check the joined players to the player count
-    if ($result['joined_players'] > 2 && $result['joined_players'] <= $result['player_count']) {
+    if ($result[0]['joined_players'] > 2 && $result[0]['joined_players'] <= $result[0]['player_count']) {
         // Update the game table to indicate the game is closed
         $updateQuery = "UPDATE rdi_game 
                         SET game_open = FALSE 
@@ -69,8 +69,8 @@
     </div>
     <div class="container body">
         <?php
-        var_dump($result['joined_players']);
-        var_dump($result['player_count']);
+        var_dump($result[0]['joined_players']);
+        var_dump($result[0]['player_count']);
         ?>
         <h2 class="container">Game #<?php echo $game_id; ?> has started!</h2>
         <p class="container">Below is the character lineup. As players are eliminated please indicate which
@@ -93,9 +93,9 @@
                                    NATURAL JOIN rdi_user AS u 
                                    WHERE p.game_id=:game_id) AS up 
                                  ON (c.character_id = up.character_id)";
-                $statement = $db->prepare($selectQuery2);
-                $statement->execute(array(':game_id' => $game_id));
-                while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
+                $dbSelect2 = $db->prepare($selectQuery2);
+                $dbSelect2->execute(array(':game_id' => $game_id));
+                while ($row = $dbSelect2->fetch(PDO::FETCH_ASSOC)):
                     ?>
                     <tr class="noBorder">
                         <td class="noBorder"><em>
