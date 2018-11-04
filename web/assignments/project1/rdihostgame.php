@@ -48,6 +48,7 @@ require 'rdiverifylogin.php';
             <br />
             <input type="number" id="playerCount" name="playerCount" />
             <br />
+            <br />
             <button id="startGame" name="startGame" class="btn btn-secondary button" onclick="">Host Game</button>
         </div>
     </div>
