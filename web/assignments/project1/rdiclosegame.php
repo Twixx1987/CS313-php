@@ -21,7 +21,7 @@
 
 
     // check the joined players to the player count
-    if ($result[0]['joined_players'] > 2 && $result[0]['joined_players'] <= $result[0]['player_count']) {
+    if ($result['joined_players'] > 2 && $result['joined_players'] <= $result['player_count']) {
         // Update the game table to indicate the game is closed
         $updateQuery = "UPDATE rdi_game 
                         SET game_open = FALSE 
@@ -69,7 +69,8 @@
     </div>
     <div class="container body">
         <?php
-        var_dump($result);
+        var_dump($result['joined_players']);
+        var_dump($result['player_count']);
         ?>
         <h2 class="container">Game #<?php echo $game_id; ?> has started!</h2>
         <p class="container">Below is the character lineup. As players are eliminated please indicate which
