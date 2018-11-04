@@ -74,6 +74,7 @@ function cleanInputs($data) {
             </div>
         </div>
         <div class="container body" id="login">
+            <h2>Sign Up for RDI Tracker</h2>
             <div id="topError" class="error"><?php echo $error; ?></div>
             <form action="rdisignup.php" method="POST" onsubmit="return validateForm()">
                 <span>Username<input type="text" name="username" value=""></span><br>
