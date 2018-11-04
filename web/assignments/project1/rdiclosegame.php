@@ -113,6 +113,7 @@
                 ?>
             </table>
             <br />
+            <input class="d-none" type="number" value="<?php echo $game_id; ?>" id="game_id" name="game_id">
             <input type="submit" id="completeGame" class="btn btn-secondary button" value="Complete Game">
         </form>
     </div>
