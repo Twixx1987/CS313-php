@@ -19,6 +19,7 @@
     $dbSelect = $db->prepare($query);
     $result = $dbSelect->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
 
+    vardump($result);
     // check the joined players to the player count
     if ($result[0]['joined_players'] > 2 && $result[0]['joined_players'] <= $result[0]['player_count']) {
         // Update the game table to indicate the game is closed
