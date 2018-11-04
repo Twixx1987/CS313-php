@@ -33,10 +33,10 @@
         //ob_clean();
 
         // redirect to an error page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
-        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdierror.php', true, 303);
+        //header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdierror.php', true, 303);
 
         // terminate php script upon redirect
-        die();
+        //die();
     }
 ?>
 <!DOCTYPE html>
@@ -106,7 +106,7 @@
                         </td>
                         <td class="noBorder">
                             <input type="number" id="player<?php echo $row['player_id']; ?>"
-                                   name="player<?php echo $row['player_id']; ?>">
+                                   name="player<?php echo $row['player_id']; ?>" >
                         </td>
                     </tr>
                 <?php

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +74,7 @@
           <entry key="js" value="4692" />
           <entry key="php" value="17280" />
           <entry key="sql" value="200" />
-          <entry key="txt" value="5020" />
+          <entry key="txt" value="5047" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -84,7 +83,7 @@
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="4692" />
           <entry key="PHP" value="17085" />
-          <entry key="PLAIN_TEXT" value="5020" />
+          <entry key="PLAIN_TEXT" value="5047" />
           <entry key="SQL" value="390" />
         </counts>
       </usages-collector>
@@ -157,8 +156,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="375">
+              <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -353,14 +352,7 @@
       <workItem from="1541002733849" duration="6844000" />
       <workItem from="1541020798556" duration="8545000" />
       <workItem from="1541213988171" duration="11358000" />
-      <workItem from="1541300871034" duration="8036000" />
-    </task>
-    <task id="LOCAL-00179" summary="update footer to include bg-color and center formatting">
-      <created>1541013942196</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1541013942196</updated>
+      <workItem from="1541300871034" duration="8084000" />
     </task>
     <task id="LOCAL-00180" summary="update footer to include bg-color and center formatting">
       <created>1541014148668</created>
@@ -698,11 +690,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541308846527</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="add debugging to close game">
+      <created>1541309264467</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1541309264467</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162777000" />
+    <option name="totallyTimeSpent" value="162825000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,7 +714,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.14179105" />
       <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.18336888" />
@@ -745,7 +743,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update formatting of placement table" />
     <MESSAGE value="update formatting of links on main game page" />
     <MESSAGE value="update close game to throw an error page&#10;update close game to include submit for complete game functionality" />
     <MESSAGE value="change psuedoLink cursor to pointer" />
@@ -770,7 +767,8 @@
     <MESSAGE value="debugging to close game functionality" />
     <MESSAGE value="update code formatting" />
     <MESSAGE value="add span to store the game id" />
-    <option name="LAST_COMMIT_MESSAGE" value="add span to store the game id" />
+    <MESSAGE value="add debugging to close game" />
+    <option name="LAST_COMMIT_MESSAGE" value="add debugging to close game" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -1059,8 +1057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        <state relative-caret-position="375">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
         </state>
       </provider>
     </entry>
