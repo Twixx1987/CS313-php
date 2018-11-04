@@ -63,6 +63,7 @@ body
 
 .psuedoLink {
     text-decoration: underline darkblue;
+    cursor: pointer;
 }
 
 .required
