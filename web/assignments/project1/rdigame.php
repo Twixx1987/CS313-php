@@ -52,7 +52,13 @@
                 <h2>My Open Games</h2>
                 <?php
                     // create the prepared query to find the open games the player has joined
-                    $statement = $db->prepare('SELECT g.game_id AS game_id, g.player_count AS player_count, COUNT(p.player_id) AS joined_players FROM rdi_game AS g NATURAL JOIN rdi_player AS p WHERE g.host_user = :user_id AND g.game_open = TRUE GROUP BY g.game_id, g.player_count');
+                    $query = "SELECT g.game_id AS game_id, g.player_count AS player_count, 
+                                     COUNT(p.player_id) AS joined_players 
+                              FROM rdi_game AS g 
+                              NATURAL JOIN rdi_player AS p 
+                              WHERE g.host_user = :user_id AND g.game_open = TRUE 
+                              GROUP BY g.game_id, g.player_count";
+                    $statement = $db->prepare($query);
 
                     // run the query
                     $statement->execute(array(':user_id' => $user_id));
