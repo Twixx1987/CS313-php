@@ -69,8 +69,7 @@
     </div>
     <div class="container body">
         <?php
-        var_dump($result[0]['joined_players']);
-        var_dump($result[0]['player_count']);
+        var_dump($result);
         ?>
         <h2 class="container">Game #<?php echo $game_id; ?> has started!</h2>
         <p class="container">Below is the character lineup. As players are eliminated please indicate which
