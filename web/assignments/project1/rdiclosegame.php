@@ -19,7 +19,7 @@
     $dbSelect = $db->prepare($query);
     $result = $dbSelect->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
 
-    var_dump($result);
+
     // check the joined players to the player count
     if ($result[0]['joined_players'] > 2 && $result[0]['joined_players'] <= $result[0]['player_count']) {
         // Update the game table to indicate the game is closed
@@ -61,6 +61,9 @@
     <title>Game #<?php echo $game_id; ?> Character Selection</title>
 </head>
 <body>
+<?php
+var_dump($result);
+?>
     <div class="container fixed-top bg-white">
         <h1 class="pagetitle">Game #<?php echo $game_id; ?> Character Selection</h1>
         <div class="menu container bg-secondary">
