@@ -37,7 +37,7 @@ $game_id = intval($_GET["game_id"]);
     </div>
 </div>
 <div class="container body">
-    <h2>Game #<?php echo $game_id; ?></h2>
+    <h2>Game #<span id="game_id"><?php echo $game_id; ?></span></h2>
     <div id="gameCreatedStatus">
         <p class="container">The following players have joined your game:</p>
         <div id="playerList" class="container">
