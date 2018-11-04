@@ -18,7 +18,7 @@
               LIMIT 1";
     $dbSelect = $db->prepare($selectQuery);
     $dbSelect->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
-    $result = $dbSelect->fetch(PDO::FETCH_ASSOC);
+    $result = $dbSelect->fetchAll(PDO::FETCH_ASSOC);
 
     // check the joined players to the player count
     if ($result['joined_players'] > 2 && $result['joined_players'] <= $result['player_count']) {
@@ -30,13 +30,13 @@
         $dbUpdate->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
     }  else {
         // clean the output buffer
-        ob_clean();
+        //ob_clean();
 
         // redirect to an error page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
-        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdierror.php', true, 303);
+        //header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdierror.php', true, 303);
 
         // terminate php script upon redirect
-        die();
+        //die();
     }
 ?>
 <!DOCTYPE html>
@@ -68,6 +68,11 @@
         </div>
     </div>
     <div class="container body">
+        <?php
+        var_dump($result);
+        var_dump($result['player_count']);
+        var_dump($result['joined_players']);
+        ?>
         <h2 class="container">Game #<?php echo $game_id; ?> has started!</h2>
         <p class="container">Below is the character lineup. As players are eliminated please indicate which
             placement they received. The last surviving player receives placement 1 and subsequent players

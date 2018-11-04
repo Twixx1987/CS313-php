@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" afterDir="false" />
-    </list>
+    <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,9 +70,9 @@
         <counts>
           <entry key="css" value="273" />
           <entry key="js" value="4692" />
-          <entry key="php" value="17352" />
+          <entry key="php" value="17366" />
           <entry key="sql" value="200" />
-          <entry key="txt" value="5145" />
+          <entry key="txt" value="5188" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -83,8 +80,8 @@
           <entry key="CSS" value="273" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="4692" />
-          <entry key="PHP" value="17157" />
-          <entry key="PLAIN_TEXT" value="5145" />
+          <entry key="PHP" value="17171" />
+          <entry key="PLAIN_TEXT" value="5188" />
           <entry key="SQL" value="390" />
         </counts>
       </usages-collector>
@@ -157,8 +154,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+            <state relative-caret-position="500">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -353,28 +350,7 @@
       <workItem from="1541002733849" duration="6844000" />
       <workItem from="1541020798556" duration="8545000" />
       <workItem from="1541213988171" duration="11358000" />
-      <workItem from="1541300871034" duration="8965000" />
-    </task>
-    <task id="LOCAL-00186" summary="Added verbage that SlugFest specified.">
-      <created>1541024404628</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1541024404629</updated>
-    </task>
-    <task id="LOCAL-00187" summary="change version table layout to three rows each cell displaying a version">
-      <created>1541026491294</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1541026491295</updated>
-    </task>
-    <task id="LOCAL-00188" summary="add break before footer">
-      <created>1541026618664</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1541026618664</updated>
+      <workItem from="1541300871034" duration="9207000" />
     </task>
     <task id="LOCAL-00189" summary="add bg-secondary to login menu bar">
       <created>1541026691980</created>
@@ -698,11 +674,32 @@
       <option name="project" value="LOCAL" />
       <updated>1541309840670</updated>
     </task>
-    <option name="localTasksCounter" value="235" />
+    <task id="LOCAL-00235" summary="add debugger code">
+      <created>1541310182582</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1541310182582</updated>
+    </task>
+    <task id="LOCAL-00236" summary="add debugger code">
+      <created>1541310301726</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1541310301726</updated>
+    </task>
+    <task id="LOCAL-00237" summary="made corrections? hopefully this works now.">
+      <created>1541310404667</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1541310404668</updated>
+    </task>
+    <option name="localTasksCounter" value="238" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163706000" />
+    <option name="totallyTimeSpent" value="163948000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -745,7 +742,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reformat game page to improve layout" />
     <MESSAGE value="correct error checking code for close game" />
     <MESSAGE value="update error php page to display error message and further information" />
     <MESSAGE value="update code layout of start game page" />
@@ -770,7 +766,8 @@
     <MESSAGE value="update button labels to be shorter" />
     <MESSAGE value="make placement fields required" />
     <MESSAGE value="add debugger code" />
-    <option name="LAST_COMMIT_MESSAGE" value="add debugger code" />
+    <MESSAGE value="made corrections? hopefully this works now." />
+    <option name="LAST_COMMIT_MESSAGE" value="made corrections? hopefully this works now." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -1059,8 +1056,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+        <state relative-caret-position="500">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
         </state>
       </provider>
     </entry>
