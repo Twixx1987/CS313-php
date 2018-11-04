@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,9 +72,9 @@
         <counts>
           <entry key="css" value="273" />
           <entry key="js" value="4692" />
-          <entry key="php" value="17164" />
+          <entry key="php" value="17209" />
           <entry key="sql" value="200" />
-          <entry key="txt" value="4838" />
+          <entry key="txt" value="4929" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -82,8 +82,8 @@
           <entry key="CSS" value="273" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="4692" />
-          <entry key="PHP" value="17007" />
-          <entry key="PLAIN_TEXT" value="4838" />
+          <entry key="PHP" value="17052" />
+          <entry key="PLAIN_TEXT" value="4929" />
           <entry key="SQL" value="352" />
         </counts>
       </usages-collector>
@@ -153,11 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="73" column="77" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="77" />
+            <state relative-caret-position="300">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -171,7 +171,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="537">
@@ -183,8 +183,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisignup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="77" column="87" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="87" />
+            <state relative-caret-position="437">
+              <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -234,19 +234,19 @@
         <option value="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" />
         <option value="$PROJECT_DIR$/web/db/databaseCreation.sql" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdisignup.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdigameplayerlist.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdimygames.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdigame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdierror.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdi.js" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdi.css" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdistartgame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdihostgame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdigamedetails.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdisignup.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" />
       </list>
     </option>
   </component>
@@ -352,21 +352,7 @@
       <workItem from="1541002733849" duration="6844000" />
       <workItem from="1541020798556" duration="8545000" />
       <workItem from="1541213988171" duration="11358000" />
-      <workItem from="1541300871034" duration="6509000" />
-    </task>
-    <task id="LOCAL-00173" summary="update game close">
-      <created>1540968264819</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1540968264819</updated>
-    </task>
-    <task id="LOCAL-00174" summary="update button formatting">
-      <created>1540968683722</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1540968683722</updated>
+      <workItem from="1541300871034" duration="7038000" />
     </task>
     <task id="LOCAL-00175" summary="begin working on game completion functionality">
       <created>1540969212502</created>
@@ -697,11 +683,25 @@
       <option name="project" value="LOCAL" />
       <updated>1541307640521</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="update formatting on settings page to improve readability">
+      <created>1541307738860</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1541307738860</updated>
+    </task>
+    <task id="LOCAL-00223" summary="add subtitle to sign up page">
+      <created>1541307807576</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1541307807576</updated>
+    </task>
+    <option name="localTasksCounter" value="224" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161250000" />
+    <option name="totallyTimeSpent" value="161779000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -744,8 +744,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="debugging for version table" />
-    <MESSAGE value="remove debugging from settings page" />
     <MESSAGE value="update SQL creation file to include additions that were added" />
     <MESSAGE value="update button format" />
     <MESSAGE value="add error handling for missing character selection settings." />
@@ -769,7 +767,9 @@
     <MESSAGE value="correct missing query string locations" />
     <MESSAGE value="improve formatting of host game page" />
     <MESSAGE value="correct missing query in prepare statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct missing query in prepare statement" />
+    <MESSAGE value="update formatting on settings page to improve readability" />
+    <MESSAGE value="add subtitle to sign up page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add subtitle to sign up page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -1000,13 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisignup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="77" column="87" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1018,13 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1012">
           <caret line="101" column="12" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="73" column="77" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -1060,6 +1046,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
           <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisignup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
