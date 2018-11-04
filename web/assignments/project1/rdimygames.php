@@ -4,6 +4,9 @@ require 'rdidbconnect.php';
 
 // include the logged in verification
 require 'rdiverifylogin.php';
+
+// get the data from the request
+$game_id = intval($_GET["game_id"]);
 ?>
 <!DOCTYPE html>
 

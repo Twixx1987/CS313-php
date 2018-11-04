@@ -50,7 +50,7 @@ require 'rdiverifylogin.php';
             $statement->execute(array(':user_id' => $user_id));
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                 ?>
-                <p onclick="closeGame(<?php echo $row['game_id']; ?>)" class="psuedoLink">Game #
+                <p onclick="gameDetails(<?php echo $row['game_id']; ?>)" class="psuedoLink">Game #
                     <?php echo $row['game_id']; ?> has <?php echo $row['joined_players']; ?>
                     of the anticipated <?php echo $row['player_count']; ?> players. Click to see details.
                 </p>
