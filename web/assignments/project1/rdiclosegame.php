@@ -30,9 +30,9 @@
         $dbUpdate->execute(array(':player_count' => $result[0]['player_count'], ':game_id' => $game_id, ':host_user' => $user_id));
 
         // delete any remaining characters from the game_characters table
-        $deleteQuery = "DELETE FROM rdi_game_charaters WHERE game_id = :game_id";
+        $deleteQuery = "DELETE FROM rdi_game_characters WHERE game_id=:game_id";
         $dbDelete = $db->prepare($deleteQuery);
-        $dbDelete->execute(array(':game_id' => $game_id));
+        $dbDelete->execute(array(":game_id" => $game_id));
     }  else {
         // clean the output buffer
         ob_clean();
