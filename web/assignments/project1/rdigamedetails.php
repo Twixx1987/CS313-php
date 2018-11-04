@@ -48,7 +48,7 @@ $game_id = intval($_GET["game_id"]);
                       FROM rdi_user AS u 
                       NATURAL JOIN rdi_player AS p 
                       WHERE p.game_id=:game_id";
-                $statement = $db->prepare();
+                $statement = $db->prepare($query);
 
                 // run the query
                 $statement->execute(array(':game_id' => $game_id));
