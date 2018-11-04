@@ -49,7 +49,7 @@ if (isset($_SESSION["characters"])) {
     // insert creator into the game
     $insertQuery3 = "INSERT INTO rdi_player (game_id, user_id, character_id) 
                      VALUES (:game_id, :user_id, :character_id)";
-    $dbInsert3 = $db->prepare();
+    $dbInsert3 = $db->prepare($insertQuery3);
     $dbInsert3->execute(array(':game_id' => $game_id, ':user_id' => $user_id, ':character_id' => $character_id));
 
     // output a joined game message
@@ -64,7 +64,7 @@ if (isset($_SESSION["characters"])) {
                       FROM rdi_user AS u 
                       NATURAL JOIN rdi_player AS p 
                       WHERE p.game_id=:game_id";
-            $statement = $db->prepare();
+            $statement = $db->prepare($query);
 
             // run the query
             $statement->execute(array(':game_id' => $game_id));
