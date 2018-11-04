@@ -8,6 +8,12 @@ require 'rdiverifylogin.php';
 // get the game id from the request
 $game_id = intval($_POST["game_id"]);
 
+// create the query to update the game table with the complete status set to true
+$updateQuery = "UPDATE rdi_game SET game_complete = TRUE
+                  WHERE game_id=:game_id AND host_user=:host_user";
+$dbUpdate = $db->prepare($updateQuery );
+$dbUpdate->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
+
 // get the data from the request
 foreach ($_POST as $key => $value) {
     // check if the key starts with "player"
@@ -19,10 +25,10 @@ foreach ($_POST as $key => $value) {
         $placement = intval($value);
 
         // create the query to update the player table with the placement
-        $query = "UPDATE rdi_player SET placement = :placement 
+        $updateQuery2 = "UPDATE rdi_player SET placement = :placement 
                   WHERE game_id = :game_id AND player_id = :player_id";
-        $dbUpdate = $db->prepare($query);
-        $dbUpdate->execute(array(':placement' => $placement, ':game_id' => $game_id, ':player_id' => $player_id));
+        $dbUpdate2 = $db->prepare($updateQuery2);
+        $dbUpdate2->execute(array(':placement' => $placement, ':game_id' => $game_id, ':player_id' => $player_id));
     }
 }
 ?>
