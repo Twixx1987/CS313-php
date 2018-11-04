@@ -32,7 +32,14 @@
         $dbUpdate = $db->prepare('UPDATE rdi_game SET game_open = FALSE WHERE game_id=:game_id AND host_user=:host_user');
         $dbUpdate->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
     }  else {
-        
+        // clean the output buffer
+        ob_clean();
+
+        // redirect to an error page based on code from https://www.bing.com/videos/search?q=how+to+redirect+to+another+page+using+php&view=detail&mid=09FEDBEAEB640A5D76BE09FEDBEAEB640A5D76BE&FORM=VIRE
+        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/assignments/project1/rdierror.php', true, 303);
+
+        // terminate php script upon redirect
+        die();
     }
 ?>
 <!DOCTYPE html>
@@ -97,6 +104,8 @@
             endwhile;
             ?>
         </table>
+        <br />
+        <input type="submit" id="complete game" class="btn btn-secondary button" value="Complete Game">
     </div>
     <br />
     <div class="footer text-sm-center container bg-secondary text-white">
