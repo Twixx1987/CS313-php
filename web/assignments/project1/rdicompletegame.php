@@ -45,65 +45,62 @@ foreach ($_POST as $key => $value) {
     <script src="rdi.js"></script>
 
     <!-- Page title -->
-    <title>Game #<?php echo $game_id; ?> Character Selection</title>
+    <title>Game #<?php echo $game_id; ?> Results Summary</title>
 </head>
 <body>
 <div class="container fixed-top bg-white">
-    <h1 class="pagetitle">Game #<?php echo $game_id; ?> Character Selection</h1>
+    <h1 class="pagetitle">Game #<?php echo $game_id; ?> Results Summary</h1>
     <div class="menu container bg-secondary">
         <?php include 'rdimenu.php'; ?>
     </div>
 </div>
 <div class="container body">
-    <h2 class="container">Game #<?php echo $game_id; ?> has started!</h2>
-    <p class="container">Below is the character lineup. As players are eliminated please indicate which
-        placement they received. The last surviving player receives placement 1 and subsequent players
-        rank accordingly.</p>
-    <form action="rdicompletegame.php" method="POST" id="completeGameFrm">
-        <table class="noBorder">
-            <tr>
-                <th class="noBorder">Player</th>
-                <th class="noBorder">Character</th>
-                <th class="noBorder">Placement</th>
-            </tr>
-            <?php
-            // create the prepared query to find the character name
-            $selectQuery2 = "SELECT c.character_name AS character, up.user_name AS player, up.player_id AS player_id 
-                                 FROM rdi_characters AS c 
-                                 RIGHT JOIN 
-                                  (SELECT p.player_id, p.character_id, u.user_name 
-                                   FROM rdi_player AS p 
-                                   NATURAL JOIN rdi_user AS u 
-                                   WHERE p.game_id=:game_id) AS up 
-                                 ON (c.character_id = up.character_id)";
-            $statement = $db->prepare($selectQuery2);
-            $statement->execute(array(':game_id' => $game_id));
-            while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
-                ?>
-                <tr class="noBorder">
-                    <td class="noBorder"><em>
-                            <?php
-                            echo $row['player'];
-                            ?>
-                        </em></td>
-                    <td class="noBorder">
-                        <?php
-                        echo $row['character'];
-                        ?>
-                    </td>
-                    <td class="noBorder">
-                        <input type="number" id="player<?php echo $row['player_id']; ?>"
-                               name="player<?php echo $row['player_id']; ?>">
-                    </td>
-                </tr>
-            <?php
-            endwhile;
+    <h2 class="container">Game #<?php echo $game_id; ?> has completed!</h2>
+    <p class="container">Below is the results. The last surviving player received placement 1 and subsequent players
+        ranked accordingly.</p>
+    <table class="noBorder">
+        <tr>
+            <th class="noBorder">Player</th>
+            <th class="noBorder">Character</th>
+            <th class="noBorder">Placement</th>
+        </tr>
+        <?php
+        // create the prepared query to find the character name
+        $selectQuery2 = "SELECT c.character_name AS character, up.user_name AS player, up.placement AS placement 
+                             FROM rdi_characters AS c 
+                             RIGHT JOIN 
+                              (SELECT p.placement, p.character_id, u.user_name 
+                               FROM rdi_player AS p 
+                               NATURAL JOIN rdi_user AS u 
+                               WHERE p.game_id=:game_id) AS up 
+                             ON (c.character_id = up.character_id)
+                             ORDER BY up.placement";
+        $statement = $db->prepare($selectQuery2);
+        $statement->execute(array(':game_id' => $game_id));
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
             ?>
-        </table>
-        <br />
-        <input type="number" value="<?php echo $game_id; ?>" id="game_id" name="game_id">
-        <input type="submit" id="completeGame" class="btn btn-secondary button" value="Complete Game">
-    </form>
+            <tr class="noBorder">
+                <td class="noBorder"><em>
+                        <?php
+                        echo $row['player'];
+                        ?>
+                    </em></td>
+                <td class="noBorder">
+                    <?php
+                    echo $row['character'];
+                    ?>
+                </td>
+                <td class="noBorder">
+                    <?php
+                    echo $row['placement'];
+                    ?>
+                </td>
+            </tr>
+        <?php
+        endwhile;
+        ?>
+    </table>
+    <br />
 </div>
 <br />
 <div class="footer text-sm-center container bg-secondary text-white">

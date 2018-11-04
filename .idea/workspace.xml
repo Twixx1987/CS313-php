@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdi.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdi.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,9 +73,9 @@
         <counts>
           <entry key="css" value="273" />
           <entry key="js" value="4692" />
-          <entry key="php" value="17038" />
+          <entry key="php" value="17105" />
           <entry key="sql" value="200" />
-          <entry key="txt" value="4508" />
+          <entry key="txt" value="4649" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -86,9 +83,9 @@
           <entry key="CSS" value="273" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="4692" />
-          <entry key="PHP" value="16882" />
-          <entry key="PLAIN_TEXT" value="4508" />
-          <entry key="SQL" value="351" />
+          <entry key="PHP" value="16948" />
+          <entry key="PLAIN_TEXT" value="4649" />
+          <entry key="SQL" value="352" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -157,19 +154,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="200">
+              <caret line="68" column="25" lean-forward="true" selection-start-line="68" selection-start-column="25" selection-end-line="76" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-525">
               <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
@@ -346,21 +343,7 @@
       <workItem from="1541002733849" duration="6844000" />
       <workItem from="1541020798556" duration="8545000" />
       <workItem from="1541213988171" duration="11358000" />
-      <workItem from="1541300871034" duration="5037000" />
-    </task>
-    <task id="LOCAL-00166" summary="debug code added to determine login error">
-      <created>1540962760052</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1540962760052</updated>
-    </task>
-    <task id="LOCAL-00167" summary="login fixed">
-      <created>1540962850518</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1540962850518</updated>
+      <workItem from="1541300871034" duration="5333000" />
     </task>
     <task id="LOCAL-00168" summary="formatting for login button">
       <created>1540962930158</created>
@@ -691,11 +674,25 @@
       <option name="project" value="LOCAL" />
       <updated>1541304181354</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="update conditional to check for false instead of 0">
+      <created>1541306286921</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1541306286921</updated>
+    </task>
+    <task id="LOCAL-00216" summary="create update code for complete game page&#10;add form input to store game id (not displayed)">
+      <created>1541306364850</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1541306364850</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159778000" />
+    <option name="totallyTimeSpent" value="160074000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -738,8 +735,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix the header title and menu to the top of the page" />
-    <MESSAGE value="Added verbage that SlugFest specified." />
     <MESSAGE value="change version table layout to three rows each cell displaying a version" />
     <MESSAGE value="add break before footer" />
     <MESSAGE value="add bg-secondary to login menu bar" />
@@ -763,7 +758,9 @@
     <MESSAGE value="correct window redirect function to proper link" />
     <MESSAGE value="update code formatting for better readability" />
     <MESSAGE value="update close game to redirect to complete game upon form submit" />
-    <option name="LAST_COMMIT_MESSAGE" value="update close game to redirect to complete game upon form submit" />
+    <MESSAGE value="update conditional to check for false instead of 0" />
+    <MESSAGE value="create update code for complete game page&#10;add form input to store game id (not displayed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="create update code for complete game page&#10;add form input to store game id (not displayed)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -1041,17 +1038,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php">
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="-525">
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="200">
+          <caret line="68" column="25" lean-forward="true" selection-start-line="68" selection-start-column="25" selection-end-line="76" selection-end-column="50" />
         </state>
       </provider>
     </entry>
