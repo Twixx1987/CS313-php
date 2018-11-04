@@ -109,7 +109,7 @@
                         </td>
                         <td class="noBorder">
                             <input type="number" id="player<?php echo $row['player_id']; ?>"
-                                   name="player<?php echo $row['player_id']; ?>" >
+                                   name="player<?php echo $row['player_id']; ?>" required>
                         </td>
                     </tr>
                 <?php
