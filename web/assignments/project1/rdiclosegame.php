@@ -9,27 +9,23 @@
     $game_id = intval($_GET["game_id"]);
 
     // create the query to verify joined players
-    $query = "SELECT 
-                g.player_count AS player_count, 
-                COUNT(p.player_id) AS joined_players 
-            FROM rdi_game AS g 
-            LEFT JOIN rdi_player AS p
-            ON (g.game_id=p.game_id) 
-            WHERE 
-                g.host_user = :host_user
-                AND
-                g.game_id = :game_id
-                AND
-                g.game_open = TRUE 
-            GROUP BY g.player_count
-            LIMIT 1";
+    $query = "SELECT g.player_count AS player_count, COUNT(p.player_id) AS joined_players 
+              FROM rdi_game AS g 
+              LEFT JOIN rdi_player AS p
+              ON (g.game_id=p.game_id) 
+              WHERE g.host_user = :host_user AND g.game_id = :game_id AND g.game_open = TRUE 
+              GROUP BY g.player_count
+              LIMIT 1";
     $dbSelect = $db->prepare($query);
     $result = $dbSelect->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
 
     // check the joined players to the player count
     if ($result[0]['joined_players'] > 2 && $result[0]['joined_players'] <= $result[0]['player_count']) {
         // Update the game table to indicate the game is closed
-        $dbUpdate = $db->prepare('UPDATE rdi_game SET game_open = FALSE WHERE game_id=:game_id AND host_user=:host_user');
+        $updateQuery = "UPDATE rdi_game 
+                        SET game_open = FALSE 
+                        WHERE game_id=:game_id AND host_user=:host_user";
+        $dbUpdate = $db->prepare($updateQuery);
         $dbUpdate->execute(array(':game_id' => $game_id, ':host_user' => $user_id));
     }  else {
         // clean the output buffer
@@ -83,7 +79,15 @@
             </tr>
             <?php
             // create the prepared query to find the character name
-            $statement = $db->prepare('SELECT c.character_name AS character, up.user_name AS player, up.player_id AS player_id FROM rdi_characters AS c RIGHT JOIN (SELECT p.player_id, p.character_id, u.user_name FROM rdi_player AS p NATURAL JOIN rdi_user AS u WHERE p.game_id=:game_id) AS up ON (c.character_id = up.character_id)');
+            $selectQuery2 = "SELECT c.character_name AS character, up.user_name AS player, up.player_id AS player_id 
+                             FROM rdi_characters AS c 
+                             RIGHT JOIN 
+                              (SELECT p.player_id, p.character_id, u.user_name 
+                               FROM rdi_player AS p 
+                               NATURAL JOIN rdi_user AS u 
+                               WHERE p.game_id=:game_id) AS up 
+                             ON (c.character_id = up.character_id)";
+            $statement = $db->prepare($selectQuery2);
             $statement->execute(array(':game_id' => $game_id));
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
                 ?>
@@ -98,7 +102,8 @@
                         echo $row['character'];
                         ?>
                     </td>
-                    <td class="noBorder"><input type="number" id="player<?php echo $row['player_id']; ?>" name="player<?php echo $row['player_id']; ?>"></td>
+                    <td class="noBorder"><input type="number" id="player<?php echo $row['player_id']; ?>"
+                                                name="player<?php echo $row['player_id']; ?>"></td>
                 </tr>
             <?php
             endwhile;
