@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/top_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/top_menu.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,22 +32,25 @@
     <session id="1557354213">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.49" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -100,18 +104,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigame.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-138">
-              <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihostgame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="1250">
               <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
             </state>
           </provider>
@@ -120,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigamedetails.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
+            <state relative-caret-position="1625">
               <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
             </state>
           </provider>
@@ -129,7 +124,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-774">
+            <state relative-caret-position="2950">
               <caret line="118" selection-start-line="118" selection-end-line="118" />
             </state>
           </provider>
@@ -138,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdierror.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="1400">
               <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
             </state>
           </provider>
@@ -165,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="32" selection-end-column="96" />
+            <state relative-caret-position="775">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="32" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -175,7 +170,7 @@
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -183,7 +178,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisignup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="1900">
               <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
             </state>
           </provider>
@@ -255,6 +250,126 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/web/testApp/node_modules" />
+    <handled-path value="$PROJECT_DIR$/web/testApp/testApp/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/bl/package.json" />
+      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/node_modules/vary/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/basic-auth/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/cookie-parser/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/ejs/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/morgan/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/on-headers/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/vary/package.json" />
+      <path value="$PROJECT_DIR$/web/testApp/testApp/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1237" />
@@ -353,6 +468,9 @@
       <workItem from="1541020798556" duration="8545000" />
       <workItem from="1541213988171" duration="11358000" />
       <workItem from="1541300871034" duration="11830000" />
+      <workItem from="1541651960765" duration="230000" />
+      <workItem from="1541789754041" duration="11000" />
+      <workItem from="1542154800220" duration="16000" />
     </task>
     <task id="LOCAL-00198" summary="remove debugging from settings page">
       <created>1541033354281</created>
@@ -701,7 +819,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166571000" />
+    <option name="totallyTimeSpent" value="166828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,7 +833,7 @@
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.14179105" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.14658849" />
       <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.18336888" />
       <window_info id="Favorites" order="2" sideWeight="0.50161815" side_tool="true" weight="0.18336888" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -957,20 +1075,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigameplayer-character.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdimygames.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigameplayer-character.php" />
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdimygames.php" />
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdidbconnect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -992,52 +1098,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisignup.php">
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+        <state relative-caret-position="1500">
+          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigame.php">
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihostgame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+        <state relative-caret-position="1250">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigamedetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1625">
+          <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-774">
+        <state relative-caret-position="2950">
           <caret line="118" selection-start-line="118" selection-end-line="118" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdierror.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="1400">
           <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigamedetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihostgame.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1050,10 +1142,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="32" selection-end-column="96" />
+        <state relative-caret-position="775">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="32" selection-end-column="96" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisignup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/testApp/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
       <provider selected="true" editor-type-id="text-editor">
