@@ -22,6 +22,7 @@ echo '<ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-s
             <div class="dropdown-divider"></div>
             <a class="dropdown-item menu btn btn-secondary" role="button" href="/homepage.php">Ponder 02 - King\'s Initiative Blog</a>
             <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week03/browse.php">Ponder 03 - Shopping Cart</a>
+            <a class="dropdown-item menu btn btn-secondary" role="button" href="https://protected-cliffs-36729.herokuapp.com/rateCalc">Ponder 09 - Node Postal Rate Calculator</a>
           </div>
         </li>
         <li class="nav-item dropdown flex-sm-fill text-sm-center">
