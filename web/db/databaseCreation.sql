@@ -39,6 +39,7 @@ CREATE TABLE rdi_player (
 CREATE TABLE rdi_game_characters (
     game_characters_id serial NOT NULL PRIMARY KEY,
     game_id integer NOT NULL REFERENCES rdi_game (game_id),
+    user_id integer NOT NULL REFERENCES rdi_user (user_id),
     character_id integer NOT NULL REFERENCES rdi_characters (character_id),
     CONSTRAINT rdi_player_game_id_character_id_key UNIQUE (game_id, character_id),
     CONSTRAINT rdi_player_game_id_user_id_key UNIQUE (game_id, user_id)

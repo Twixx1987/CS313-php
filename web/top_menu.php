@@ -14,6 +14,7 @@ echo '<ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-s
             <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week06/teach06.php">Teach 06 - PHP Database Update</a>
             <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week07/signin.php">Teach 07 - PHP Database Login Validation</a>
             <a class="dropdown-item menu btn btn-secondary" role="button" href="https://protected-cliffs-36729.herokuapp.com/mathForm">Teach 09 - Node Math Calculations</a>
+            <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/week11/teach11.php">Teach 11 - AJAX API Data Retrieval</a>
           </div>
         </li>
         <li class="nav-item dropdown flex-sm-fill text-sm-center">
