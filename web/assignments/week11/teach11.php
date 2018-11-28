@@ -16,10 +16,12 @@
     <title>Teach 11</title>
 </head>
 <body>
+    <h1 class="pagetitle container">Movie Search</h1>
     <div class="menu container">
         <?php include '../../top_menu.php'; ?>
     </div>
     <div class="container">
+		<p> This page does not work because the API is not serverd over HTTPS and this Heroku App requires HTTPS for webservices.</p>
         <input id="search" placeholder="search" />
         <br />
         <button id="runSearch" onclick="runSearch()">Run Search</button>
