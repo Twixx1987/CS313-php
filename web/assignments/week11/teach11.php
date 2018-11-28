@@ -16,7 +16,7 @@
     <title>Teach 11</title>
 </head>
 <body>
-    <h1 class="pagetitle container">Movie Search</h1>
+    <h1 class="pagetitle container">Teach 11: Movie Search</h1>
     <div class="menu container">
         <?php include '../../top_menu.php'; ?>
     </div>
