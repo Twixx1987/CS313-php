@@ -55,7 +55,7 @@
 				<a class="btn btn-secondary" role="button" href="/assignments/week03/browse.php">Ponder 03 - Shopping Cart</a>
 			</div>
 			<div class="col-sm">
-			
+				<a class="btn btn-secondary" role="button" href="https://shrouded-sands-83723.herokuapp.com/">Project 2 - Pandemic Tracker</a>
 			</div>
 		</div>
 		<div class="row">

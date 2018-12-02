@@ -33,6 +33,7 @@ echo '<ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-s
             <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/assignments.php">Assignments Home</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item menu btn btn-secondary" role="button" href="/assignments/project1/rdilogin.php">Project 1 - Red Dragon Inn Tracker</a>
+            <a class="btn btn-secondary" role="button" href="https://shrouded-sands-83723.herokuapp.com/">Project 2 - Pandemic Tracker</a>
           </div>
         </li>
       </ul>';
