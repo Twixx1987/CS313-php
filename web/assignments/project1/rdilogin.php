@@ -71,8 +71,9 @@
     
     <!-- Bootstrap CSS and Custom Stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="rdi.css" />
-    
+
     <!-- Required JavaScript and Custom JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -88,7 +89,7 @@
         <div class="menu container bg-secondary">
             <ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-secondary">
                 <li class="nav-item flex-sm-fill text-sm-center">
-                  <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="/homepage.php">CS313 Home</a>
+                  <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="https://twixx1987.github.io/cit261/web/Project/games/rdi.html">Basic Randomizer</a>
                 </li>
             </ul>
         </div>

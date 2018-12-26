@@ -58,6 +58,7 @@ function cleanInputs($data) {
 
     <!-- Bootstrap CSS and Custom Stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="rdi.css" />
 
     <!-- Required JavaScript and Custom JavaScript -->
@@ -70,7 +71,11 @@ function cleanInputs($data) {
         <div class="container fixed-top bg-white">
             <h1 class="pagetitle">Create an RDI-Tracker Account</h1>
             <div class="menu container bg-secondary">
-                <?php include 'rdimenu.php'; ?>
+                <ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-secondary">
+                    <li class="nav-item flex-sm-fill text-sm-center">
+                        <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="https://twixx1987.github.io/cit261/web/Project/games/rdi.html">Basic Randomizer</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="container body" id="login">
