@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="9fab6311-159d-4f49-97d6-fb15f0df5b3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/top_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/top_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdi.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdi.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdierror.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdierror.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdigame.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdigame.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdigamedetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdigamedetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdihome.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdihome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdimenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdimenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdisignup.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdisignup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +45,7 @@
         <counts>
           <entry key="project.closed" value="12" />
           <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.45" value="1" />
@@ -50,44 +62,46 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="13" />
+          <entry key="css" value="15" />
           <entry key="js" value="14" />
           <entry key="json" value="4" />
-          <entry key="php" value="242" />
+          <entry key="php" value="265" />
+          <entry key="rnc" value="1" />
           <entry key="sql" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="13" />
+          <entry key="CSS" value="15" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="14" />
-          <entry key="PHP" value="242" />
+          <entry key="PHP" value="265" />
+          <entry key="RNG Compact" value="1" />
           <entry key="SQL" value="3" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="273" />
+          <entry key="css" value="429" />
           <entry key="js" value="4692" />
-          <entry key="php" value="17797" />
+          <entry key="php" value="17830" />
           <entry key="sql" value="200" />
-          <entry key="txt" value="5518" />
+          <entry key="txt" value="5538" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="273" />
+          <entry key="CSS" value="429" />
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="4692" />
-          <entry key="PHP" value="17601" />
-          <entry key="PLAIN_TEXT" value="5518" />
+          <entry key="PHP" value="17634" />
+          <entry key="PLAIN_TEXT" value="5538" />
           <entry key="SQL" value="391" />
         </counts>
       </usages-collector>
@@ -103,11 +117,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihostgame.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1250">
-              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+            <state relative-caret-position="224">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdistatistics.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -115,62 +138,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigamedetails.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1625">
-              <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+            <state relative-caret-position="500">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
+        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2950">
-              <caret line="118" selection-start-line="118" selection-end-line="118" />
+            <state relative-caret-position="500">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdierror.php">
+        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdilogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdistartgame.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdijoingame.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="32" selection-end-column="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+            <state relative-caret-position="124">
+              <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -178,8 +165,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisignup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1900">
-              <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+            <state relative-caret-position="501">
+              <caret line="74" column="50" lean-forward="true" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdierror.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigame.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdimenu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -193,6 +216,7 @@
       <find>btnAddClass</find>
       <find>button</find>
       <find>submit</find>
+      <find>menu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -221,27 +245,27 @@
         <option value="$PROJECT_DIR$/web/assignments/week07/teach07.js" />
         <option value="$PROJECT_DIR$/web/assignments/week07/signin.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdimenu.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdijoingame.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdirightsfooter.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdihome.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" />
         <option value="$PROJECT_DIR$/web/db/databaseCreation.sql" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdigameplayerlist.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdimygames.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdierror.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdi.js" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdistartgame.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdimenu.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdi.css" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdihostgame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdisettings.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdisignup.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdilogin.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdistatistics.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdierror.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdigame.php" />
         <option value="$PROJECT_DIR$/web/assignments/project1/rdigamedetails.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdistartgame.php" />
-        <option value="$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdihome.php" />
+        <option value="$PROJECT_DIR$/web/assignments/project1/rdihostgame.php" />
       </list>
     </option>
   </component>
@@ -251,131 +275,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/web/testApp/node_modules" />
-    <handled-path value="$PROJECT_DIR$/web/testApp/testApp/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/bl/package.json" />
-      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/process-nextick-args/package.json" />
-      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/safe-buffer/package.json" />
-      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/web/assignments/week08/node_modules/util-deprecate/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/accepts/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/array-flatten/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/body-parser/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/bytes/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/content-disposition/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/content-type/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/cookie-signature/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/cookie/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/depd/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/destroy/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/ee-first/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/encodeurl/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/escape-html/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/etag/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/express/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/finalhandler/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/forwarded/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/fresh/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/http-errors/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/iconv-lite/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/ipaddr.js/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/media-typer/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/merge-descriptors/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/methods/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/mime-db/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/mime-types/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/mime/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/negotiator/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/on-finished/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/parseurl/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/path-to-regexp/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/proxy-addr/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/qs/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/range-parser/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/raw-body/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/safe-buffer/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/safer-buffer/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/send/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/serve-static/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/setprototypeof/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/statuses/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/type-is/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/unpipe/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/utils-merge/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/node_modules/vary/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/accepts/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/array-flatten/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/basic-auth/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/body-parser/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/bytes/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/content-disposition/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/content-type/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/cookie-parser/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/cookie-signature/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/cookie/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/depd/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/destroy/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/ee-first/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/ejs/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/encodeurl/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/escape-html/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/etag/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/express/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/finalhandler/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/forwarded/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/fresh/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/http-errors/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/iconv-lite/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/ipaddr.js/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/media-typer/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/merge-descriptors/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/methods/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/mime-db/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/mime-types/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/mime/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/morgan/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/negotiator/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/on-finished/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/on-headers/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/parseurl/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/path-to-regexp/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/proxy-addr/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/qs/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/range-parser/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/raw-body/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/safe-buffer/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/safer-buffer/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/send/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/serve-static/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/setprototypeof/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/statuses/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/type-is/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/unpipe/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/utils-merge/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/node_modules/vary/package.json" />
-      <path value="$PROJECT_DIR$/web/testApp/testApp/package.json" />
-    </packageJsonPaths>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1237" />
-    <option name="y" value="-28" />
-    <option name="width" value="1920" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -471,13 +375,7 @@
       <workItem from="1541651960765" duration="230000" />
       <workItem from="1541789754041" duration="11000" />
       <workItem from="1542154800220" duration="16000" />
-    </task>
-    <task id="LOCAL-00198" summary="remove debugging from settings page">
-      <created>1541033354281</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1541033354281</updated>
+      <workItem from="1545856631027" duration="1445000" />
     </task>
     <task id="LOCAL-00199" summary="update SQL creation file to include additions that were added">
       <created>1541215902311</created>
@@ -815,11 +713,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541312440067</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="make menu responsive">
+      <created>1545857619518</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1545857619519</updated>
+    </task>
+    <option name="localTasksCounter" value="248" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166828000" />
+    <option name="totallyTimeSpent" value="168273000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -831,9 +736,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.14658849" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.14818764" />
       <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.18336888" />
       <window_info id="Favorites" order="2" sideWeight="0.50161815" side_tool="true" weight="0.18336888" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -861,7 +767,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update code formatting for better readability" />
     <MESSAGE value="update close game to redirect to complete game upon form submit" />
     <MESSAGE value="update conditional to check for false instead of 0" />
     <MESSAGE value="create update code for complete game page&#10;add form input to store game id (not displayed)" />
@@ -886,7 +791,8 @@
     <MESSAGE value="update the game's player count once the game is closed" />
     <MESSAGE value="delete and remaining game_characters from said table" />
     <MESSAGE value="add conditional before delete, to delete remaining game_characters from said table" />
-    <option name="LAST_COMMIT_MESSAGE" value="add conditional before delete, to delete remaining game_characters from said table" />
+    <MESSAGE value="make menu responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="make menu responsive" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b03b6afb-2a30-44b0-9a2a-bf2fa34ac2f1/console.sql">
@@ -1026,99 +932,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdirightsfooter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdistatistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="98" column="10" selection-start-line="98" selection-start-column="10" selection-end-line="98" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdimenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="95" column="10" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigameplayerlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdilogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="41" selection-start-line="41" selection-end-line="48" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigameplayer-character.php" />
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdimygames.php" />
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdidbconnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigame.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="60" column="54" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihostgame.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigamedetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1625">
-          <caret line="65" column="61" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/testApp/index.js" />
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2950">
@@ -1126,17 +942,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdierror.php">
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdidbconnect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        <state relative-caret-position="25">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdistartgame.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/rdfa.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="291">
+          <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1147,27 +963,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="83" column="1" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisettings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdicompletegame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="175">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdisignup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1900">
-          <caret line="76" column="39" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+        <state relative-caret-position="501">
+          <caret line="74" column="50" lean-forward="true" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/testApp/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdimenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdirightsfooter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdilogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiverifylogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdistartgame.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1174">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdistatistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdiclosegame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        <state relative-caret-position="350">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdierror.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigame.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigameplayerlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdigamedetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assignments/project1/rdihostgame.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
         </state>
       </provider>
     </entry>
