@@ -32,7 +32,7 @@
 <body>
     <div class="container fixed-top bg-white">
         <h1 class="pagetitle">Welcome <?php echo $_SESSION['username'];?> to RDI-Tracker!</h1>
-        <div class="menu container bg-secondary">
+        <div class="menu navbar-expand-lg container bg-secondary">
             <?php include 'rdimenu.php'; ?>
         </div>
     </div>
