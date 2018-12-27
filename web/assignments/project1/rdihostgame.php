@@ -29,7 +29,7 @@ require 'rdiverifylogin.php';
 <body>
     <div class="container fixed-top bg-white">
         <h1 class="pagetitle">Host a New Game</h1>
-        <nav class="navbar navbar-expand-lg navbar-secondary menu bg-secondary">
+        <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
             <?php include 'rdimenu.php'; ?>
         </nav>
     </div>
