@@ -86,9 +86,9 @@
     <div class="container fixed-top bg-white">
         <h1 class="pagetitle">Login to RDI-Tracker</h1>
         <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
-            <ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-secondary">
+            <ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-light">
                 <li class="nav-item flex-sm-fill text-sm-center">
-                  <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-secondary" role="button" href="https://twixx1987.github.io/cit261/web/Project/games/rdi.html">Basic Randomizer</a>
+                  <a class="nav-link menu-items flex-sm-fill text-sm-center btn btn-light" role="button" href="https://twixx1987.github.io/cit261/web/Project/games/rdi.html">Basic Randomizer</a>
                 </li>
             </ul>
         </nav>

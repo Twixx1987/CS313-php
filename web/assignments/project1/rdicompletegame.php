@@ -56,9 +56,9 @@ foreach ($_POST as $key => $value) {
 <body>
 <div class="container fixed-top bg-white">
     <h1 class="pagetitle">Game #<?php echo $game_id; ?> Results Summary</h1>
-    <div class="menu container bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
         <?php include 'rdimenu.php'; ?>
-    </div>
+    </nav>
 </div>
 <div class="container body">
     <h2 class="container">Game #<?php echo $game_id; ?> has completed!</h2>
