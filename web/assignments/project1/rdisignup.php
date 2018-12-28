@@ -67,7 +67,7 @@ function cleanInputs($data) {
     <title>RDI-Tracker Sign Up</title>
 </head>
     <body>
-        <div class="container fixed-top bg-white">
+        <div class="container sticky-top bg-white">
             <h1 class="pagetitle">Create an RDI-Tracker Account</h1>
             <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
                 <ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-light">
@@ -77,7 +77,7 @@ function cleanInputs($data) {
                 </ul>
             </nav>
         </div>
-        <div class="container body" id="login">
+        <div class="container" id="login">
             <h2>Sign Up for RDI Tracker</h2>
             <div id="topError" class="error"><?php echo $error; ?></div>
             <form action="rdisignup.php" method="POST" onsubmit="return validateForm()">
@@ -86,12 +86,12 @@ function cleanInputs($data) {
                 <span id="sideError1" class="error"></span><br>
                 <span>Retype Password <input type="password" name="password2" id="password2" value=""></span>
                 <span id="sideError2" class="error"></span><br /><br />
-                <input type="submit" class="btn btn-secondary button">
-                <a class="btn btn-secondary button" role="button" href="/assignments/project1/rdilogin.php">Return to Sign In</a>
+                <input type="submit" class="btn btn-light button">
+                <a class="btn btn-light button" role="button" href="/assignments/project1/rdilogin.php">Return to Sign In</a>
             </form>
         </div>
         <br />
-        <div class="footer text-sm-center container bg-secondary text-white">
+        <div class="footer text-sm-center container bg-light">
             <?php include 'rdirightsfooter.php'; ?>
         </div>
     </body>

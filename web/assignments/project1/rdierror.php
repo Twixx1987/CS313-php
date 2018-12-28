@@ -27,13 +27,13 @@ require 'rdiverifylogin.php';
         <title>Track RDI Games</title>
     </head>
     <body>
-        <div class="container fixed-top bg-white">
+        <div class="container sticky-top bg-white">
             <h1 class="pagetitle">My Open RDI Games</h1>
             <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
                 <?php include 'rdimenu.php'; ?>
             </nav>
         </div>
-        <div class="container body">
+        <div class="container">
             <h2 class="error">ERROR: Unable to close a game with only one player.</h2>
             <p>Please verify that you have the correct game number. A game requires at least two players to track.</p>
             <h2>My Open Games</h2>
@@ -59,7 +59,7 @@ require 'rdiverifylogin.php';
             ?>
         </div>
         <br />
-        <div class="footer text-sm-center container bg-secondary text-white">
+        <div class="footer text-sm-center container bg-light">
             <?php include 'rdirightsfooter.php'; ?>
         </div>
     </body>

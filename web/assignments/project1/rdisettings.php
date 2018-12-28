@@ -50,20 +50,20 @@
     <title>RDI-Tracker Settings</title>
 </head>
 <body>
-    <div class="container fixed-top bg-white">
+    <div class="container sticky-top bg-white">
         <h1 class="pagetitle">RDI-Tracker Settings</h1>
         <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
             <?php include 'rdimenu.php'; ?>
         </nav>
     </div>
-    <div class="container body">
+    <div class="container">
         <br />
-        <button id="selectAll" name="selectAll" class="btn btn-secondary button">Select All</button>
-        <button id="clearAll" name="clearAll" class="btn btn-secondary button">Clear All</button>
+        <button id="selectAll" name="selectAll" class="btn btn-light button">Select All</button>
+        <button id="clearAll" name="clearAll" class="btn btn-light button">Clear All</button>
         <br />
         <br />
 		<form name="settings" action="rdisettings.php" method="post">
-            <input type="submit" value="Update Settings" id="allUpdate" class="btn btn-secondary button">
+            <input type="submit" value="Update Settings" id="allUpdate" class="btn btn-light button">
             <br />
 			<h2 class="container">Box Sets</h2>
 			<table class="versions">
@@ -96,7 +96,7 @@
                 ?>
 			</table>
             <br />
-            <input type="submit" value="Update Settings" id="boxUpdate" class="btn btn-secondary button">
+            <input type="submit" value="Update Settings" id="boxUpdate" class="btn btn-light button">
             <br />
             <br />
 			<h2 class="container">Individual Characters</h2>
@@ -138,11 +138,11 @@
 				?>
 			</table>
             <br />
-            <input type="submit" value="Update Settings" id="characterUpdate" class="btn btn-secondary button">
+            <input type="submit" value="Update Settings" id="characterUpdate" class="btn btn-light button">
 		</form>
 	</div>
     <br />
-    <div class="footer text-sm-center container bg-secondary text-white">
+    <div class="footer text-sm-center container bg-light">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
 </body>

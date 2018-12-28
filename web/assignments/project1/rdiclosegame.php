@@ -68,13 +68,13 @@
     <title>Game #<?php echo $game_id; ?> Character Selection</title>
 </head>
 <body>
-    <div class="container fixed-top bg-white">
+    <div class="container sticky-top bg-white">
         <h1 class="pagetitle">Game #<?php echo $game_id; ?> Character Selection</h1>
         <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
             <?php include 'rdimenu.php'; ?>
         </nav>
     </div>
-    <div class="container body">
+    <div class="container">
         <h2 class="container">Game #<?php echo $game_id; ?> has started!</h2>
         <p class="container">Below is the character lineup. As players are eliminated please indicate which
             placement they received. The last surviving player receives placement 1 and subsequent players
@@ -122,11 +122,11 @@
             </table>
             <br />
             <input class="d-none" type="number" value="<?php echo $game_id; ?>" id="game_id" name="game_id">
-            <input type="submit" id="completeGame" class="btn btn-secondary button" value="Complete Game">
+            <input type="submit" id="completeGame" class="btn btn-light button" value="Complete Game">
         </form>
     </div>
     <br />
-    <div class="footer text-sm-center container bg-secondary text-white">
+    <div class="footer text-sm-center container bg-light">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
 </body>

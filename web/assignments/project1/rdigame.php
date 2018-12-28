@@ -27,13 +27,13 @@
     <title>Track RDI Games</title>
 </head>
 <body>
-    <div class="container fixed-top bg-white">
+    <div class="container sticky-top bg-white">
         <h1 class="pagetitle">Track Your RDI Games</h1>
         <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
             <?php include 'rdimenu.php'; ?>
         </nav>
     </div>
-    <div class="container body">
+    <div class="container">
         <div class="row">
             <div class="col-sm">
                 <h2>Join a Game</h2>
@@ -45,7 +45,7 @@
                     <input type="number" id="gameId" name="gameId" />
                     <br />
                     <br />
-                    <button id="joinGame" name="joinGame" class="btn btn-secondary button" onclick="">Join Game</button>
+                    <button id="joinGame" name="joinGame" class="btn btn-light button" onclick="">Join Game</button>
                 </div>
             </div>
             <div class="col-lg">
@@ -81,13 +81,13 @@
                         choices on the settings page. You will need to provide a Game ID to the
                         players that will join. This ID will be provided once the game is
                         initialized.</p>
-                    <a href="rdihostgame.php" class="btn btn-secondary button" role="button">Host Game</a>
+                    <a href="rdihostgame.php" class="btn btn-light button" role="button">Host Game</a>
                 </div>
             </div>
         </div>
     </div>
     <br />
-    <div class="footer text-sm-center container bg-secondary text-white">
+    <div class="footer text-sm-center container bg-light">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
 </body>

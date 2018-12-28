@@ -27,13 +27,13 @@
     <title>RDI-Tracker Statistics</title>
 </head>
 <body>
-    <div class="container fixed-top bg-white">
+    <div class="container sticky-top bg-white">
         <h1 class="pagetitle">RDI-Tracker Statistics</h1>
         <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
             <?php include 'rdimenu.php'; ?>
         </nav>
     </div>
-	<div class="container body">
+	<div class="container">
         <h2 class="container"><?php echo $_SESSION['username']; ?>'s Statistics</h2>
         <p>
             You have played
@@ -97,7 +97,7 @@
         </table>
 	</div>
     <br />
-    <div class="footer text-sm-center container bg-secondary text-white">
+    <div class="footer text-sm-center container bg-light">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
 </body>

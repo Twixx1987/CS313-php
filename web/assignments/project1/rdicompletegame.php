@@ -54,13 +54,13 @@ foreach ($_POST as $key => $value) {
     <title>Game #<?php echo $game_id; ?> Results Summary</title>
 </head>
 <body>
-<div class="container fixed-top bg-white">
+<div class="container sticky-top bg-white">
     <h1 class="pagetitle">Game #<?php echo $game_id; ?> Results Summary</h1>
     <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
         <?php include 'rdimenu.php'; ?>
     </nav>
 </div>
-<div class="container body">
+<div class="container">
     <h2 class="container">Game #<?php echo $game_id; ?> has completed!</h2>
     <p class="container">Below is the results. The last surviving player received placement 1 and subsequent players
         ranked accordingly.</p>
@@ -108,7 +108,7 @@ foreach ($_POST as $key => $value) {
     </table>
 </div>
 <br />
-<div class="footer text-sm-center container bg-secondary text-white">
+<div class="footer text-sm-center container bg-light">
     <?php include 'rdirightsfooter.php'; ?>
 </div>
 </body>

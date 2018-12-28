@@ -30,13 +30,13 @@
     <title>RDI-Tracker Home</title>
 </head>
 <body>
-    <div class="container fixed-top bg-white">
+    <div class="container sticky-top bg-white">
         <h1 class="pagetitle">Welcome <?php echo $_SESSION['username'];?> to RDI-Tracker!</h1>
         <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
             <?php include 'rdimenu.php'; ?>
         </nav>
     </div>
-    <div class="container body">
+    <div class="container">
 		<h2 class="container">A Brief Synopsis of the Red Dragon Inn</h2>
 		<p>You and your adventuring companions have spent all day slogging through the Dungeon, killing monsters and taking 
 		their stuff. Now you're back in town, healed up, cleaned up, and ready to party at the Red Dragon Inn.</p>
@@ -94,7 +94,7 @@
 		</table>
 	</div>
     <br />
-    <div class="footer text-sm-center container bg-secondary text-white">
+    <div class="footer text-sm-center container bg-light">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
 </body>

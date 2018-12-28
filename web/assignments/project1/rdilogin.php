@@ -83,7 +83,7 @@
     <title>RDI-Tracker Login</title>
 </head>
 <body>
-    <div class="container fixed-top bg-white">
+    <div class="container sticky-top bg-white">
         <h1 class="pagetitle">Login to RDI-Tracker</h1>
         <nav class="navbar navbar-expand-lg navbar-light menu bg-light">
             <ul id="navigation" class="nav flex-column flex-sm-row menu-list btn btn-light">
@@ -93,7 +93,7 @@
             </ul>
         </nav>
     </div>
-	<div class="container body">
+	<div class="container">
 		<div class="container error">
 			<p><?php echo $error;?></p>
 		</div>
@@ -102,12 +102,12 @@
 			<input type="text" name="username"><br/>
 			<label for="password">Password:</label><br/>
 			<input type="password" name="password"><br/><br />
-			<input type="submit" class="btn btn-secondary button" name="login" value="Login">
-            <a class="btn btn-secondary button" role="button" href="/assignments/project1/rdisignup.php">Sign Up</a>
+			<input type="submit" class="btn btn-light button" name="login" value="Login">
+            <a class="btn btn-light button" role="button" href="/assignments/project1/rdisignup.php">Sign Up</a>
 		</form>
 	</div>
     <br />
-    <div class="footer text-sm-center container bg-secondary text-white">
+    <div class="footer text-sm-center container bg-light">
         <?php include 'rdirightsfooter.php'; ?>
     </div>
 </body>
